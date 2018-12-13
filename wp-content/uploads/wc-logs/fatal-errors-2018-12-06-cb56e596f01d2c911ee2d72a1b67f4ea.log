@@ -1,0 +1,22 @@
+2018-12-06T16:03:50+00:00 CRITICAL Uncaught Error: Call to a member function is_purchasable() on null in D:\OSPanel\domains\forsagewp\wp-content\plugins\woocommerce\templates\single-product\add-to-cart\simple.php:22
+Stack trace:
+#0 D:\OSPanel\domains\forsagewp\wp-content\plugins\woocommerce\includes\wc-core-functions.php(208): include()
+#1 D:\OSPanel\domains\forsagewp\wp-content\plugins\woocommerce\includes\wc-template-functions.php(1503): wc_get_template('single-product/...')
+#2 D:\OSPanel\domains\forsagewp\wp-content\themes\forsage_penza\goods-page.php(12): woocommerce_simple_add_to_cart()
+#3 D:\OSPanel\domains\forsagewp\wp-includes\template-loader.php(74): include('D:\\OSPanel\\doma...')
+#4 D:\OSPanel\domains\forsagewp\wp-blog-header.php(19): require_once('D:\\OSPanel\\doma...')
+#5 D:\OSPanel\domains\forsagewp\index.php(17): require('D:\\OSPanel\\doma...')
+#6 {main}
+  thrown в D:\OSPanel\domains\forsagewp\wp-content\plugins\woocommerce\templates\single-product\add-to-cart\simple.php на строке 22
+
+2018-12-06T16:03:59+00:00 CRITICAL Uncaught Error: Call to a member function is_purchasable() on null in D:\OSPanel\domains\forsagewp\wp-content\plugins\woocommerce\templates\single-product\add-to-cart\simple.php:22
+Stack trace:
+#0 D:\OSPanel\domains\forsagewp\wp-content\plugins\woocommerce\includes\wc-core-functions.php(208): include()
+#1 D:\OSPanel\domains\forsagewp\wp-content\plugins\woocommerce\includes\wc-template-functions.php(1503): wc_get_template('single-product/...')
+#2 D:\OSPanel\domains\forsagewp\wp-content\themes\forsage_penza\goods-page.php(12): woocommerce_simple_add_to_cart()
+#3 D:\OSPanel\domains\forsagewp\wp-includes\template-loader.php(74): include('D:\\OSPanel\\doma...')
+#4 D:\OSPanel\domains\forsagewp\wp-blog-header.php(19): require_once('D:\\OSPanel\\doma...')
+#5 D:\OSPanel\domains\forsagewp\index.php(17): require('D:\\OSPanel\\doma...')
+#6 {main}
+  thrown в D:\OSPanel\domains\forsagewp\wp-content\plugins\woocommerce\templates\single-product\add-to-cart\simple.php на строке 22
+

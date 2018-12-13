@@ -1,0 +1,117 @@
+#include<stdio.h>
+#include<conio.h>
+#include<locale.h>
+#include <fstream> 
+#include <iostream>
+
+const int N=3, M=3;
+int A[N][M];
+
+void input_k()//Ввод данных в матрицу с клавиатуры
+{
+	for(int i=0; i<N; i++)
+	{
+		printf("Введите целочисленные значения в ячейки %d-ой строки: \n",i+1);
+		for(int j=0; j<M; j++)
+			scanf("%d", &A[i][j]);
+	}
+}
+void input_f(char *way)//Ввод данных в матрицу из файла
+{
+	FILE * table;
+	table = fopen(way, "r");
+	if(table == NULL)
+		printf("Не удалось открыть файл");
+	else
+	{
+		for(int i=0; i<N; i++)
+			for(int j=0; j<M; j++)
+				fscanf(table, "%d", &A[i][j]);
+		fclose(table);
+	}
+}
+int col()//Количество столбцов, содержащих хотя бы один нулевой элемент
+{
+	int k=0;
+	for(int j=0; j<M; j++)
+		for(int i=0; i<N; i++)
+			if(A[i][j]==0)
+			{
+				k++;
+				break;
+			}
+	return(k);
+}
+
+void num(int B[N])//Номер строки, в которой находится самая длинная серия одинаковых элементов
+{
+	int i, j, k=1, s=0, max=0;
+	for(i=0; i<N; i++)
+		B[i]=0;
+
+	for(i=0; i<N; i++)
+	{
+		for(j=0; j<M-1; j++)
+			if(A[i][j]==A[i][j+1])
+				k++;
+			else
+			{
+				if(k>B[i])
+					B[i]=k;
+				k=1;
+			}
+		B[i]=k;
+		k=1;
+	}
+}
+void show_max_series(int *B)
+{
+	int i, max=0, k, s;
+	for(i=0; i<N; i++)
+		if(max<=B[i])
+			max=B[i];
+
+	k=0;
+	for(i=0; i<N; i++)
+		if(B[i]==max)
+		{
+			k++;
+			s=i;
+		}
+	
+	if(k==1)
+		printf("\nНомер строки, в которой находится самая длинная серия одинаковых элементов: %d",s+1);
+	else
+	{
+		printf("\nНомера строк, в которых находятся самые длинные серии одинаковых элементов: ");
+		for(i=0; i<=N-1; i++)
+			if(B[i]==max)
+				printf("%d ",i+1);
+	}
+}
+
+void main()
+{
+	int v;
+	char way[100];
+	int B[N];
+	setlocale(LC_ALL,"Russian");
+	printf("Если вы хотите ввести данные в матрицу с клавиатуры, введите 1 \nЕсли вы хотите, чтобы данные были взяты из файла, введите 2\n");
+	scanf("%d", &v);
+	if(v == 1)
+		input_k();
+	else
+	{
+		printf("Введите путь к файлу: ");
+		scanf("%s", way);
+		input_f(way);
+	}
+
+	int k = col();
+	printf("Количество столбцов матрицы, содержащих хотя бы один нулевой элемент = %d",k);
+
+	num(B);
+	show_max_series(B);
+
+	getch();
+}
