@@ -158,4 +158,15 @@ require get_template_directory() . '/inc/customizer.php';
 if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
+add_action ('woocommerce_after_shop_loop_item_title','my_custom_good_bottom');
+
+function my_custom_good_bottom(){
+	global $product; 
+	echo 'Произвёли: ' . $product->get_attribute('proizvoditel');
+	echo '<br>';
+	if ( $product->is_in_stock() ) {
+        echo 'В наличии: ' . '<span class="soldout">' . $product->get_stock_quantity() . '</span>';
+    }
+    echo '<br>';	
+}
 
