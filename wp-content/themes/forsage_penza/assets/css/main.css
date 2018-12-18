@@ -44,6 +44,10 @@ table {
   border-spacing: 0;
 }
 
+html {
+  font-family: "Play", arial;
+}
+
 span .custom_title {
   fontont-family: "Europe Bold Italic", arial;
 }
@@ -101,7 +105,7 @@ span .custom_title {
 .contacts {
   background-color: #F4F4F4;
   border-radius: 1px;
-  font-size: 21px;
+  font-size: 2.46vmin;
   line-height: 25px;
   margin: 0 -100px;
 }
@@ -271,33 +275,32 @@ span .custom_title {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  font-size: 24px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  font-size: 2.77vmin;
   line-height: 28px;
-  padding: 7px 0px;
+  padding: 0.85vmin 0px;
 }
 .main-menu ul li:first-child {
-  padding-left: 42px;
+  padding-left: 3vmin;
 }
 .main-menu ul li:last-child {
-  padding-right: 42px;
+  padding-right: 3vmin;
 }
 .main-menu ul a {
   text-decoration: none;
   color: #FEDD49;
-  padding: 8px 0px;
+  padding: 0.85vmin 0px;
 }
 .main-menu ul a:hover {
   background-color: #FEDD49;
   color: #333333;
 }
 .main-menu ul a:first-child {
-  padding-left: 42px;
+  padding-left: 3vmin;
 }
 .main-menu ul a:last-child {
-  padding-right: 42px;
+  padding-right: 3vmin;
 }
 
 .slider-main_page {
@@ -394,7 +397,6 @@ span .custom_title {
   font-weight: 900;
 }
 .goods_selection-tires_others-characters ul {
-  font-family: "Play", arial;
   font-style: normal;
   font-weight: normal;
   line-height: normal;
@@ -403,7 +405,6 @@ span .custom_title {
   margin-left: 21px;
 }
 .goods_selection-tires_others-characters p {
-  font-family: "Play", arial;
   font-style: normal;
   font-weight: normal;
   line-height: normal;
@@ -500,7 +501,6 @@ span .custom_title {
 }
 
 .map-main_page {
-  font-family: "Play", arial;
   margin-bottom: 30px;
   height: 548px;
   margin: 0 -100px;
@@ -583,9 +583,6 @@ span .custom_title {
   font-weight: 1000;
 }
 
-footer {
-  font-family: "Play", arial;
-}
 footer .copyright {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -627,11 +624,7 @@ footer .developed-by span {
   padding-left: 5px;
 }
 
-.goods_wrapper {
-  width: 1140px;
-  margin: auto;
-}
-.good_card {
+ul .type-product {
   display: inline-block;
   height: 408px;
   width: 255px;
@@ -640,7 +633,38 @@ footer .developed-by span {
           box-shadow: 0px 5px 7px rgba(0, 0, 0, 0.08);
   border-radius: 20px;
   margin: 15px;
+  padding: 5px 15px 15px !important;
 }
-.good_card:nth-child(4n+1) {
+ul .type-product:nth-child(4n+1) {
   margin-left: 0;
+}
+ul .type-product a {
+  color: #333333;
+  font-size: 2.77vmin;
+}
+ul .type-product a img {
+  margin: auto !important;
+  border-radius: 10px;
+}
+
+.product-attribute-proizvoditel {
+  position: relative;
+  padding-left: 32px;
+  margin-top: 12px;
+}
+.product-attribute-proizvoditel .icon-info {
+  display: inline-block;
+  position: absolute;
+  margin-bottom: 0 !important;
+  padding: 0;
+  width: 30px !important;
+  height: 30px !important;
+  color: rgba(51, 51, 51, 0.67);
+  left: 0;
+}
+.product-attribute-proizvoditel span {
+  line-height: 30px;
+}
+.product-attribute-stock_quantit {
+  padding-left: 32px;
 }

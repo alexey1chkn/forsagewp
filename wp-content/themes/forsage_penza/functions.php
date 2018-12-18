@@ -162,11 +162,8 @@ add_action ('woocommerce_after_shop_loop_item_title','my_custom_good_bottom');
 
 function my_custom_good_bottom(){
 	global $product; 
-	echo 'Произвёли: ' . $product->get_attribute('proizvoditel');
-	echo '<br>';
+	echo '<div class="product-attribute-proizvoditel"><img src="' . get_template_directory_uri() . '/assets/img/info.svg" class="icon-info">' . '<span>' . $product->get_attribute('proizvoditel') . '</span></div>';
 	if ( $product->is_in_stock() ) {
-        echo 'В наличии: ' . '<span class="soldout">' . $product->get_stock_quantity() . '</span>';
+        echo '<span class="product-attribute-stock_quantit">В наличии: ' . $product->get_stock_quantity() . '</span>';
     }
-    echo '<br>';	
 }
-
