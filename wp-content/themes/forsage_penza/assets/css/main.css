@@ -105,7 +105,7 @@ span .custom_title {
 .contacts {
   background-color: #F4F4F4;
   border-radius: 1px;
-  font-size: 2.46vmin;
+  font-size: 23px;
   line-height: 25px;
   margin: 0 -100px;
 }
@@ -277,7 +277,7 @@ span .custom_title {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  font-size: 2.77vmin;
+  font-size: 24px;
   line-height: 28px;
   padding: 0.85vmin 0px;
 }
@@ -640,7 +640,7 @@ ul .type-product:nth-child(4n+1) {
 }
 ul .type-product a {
   color: #333333;
-  font-size: 2.77vmin;
+  font-size: 24px;
 }
 ul .type-product a img {
   margin: auto !important;

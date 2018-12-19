@@ -193,41 +193,5 @@ get_header();
 					</div>
 				</div>
 			</div>
-			<!--FOOTER============================================================================================================================================================-->
-			<div class="footer-banner">
-				<div class="row justify-content-around align-items-center">
-					<div class="col-3">
-						<div class="footer-banner-logo">
-							<img src="<?echo get_template_directory_uri();?>/assets/img/logo.svg" alt="">
-						</div>
-					</div>
-					<div class="col-7">
-						<div class="footer-banner-title">Максимальный ассортимент<br>За минимальные цены</div>
-					</div>
-				</div>
-			</div>
-		<div class="row">
-			<div class="col-12">
-				<div class="main-menu">
-					<ul>
-						<li><a href="#">Главная</a></li>
-						<li><a href="#">Шины</a></li>
-						<li><a href="#">Диски</a></li>
-						<li><a href="#">АКБ</a></li>
-						<li><a href="#">Крепежи</a></li>
-						<li><a href="#">Кольца</a></li>
-						<li><a href="#">О нас</a></li>
-					</ul>
-				</div>
-			</div>
-		</div>
-		<footer>
-			<div class="copyright">© Шинный центр Форсаж, 2018 г. Все права защищены законодательством РФ</div>
-			<div class="developed-by">
-				Сайт разработан командой<a href="#"><span>40digit</span></a>
-			</div>
-		</footer>
-	</div>
-</div>
 
 <? get_footer(); ?>
