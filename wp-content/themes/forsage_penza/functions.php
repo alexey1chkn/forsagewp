@@ -165,5 +165,6 @@ function my_custom_good_bottom(){
 	echo '<div class="product-attribute-proizvoditel"><img src="' . get_template_directory_uri() . '/assets/img/info.svg" class="icon-info">' . '<span>' . $product->get_attribute('proizvoditel') . '</span></div>';
 	if ( $product->is_in_stock() ) {
         echo '<span class="product-attribute-stock_quantit">В наличии: ' . $product->get_stock_quantity() . '</span>';
+        echo '<br>';
     }
 }

@@ -96,7 +96,7 @@
 						<div class="col-4">
 							<div class="contacts-opening_hours">
 								<div class="contacts-opening_hours-logo">
-									<img src="assets/img/timer.svg" alt="">
+									<img src="<?echo get_template_directory_uri();?>/assets/img/timer.svg" alt="">
 								</div>
 								<div class="contacts-opening_hours-ways">
 									<div class="contacts-opening_hours-ways-first_way">Пн-Пт 8:30 - 19:00</div>
@@ -109,7 +109,7 @@
 						<div class="col-4">
 							<div class="contacts-phone-numbers">
 								<div class="contacts-phone-numbers-logo">
-									<img src="assets/img/phone.svg" alt="">
+									<img src="<?echo get_template_directory_uri();?>/assets/img/phone.svg" alt="">
 								</div>
 								<div class="contacts-phone-numbers-list">
 									<div class="contacts-phone-numbers-list-nubmer-1">Отдел продаж: 8 (8412) 20-45-40</div>

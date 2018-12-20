@@ -52,7 +52,7 @@ span .custom_title {
   fontont-family: "Europe Bold Italic", arial;
 }
 
-.top-bar {
+.top-bar, .bottom-bar {
   font-family: "Europe Bold Italic", arial;
   font-weight: 600;
 }
@@ -105,7 +105,7 @@ span .custom_title {
 .contacts {
   background-color: #F4F4F4;
   border-radius: 1px;
-  font-size: 23px;
+  font-size: 21px;
   line-height: 25px;
   margin: 0 -100px;
 }
@@ -279,28 +279,22 @@ span .custom_title {
       justify-content: space-around;
   font-size: 24px;
   line-height: 28px;
-  padding: 0.85vmin 0px;
+  padding: 8px 0px;
 }
 .main-menu ul li:first-child {
-  padding-left: 3vmin;
+  padding-left: 42px;
 }
 .main-menu ul li:last-child {
-  padding-right: 3vmin;
+  padding-right: 42px;
 }
 .main-menu ul a {
   text-decoration: none;
   color: #FEDD49;
-  padding: 0.85vmin 0px;
+  padding: 8px 0px;
 }
 .main-menu ul a:hover {
   background-color: #FEDD49;
   color: #333333;
-}
-.main-menu ul a:first-child {
-  padding-left: 3vmin;
-}
-.main-menu ul a:last-child {
-  padding-right: 3vmin;
 }
 
 .slider-main_page {
@@ -583,25 +577,25 @@ span .custom_title {
   font-weight: 1000;
 }
 
-footer .copyright {
+.footer-copyright {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   height: 78px;
   background-color: #333333;
-  margin: -30px -100px 0px;
-  padding: 25px 0;
+  margin: 0 -100px 0px;
+  padding: 25px 0 !important;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   text-align: center;
   font-style: normal;
-  font-weight: normal;
+  font-weight: normal !important;
   line-height: normal;
   font-size: 24px;
   color: #fff;
 }
-footer .developed-by {
+.footer-developed-by {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -619,20 +613,19 @@ footer .developed-by {
   font-weight: normal;
   line-height: normal;
 }
-footer .developed-by span {
+.footer-developed-by span {
   color: #FEDD49;
   padding-left: 5px;
 }
 
 ul .type-product {
   display: inline-block;
-  height: 408px;
+  height: 100%;
   width: 255px;
   background-color: #FEDD49;
   -webkit-box-shadow: 0px 5px 7px rgba(0, 0, 0, 0.08);
           box-shadow: 0px 5px 7px rgba(0, 0, 0, 0.08);
   border-radius: 20px;
-  margin: 15px;
   padding: 5px 15px 15px !important;
 }
 ul .type-product:nth-child(4n+1) {
@@ -640,7 +633,16 @@ ul .type-product:nth-child(4n+1) {
 }
 ul .type-product a {
   color: #333333;
-  font-size: 24px;
+}
+ul .type-product a .woocommerce-loop-product__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 2.7em;
+  font-weight: bold;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 ul .type-product a img {
   margin: auto !important;
@@ -657,8 +659,8 @@ ul .type-product a img {
   position: absolute;
   margin-bottom: 0 !important;
   padding: 0;
-  width: 30px !important;
-  height: 30px !important;
+  width: 1.7em !important;
+  height: 1.7em !important;
   color: rgba(51, 51, 51, 0.67);
   left: 0;
 }
@@ -667,4 +669,136 @@ ul .type-product a img {
 }
 .product-attribute-stock_quantit {
   padding-left: 32px;
+}
+
+.my_custom-add_to_cart_button {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+.my_custom-add_to_cart_button a {
+  color: #FEDD49 !important;
+}
+.my_custom-add_to_cart_button .add_to_cart_button {
+  width: 100%;
+  background-color: #333333 !important;
+  padding-left: 23% !important;
+  border-radius: 10px !important;
+}
+.my_custom-add_to_cart_button .add_to_cart_button-next {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: rgba(254, 221, 73, 0.07);
+  border-radius: 0px 10px 10px 0px;
+  right: 0;
+  top: 15px;
+  width: 25%;
+  font-size: 1em;
+  font-weight: bold;
+  padding: 11px;
+}
+
+@media (max-width: 1200px) {
+  .contacts {
+    font-size: 17px;
+    line-height: 21px;
+  }
+  .contacts-opening_hours {
+    padding-left: 100px;
+    padding-top: 8px;
+    padding-bottom: 12px;
+  }
+  .contacts-opening_hours-logo img {
+    height: 23px;
+    left: -23px;
+  }
+  .contacts-opening_hours-ways-check {
+    height: 5px;
+    width: 7px;
+    border: 5px solid transparent;
+    border-top: 7px solid #333333;
+    top: 15px;
+    right: 77px;
+  }
+  .contacts-opening_hours:hover .contacts-opening_hours-ways {
+    height: 92px;
+  }
+  .contacts-opening_hours:hover .contacts-opening_hours-ways-second_way {
+    top: 31px;
+  }
+  .contacts-opening_hours:hover .contacts-opening_hours-ways-third_way {
+    top: 61px;
+  }
+  .contacts-phone-numbers-logo img {
+    height: 23px;
+    left: -37px;
+  }
+  .contacts-phone-numbers-list-nubmer-check {
+    height: 5px;
+    width: 7px;
+    border: 5px solid transparent;
+    border-top: 7px solid #333333;
+    top: 15px;
+    right: 66px;
+  }
+  .contacts-phone-numbers:hover .contacts-phone-numbers-list {
+    height: 92px;
+  }
+  .contacts-phone-numbers:hover .contacts-phone-numbers-list-nubmer-2 {
+    top: 31px;
+  }
+  .contacts-phone-numbers:hover .contacts-phone-numbers-list-nubmer-3 {
+    top: 61px;
+  }
+  .contacts-email {
+    padding: 8px 0px 12px;
+  }
+}
+@media (max-width: 1024px) {
+  .top-bar {
+    display: none;
+  }
+
+  .content-area {
+    margin: -7px;
+    width: 100vw;
+  }
+}
+.footer-banner {
+  height: 100%;
+}
+.footer-banner-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.footer-banner-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }

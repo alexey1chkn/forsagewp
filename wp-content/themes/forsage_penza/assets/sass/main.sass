@@ -8,10 +8,10 @@ span
 	.custom_title
 		fontont-family: 'Europe Bold Italic', arial
 
-.top-bar
+.top-bar, .bottom-bar
 	font-family: 'Europe Bold Italic', arial
 	font-weight: 600
-
+	
 .header
 	padding: 13px 0
 	align-items: center
@@ -41,7 +41,7 @@ span
 .contacts
 	background-color: $bgf
 	border-radius: 1px
-	font-size: 23px
+	font-size: 21px
 	line-height: 25px
 	margin: 0 -100px
 	&-opening_hours
@@ -186,24 +186,19 @@ span
 		justify-content: space-around
 		font-size: 24px
 		line-height: 28px	
-		padding: 0.85vmin 0px
+		padding: 8px 0px
 		li
 			&:first-child
-				padding-left: 3vmin
+				padding-left: 42px
 			&:last-child
-				padding-right: 3vmin		
+				padding-right: 42px		
 		a
 			text-decoration: none
 			color: $mainf
-			padding: 0.85vmin 0px
+			padding: 8px 0px
 			&:hover
 				background-color: $mainf
 				color: $tmf
-			&:first-child
-				padding-left: 3vmin
-			&:last-child
-				padding-right: 3vmin
-
 .slider
 	&-main_page
 		margin: 30px 0px
@@ -424,21 +419,21 @@ span
 			color: $tmf
 			font-weight: 1000
 
-footer
-	.copyright
+.footer
+	&-copyright
 		display: flex
 		height: 78px
 		background-color: $tmf
-		margin: -30px -100px 0px
-		padding: 25px 0 
+		margin: 0 -100px 0px
+		padding: 25px 0 !important
 		justify-content: center
 		text-align: center
 		font-style: normal
-		font-weight: normal
+		font-weight: normal !important
 		line-height: normal
 		font-size: 24px
 		color: $white
-	.developed-by
+	&-developed-by
 		display: flex
 		height: 34px
 		justify-content: center
@@ -458,18 +453,21 @@ footer
 ul
 	.type-product
 		display: inline-block
-		height: 408px
+		height: 100%
 		width: 255px
 		background-color: $mainf
 		box-shadow: 0px 5px 7px rgba(0, 0, 0, 0.08)
 		border-radius: 20px
-		margin: 15px
 		padding: 5px 15px 15px !important
 		&:nth-child(4n+1)
 			margin-left: 0
 		a
 			color: $tmf
-			font-size: 24px
+			.woocommerce-loop-product__title
+				display: flex	
+				height: 2.7em
+				font-weight: 	bold
+				justify-content: 	center
 			img 
 				margin: auto !important
 				border-radius: 10px
@@ -487,8 +485,8 @@ ul
 					position: absolute
 					margin-bottom: 0 !important
 					padding: 0
-					width: 30px !important
-					height: 30px !important
+					width: 1.7em !important
+					height: 1.7em !important
 					color: rgba(51, 51, 51, 0.67)
 					left: 0
 			span
@@ -496,5 +494,107 @@ ul
 		&-stock_quantit
 			padding-left: 32px
 
+.my
+	&_custom
+		&-add_to_cart_button 
+			display: flex !important	
+			justify-content: center
+			position: relative			
+			a
+				color: $mainf !important
+			.add_to_cart_button
+				width: 100%
+				background-color: $tmf !important
+				padding-left: 23% !important
+				border-radius: 10px !important
+				&-next
+					position: absolute
+					display: flex
+					justify-content: center
+					align-items: center
+					background: rgba(254, 221, 73, 0.07)
+					border-radius: 0px 10px 10px 0px
+					right: 0
+					top: 15px
+					width: 25%
+					font-size: 1em
+					font-weight: bold
+					padding: 11px
 
+//MEDIA
+@media (max-width: 1200px)
+	.contacts
+		font-size: 17px
+		line-height: 21px
+		&-opening_hours
+			padding-left: 100px
+			padding-top: 8px
+			padding-bottom: 12px
+			&-logo
+				img
+					height: 23px
+					left: -23px
+			&-ways
+				&-check
+					height: 5px
+					width: 7px
+					border: 5px solid transparent
+					border-top: 7px solid $tmf
+					top: 15px
+					right: 77px
+			&:hover
+				.contacts-opening_hours
+					&-ways
+						height: 92px
+						&-first_way
+						&-second_way
+							top: 31px
+						&-third_way
+							top: 61px
+		&-phone-numbers
+			&-logo
+				img
+					height: 23px
+					left: -37px
+			&-list
+				&-nubmer
+					&-check
+						height: 5px
+						width: 7px
+						border: 5px solid transparent
+						border-top: 7px solid $tmf
+						top: 15px
+						right: 66px
+			&:hover
+				.contacts-phone-numbers
+					&-list
+						height: 92px
+						&-nubmer
+							&-1
+							&-2
+								top: 31px
+							&-3
+								top: 61px
+		&-email
+			padding: 8px 0px 12px
+
+@media (max-width: 1024px)
+	.top-bar
+		display: none
+	.content-area
+		margin: -7px
+		width: 100vw
+
+@media (max-width: 960px)
+.footer
+	&-banner
+		height: 100%
+		&-logo
+			display: flex
+			justify-content: center
+		&-title
+			display: flex
+			flex-direction: column
+			justify-content: center
+			align-items: center
 			
