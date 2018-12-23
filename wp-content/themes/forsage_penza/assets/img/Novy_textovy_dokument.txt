@@ -1,0 +1,106 @@
+#include "stdio.h"
+#include "conio.h"
+#include "locale.h"
+#include "string.h"
+const int N = 100, M = 50;
+
+void main()
+{
+	FILE *file;
+	FILE *lib;
+	int m1 = 0, m2 = 0, m3 = 0, count1 = 1, count2 = 0;
+	char str[N], word1[M], word2[M], *s1, *s2, *s3;
+	file = fopen("Text.txt", "r + ");
+	lib = fopen("lib.txt", "w+");
+
+	for (;;) 
+	{
+		char *prov = fgets(str, N, file);
+		if (prov == 0) 
+		{
+			break;
+		}
+		for (;;) 
+		{
+			char * w = strtok(str, " ");
+			if (w == 0) 
+			{
+				break;	
+			}
+			while (w != NULL)             
+				{ 
+					fputs(w, lib);
+					w = strtok(NULL, " ,.-");
+					fputs("\n", lib);
+				}
+			if (w == NULL)
+			{
+				break;
+			}
+			
+		}
+	}
+
+	fseek(lib, 0L, SEEK_SET);
+	for (;;) 
+	{
+		char *prov = fgets(word1, M, lib);
+		if (prov == 0)
+			break;
+		int l = strlen(word1), count3 = 0;
+
+		for (;;) 
+		{
+			char *prov = fgets(word2, M, lib);
+			if (prov == 0)
+				break;
+			for (int i = 0; i < l; i++)
+				if (word1[i] == word2[i]) 
+				{
+					count3++;
+				} 
+			if (count3 == l) 
+			{
+				count1++;
+			}
+			count3 = 0;
+		}
+
+		if (count1 > m1) 
+		{
+			m3 = m2;
+			s3 = s2;
+			m2 = m1;
+			s2 = s1;
+			s1 = word1;
+			m1 = count1;			
+		}
+		else 
+		{
+			if ((count1 != m1) && (count1 > m2)) 
+			{
+				m3 = m2;
+				s3 = s2;
+				s2 = word1;
+				m2 = count1;
+			}
+			else 
+			{
+				if ((count1 != m2) && (count1 > m3))
+				{
+					s3 = word1;
+					m3 = count1;					
+				}
+			}
+		 }
+
+		count1 = 1;
+		count2+=(l+1);
+		fseek(lib, count2, SEEK_SET);
+
+	}
+
+	fclose(lib);
+	fclose(file);
+	getch();
+}
