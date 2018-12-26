@@ -163,8 +163,27 @@ add_action ('woocommerce_after_shop_loop_item_title','my_custom_good_bottom');
 function my_custom_good_bottom(){
 	global $product; 
 	echo '<div class="product-attribute-proizvoditel"><img src="' . get_template_directory_uri() . '/assets/img/info.svg" class="icon-info">' . '<span>' . $product->get_attribute('proizvoditel') . '</span></div>';
-	if ( $product->is_in_stock() ) {
-        echo '<span class="product-attribute-stock_quantit">В наличии: ' . $product->get_stock_quantity() . '</span>';
-        echo '<br>';
-    }
 }
+
+add_action('woocommerce_before_single_product_summary','my_custom_single_product_summary_title');
+
+function my_custom_single_product_summary_title(){
+	global $product;
+	echo '<div class="my_custom-single_product"><span class="my_custom-single_product-title">' . $product->get_title() . '</span>';
+}
+
+add_action('woocommerce_single_product_summary', 'my_custom_single_product_summary', 50);
+
+function my_custom_single_product_summary(){
+	global $product;
+	$cat = count( $product->get_category_ids() );
+	if ( $cat == 1 ) {
+	echo '<div class="my_custom-single_product-summary">Производитель:' . $product->get_attribute('proizvoditel') . 'Ширина: ' . $product->get_attribute('shirina-shiny'). 'Высота*: ' . $product->get_attribute('shirina-shiny'). 'Диаметр: ' . $product->get_attribute('posadochnyj-diametr'). 'Шипы*: ' . $product->get_attribute('shirina-shiny'). 'Сезон*: ' . $product->get_attribute('shirina-shiny');
+}
+		if ( $product->is_in_stock() ) {
+	        echo '<span class="product-attribute-stock_quantit">В наличии: ' . $product->get_stock_quantity() . '</span>';
+	        echo '<br>';
+	    }
+	    echo '</div>';
+	}
+//woocommerce_single_product_summary
