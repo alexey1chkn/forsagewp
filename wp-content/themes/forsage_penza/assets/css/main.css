@@ -709,6 +709,28 @@ ul .type-product a img {
   font-weight: bold;
   padding: 11px;
 }
+.my_custom-single_product-title {
+  font-family: Europe;
+  line-height: normal;
+  font-size: 27px;
+  font-weight: bold;
+  text-align: center;
+  padding-left: 65px;
+  color: #333333;
+}
+
+.entry-summary {
+  padding-left: 65px;
+}
+
+.site-main article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.site-main article .entry-header {
+  display: none;
+}
 
 @media (max-width: 1200px) {
   .contacts {
