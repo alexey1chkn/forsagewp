@@ -2,11 +2,11 @@
 @import "reset"
 
 html
-	font-family: 'Play', arial
+	font-family: 'Play', arial 
 
 span 
 	.custom_title
-		fontont-family: 'Europe Bold Italic', arial
+		font-family: 'Europe Bold Italic', arial
 
 .top-bar, .bottom-bar
 	font-family: 'Europe Bold Italic', arial
@@ -521,8 +521,14 @@ ul
 					font-weight: bold
 					padding: 11px
 		&-single_product
+			.woocommerce-product-gallery
+				width: 35% !important
+			.entry-summary
+				width: 59% !important
+			.in-stock
+				display: none
 			&-title
-				font-family: Europe
+				font-family: 'Europe Bold Italic', arial
 				line-height: normal
 				font-size: 27px
 				font-weight: bold
@@ -530,13 +536,45 @@ ul
 				padding-left: 65px
 				color: $tmf
 			&-summary
-				
-				
+				&-price
+					font-style: normal
+					font-weight: bold
+					line-height: normal
+					font-size: 21px
+					text-align: center
+					color: $tmf
+					text-align: left
+					margin-top: -21px
+					padding-bottom: 6px
+				&-wrapper
+					width: 71%
+					height: 249px
+					background-color: $bgf
+					padding: 22px 30px 12px
+					border-radius: 20px
+				&-content
+					font-style: normal
+					font-weight: normal
+					line-height: normal
+					font-size: 24px
+					text-align: center
+					display: flex
+					flex-direction: column
+					color: $tmf
+					&-line
+						display: flex
+						justify-content: space-between
+						&-element
+							display: block
+							width: 37%
+							padding: 6px 0
+							text-align: left
+						&:first-child
+							.my_custom-single_product-summary-content-line-element
+								width: 100%
+						
 
-
-.entry-summary
-	padding-left: 65px
-		
+			
 
 //CUSTOM SINGLE PRODUCT
 .site-main

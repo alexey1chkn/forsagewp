@@ -172,18 +172,27 @@ function my_custom_single_product_summary_title(){
 	echo '<div class="my_custom-single_product"><span class="my_custom-single_product-title">' . $product->get_title() . '</span>';
 }
 
-add_action('woocommerce_single_product_summary', 'my_custom_single_product_summary', 50);
+add_action('woocommerce_single_product_summary', 'my_custom_single_product_summary', 25);
 
 function my_custom_single_product_summary(){
 	global $product;
 	$cat = count( $product->get_category_ids() );
+	echo '<p class="my_custom-single_product-summary-price">' . $product->get_price_html() . '</p>';
 	if ( $cat == 1 ) {
-	echo '<div class="my_custom-single_product-summary">Производитель:' . $product->get_attribute('proizvoditel') . 'Ширина: ' . $product->get_attribute('shirina-shiny'). 'Высота*: ' . $product->get_attribute('shirina-shiny'). 'Диаметр: ' . $product->get_attribute('posadochnyj-diametr'). 'Шипы*: ' . $product->get_attribute('shirina-shiny'). 'Сезон*: ' . $product->get_attribute('shirina-shiny');
+	echo 
+	'<div class="my_custom-single_product-summary-wrapper">
+		<div class="my_custom-single_product-summary-content">
+		<div class="my_custom-single_product-summary-content-line"><div class="my_custom-single_product-summary-content-line-element">Производитель: ' . $product->get_attribute('proizvoditel') . '</div></div>' . 
+		'<div class="my_custom-single_product-summary-content-line"><div class="my_custom-single_product-summary-content-line-element">Ширина: ' . $product->get_attribute('shirina-shiny') . '</div>' .
+		'<div class="my_custom-single_product-summary-content-line-element">Высота*: ' . $product->get_attribute('shirina-shiny'). '</div></div>' .
+		'<div class="my_custom-single_product-summary-content-line"><div class="my_custom-single_product-summary-content-line-element">Диаметр: ' . $product->get_attribute('posadochnyj-diametr'). '</div>' .
+			'<div class="my_custom-single_product-summary-content-line-element">Шипы*: ' . $product->get_attribute('shirina-shiny') . '</div></div>' . 
+		'<div class="my_custom-single_product-summary-content-line"><div class="my_custom-single_product-summary-content-line-element">Сезон*: ' . $product->get_attribute('shirina-shiny') . '</div></div>';
 }
 		if ( $product->is_in_stock() ) {
 	        echo '<span class="product-attribute-stock_quantit">В наличии: ' . $product->get_stock_quantity() . '</span>';
 	        echo '<br>';
 	    }
-	    echo '</div>';
+	    echo '</div></div>';
 	}
 //woocommerce_single_product_summary

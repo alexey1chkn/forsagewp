@@ -49,7 +49,7 @@ html {
 }
 
 span .custom_title {
-  fontont-family: "Europe Bold Italic", arial;
+  font-family: "Europe Bold Italic", arial;
 }
 
 .top-bar, .bottom-bar {
@@ -709,8 +709,17 @@ ul .type-product a img {
   font-weight: bold;
   padding: 11px;
 }
+.my_custom-single_product .woocommerce-product-gallery {
+  width: 35% !important;
+}
+.my_custom-single_product .entry-summary {
+  width: 59% !important;
+}
+.my_custom-single_product .in-stock {
+  display: none;
+}
 .my_custom-single_product-title {
-  font-family: Europe;
+  font-family: "Europe Bold Italic", arial;
   line-height: normal;
   font-size: 27px;
   font-weight: bold;
@@ -718,9 +727,55 @@ ul .type-product a img {
   padding-left: 65px;
   color: #333333;
 }
-
-.entry-summary {
-  padding-left: 65px;
+.my_custom-single_product-summary-price {
+  font-style: normal;
+  font-weight: bold;
+  line-height: normal;
+  font-size: 21px;
+  text-align: center;
+  color: #333333;
+  text-align: left;
+  margin-top: -21px;
+  padding-bottom: 6px;
+}
+.my_custom-single_product-summary-wrapper {
+  width: 71%;
+  height: 249px;
+  background-color: #F4F4F4;
+  padding: 22px 30px 12px;
+  border-radius: 20px;
+}
+.my_custom-single_product-summary-content {
+  font-style: normal;
+  font-weight: normal;
+  line-height: normal;
+  font-size: 24px;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: #333333;
+}
+.my_custom-single_product-summary-content-line {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.my_custom-single_product-summary-content-line-element {
+  display: block;
+  width: 37%;
+  padding: 6px 0;
+  text-align: left;
+}
+.my_custom-single_product-summary-content-line:first-child .my_custom-single_product-summary-content-line-element {
+  width: 100%;
 }
 
 .site-main article {
