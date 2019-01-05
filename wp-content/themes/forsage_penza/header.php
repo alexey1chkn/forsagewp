@@ -21,10 +21,7 @@
 
 		<!-- Icons -->
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-		
 		<!--FONTS-->
-		<link href="http://allfont.ru/allfont.css?fonts=europe-bold-italic" rel="stylesheet" type="text/css" />
-		<link href="http://allfont.ru/allfont.css?fonts=play" rel="stylesheet" type="text/css" />
 	<?php wp_head(); ?>
 </head>
 
@@ -84,8 +81,15 @@
 						</div>
 						<div class="col-2">
 							<div class="header-cart">
-								<a href="#"><img src="<?echo get_template_directory_uri();?>/assets/img/Vector.svg" alt=""></a>
-								<div class="header-cart-event"><span>3</span></div>
+								<a href="/cart/"><img src="<?echo get_template_directory_uri();?>/assets/img/Vector.svg" alt=""></a>
+								<div class="header-cart-event">
+									<span>
+									<?php
+										global $woocommerce; 
+										echo sprintf($woocommerce->cart->cart_contents_count); 
+									?>
+									</span>
+								</div>
 							</div>
 						</div>
 					</div>

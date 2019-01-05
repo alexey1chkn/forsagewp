@@ -28,7 +28,7 @@ class NF_FormBlock {
 		wp_register_script(
 			'ninja-forms-block',
 			$js_dir . 'block.js',
-			array( 'wp-blocks', 'wp-i18n', 'wp-element', 'underscore' )
+			array( 'wp-blocks', 'wp-editor', 'wp-components', 'wp-i18n', 'wp-element', 'underscore' )
 		);
 
 		wp_register_style(
@@ -71,6 +71,9 @@ class NF_FormBlock {
 	}
 
 	public function load_preview_data() {
+
+		$js_dir  = Ninja_Forms::$url . 'assets/js/min/';
+
 		// check for preview and iframe get parameters
 		if( isset( $_GET[ 'nf_preview_form' ] ) && isset( $_GET[ 'nf_iframe' ] ) ){
 			$form_id = intval( $_GET[ 'nf_preview_form' ] );
@@ -89,23 +92,27 @@ class NF_FormBlock {
 					background-color: white;
 					/* overflow-x: hidden; */
 				}
+
+				div.site-branding, header.entry-header, .site-footer {
+					display:none;
+				}
+
 			</style>
-			<script type="text/javascript">
-				jQuery(document).on( 'nfFormReady', function(){
-					var frameEl = window.frameElement;
-
-					// get the form element
-					var $form = jQuery("#nf-form-<?php echo $form_id; ?>-cont");
-					// get the height of the form
-					var height = $form.find( '.ninja-forms-form-wrap' ).outerHeight(true);
-
-					if (frameEl) {
-						// add 75 to height b/c the submit button was missing
-						frameEl.height = height + 75;
-					}
-				});
-			</script>
+			
 			<?php
+
+			// register our script to target the form iFrame in page builder
+			wp_register_script(
+				'ninja-forms-block-setup',
+				$js_dir . 'blockFrameSetup.js',
+				array( 'underscore', 'jquery' )
+			);
+
+			wp_localize_script( 'ninja-forms-block-setup', 'ninjaFormsBlockSetup', array(
+				'form_id' => $form_id
+			) );
+
+			wp_enqueue_script( 'ninja-forms-block-setup' );
 		}
 
 	}

@@ -1,0 +1,43 @@
+2019-01-04T12:39:12+00:00 CRITICAL syntax error, unexpected 'if' (T_IF) в D:\OSPanel\domains\forsagewp\wp-content\themes\forsage_penza\functions.php на строке 198
+
+2019-01-04T13:48:59+00:00 CRITICAL syntax error, unexpected end of file в D:\OSPanel\domains\forsagewp\wp-content\themes\forsage_penza\functions.php на строке 205
+
+2019-01-04T13:49:16+00:00 CRITICAL syntax error, unexpected end of file в D:\OSPanel\domains\forsagewp\wp-content\themes\forsage_penza\functions.php на строке 204
+
+2019-01-04T14:08:48+00:00 CRITICAL syntax error, unexpected 'if' (T_IF), expecting ',' or ';' в D:\OSPanel\domains\forsagewp\wp-content\themes\forsage_penza\woocommerce\single-product\tabs\tabs.php на строке 31
+
+2019-01-04T15:18:40+00:00 CRITICAL Uncaught Error: Call to undefined method WC_Product_Simple::wc_get_attribute_taxonomies() in D:\OSPanel\domains\forsagewp\wp-content\themes\forsage_penza\functions.php:172
+Stack trace:
+#0 D:\OSPanel\domains\forsagewp\wp-includes\class-wp-hook.php(286): my_custom_good_bottom('')
+#1 D:\OSPanel\domains\forsagewp\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#2 D:\OSPanel\domains\forsagewp\wp-includes\plugin.php(453): WP_Hook->do_action(Array)
+#3 D:\OSPanel\domains\forsagewp\wp-content\themes\forsage_penza\woocommerce\content-product.php(54): do_action('woocommerce_aft...')
+#4 D:\OSPanel\domains\forsagewp\wp-includes\template.php(690): require('D:\\OSPanel\\doma...')
+#5 D:\OSPanel\domains\forsagewp\wp-content\plugins\woocommerce\includes\wc-core-functions.php(178): load_template('D:\\OSPanel\\doma...', false)
+#6 D:\OSPanel\domains\forsagewp\wp-content\plugins\woocommerce\includes\shortcodes\class-wc-shortcode-products.php(643): wc_get_template_part('content', 'product')
+#7 D:\OSPanel\dom в D:\OSPanel\domains\forsagewp\wp-content\themes\forsage_penza\functions.php на строке 172
+
+2019-01-04T15:29:34+00:00 CRITICAL syntax error, unexpected 'function' (T_FUNCTION) в D:\OSPanel\domains\forsagewp\wp-content\themes\forsage_penza\functions.php на строке 245
+
+2019-01-04T15:31:35+00:00 CRITICAL syntax error, unexpected 'function' (T_FUNCTION) в D:\OSPanel\domains\forsagewp\wp-content\themes\forsage_penza\functions.php на строке 245
+
+2019-01-04T15:32:07+00:00 CRITICAL syntax error, unexpected 'function' (T_FUNCTION) в D:\OSPanel\domains\forsagewp\wp-content\themes\forsage_penza\functions.php на строке 245
+
+2019-01-04T15:32:20+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function wc_display_product_attributes(), 0 passed in D:\OSPanel\domains\forsagewp\wp-content\themes\forsage_penza\header.php on line 152 and exactly 1 expected in D:\OSPanel\domains\forsagewp\wp-content\plugins\woocommerce\includes\wc-template-functions.php:3119
+Stack trace:
+#0 D:\OSPanel\domains\forsagewp\wp-content\themes\forsage_penza\header.php(152): wc_display_product_attributes()
+#1 D:\OSPanel\domains\forsagewp\wp-includes\template.php(688): require_once('D:\\OSPanel\\doma...')
+#2 D:\OSPanel\domains\forsagewp\wp-includes\template.php(647): load_template('D:\\OSPanel\\doma...', true)
+#3 D:\OSPanel\domains\forsagewp\wp-includes\general-template.php(41): locate_template(Array, true)
+#4 D:\OSPanel\domains\forsagewp\wp-content\themes\forsage_penza\goods-page.php(8): get_header()
+#5 D:\OSPanel\domains\forsagewp\wp-includes\template-loader.php(74): include('D:\\OSPanel\\doma...')
+#6 D:\OSPanel\domains\forsagewp\wp-blog-header.php(19): require_once('D:\\OSPanel в D:\OSPanel\domains\forsagewp\wp-content\plugins\woocommerce\includes\wc-template-functions.php на строке 3119
+
+2019-01-04T15:37:34+00:00 CRITICAL syntax error, unexpected '(', expecting ':' в D:\OSPanel\domains\forsagewp\wp-content\themes\forsage_penza\woocommerce\content-product.php на строке 70
+
+2019-01-04T15:38:58+00:00 CRITICAL syntax error, unexpected ':' в D:\OSPanel\domains\forsagewp\wp-content\themes\forsage_penza\woocommerce\content-product.php на строке 26
+
+2019-01-04T15:39:15+00:00 CRITICAL syntax error, unexpected ':' в D:\OSPanel\domains\forsagewp\wp-content\themes\forsage_penza\woocommerce\content-product.php на строке 26
+
+2019-01-04T15:40:33+00:00 CRITICAL 'break' not in the 'loop' or 'switch' context в D:\OSPanel\domains\forsagewp\wp-content\themes\forsage_penza\woocommerce\content-product.php на строке 71
+

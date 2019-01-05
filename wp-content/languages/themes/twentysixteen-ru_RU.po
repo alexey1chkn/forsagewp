@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Themes - Twenty Sixteen package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2017-11-11 14:56:18+0000\n"
+"PO-Revision-Date: 2018-12-07 09:51:50+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -11,27 +11,71 @@ msgstr ""
 "Language: ru\n"
 "Project-Id-Version: Themes - Twenty Sixteen\n"
 
-#. Theme Name of the plugin/theme
+#. Theme Name of the theme
 msgid "Twenty Sixteen"
 msgstr "Twenty Sixteen"
 
-#. Description of the plugin/theme
+#. Description of the theme
 msgid "Twenty Sixteen is a modernized take on an ever-popular WordPress layout — the horizontal masthead with an optional right sidebar that works perfectly for blogs and websites. It has custom color options with beautiful default color schemes, a harmonious fluid grid using a mobile-first approach, and impeccable polish in every detail. Twenty Sixteen will make your WordPress look beautiful everywhere."
 msgstr "Twenty Sixteen — современная версия популярного дизайна для WordPress. Горизонтальный заголовок с дополнительной правой панелью идеально подходит для блогов и сайтов. В теме есть произвольная настройка цветов с красивыми встроенными схемами и гармоничная растяжимая сетка с ориентацией на мобильные устройства, внимание уделено даже мельчайшим деталям. С Twenty Sixteen ваш сайт будет прекрасно выглядеть на любых экранах."
 
+#: functions.php:189
+msgid "Bright Red"
+msgstr "Ярко-красная"
+
+#: functions.php:184
+msgid "Dark Red"
+msgstr "Темно-красная"
+
+#: functions.php:179
+msgid "Medium Brown"
+msgstr "Средне-коричневая"
+
+#: functions.php:174
+msgid "Dark Brown"
+msgstr "Темно-коричневая"
+
+#: functions.php:169
+msgid "Light Blue"
+msgstr "Светло-синяя"
+
+#: functions.php:164
+msgid "Bright Blue"
+msgstr "Ярко-синяя"
+
+#: functions.php:159
+msgid "Blue Gray"
+msgstr "Сине-серая"
+
+#: functions.php:154
+msgid "White"
+msgstr "Белая"
+
+#: functions.php:149
+msgid "Light Gray"
+msgstr "Светло-серая"
+
+#: functions.php:144
+msgid "Medium Gray"
+msgstr "Средне-серая"
+
+#: functions.php:139
+msgid "Dark Gray"
+msgstr "Темно-серая"
+
 #. translators: %s: Name of current post
-#: inc/template-tags.php:194 template-parts/content.php:29
+#: inc/template-tags.php:184 template-parts/content.php:28
 msgid "Continue reading<span class=\"screen-reader-text\"> \"%s\"</span>"
 msgstr "Читать далее<span class=\"screen-reader-text\"> «%s»</span>"
 
 #. translators: %s: Name of current post
-#: image.php:88 template-parts/content-page.php:39
-#: template-parts/content-search.php:28 template-parts/content-search.php:43
-#: template-parts/content-single.php:47 template-parts/content.php:53
+#: image.php:84 template-parts/content.php:49
+#: template-parts/content-single.php:45 template-parts/content-search.php:28
+#: template-parts/content-search.php:43 template-parts/content-page.php:37
 msgid "Edit<span class=\"screen-reader-text\"> \"%s\"</span>"
 msgstr "Изменить<span class=\"screen-reader-text\"> «%s»</span>"
 
-#: inc/customizer.php:324
+#: inc/customizer.php:283
 msgid "Red"
 msgstr "Красный"
 
@@ -56,7 +100,7 @@ msgctxt "label"
 msgid "Search for:"
 msgstr "Искать:"
 
-#: footer.php:30
+#: footer.php:28
 msgid "Footer Social Links Menu"
 msgstr "Меню социальных ссылок в подвале"
 
@@ -64,7 +108,7 @@ msgstr "Меню социальных ссылок в подвале"
 msgid "Footer Primary Menu"
 msgstr "Основное меню подвала"
 
-#: functions.php:167
+#: functions.php:231
 msgid "Add widgets here to appear in your sidebar."
 msgstr "Добавьте сюда виджеты, которые вы хотите разместить в боковой колонке."
 
@@ -96,19 +140,19 @@ msgstr "Посмотреть все записи автора %s"
 msgid "Author:"
 msgstr "Автор:"
 
-#: single.php:42
+#: single.php:38
 msgid "Previous post:"
 msgstr "Предыдущая запись:"
 
-#: single.php:41
+#: single.php:37
 msgid "Previous"
 msgstr "Назад"
 
-#: single.php:39
+#: single.php:35
 msgid "Next post:"
 msgstr "Следующая запись:"
 
-#: single.php:38
+#: single.php:34
 msgid "Next"
 msgstr "Далее"
 
@@ -116,104 +160,104 @@ msgstr "Далее"
 msgid "Search Results for: %s"
 msgstr "Результаты поиска: %s"
 
-#: inc/template-tags.php:112
+#: inc/template-tags.php:106
 msgctxt "Used before tag names."
 msgid "Tags"
 msgstr "Метки"
 
-#: inc/template-tags.php:103
+#: inc/template-tags.php:98
 msgctxt "Used before category names."
 msgid "Categories"
 msgstr "Рубрики"
 
-#: inc/template-tags.php:99 inc/template-tags.php:108
+#: inc/template-tags.php:95 inc/template-tags.php:103
 msgctxt "Used between list items, there is a space after the comma."
 msgid ", "
 msgstr ", "
 
-#: inc/template-tags.php:83
+#: inc/template-tags.php:79
 msgctxt "Used before publish date."
 msgid "Posted on"
 msgstr "Опубликовано"
 
-#: inc/template-tags.php:40
+#: inc/template-tags.php:38
 msgctxt "Used before post format."
 msgid "Format"
 msgstr "Формат"
 
-#: inc/template-tags.php:52
+#: inc/template-tags.php:50
 msgid "Leave a comment<span class=\"screen-reader-text\"> on %s</span>"
 msgstr "Добавить комментарий<span class=\"screen-reader-text\"> к записи %s</span>"
 
-#: inc/template-tags.php:26
+#: inc/template-tags.php:25
 msgctxt "Used before post author name."
 msgid "Author"
 msgstr "Автор"
 
-#: inc/customizer.php:334
+#: functions.php:194 inc/customizer.php:293
 msgid "Yellow"
 msgstr "Жёлтый"
 
-#: inc/customizer.php:314
+#: inc/customizer.php:273
 msgid "Gray"
 msgstr "Серый"
 
-#: inc/customizer.php:304
+#: inc/customizer.php:263
 msgid "Dark"
 msgstr "Тёмный"
 
-#: inc/customizer.php:204
+#: inc/customizer.php:172
 msgid "Main Text Color"
 msgstr "Основной цвет текста"
 
-#: inc/customizer.php:294
+#: inc/customizer.php:253
 msgid "Default"
 msgstr "По умолчанию"
 
-#: inc/customizer.php:222
+#: inc/customizer.php:184
 msgid "Secondary Text Color"
 msgstr "Цвет второстепенного текста"
 
-#: inc/customizer.php:186
+#: inc/customizer.php:160
 msgid "Link Color"
 msgstr "Цвет ссылок"
 
-#: inc/customizer.php:165
+#: inc/customizer.php:145
 msgid "Page Background Color"
 msgstr "Цвет фона страницы"
 
-#: image.php:107 single.php:31
+#: single.php:29 image.php:102
 msgctxt "Parent post link"
 msgid "<span class=\"meta-nav\">Published in</span><span class=\"post-title\">%title</span>"
 msgstr "<span class=\"meta-nav\">Опубликовано в</span><span class=\"post-title\">%title</span>"
 
-#: inc/back-compat.php:41 inc/back-compat.php:54 inc/back-compat.php:70
+#: inc/back-compat.php:41 inc/back-compat.php:53 inc/back-compat.php:68
 msgid "Twenty Sixteen requires at least WordPress version 4.4. You are running version %s. Please upgrade and try again."
 msgstr "Тема Twenty Sixteen требует WordPress версии 4.4 или выше. У вас версия %s. Пожалуйста, обновите WordPress и попробуйте ещё раз."
 
-#: inc/customizer.php:145
+#: inc/customizer.php:130
 msgid "Base Color Scheme"
 msgstr "Основная цветовая схема"
 
-#: image.php:77
+#: image.php:73
 msgctxt "Used before full size attachment link."
 msgid "Full size"
 msgstr "Полный размер"
 
-#: image.php:58 template-parts/content-page.php:24
-#: template-parts/content-single.php:26 template-parts/content.php:36
+#: image.php:56 template-parts/content.php:33
+#: template-parts/content-single.php:25 template-parts/content-page.php:23
 msgid "Pages:"
 msgstr "Страницы:"
 
-#: image.php:26
+#: image.php:25
 msgid "Next Image"
 msgstr "Следующее изображение"
 
-#: image.php:25
+#: image.php:24
 msgid "Previous Image"
 msgstr "Предыдущее изображение"
 
-#: header.php:49
+#: header.php:47
 msgid "Menu"
 msgstr "Меню"
 
@@ -221,38 +265,38 @@ msgstr "Меню"
 msgid "Skip to content"
 msgstr "Перейти к содержимому"
 
-#: functions.php:301
+#: functions.php:360
 msgid "expand child menu"
 msgstr "раскрыть дочернее меню"
 
-#: functions.php:302
+#: functions.php:361
 msgid "collapse child menu"
 msgstr "свернуть дочернее меню"
 
 #. translators: If there are characters in your language that are not supported
 #. by Inconsolata, translate this to 'off'. Do not translate into your own
 #. language.
-#: functions.php:227
+#: functions.php:286
 msgctxt "Inconsolata font: on or off"
 msgid "on"
 msgstr "on"
 
-#: functions.php:177
+#: functions.php:239
 msgid "Content Bottom 1"
 msgstr "Под содержимым 1"
 
-#: functions.php:179 functions.php:191
+#: functions.php:241 functions.php:251
 msgid "Appears at the bottom of the content on posts and pages."
 msgstr "Отображается под содержимым на страницах и записях."
 
-#: functions.php:189
+#: functions.php:249
 msgid "Content Bottom 2"
 msgstr "Под содержимым 2"
 
 #. translators: If there are characters in your language that are not supported
 #. by Merriweather, translate this to 'off'. Do not translate into your own
 #. language.
-#: functions.php:217
+#: functions.php:276
 msgctxt "Merriweather font: on or off"
 msgid "on"
 msgstr "off"
@@ -260,28 +304,28 @@ msgstr "off"
 #. translators: If there are characters in your language that are not supported
 #. by Montserrat, translate this to 'off'. Do not translate into your own
 #. language.
-#: functions.php:222
+#: functions.php:281
 msgctxt "Montserrat font: on or off"
 msgid "on"
 msgstr "off"
 
-#: functions.php:165
+#: functions.php:229
 msgid "Sidebar"
 msgstr "Боковая колонка"
 
-#: functions.php:92 header.php:66
+#: header.php:62 functions.php:89
 msgid "Social Links Menu"
 msgstr "Меню социальных ссылок"
 
-#: functions.php:91 header.php:53
+#: header.php:51 functions.php:88
 msgid "Primary Menu"
 msgstr "Основное меню"
 
-#: footer.php:61
+#: footer.php:57
 msgid "Proudly powered by %s"
 msgstr "Сайт работает на %s"
 
-#: comments.php:71
+#: comments.php:69
 msgid "Comments are closed."
 msgstr "Обсуждение закрыто."
 
@@ -294,17 +338,17 @@ msgstr[0] "%2$s: %1$s комментарий"
 msgstr[1] "%2$s: %1$s комментария"
 msgstr[2] "%2$s: %1$s комментариев"
 
-#: archive.php:53 image.php:62 index.php:50 search.php:41
-#: template-parts/content-page.php:28 template-parts/content-single.php:30
-#: template-parts/content.php:40
+#: index.php:48 archive.php:51 search.php:39 image.php:60
+#: template-parts/content.php:37 template-parts/content-single.php:29
+#: template-parts/content-page.php:27
 msgid "Page"
 msgstr "Страница"
 
-#: archive.php:52 index.php:49 search.php:40
+#: index.php:47 archive.php:50 search.php:38
 msgid "Next page"
 msgstr "Следующая страница"
 
-#: archive.php:51 index.php:48 search.php:39
+#: index.php:46 archive.php:49 search.php:37
 msgid "Previous page"
 msgstr "Предыдущая страница"
 
@@ -316,16 +360,15 @@ msgstr "По данному адресу ничего не найдено. По�
 msgid "Oops! That page can&rsquo;t be found."
 msgstr "Ой! Страница не найдена."
 
-#. Theme URI of the plugin/theme
+#. Theme URI of the theme
 msgid "https://wordpress.org/themes/twentysixteen/"
 msgstr "https://wordpress.org/themes/twentysixteen/"
 
-#. Author of the plugin/theme
+#. Author of the theme
 msgid "the WordPress team"
 msgstr "Команда WordPress"
 
-#. #-#-#-#-#  twentysixteen.pot (Twenty Sixteen 1.5)  #-#-#-#-#
-#. Author URI of the plugin/theme
-#: footer.php:60
+#. Author URI of the theme
+#: footer.php:56
 msgid "https://wordpress.org/"
 msgstr "https://wordpress.org/"

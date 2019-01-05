@@ -1,9 +1,9 @@
 ﻿=== Cyr to Lat reloaded – transliteration of links and file names===
-Contributors: webcraftic, preslilvs
+Contributors: webcraftic
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=VDX7JNTQPNPFW
 Tags: cyr-to-lat, cyr to lat, rus to lat, cyrillic, latin, l10n, russian, rustolat, slugs, translations, transliteration, media, georgian, european, diacritics, muiltilanguage
 Requires at least: 4.2
-Tested up to: 4.9
+Tested up to: 5.0
 Requires PHP: 5.2
 Stable tag: trunk
 License: GPLv2
@@ -51,25 +51,30 @@ We recommend naming files in Latin symbols. Cyr-to-lat reloaded plugin can do th
 * Preserves absolute URLs integrity;
 * Transliterates file names in attachments;
 * Performs transliteration of attachment file names.
-* Supports Russian, Belarusian, Ukrainian, Bulgarian, Georgian, Greek
+* Supports Russian, Belarusian, Ukrainian, Bulgarian, Georgian, Greek, Armenian, Serbian symbols
+* Support plugin Advanced custom fields
+* Support plugin Asgaros
+* Support plugin Buddypress
 
 #### EXTENDED VERSION OF THE PLUGIN WITH CONTROL PANEL ####
 * [Cyrlitera – transliteration of links and file names](https://wordpress.org/plugins/cyrlitera/)
 * [Clearfy – WordPress optimization plugin and disable ultimate tweaker](https://wordpress.org/plugins/clearfy/)
-
-#### RECOMMENDED SEPARATE MODULES ####
-We invite you to check out a few other related free plugins that our team has also produced that you may find especially useful:
-* [Disable Comments for Any Post Types (Remove Comments)](https://wordpress.org/plugins/comments-plus/)
-* [Disable updates, Disable automatic updates, Updates manager](https://wordpress.org/plugins/webcraftic-updates-manager/)
-* [Disable admin notices individually](https://wordpress.org/plugins/disable-admin-notices/ "Disable admin notices individually")
-* [WordPress Assets manager, dequeue scripts, dequeue styles](https://wordpress.org/plugins/gonzales/  "WordPress Assets manager, dequeue scripts, dequeue styles")
-* [Hide login page](https://wordpress.org/plugins/hide-login-page/ "Hide login page")
 
 **THANKS TO THE PLUGIN DEVELOPERS**
 
 We’ve used some features of the following plugins:
 
 Cyrlitera, WP Translitera, Rus-To-Lat, Cyr-To-Lat, Clearfy — WordPress optimization plugin, translit-it, Cyr to Lat enhanced, Cyr-And-Lat, Rus filename translit, rus to lat advanced
+
+#### NEED SUPPORT, WE GOT YOU COVERED ####
+We provide free support for this plugin. If you are pushed with a problem, just create a new ticket. We will definitely help you!
+
+1. **[Get starting free support](https://clearfy.pro/support/?utm_source=wordpress.org&utm_campaign=wbcr_clearfy&utm_content=repo_description)**
+4. **[Hot support](https://clearfy.pro/hot-support/?utm_source=wordpress.org&utm_campaign=wbcr_clearfy&utm_content=repo_description)** - Any user can contact us. You can use it only if you find a php error in plugin, get a white screen, or want to report a vulnerability.
+
+#### ADDITIONAL RESOURCES ####
+1. **[Youtube channel](https://www.youtube.com/channel/UCxOg4XzLe5kX1bP2YP4TTfQ)**
+2. **[Telegram](https://t.me/webcraftic)**
 
 == Screenshots ==
 
@@ -108,6 +113,16 @@ You can roll back the changes you have made, using the extended version of  [Cyr
 You can do this by installing the extended version of [Cyrlitera plugin](https://wordpress.org/plugins/cyrlitera/ "Cyrlitera plugin")
 
 == Changelog ==
+= 1.2.0 =
+* Added: Compatible with Wordpress 5.0
+* Added: Gutenberg support
+* Added: Support Armenian symbols
+* Added: Support Serbian symbols
+* Added: Add ACF support
+* Added: Add buddypress support
+* Added: Add Asgaros forum support
+* Fixed: Bug with Cyrillic links on frontend.
+
 = 1.1.1 =
 * Added: Greek symbols
 * Added: Special symbols

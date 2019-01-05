@@ -44,6 +44,18 @@ table {
   border-spacing: 0;
 }
 
+@font-face {
+  font-family: Europe Bold Italic;
+  src: url(../fonts/europe-bold-italic_[allfont.ru].ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: Play;
+  src: url(../fonts/play_[allfont.ru].ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
 html {
   font-family: "Play", arial;
 }
@@ -82,6 +94,7 @@ span .custom_title {
   border-radius: 50%;
 }
 .header-cart-event {
+  font-family: "Play", arial;
   position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -108,6 +121,7 @@ span .custom_title {
   font-size: 21px;
   line-height: 25px;
   margin: 0 -100px;
+  font-family: "Play", arial;
 }
 .contacts-opening_hours {
   position: relative;
@@ -279,7 +293,7 @@ span .custom_title {
       justify-content: space-around;
   font-size: 24px;
   line-height: 28px;
-  padding: 8px 0px;
+  padding: 8px 3px;
 }
 .main-menu ul li:first-child {
   padding-left: 42px;
@@ -290,7 +304,7 @@ span .custom_title {
 .main-menu ul a {
   text-decoration: none;
   color: #FEDD49;
-  padding: 8px 0px;
+  padding: 8px 3px;
 }
 .main-menu ul a:hover {
   background-color: #FEDD49;
@@ -330,6 +344,9 @@ span .custom_title {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+.goods_selection-tires_main-characters ul li img {
+  margin: 16px 39px 9px;
 }
 .goods_selection-tires_main-visual {
   width: 100%;
@@ -397,8 +414,10 @@ span .custom_title {
   font-size: 24px;
   margin-top: 17px;
   margin-left: 21px;
+  font-family: "Play", arial;
 }
 .goods_selection-tires_others-characters p {
+  font-family: "Play", arial;
   font-style: normal;
   font-weight: normal;
   line-height: normal;
@@ -504,6 +523,8 @@ span .custom_title {
   height: inherit;
 }
 .map-main_page-info {
+  font-family: "Play", arial;
+  font-weight: normal;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -522,7 +543,7 @@ span .custom_title {
   line-height: 37px;
 }
 .map-main_page-info span {
-  font-weight: 700;
+  font-weight: 1000;
 }
 .map-main_page-info-title {
   margin-top: 40px;
@@ -774,8 +795,106 @@ ul .type-product a img {
   padding: 6px 0;
   text-align: left;
 }
+.my_custom-single_product-summary-content-line-element-bottom {
+  display: block;
+  width: 50%;
+  padding: 15px 0;
+  text-align: left;
+}
+.my_custom-single_product-summary-content-line-element-bottom span {
+  font-style: normal;
+  font-weight: bold;
+  line-height: normal;
+  font-size: 24px;
+  color: #333333;
+}
+.my_custom-single_product-summary-content-line-element-bottom a {
+  text-decoration: none;
+  color: #333333;
+  background-color: #FEDD49;
+  padding: 12px 42px 12px 40px;
+  border-radius: 10px;
+  font-style: normal;
+  font-weight: bold;
+  line-height: normal;
+  font-size: 24px;
+}
 .my_custom-single_product-summary-content-line:first-child .my_custom-single_product-summary-content-line-element {
   width: 100%;
+}
+
+.characters {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+.characters select {
+  background: #fff;
+  border: 2px solid #CCCCCC;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 7px;
+  min-width: 95px;
+  min-height: 30px;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 18px;
+  font-size: 19px;
+  color: #333333;
+  padding: 0px 21px 0px 2px;
+  font-family: "Play", arial;
+}
+.characters-checkbox {
+  position: relative;
+}
+.characters-checkbox input[type="checkbox"] {
+  opacity: 0;
+}
+.characters-checkbox input[type="checkbox"] + label {
+  content: "";
+  position: absolute;
+  right: 21px;
+  top: 20px;
+  min-width: 30px;
+  min-height: 30px;
+  border-radius: 7px;
+  border: 2px solid #CCCCCC;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: #ffffff;
+}
+.characters-checkbox input[type="checkbox"]:checked + label {
+  background-color: #FEDD49;
+  border: none;
+}
+.characters-checkbox input[type="checkbox"] + label:after {
+  content: "";
+  position: absolute;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  left: 20%;
+  top: 21%;
+  width: 17.66px;
+  height: 11.5px;
+  border-radius: 1px;
+  border-left: 4px solid #333333;
+  border-bottom: 4px solid #333333;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+.characters-checkbox input[type="checkbox"]:not(:checked) + label:after {
+  opacity: 0;
+}
+.characters-checkbox input[type="checkbox"]:checked + label:after {
+  opacity: 1;
+}
+.characters .spikes input[type="checkbox"] + label {
+  right: -17px;
+  top: -3px;
 }
 
 .site-main article {

@@ -64,6 +64,10 @@
 	right: .45em;
 }
 
+.nf-filter-input-el.blocks-select-control__input > .components-base-control__field {
+	margin-bottom: 0;
+}
+
 .nf-filter-option-container {
 	display: none;
 	position: absolute;

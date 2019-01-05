@@ -38,46 +38,89 @@ get_header();
 				</div>
 			</div>
 			<!--Selection of goods==========================================================================================================-->
+			<?
+				$link = '/vybor-shin/?';
+			?>
 			<div class="goods_selection">
 				<div class="row">
 					<div class="col-6">
 						<div class="goods_selection-tires_main">
 							<div class="row">
 								<div class="col-7">
-									<div class="goods_selection-tires_main-characters">
-										<ul>
-											<li>
-												<span>Ширина</span>
-												<div class="characters"></div>
-											</li>
-											<li>
-												<span>Высота</span>
-												<div class="characters"></div>
-											</li>
-											<li>
-												<span>Диаметр</span>
-												<div class="characters"></div>
-											</li>
-											<li>
-												<div class="characters">
-													<img src="<?echo get_template_directory_uri();?>/assets/img/cold.svg" alt="">
-													<img src="<?echo get_template_directory_uri();?>/assets/img/sun.svg" alt="">
-												</div>
-											</li>
-											<li>
-												<span>Шипы</span>
-												<div class="characters"></div>
-											</li>
-										</ul>
+									<form action="" method="GET">
+										<div class="goods_selection-tires_main-characters">
+											<ul>
+												<li>
+													<div class="characters">
+														<span>Ширина</span>								
+														<select id="caef">
+															<option value="">185</option>
+															<option value="">195</option>
+															<option value="">215</option>
+															<option value="">225</option>
+															<option value="">235</option>
+														</select>
+													</div>
+												</li>
+												<li>												
+													<div class="characters">
+														<span>Высота</span>
+														<select>
+															<option value="">185</option>
+															<option value="">195</option>
+															<option value="">215</option>
+															<option value="">225</option>
+															<option value="">235</option>
+														</select>
+													</div>
+												</li>
+												<li>
+													<div class="characters">
+														<span>Диаметр</span>
+														<select>
+															<option value="">185</option>
+															<option value="">195</option>
+															<option value="">215</option>
+															<option value="">225</option>
+															<option value="">235</option>
+														</select>												
+													</div>
+												</li>
+												<li>
+													<div class="characters">
+														<div class="characters-checkbox">
+															<img src="<?echo get_template_directory_uri();?>/assets/img/cold.svg" alt="">
+															<input type="checkbox" id="winter" name="" checked>
+															<label for="winter"></label>
+														</div>
+														<div class="characters-checkbox">
+															<img src="<?echo get_template_directory_uri();?>/assets/img/sun.svg" class="summer" alt="">
+															<input type="checkbox" id="summer" name="">
+															<label for="summer"></label>
+														</div>
+													</div>
+												</li>
+												<li>
+													<div class="characters">													
+														<div class="characters-checkbox spikes">
+															<span>Шипы</span>
+															<input type="checkbox" id="spikes" name="">
+															<label for="spikes"></label>
+														</div>
+													</div>
+												</li>
+											</ul>										
+										</div>
 									</div>
-								</div>
-								<div class="col-5">
-									<div class="goods_selection-tires_main-visual">
-										<span>Подбор шин</span>
-										<img src="<?echo get_template_directory_uri();?>/assets/img/tire_main_1.svg" alt="">
-										<a href="#">Подобрать</a>
+									<div class="col-5">
+										<div class="goods_selection-tires_main-visual">
+											<span>Подбор шин</span>
+											<img src="<?echo get_template_directory_uri();?>/assets/img/tire_main_1.svg" alt="">
+											<a href="#">Подобрать</a>
+										</div>
 									</div>
-								</div>
+								</form>
+								<!--END FORM=================================================================================================================-->
 							</div>
 						</div>
 					</div>
@@ -85,38 +128,86 @@ get_header();
 						<div class="goods_selection-discs_main">
 							<div class="row">
 								<div class="col-7">
-									<div class="goods_selection-tires_main-characters">
+									<div class="goods_selection-tires_main-characters">	
 										<ul>
-											<li>
-												<span>Диаметр</span>
-												<div class="characters"></div>
+											<li>												
+												<div class="characters">
+													<span>Диаметр</span>
+													<select>
+														<option value="">185</option>
+														<option value="">195</option>
+														<option value="">215</option>
+														<option value="">225</option>
+														<option value="">235</option>
+													</select>	
+												</div>
 											</li>
-											<li>
-												<span>PSD</span>
-												<div class="characters"></div>
+											<li>										
+												<div class="characters">
+													<span>PSD</span>
+													<select>
+														<option value="">185</option>
+														<option value="">195</option>
+														<option value="">215</option>
+														<option value="">225</option>
+														<option value="">235</option>
+													</select>	
+												</div>
 											</li>
-											<li>
-												<span>Ст.отверстие</span>
-												<div class="characters"></div>
+											<li>												
+												<div class="characters">
+													<span>Ст.отверстие</span>
+													<select>
+														<option value="">185</option>
+														<option value="">195</option>
+														<option value="">215</option>
+														<option value="">225</option>
+														<option value="">235</option>
+													</select>	
+												</div>
 											</li>
-											<li>
-												<span>Вылет ЕТ</span>
-												<div class="characters"></div>
+											<li>												
+												<div class="characters">
+													<span>Вылет ЕТ</span>
+													<select>
+														<option value="">185</option>
+														<option value="">195</option>
+														<option value="">215</option>
+														<option value="">225</option>
+														<option value="">235</option>
+													</select>	
+												</div>
 											</li>
-											<li>
-												<span>Ширина диска</span>
-												<div class="characters"></div>
+											<li>												
+												<div class="characters">
+													<span>Ширина диска</span>
+													<select>
+														<option value="">185</option>
+														<option value="">195</option>
+														<option value="">215</option>
+														<option value="">225</option>
+														<option value="">235</option>
+													</select>	
+												</div>
 											</li>
-											<li>
-												<span>Тип диска</span>
-												<div class="characters"></div>
+											<li>												
+												<div class="characters">
+													<span>Тип диска</span>
+													<select>
+														<option value="">Литой</option>
+														<option value="">195</option>
+														<option value="">215</option>
+														<option value="">225</option>
+														<option value="">235</option>
+													</select>	
+												</div>
 											</li>
 										</ul>
 									</div>
 								</div>
 								<div class="col-5">
 									<div class="goods_selection-discs_main-visual">
-										<span>Подбор шин</span>
+										<span>Подбор дисков</span>
 										<img src="<?echo get_template_directory_uri();?>/assets/img/disc_main_1.svg" alt="">
 										<a href="#">Подобрать</a>
 									</div>

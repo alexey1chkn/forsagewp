@@ -1,8 +1,9 @@
 @import "colors"
 @import "reset"
+@import "fonts"
 
 html
-	font-family: 'Play', arial 
+	font-family: 'Play', arial
 
 span 
 	.custom_title
@@ -26,6 +27,7 @@ span
 			justify-content: center
 			border-radius: 50%
 		&-event
+			font-family: 'Play', arial
 			position: absolute
 			display: flex
 			height: 27px
@@ -44,6 +46,7 @@ span
 	font-size: 21px
 	line-height: 25px
 	margin: 0 -100px
+	font-family: 'Play', arial
 	&-opening_hours
 		position: relative
 		padding-left: 100px
@@ -186,7 +189,7 @@ span
 		justify-content: space-around
 		font-size: 24px
 		line-height: 28px	
-		padding: 8px 0px
+		padding: 8px 3px
 		li
 			&:first-child
 				padding-left: 42px
@@ -195,7 +198,7 @@ span
 		a
 			text-decoration: none
 			color: $mainf
-			padding: 8px 0px
+			padding: 8px 3px
 			&:hover
 				background-color: $mainf
 				color: $tmf
@@ -226,6 +229,8 @@ span
 						li
 							margin: 16px 0px 9px
 							display: flex
+							img
+								margin: 16px 39px 9px		
 				&-visual
 					width: 100%
 					height: 299px					
@@ -279,7 +284,9 @@ span
 						font-size: 24px
 						margin-top: 17px
 						margin-left: 21px
+						font-family: 'Play', arial
 					p
+						font-family: 'Play', arial
 						font-style: normal
 						font-weight: normal
 						line-height: normal
@@ -363,6 +370,8 @@ span
 		iframe
 			height: inherit
 		&-info
+			font-family: 'Play', arial
+			font-weight: normal
 			display: flex
 			flex-direction: column
 			height: 461px
@@ -375,7 +384,7 @@ span
 			color: $white
 			line-height: 37px
 			span
-				font-weight: 700
+				font-weight: 1000
 			&-title
 				margin-top: 40px
 				justify-content: center
@@ -506,6 +515,7 @@ ul
 				width: 100%
 				background-color: $tmf !important
 				padding-left: 23% !important
+				tant
 				border-radius: 10px !important
 				&-next
 					position: absolute
@@ -569,11 +579,95 @@ ul
 							width: 37%
 							padding: 6px 0
 							text-align: left
+							&-bottom
+								display: block
+								width: 50%
+								padding: 15px 0
+								text-align: left
+								span 
+									font-style: normal
+									font-weight: bold
+									line-height: normal
+									font-size: 24px
+									color: $tmf
+								a
+									text-decoration: none
+									color: $tmf
+									background-color: $mainf
+									padding: 12px 42px 12px 40px
+									border-radius: 10px
+									font-style: normal
+									font-weight: bold
+									line-height: normal
+									font-size: 24px
 						&:first-child
 							.my_custom-single_product-summary-content-line-element
 								width: 100%
 						
-
+//FILTER_STYLES
+.characters
+	display: flex
+	justify-content: space-between
+	width: 100%	
+	select
+		background: $white
+		border: 2px solid #CCCCCC
+		box-sizing: border-box
+		border-radius: 7px
+		min-width: 95px
+		min-height: 30px
+		font-style: normal
+		font-weight: normal
+		line-height: 18px
+		font-size: 19px
+		color: $tmf
+		padding: 0px 21px 0px 2px
+		font-family: 'Play', arial
+	&-checkbox
+		position: relative
+		input[type="checkbox"]
+			opacity: 0
+		input[type="checkbox"] + label
+			content: ""
+			position: absolute
+			right: 21px
+			top: 20px 
+			min-width: 30px
+			min-height: 30px
+			border-radius: 7px
+			border: 2px solid #CCCCCC
+			box-sizing: border-box
+			background-color: #ffffff
+		input[type="checkbox"]:checked + label
+			background-color: $mainf
+			border: none
+		input[type="checkbox"] + label:after
+			content: ""
+			position: absolute
+			-webkit-transition: all 0.2s ease
+			-moz-transition: all 0.2s ease
+			-o-transition: all 0.2s ease
+			transition: all 0.2s ease
+			left: 20%
+			top: 21%
+			width: 17.66px
+			height: 11.5px
+			border-radius: 1px
+			border-left: 4px solid $tmf
+			border-bottom: 4px solid $tmf
+			-webkit-transform: rotate(-45deg)
+			-moz-transform: rotate(-45deg)
+			-o-transform: rotate(-45deg)
+			-ms-transform: rotate(-45deg)
+			transform: rotate(-45deg)
+		input[type="checkbox"]:not(:checked) + label:after 
+			opacity: 0
+		input[type="checkbox"]:checked + label:after
+			opacity: 1
+	.spikes
+		input[type="checkbox"] + label
+			right: -17px
+			top: -3px 
 			
 
 //CUSTOM SINGLE PRODUCT
@@ -660,4 +754,3 @@ ul
 			justify-content: center
 			align-items: center
 		
-	

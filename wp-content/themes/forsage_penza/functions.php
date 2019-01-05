@@ -163,7 +163,16 @@ add_action ('woocommerce_after_shop_loop_item_title','my_custom_good_bottom');
 function my_custom_good_bottom(){
 	global $product; 
 	echo '<div class="product-attribute-proizvoditel"><img src="' . get_template_directory_uri() . '/assets/img/info.svg" class="icon-info">' . '<span>' . $product->get_attribute('proizvoditel') . '</span></div>';
+	if ( $product->is_in_stock() ) {
+    echo 
+    '<div class="product-attribute-stock_quantit">
+   		<span>В наличии: ' . $product->get_stock_quantity() . '</span>
+   	</div>';
+  }
+  // echo wc_display_product_attributes( $product );
 }
+
+//woocommerce_single_product_summary
 
 add_action('woocommerce_before_single_product_summary','my_custom_single_product_summary_title');
 
@@ -188,11 +197,46 @@ function my_custom_single_product_summary(){
 		'<div class="my_custom-single_product-summary-content-line"><div class="my_custom-single_product-summary-content-line-element">Диаметр: ' . $product->get_attribute('posadochnyj-diametr'). '</div>' .
 			'<div class="my_custom-single_product-summary-content-line-element">Шипы*: ' . $product->get_attribute('shirina-shiny') . '</div></div>' . 
 		'<div class="my_custom-single_product-summary-content-line"><div class="my_custom-single_product-summary-content-line-element">Сезон*: ' . $product->get_attribute('shirina-shiny') . '</div></div>';
-}
-		if ( $product->is_in_stock() ) {
-	        echo '<span class="product-attribute-stock_quantit">В наличии: ' . $product->get_stock_quantity() . '</span>';
-	        echo '<br>';
-	    }
-	    echo '</div></div>';
 	}
-//woocommerce_single_product_summary
+	$id = $product->get_id();
+	if ( $product->is_in_stock() ) {
+    echo '<div class="my_custom-single_product-summary-content-line">
+    <div class="my_custom-single_product-summary-content-line-element-bottom"><span>В наличии: ' . $product->get_stock_quantity() . '</span></div>';
+    echo '<div class="my_custom-single_product-summary-content-line-element-bottom"><a href="' . do_shortcode('[add_to_cart_url id="'. $id . '"]') . '">В корзину</a></div></div></div></div>';
+  }
+}
+
+
+add_filter( 'woocommerce_product_tabs', 'devise_woo_rename_reviews_tab', 98);
+function devise_woo_rename_reviews_tab($tabs) {
+	$tabs['additional_information']['title'] = 'Характеристики';
+	return $tabs;
+}
+
+add_filter( 'woocommerce_output_related_products_args', 'jk_related_products_args' );
+function jk_related_products_args( $args ) { 
+	$args['posts_per_page'] = 12; // количество "Похожих товаров"
+	$args['columns'] = 4; // количество колонок
+	return $args;
+}
+
+add_filter('woocommerce_add_to_cart_fragments', 'header_add_to_cart_fragment');
+
+function header_add_to_cart_fragment( $fragments ) {
+    global $woocommerce;
+    ob_start();
+    ?>
+    <span class="basket-btn__counter">(<?php echo sprintf($woocommerce->cart->cart_contents_count); ?>)</span>
+    <?php
+    $fragments['.basket-btn__counter'] = ob_get_clean();
+    return $fragments;
+}
+//ДОБАВЛЯЮ САЙДБАР
+add_action( 'widgets_init', 'register_my_widgets' );
+
+function register_my_widgets(){
+	register_sidebar( array(
+		'name' => "Ширина шины",
+		'id' => 'shirina-shiny',
+	) );
+}

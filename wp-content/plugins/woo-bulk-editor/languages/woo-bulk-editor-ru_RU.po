@@ -1,0 +1,2375 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Project-Id-Version: WOOBE\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: https://bulk-editor.com/\n"
+"MIME-Version: 1.0\n"
+"Language: ru_UA\n"
+"X-Generator: Poedit 2.0.6\n"
+
+#. Text in echo
+#: woo-bulk-editor/index.php:265
+msgid "(filtered from _MAX_ total entries)"
+msgstr "(отфильтрован из _MAX_ записей)"
+
+#. Text in echo
+#: woo-bulk-editor/ext/export/views/panel.php:15
+msgid "<b>Note:</b> you can change columns set and then set their order in the tab Settings, then save it as columns profile which in future will help you with exporting of the products data format quickly without necessary each time set columns order and their set!"
+msgstr "Примечание: вы можете изменить набор колонок, а затем установить их порядок на вкладке «Настройки», а затем сохранить его как профиль столбцов, который в будущем поможет вам быстро загружать колонки продуктов без необходимости каждый раз устанавливать их порядок и их набор!"
+
+#. Text in echo
+#: woo-bulk-editor/views/woobe.php:33
+msgid "ATTENTION! Your version of the woocommerce plugin is too obsolete. There is no warranty of normal working with the plugin!!"
+msgstr "ВНИМАНИЕ! Ваша версия плагина woocommerce слишком устарела. Нет гарантии нормальной работы с плагином!"
+
+#. Text in function
+#: woo-bulk-editor/ext/bulk/bulk.php:48
+msgid "ATTENTION: Bulk operation is going!"
+msgstr "ВНИМАНИЕ: Массовая операция идет!"
+
+#. Text in function
+#: woo-bulk-editor/ext/export/export.php:33
+msgid "ATTENTION: Export operation is going!"
+msgstr "ВНИМАНИЕ: Экспортная операция идет!"
+
+#. Text in function
+#: woo-bulk-editor/ext/history/history.php:50
+msgid "ATTENTION: History operation is going!"
+msgstr "ВНИМАНИЕ: Историческая операция ведется!"
+
+#. Text in echo
+#: woo-bulk-editor/ext/bulkoperations/bulkoperations.php:42
+msgid "ATTENTION: Variations Advanced Bulk Operation is going"
+msgstr "ВНИМАНИЕ: Variations Advanced Bulk Operation идёт"
+
+#. Text in function
+#: woo-bulk-editor/views/woobe.php:71
+msgid "Actions"
+msgstr "Действия"
+
+#. Text in echo
+#: woo-bulk-editor/ext/meta/views/panel.php:10
+msgid "Add"
+msgstr "Добавить"
+
+#. Text in echo
+#: woo-bulk-editor/ext/meta/views/panel.php:8
+msgid "Add Custom key by hands"
+msgstr "Добавить пользовательский ключ руками"
+
+#. Text in function
+#: woo-bulk-editor/views/woobe.php:198
+msgid "Add File"
+msgstr "Добавить файл"
+
+#. Text in function
+#: woo-bulk-editor/views/woobe.php:264
+msgid "Add Image"
+msgstr "Добавить изображение"
+
+#. Text in echo
+#: woo-bulk-editor/ext/bulk/views/panel.php:35
+msgid "Add attributes combination to apply on"
+msgstr "Добавить комбинацию атрибутов для применения"
+
+#. Text in echo
+#: woo-bulk-editor/views/woobe.php:206
+msgid "Add selected downloads to the already existed ones"
+msgstr "Добавить выбранные загрузки к уже существующим"
+
+#. Text in echo
+#: woo-bulk-editor/views/woobe.php:271
+msgid "Add selected images to the already existed ones"
+msgstr "Добавить выбранные изображения в уже существующие"
+
+#. Text in echo
+#: woo-bulk-editor/views/woobe.php:464
+msgid "Add selected products to the already existed ones"
+msgstr "Добавить выбранные продукты в уже существующие"
+
+#. Text in echo
+#: woo-bulk-editor/ext/bulk/views/panel.php:67
+msgid "Additional"
+msgstr "Дополнительно"
+
+#. Text in function
+#: woo-bulk-editor/index.php:238
+#: woo-bulk-editor/views/woobe.php:143
+#: woo-bulk-editor/views/woobe.php:176
+#: woo-bulk-editor/views/woobe.php:223
+#: woo-bulk-editor/views/woobe.php:291
+#: woo-bulk-editor/views/woobe.php:360
+#: woo-bulk-editor/views/woobe.php:420
+#: woo-bulk-editor/views/woobe.php:480
+msgid "Apply"
+msgstr "Применить"
+
+#. Text in echo
+#: woo-bulk-editor/ext/bulkoperations/views/panel.php:143
+msgid "Apply combination"
+msgstr "Применить комбинацию"
+
+#. Text in echo
+#: woo-bulk-editor/ext/bulkoperations/views/panel.php:35
+#: woo-bulk-editor/ext/bulkoperations/views/panel.php:212
+msgid "Attaching"
+msgstr "Прикрепление"
+
+#. Text in echo
+#: woo-bulk-editor/ext/bulkoperations/bulkoperations.php:44
+msgid "Attaching of the default combination for the products variations is finished!"
+msgstr "Завершена установка комбинации по умолчанию для вариантов продуктов!"
+
+#. Text in echo
+#: woo-bulk-editor/ext/bulkoperations/bulkoperations.php:48
+msgid "Attaching of the products variations is finished"
+msgstr "Прикрепление вариаций завершено"
+
+#. Text in function
+#: woo-bulk-editor/ext/filters/views/panel.php:449
+msgid "BEGIN"
+msgstr ""
+
+#. Text in function
+#: woo-bulk-editor/ext/filters/views/panel.php:437
+msgid "Backorders"
+msgstr ""
+
+#. Text in echo
+#: woo-bulk-editor/ext/bulk/views/panel.php:64
+msgid "Basic"
+msgstr "Базовые"
+
+#. Text in echo
+#: woo-bulk-editor/ext/bulkoperations/views/panel.php:141
+msgid "This operation is only for variable products and not for their variations. Select attributes which combination you want to apply as default one on its single page of variable a product. Select terms of the attributes and press button Apply combination. This combination will be pre-selected on the shop single page. If you will miss any attribute you can always can stop the operation, and then try again!"
+msgstr "Эта операция предназначена только для переменных продуктов, а не для их вариантов. Перед тем, как присоединить комбинацию вариантов по умолчанию, выберите вариации продуктов с помощью фильтра или чекбоксов! Отбор по чекбоксам имеет более высокий приоритет!"
+
+#. Text in function
+#: woo-bulk-editor/ext/bulk/bulk.php:1
+msgid "Bulk Edit"
+msgstr "Массовое редактирование"
+
+#. Text in function
+#: woo-bulk-editor/index.php:1
+msgid "Bulk Editor"
+msgstr "Редактор продуктов"
+
+#. Text in function
+#: woo-bulk-editor/ext/bulk/bulk.php:45
+msgid "Bulk editing"
+msgstr "Массовое редактирование"
+
+#. Text in function
+#: woo-bulk-editor/views/parts/advanced-table.php:33
+msgid "Bulk editing of the parent products will be ignored! Enabling this mode hide not relevant bulk edit operations for the products [variations]! Before activation of this mode, for more convenient editing of [variations] recommend make filtering for all variable products. Binded operation also will be applied only to the products variations!"
+msgstr "Массовое редактирование родительских продуктов будет проигнорировано! Включение этого режима скрывает не соответствующие операции массвого редактирования для вариантов  продуктов! Перед активацией этого режима для более удобного редактирования вариаций рекомендуется сделать фильтрацию для всех переменных продуктов. Работа со связанным редактирование также будет применяться только к вариантам продуктов!"
+
+#. Text in function
+#: woo-bulk-editor/ext/bulk/views/panel.php:12
+msgid "Bulk editing will be applied to: %s"
+msgstr "Массовое редактирование будет применено к: % s"
+
+#. Text in echo
+#: woo-bulk-editor/ext/history/views/list.php:18
+msgid "Bulk operation"
+msgstr "Массовая операция"
+
+#. Text in echo
+#: woo-bulk-editor/ext/bulk/views/panel.php:21
+msgid "Bulk operations will be applied to the variations of the products, and their parent-products will be ignored!"
+msgstr "Массовые операции будут применяться к вариантам продуктов, и их родительские продукты будут игнорироваться!"
+
+#. Text in function
+#: woo-bulk-editor/ext/info/views/panel.php:84
+msgid "Can I %s?"
+msgstr "Могу ли я %s?"
+
+#. Text in function
+#: woo-bulk-editor/index.php:239
+#: woo-bulk-editor/views/woobe.php:142
+#: woo-bulk-editor/views/woobe.php:175
+#: woo-bulk-editor/views/woobe.php:222
+#: woo-bulk-editor/views/woobe.php:290
+#: woo-bulk-editor/views/woobe.php:359
+#: woo-bulk-editor/views/woobe.php:419
+#: woo-bulk-editor/views/woobe.php:479
+#: woo-bulk-editor/views/woobe.php:889
+msgid "Cancel"
+msgstr "Отменить"
+
+#. Text in function
+#: woo-bulk-editor/index.php:240
+msgid "Canceled"
+msgstr "Отменено"
+
+#. Text in echo
+#: woo-bulk-editor/views/parts/product-downloads.php:20
+#: woo-bulk-editor/views/woobe.php:243
+msgid "Choose file"
+msgstr "Выбрать файл"
+
+#. Text in echo
+#: woo-bulk-editor/views/parts/product-gallery.php:12
+msgid "Clean"
+msgstr "Очистить"
+
+#. Text in echo
+#: woo-bulk-editor/ext/history/views/panel.php:17
+msgid "Clear the History"
+msgstr "Очистить Историю"
+
+#. Text in echo
+#: woo-bulk-editor/ext/info/views/panel.php:72
+msgid "Click ID of the product in the products table to see it on the site front."
+msgstr "Щелкните ID продукта в таблице продуктов, чтобы увидеть его на сайте."
+
+#. Text in function
+#: woo-bulk-editor/ext/bulkoperations/views/panel.php:375
+#: woo-bulk-editor/ext/fprofiles/views/panel.php:72
+#: woo-bulk-editor/views/woobe.php:835
+msgid "Close"
+msgstr "Закрыть"
+
+#. Text in echo
+#: woo-bulk-editor/views/parts/top_panel.php:20
+msgid "Close the panel"
+msgstr "Закрыть панель"
+
+#. Text in echo
+#: woo-bulk-editor/views/woobe.php:776
+msgid "Columns profile"
+msgstr "Профиль столбцов"
+
+#. Text in echo
+#: woo-bulk-editor/views/parts/advanced-table.php:12
+#: woo-bulk-editor/views/woobe.php:783
+msgid "Columns profiles"
+msgstr "Профили столбцов"
+
+#. Text in function
+#: woo-bulk-editor/views/woobe.php:526
+msgid "Columns settings%s, columns enabled %s"
+msgstr "Столбцов %s, включено %s"
+
+#. Text in echo
+#: woo-bulk-editor/ext/bulkoperations/bulkoperations.php:51
+msgid "Combination(s) not selected!"
+msgstr "Комбинации не выбрана!"
+
+#. Text in function
+#: woo-bulk-editor/ext/bulkoperations/views/panel.php:352
+msgid "Combination, of the products variations for deleting, will be applied to: %s"
+msgstr "Комбинация вариантов продуктов для удаления будет применена к: %s"
+
+#. Text in function
+#: woo-bulk-editor/classes/helper.php:170
+msgid "Content"
+msgstr "Контент"
+
+#. Text in function
+#: woo-bulk-editor/views/woobe.php:888
+msgid "Create"
+msgstr "Создать"
+
+#. Text in function
+#: woo-bulk-editor/index.php:243
+msgid "Created!"
+msgstr "Создано!"
+
+#. Text in echo
+#: woo-bulk-editor/ext/bulkoperations/views/panel.php:22
+#: woo-bulk-editor/index.php:242
+msgid "Creating"
+msgstr "Создание"
+
+#. Text in function
+#: woo-bulk-editor/views/woobe.php:787
+msgid "Current profile is: %s %s"
+msgstr "Текущий профиль: %s %s"
+
+#. Text in echo
+#: woo-bulk-editor/ext/bulkoperations/views/panel.php:25
+msgid "Default combination"
+msgstr "Комбинация по умолчанию"
+
+#. Text in function
+#: woo-bulk-editor/ext/bulkoperations/views/panel.php:140
+msgid "Default variations combination will be applied to: %s"
+msgstr "Комбинация вариантов по умолчанию будет применена к: %s"
+
+#. Text in echo
+#: woo-bulk-editor/ext/bulkoperations/views/panel.php:336
+msgid "Delete all products variations"
+msgstr "Удалить все варианты продуктов"
+
+#. Text in echo
+#: woo-bulk-editor/views/woobe.php:272
+msgid "Delete selected images from the products"
+msgstr "Удаление выбранных изображений из продуктов"
+
+#. Text in echo
+#: woo-bulk-editor/views/woobe.php:273
+msgid "Delete selected images from the products, also delete them from the media library forever"
+msgstr "Удалить выбранные изображения из продуктов, а также удалите их из медиабиблиотеки навсегда"
+
+#. Text in echo
+#: woo-bulk-editor/views/parts/advanced-table.php:23
+msgid "Delete selected product(s)"
+msgstr "Удалить выбранные продукты"
+
+#. Text in echo
+#: woo-bulk-editor/ext/bulkoperations/views/panel.php:335
+msgid "Delete the products variations according to the combination of the attributes"
+msgstr "Удалить варианты продуктов в соответствии с комбинацией атрибутов"
+
+#. Text in function
+#: woo-bulk-editor/index.php:247
+msgid "Deleted!"
+msgstr "Удалено!"
+
+#. Text in echo
+#: woo-bulk-editor/ext/bulkoperations/views/panel.php:44
+#: woo-bulk-editor/index.php:246
+msgid "Deleting"
+msgstr "Удаление"
+
+#. Text in echo
+#: woo-bulk-editor/ext/bulkoperations/bulkoperations.php:45
+msgid "Deleting of the products variations is finished"
+msgstr "Закончено удаление вариантов продуктов"
+
+#. Text in echo
+#: woo-bulk-editor/views/parts/product-gallery.php:27
+msgid "Detach image of the product"
+msgstr "Отсоединить изображение продукта"
+
+#. Text in echo
+#: woo-bulk-editor/ext/bulk/views/panel.php:136
+msgid "Do Bulk Edit"
+msgstr "Редактировать"
+
+#. Text in function
+#: woo-bulk-editor/ext/bulkoperations/views/panel.php:13
+#: woo-bulk-editor/ext/bulk/views/panel.php:154
+#: woo-bulk-editor/ext/export/views/panel.php:71
+#: woo-bulk-editor/ext/filters/views/panel.php:36
+#: woo-bulk-editor/ext/history/views/panel.php:5
+#: woo-bulk-editor/ext/meta/views/panel.php:5
+#: woo-bulk-editor/index.php:1
+#: woo-bulk-editor/views/woobe.php:504
+#: woo-bulk-editor/views/woobe.php:648
+msgid "Documentation"
+msgstr "Документация"
+
+#. Text in function
+#: woo-bulk-editor/ext/filters/views/panel.php:437
+msgid "Downloadable"
+msgstr "Загружаемые"
+
+#. Text in function
+#: woo-bulk-editor/ext/bulk/views/panel.php:864
+msgid "Downloadable: no"
+msgstr "Загружаемый: нет"
+
+#. Text in function
+#: woo-bulk-editor/ext/bulk/views/panel.php:864
+msgid "Downloadable: yes"
+msgstr "Загружаемый: да"
+
+#. Text in echo
+#: woo-bulk-editor/views/parts/advanced-table.php:22
+msgid "Duplicate selected product(s). ATTENTION: duplication of variations of the products is locked!"
+msgstr "Дублирование выбранных продуктов. ВНИМАНИЕ: дублирование вариаций продуктов заблокировано!"
+
+#. Text in function
+#: woo-bulk-editor/index.php:245
+msgid "Duplicated!"
+msgstr "Отдублирован!"
+
+#. Text in function
+#: woo-bulk-editor/index.php:244
+msgid "Duplicating"
+msgstr "Дублирование"
+
+#. Text in function
+#: woo-bulk-editor/ext/filters/views/panel.php:449
+msgid "END"
+msgstr ""
+
+#. Text in function
+#: woo-bulk-editor/ext/filters/views/panel.php:449
+msgid "EXACT"
+msgstr ""
+
+#. Text in function
+#: woo-bulk-editor/index.php:307
+msgid "Editing of the product on its page"
+msgstr "Редактирование продукта на его странице"
+
+#. Text in echo
+#: woo-bulk-editor/ext/meta/meta.php:46
+msgid "Enter a product ID!"
+msgstr "Введите ID продукта!"
+
+#. Text in function
+#: woo-bulk-editor/index.php:255
+msgid "Enter how many new product(s) to create!"
+msgstr "Введите сколько продуктов будет создано!"
+
+#. Text in function
+#: woo-bulk-editor/index.php:254
+msgid "Enter how many time duplicate selected product(s)!"
+msgstr "Укажите, сколько раз дублировать выбранные продукты!"
+
+#. Text in function
+#: woo-bulk-editor/index.php:227
+msgid "Error"
+msgstr "Ошибка"
+
+#. Text in function
+#: woo-bulk-editor/ext/export/export.php:1
+msgid "Export"
+msgstr "Экспорт"
+
+#. Text in echo
+#: woo-bulk-editor/ext/export/views/panel.php:20
+msgid "Export to CSV"
+msgstr "Экспорт в CSV"
+
+#. Text in echo
+#: woo-bulk-editor/ext/export/views/panel.php:21
+msgid "Export to Excel"
+msgstr "Экспорт в эксель"
+
+#. Text in function
+#: woo-bulk-editor/ext/export/views/panel.php:9
+msgid "Export will be applied to: %s"
+msgstr "Экспорт будет применён к: %s"
+
+#. Text in echo
+#: woo-bulk-editor/ext/export/export.php:32
+msgid "Exported"
+msgstr "Экспортнулось"
+
+#. Text in echo
+#: woo-bulk-editor/ext/export/export.php:31
+msgid "Exporting"
+msgstr "Экспортирование"
+
+#. Text in function
+#: woo-bulk-editor/index.php:226
+msgid "Failed"
+msgstr "Неудача"
+
+#. Text in function
+#: woo-bulk-editor/ext/filters/views/panel.php:437
+msgid "Featured"
+msgstr "Избранный"
+
+#. Text in echo
+#: woo-bulk-editor/views/parts/product-downloads.php:16
+#: woo-bulk-editor/views/woobe.php:239
+msgid "File name"
+msgstr "Имя файла"
+
+#. Text in function
+#: woo-bulk-editor/classes/helper.php:197
+msgid "Files (%s)"
+msgstr "Файлы (%s)"
+
+#. Text in function
+#: woo-bulk-editor/index.php:253
+msgid "Fill up the data please!"
+msgstr "Заполните данные, пожалуйста!"
+
+#. Text in echo
+#: woo-bulk-editor/ext/filters/views/panel.php:31
+msgid "Filter"
+msgstr "Фильтр"
+
+#. Text in echo
+#: woo-bulk-editor/ext/fprofiles/fprofiles.php:34
+msgid "Filter profiles"
+msgstr "Профайлы фильтров"
+
+#. Text in function
+#: woo-bulk-editor/ext/filters/filters.php:32
+msgid "Filtered! Table redrawing ..."
+msgstr "Отфильтрованно! Перерисовка таблицы ..."
+
+#. Text in function
+#: woo-bulk-editor/ext/filters/filters.php:31
+msgid "Filtering"
+msgstr "Фильтрация"
+
+#. Text in function
+#: woo-bulk-editor/ext/filters/filters.php:1
+msgid "Filters"
+msgstr "Фильтры"
+
+#. Text in echo
+#: woo-bulk-editor/ext/fprofiles/views/panel.php:11
+msgid "Filters profiles"
+msgstr "Профайлы фильтров"
+
+#. Text in echo
+#: woo-bulk-editor/index.php:269
+msgid "First"
+msgstr "Первый"
+
+#. Text in echo
+#: woo-bulk-editor/ext/bulkoperations/views/panel.php:82
+msgid "Generate possible combinations"
+msgstr "Создание возможных комбинаций"
+
+#. Text in echo
+#: woo-bulk-editor/ext/bulkoperations/bulkoperations.php:49
+msgid "Generating possible combinations"
+msgstr "Создание возможных комбинаций"
+
+#. Text in echo
+#: woo-bulk-editor/ext/meta/views/panel.php:17
+msgid "Get"
+msgstr "Получить"
+
+#. Text in echo
+#: woo-bulk-editor/ext/meta/views/panel.php:15
+msgid "Get meta keys from any product by its ID"
+msgstr "Получите мета-ключи от любого продукта по его ID"
+
+#. Text in echo
+#: woo-bulk-editor/ext/bulkoperations/views/panel.php:239
+msgid "Get the existing products variations"
+msgstr "Получить существующие варианты продуктов"
+
+#. Text in echo
+#: woo-bulk-editor/ext/bulkoperations/views/panel.php:172
+msgid "Get the products variations"
+msgstr "Получить варианты продуктов"
+
+#. Text in function
+#: woo-bulk-editor/ext/info/info.php:1
+#: woo-bulk-editor/ext/info/views/panel.php:5
+msgid "Help"
+msgstr "Помощь"
+
+#. Text in function
+#: woo-bulk-editor/views/woobe.php:784
+msgid "Here you can load previously saved columns profile. After pressing on the load button, page reloading will start immediately!"
+msgstr "Здесь вы можете загрузить ранее сохраненный профиль столбцов. После нажатия на кнопку загрузки перезагрузка страницы начнется немедленно!"
+
+#. Text in function
+#: woo-bulk-editor/ext/fprofiles/views/panel.php:19
+msgid "Here you can load previously saved filters profile. After pressing on the load button, products table data reloading will start immediately!"
+msgstr "Здесь вы можете загрузить профиль ранее сохраненных фильтров. После нажатия кнопки загрузки перезагрузка данных таблиц продуктов начнется немедленно!"
+
+#. Text in function
+#: woo-bulk-editor/views/woobe.php:879
+msgid "Here you can select parent for the the new term (optionally)"
+msgstr "Здесь вы можете выбрать родителя для нового термина (необязательно)"
+
+#. Text in echo
+#: woo-bulk-editor/ext/bulkoperations/views/panel.php:80
+msgid "Here you can set order of attributes on the single product page after loaded. Before attaching products variations select variable products by filter or select them by checkboxes! Selection by checkbox has higher priority!"
+msgstr "Здесь вы можете установить порядок атрибутов на странице продукта после загрузки его страницы на фронте. Перед тем, как добавлять варианты продуктов, выберите переменные (variable) продукты с помощью фильтра или выберите их с помощью чекбоксов! Отбор с помощью чекбоксов имеет более высокий приоритет!"
+
+#. Text in function
+#: woo-bulk-editor/views/woobe.php:822
+msgid "Here you can type any title and save current columns set and their order. Type here any title and then press Save button OR press Enter button on your keyboard!"
+msgstr "Здесь вы можете ввести любой заголовок и сохранить текущие столбцы и их порядок. Введите здесь любой заголовок, а затем нажмите кнопку «Сохранить» или нажмите кнопку «Enter» на клавиатуре!"
+
+#. Text in function
+#: woo-bulk-editor/ext/fprofiles/views/panel.php:49
+msgid "Here you can type any title and save current filters set. Type here any title and then press Save button OR press Enter button on your keyboard!"
+msgstr "Здесь вы можете ввести любой заголовок и сохранить текущие фильтры. Введите здесь любой заголовок, а затем нажмите кнопку «Сохранить» или нажмите кнопку «Enter» на клавиатуре!"
+
+#. Text in function
+#: woo-bulk-editor/views/woobe.php:868
+msgid "Here you can write slug for the the new term (optionally). Use comma for slug(s) when you create some on the same time terms, or leave slug field empty to create slug(s) automatically"
+msgstr "Здесь вы можете написать slug для нового термина (необязательно). Используйте запятую для  slug(-ов), когда вы создаете несколько тёрмов одновременно, или оставляйте поле пустым для создания slug (-ов) автоматически"
+
+#. Text in function
+#: woo-bulk-editor/views/woobe.php:857
+msgid "Here you can write title for the new term. Use comma to create some new tags on the same time! New terms with already existed names will not be created!"
+msgstr "Здесь вы можете написать название для нового термина. Используйте запятую для создания новых тёрмов за один раз! Новые тёрмы с уже существующими именами не будут созданы!"
+
+#. Text in echo
+#: woo-bulk-editor/index.php:258
+msgid "Hide: Filters/Bulk Edit/Export"
+msgstr "Скрыть: Фильтры / Массовое редактирование / Экспорт"
+
+#. Text in function
+#: woo-bulk-editor/ext/history/history.php:1
+#: woo-bulk-editor/ext/history/views/panel.php:5
+msgid "History"
+msgstr "История"
+
+#. Text in echo
+#: woo-bulk-editor/ext/history/history.php:48
+msgid "History clearing ..."
+msgstr "Очистка истории ..."
+
+#. Text in echo
+#: woo-bulk-editor/ext/history/history.php:49
+msgid "History is cleared!"
+msgstr "История очищена!"
+
+#. Text in echo
+#: woo-bulk-editor/ext/history/views/list.php:94
+msgid "History is empty!"
+msgstr "История пуста!"
+
+#. Text in function
+#: woo-bulk-editor/ext/info/views/panel.php:9
+msgid "How to"
+msgstr "Как сделать"
+
+#. Text in function
+#: woo-bulk-editor/ext/info/views/panel.php:84
+msgid "How to set the same value for some products on the same time - %s"
+msgstr "Как установить одно и то же значение для некоторых продуктов одновременно - %s"
+
+#. Text in function
+#: woo-bulk-editor/ext/filters/views/panel.php:449
+msgid "ID(s). Use comma or/and minus for range"
+msgstr "ID. Использ. запятую или/или минус для диапазона"
+
+#. Text in echo
+#: woo-bulk-editor/ext/bulkoperations/views/panel.php:94
+msgid "If combinations of the variations in the products exists already - changings will be ignored, so do not worry, you will never got the same product variations in one product!"
+msgstr "Если комбинации вариаций в продуктах уже существуют - изменения будут проигнорированы, так что не беспокойтесь, вы никогда не получите одинаковые вариации в одном продукте!"
+
+#. Text in echo
+#: woo-bulk-editor/ext/info/views/panel.php:31
+msgid "If to click on an empty space of the black wp-admin bar, it will get you back to the top of the page"
+msgstr "Если щелкнуть по пустому пространству верхней черной панели wp-admin, она вернет вас в начало страницы"
+
+#. Text in function
+#: woo-bulk-editor/ext/info/views/panel.php:84
+msgid "If you have any ideas, you can suggest them on %s"
+msgstr "Если у вас есть какие-либо идеи, вы можете предложить их на %s"
+
+#. Text in function
+#: woo-bulk-editor/index.php:1
+msgid "If you not familiar with the plugin, firstly %s please"
+msgstr "Если вы не знакомы с плагином, сначала %s пожалуйста"
+
+#. Text in function
+#: woo-bulk-editor/ext/info/views/panel.php:84
+msgid "If your shop is on the Russian language you should install %s for the correct working of WOOBE with Cyrillic"
+msgstr "Если ваш магазин на русском языке, вы должны установить %s для правильной работы WOOBE с кириллицей"
+
+#. Text in function
+#: woo-bulk-editor/classes/helper.php:236
+msgid "Images (%s)"
+msgstr "Изображения (%s)"
+
+#. Text in function
+#: woo-bulk-editor/ext/export/views/panel.php:27
+msgid "Import from CSV"
+msgstr "Импорт из CSV"
+
+#. Text in echo
+#: woo-bulk-editor/ext/bulk/views/panel.php:142
+msgid "In the case of an aborted bulk-operation you can roll back changes in the tab History"
+msgstr "В случае прерванной операции массового редактирования вы можете откатить изменения данных в закладке История"
+
+#. Text in function
+#: woo-bulk-editor/ext/bulk/bulk.php:57
+msgid "In this mode to the all selected products will be set the value of a product field which been edited"
+msgstr "В этом режиме всем выбранным продуктам (чекбоксом в 1-й колонке) будет задано значение поля продукта, которое было отредактировано"
+
+#. Text in echo
+#: woo-bulk-editor/views/parts/product-downloads.php:20
+#: woo-bulk-editor/views/woobe.php:243
+msgid "Insert file URL"
+msgstr "Вставить URL файла"
+
+#. Text in function
+#: woo-bulk-editor/ext/filters/views/panel.php:437
+msgid "Is Featured"
+msgstr "Избранное"
+
+#. Text in function
+#: woo-bulk-editor/ext/filters/views/panel.php:449
+msgid "LIKE"
+msgstr ""
+
+#. Text in echo
+#: woo-bulk-editor/index.php:270
+msgid "Last"
+msgstr "Последний"
+
+#. Text in function
+#: woo-bulk-editor/index.php:235
+msgid "Loaded"
+msgstr "Загружено"
+
+#. Text in function
+#: woo-bulk-editor/index.php:234
+msgid "Loading"
+msgstr "Загрузка"
+
+#. Text in echo
+#: woo-bulk-editor/index.php:266
+msgid "Loading..."
+msgstr "Загрузка ..."
+
+#. Text in echo
+#: woo-bulk-editor/ext/bulk/views/panel.php:191
+#: woo-bulk-editor/ext/bulk/views/panel.php:230
+msgid "MENU ORDER"
+msgstr ""
+
+#. Text in function
+#: woo-bulk-editor/ext/bulk/views/panel.php:864
+msgid "Manage stock: No"
+msgstr "Управление запасами: Нет"
+
+#. Text in function
+#: woo-bulk-editor/ext/bulk/views/panel.php:864
+msgid "Manage stock: Yes"
+msgstr "Управление запасом: Да"
+
+#. Text in echo
+#: woo-bulk-editor/index.php:277
+msgid "Maybe term(s) with such name(s) already exists!"
+msgstr "Возможно, термин(ы) с такими именами уже существует!"
+
+#. Text in echo
+#: woo-bulk-editor/ext/filters/views/panel.php:388
+msgid "Menu order from"
+msgstr "Порядок меню от"
+
+#. Text in echo
+#: woo-bulk-editor/ext/filters/views/panel.php:394
+msgid "Menu order to"
+msgstr "Порядок меню до"
+
+#. Text in function
+#: woo-bulk-editor/ext/meta/meta.php:1
+#: woo-bulk-editor/ext/meta/views/panel.php:5
+msgid "Meta Fields"
+msgstr "Мета Поля"
+
+#. Text in echo
+#: woo-bulk-editor/ext/meta/meta.php:45
+msgid "Meta key cannot be empty!"
+msgstr "Мета ключ не может быть пустым!"
+
+#. Text in function
+#: woo-bulk-editor/ext/filters/views/panel.php:449
+msgid "NOT"
+msgstr ""
+
+#. Text in function
+#: woo-bulk-editor/ext/fprofiles/views/panel.php:48
+msgid "New Filter Profile"
+msgstr "Новый профиль фильтра"
+
+#. Text in function
+#: woo-bulk-editor/index.php:307
+#: woo-bulk-editor/views/parts/advanced-table.php:18
+msgid "New Product"
+msgstr "Новый продукт"
+
+#. Text in function
+#: woo-bulk-editor/views/woobe.php:821
+msgid "New Profile"
+msgstr "Новый профиль"
+
+#. Text in function
+#: woo-bulk-editor/views/woobe.php:856
+msgid "New Term(s)"
+msgstr "Новые тёрмы"
+
+#. Text in echo
+#: woo-bulk-editor/ext/meta/meta.php:48
+msgid "New meta key"
+msgstr "Новый мета-ключ"
+
+#. Text in function
+#: woo-bulk-editor/views/woobe.php:849
+msgid "New term for [%s]"
+msgstr "Новый тёрм для [%s]"
+
+#. Text in echo
+#: woo-bulk-editor/index.php:271
+msgid "Next"
+msgstr "Следующий"
+
+#. Text in function
+#: woo-bulk-editor/ext/filters/views/panel.php:437
+#: woo-bulk-editor/ext/filters/views/panel.php:422
+msgid "No"
+msgstr "Нет"
+
+#. Text in function
+#: woo-bulk-editor/ext/bulkoperations/views/panel.php:339
+#: woo-bulk-editor/ext/bulk/views/panel.php:47
+msgid "No attributes created, you can do it %s"
+msgstr "Нет созданных атрибутов, вы можете сделать это %s"
+
+#. Text in echo
+#: woo-bulk-editor/index.php:262
+msgid "No data available in the table"
+msgstr "В таблице нет данных"
+
+#. Text in echo
+#: woo-bulk-editor/index.php:268
+msgid "No matching records found"
+msgstr "Совпадающие записи не найдены"
+
+#. Text in echo
+#: woo-bulk-editor/ext/meta/meta.php:47
+msgid "No meta keys found!"
+msgstr "Мета-ключи не найдены!"
+
+#. Text in function
+#: woo-bulk-editor/ext/filters/views/panel.php:437
+msgid "Not Featured"
+msgstr "Не избранный"
+
+#. Text in function
+#: woo-bulk-editor/classes/helper.php:446
+msgid "Not allowed!"
+msgstr "Не допускается!"
+
+#. Text in echo
+#: woo-bulk-editor/ext/bulkoperations/views/panel.php:94
+msgid "Note"
+msgstr "Заметка"
+
+#. Text in echo
+#: woo-bulk-editor/ext/bulk/views/panel.php:140
+msgid "Notes"
+msgstr "Заметки"
+
+#. Text in echo
+#: woo-bulk-editor/ext/bulkoperations/views/panel.php:353
+msgid "Order of the product variations no matter, has the sense only count of the attributes and their names. Will be deleted variations of the products only with the exact count of attributes and the exact names of attributes! For more convenience and more quick operation before deleting filter the products by their type [Variable]."
+msgstr "Порядок вариаций продукта не имеет значения, имеет смысл только количество атрибутов и их имен. Будут удалены вариации продуктов только с точным количеством атрибутов и точными именами атрибутов! Для большего удобства и более быстрой работы перед операцией отфильтркйте продукты по типу variables."
+
+#. Text in echo
+#: woo-bulk-editor/ext/bulkoperations/views/panel.php:30
+msgid "Ordering"
+msgstr "Очерёдность"
+
+#. Text in echo
+#: woo-bulk-editor/ext/bulkoperations/bulkoperations.php:46
+msgid "Ordering of the products variations is finished"
+msgstr "Закончено упорядочивание вариантов продуктов"
+
+#. Text in function
+#: woo-bulk-editor/ext/bulkoperations/views/panel.php:181
+msgid "Ordering of the products variations will be applied to: %s"
+msgstr "Упорядочивание вариаций продуктов будет применяться к: %s"
+
+#. Text in echo
+#: woo-bulk-editor/ext/bulk/views/panel.php:192
+#: woo-bulk-editor/ext/bulk/views/panel.php:231
+msgid "PARENT ID"
+msgstr ""
+
+#. Text in echo
+#: woo-bulk-editor/ext/bulk/views/panel.php:194
+#: woo-bulk-editor/ext/bulk/views/panel.php:233
+msgid "PARENT SKU"
+msgstr ""
+
+#. Text in echo
+#: woo-bulk-editor/ext/bulk/views/panel.php:193
+#: woo-bulk-editor/ext/bulk/views/panel.php:232
+msgid "PARENT TITLE"
+msgstr ""
+
+#. Text in function
+#: woo-bulk-editor/views/woobe.php:878
+msgid "Parent of the new term(s)"
+msgstr "Родитель нового термина (ов)"
+
+#. Text in echo
+#: woo-bulk-editor/ext/bulkoperations/views/panel.php:163
+msgid "Paste any variable product ID"
+msgstr "Вставить любой ID продукта"
+
+#. Text in echo
+#: woo-bulk-editor/ext/bulkoperations/views/panel.php:237
+msgid "Paste any variable product ID which has combinations of the products variations you need"
+msgstr "Вставьте любой ID вариативного продукта, который содержит комбинации вариантов продуктов, которые вам нужны"
+
+#. Text in echo
+#: woo-bulk-editor/ext/bulkoperations/views/panel.php:164
+msgid "This operation is only for variable products and not for their variations. Paste in the textinput ID of any variable product, which variations you want to set in the custom order, change their order and then apply their new ordering to the another variative products which you filtered by the filter or selected them by checkboxes."
+msgstr "Эта операция предназначена только для переменных продуктов, а не для их вариантов. Вставьте ID любого продукта варианты которого вы хотите установить в своём порядке, измените их порядок, а затем примените их новую очерёднсть к другим вариативным продуктам, которые вы отфильтровали по фильтру или выбрали их с помощью чекбоксов."
+
+#. Text in echo
+#: woo-bulk-editor/index.php:259
+msgid "Per page"
+msgstr "На страницу"
+
+#. Text in echo
+#: woo-bulk-editor/ext/bulkoperations/views/panel.php:104
+msgid "Possible combinations"
+msgstr "Возможные комбинации"
+
+#. Text in echo
+#: woo-bulk-editor/ext/bulkoperations/bulkoperations.php:50
+msgid "Possible combinations been generated."
+msgstr "Были созданы возможные комбинации."
+
+#. Text in function
+#: woo-bulk-editor/ext/filters/views/panel.php:437
+msgid "Post date from"
+msgstr "Дата публикации с"
+
+#. Text in function
+#: woo-bulk-editor/ext/filters/views/panel.php:437
+msgid "Post date to"
+msgstr "Дата публикации до"
+
+#. Text in echo
+#: woo-bulk-editor/index.php:272
+msgid "Previous"
+msgstr "Предыдущий"
+
+#. Text in echo
+#: woo-bulk-editor/index.php:267
+msgid "Processing..."
+msgstr "Обработка ..."
+
+#. Text in function
+#: woo-bulk-editor/ext/filters/views/panel.php:449
+msgid "Product content ..."
+msgstr "Содержание продукта ..."
+
+#. Text in function
+#: woo-bulk-editor/ext/filters/views/panel.php:449
+msgid "Product excerpt ..."
+msgstr "Выдержка из продукта ..."
+
+#. Text in function
+#: woo-bulk-editor/ext/filters/views/panel.php:449
+msgid "Product slug ..."
+msgstr "Слаг продукта ..."
+
+#. Text in function
+#: woo-bulk-editor/ext/filters/views/panel.php:437
+msgid "Product status"
+msgstr "Статус продукта"
+
+#. Text in function
+#: woo-bulk-editor/ext/filters/views/panel.php:449
+msgid "Product title ..."
+msgstr "Название продукта ..."
+
+#. Text in function
+#: woo-bulk-editor/ext/filters/views/panel.php:437
+msgid "Product type"
+msgstr "Тип продукта"
+
+#. Text in function
+#: woo-bulk-editor/ext/bulk/bulk.php:47
+msgid "Product(s) edited!"
+msgstr "Товар(ы) отредактирован!"
+
+#. Text in function
+#: woo-bulk-editor/ext/bulk/bulk.php:46
+msgid "Product(s) edited! Table redrawing ..."
+msgstr "Товар(ы) отредактирован! Перерисовка таблицы ..."
+
+#. Text in function
+#: woo-bulk-editor/classes/helper.php:169
+#: woo-bulk-editor/classes/helper.php:196
+#: woo-bulk-editor/classes/helper.php:235
+#: woo-bulk-editor/classes/helper.php:241
+#: woo-bulk-editor/classes/helper.php:274
+#: woo-bulk-editor/classes/helper.php:280
+#: woo-bulk-editor/classes/helper.php:327
+#: woo-bulk-editor/classes/helper.php:333
+#: woo-bulk-editor/classes/helper.php:376
+#: woo-bulk-editor/classes/helper.php:382
+msgid "Product: %s"
+msgstr "Продукт: %s"
+
+#. Text in function
+#: woo-bulk-editor/classes/helper.php:377
+msgid "Products (%s)"
+msgstr "Продукты: %s"
+
+#. Text in function
+#: woo-bulk-editor/index.php:1
+#: woo-bulk-editor/views/woobe.php:51
+msgid "Products Editor"
+msgstr "Редактор продуктов"
+
+#. Text in function
+#: woo-bulk-editor/index.php:307
+msgid "Products not found!"
+msgstr "Продукты не найдены!"
+
+#. Text in function
+#: woo-bulk-editor/ext/fprofiles/views/panel.php:18
+msgid "Profiles"
+msgstr "Профайлы"
+
+#. Text in function
+#: woo-bulk-editor/views/woobe.php:127
+msgid "Quick search"
+msgstr "Быстрый поиск"
+
+#. Text in function
+#: woo-bulk-editor/views/woobe.php:128
+msgid "Quick terms search by its name"
+msgstr "Быстрый поиск тёрмов по названию"
+
+#. Text in echo
+#: woo-bulk-editor/ext/bulk/views/panel.php:195
+#: woo-bulk-editor/ext/bulk/views/panel.php:234
+msgid "REGULAR PRICE"
+msgstr ""
+
+#. Text in echo
+#: woo-bulk-editor/ext/info/views/panel.php:63
+msgid "Remember! \"Sale price\" can not be greater than \"Regular price\", never! So if \"Regular price\" is 0 - not possible to set \"Sale price\"!"
+msgstr "Запомните! «Sale цена» не может быть больше, чем «Regular цена», никогда! Поэтому, если «Обычная цена» равна 0 - невозможно установить «Цену продажи»!"
+
+#. Text in echo
+#: woo-bulk-editor/views/parts/product-gallery.php:12
+msgid "Remove all images"
+msgstr "Удалить все изображения"
+
+#. Text in echo
+#: woo-bulk-editor/views/parts/product-gallery.php:9
+msgid "Remove images also from medialibrary if detached of the product"
+msgstr "Удалять изображения также из медиабиблиотеки, если она откреплена от продукта"
+
+#. Text in echo
+#: woo-bulk-editor/views/woobe.php:207
+msgid "Remove selected downloads"
+msgstr "Удалить выбранные загрузки"
+
+#. Text in echo
+#: woo-bulk-editor/views/woobe.php:465
+msgid "Remove selected products"
+msgstr "Удалить выбранные продукты"
+
+#. Text in echo
+#: woo-bulk-editor/views/woobe.php:205
+msgid "Replace all downloads by the selected ones"
+msgstr "Заменить все загрузки выбранными"
+
+#. Text in echo
+#: woo-bulk-editor/views/woobe.php:463
+msgid "Replace all products by the selected ones"
+msgstr "Заменить все продукты выбранными"
+
+#. Text in echo
+#: woo-bulk-editor/views/woobe.php:270
+msgid "Replace all products images by the selected ones"
+msgstr "Заменить все изображения продуктов выбранными"
+
+#. Text in echo
+#: woo-bulk-editor/ext/info/views/panel.php:97
+msgid "Requirements"
+msgstr "Требования"
+
+#. Text in echo
+#: woo-bulk-editor/ext/filters/views/panel.php:32
+msgid "Reset"
+msgstr "Сброс"
+
+#. Text in echo
+#: woo-bulk-editor/views/parts/advanced-table.php:26
+msgid "Reset filters"
+msgstr "Сброс фильтров"
+
+#. Text in function
+#: woo-bulk-editor/index.php:249
+msgid "Reseted!"
+msgstr "Сброшено!"
+
+#. Text in function
+#: woo-bulk-editor/index.php:248
+msgid "Reseting"
+msgstr "Сбрасывание"
+
+#. Text in echo
+#: woo-bulk-editor/ext/history/history.php:46
+msgid "Reverted!"
+msgstr "Откат завершен!"
+
+#. Text in echo
+#: woo-bulk-editor/ext/history/history.php:45
+msgid "Reverting"
+msgstr "Откат"
+
+#. Text in echo
+#: woo-bulk-editor/ext/bulk/views/panel.php:196
+#: woo-bulk-editor/ext/bulk/views/panel.php:235
+msgid "SALE PRICE"
+msgstr ""
+
+#. Text in echo
+#: woo-bulk-editor/ext/bulk/views/panel.php:190
+#: woo-bulk-editor/ext/bulk/views/panel.php:229
+msgid "SKU"
+msgstr ""
+
+#. Text in function
+#: woo-bulk-editor/ext/filters/views/panel.php:449
+msgid "SKU, use comma for several ..."
+msgstr "SKU, используйте запятую для нескольких ..."
+
+#. Text in function
+#: woo-bulk-editor/ext/filters/views/panel.php:437
+msgid "Sale time from"
+msgstr "Распродажа с"
+
+#. Text in function
+#: woo-bulk-editor/ext/filters/views/panel.php:437
+msgid "Sale time to"
+msgstr "Распродажа по"
+
+#. Text in function
+#: woo-bulk-editor/ext/fprofiles/views/panel.php:71
+#: woo-bulk-editor/views/woobe.php:834
+msgid "Save"
+msgstr "Сохранить"
+
+#. Text in function
+#: woo-bulk-editor/views/woobe.php:697
+msgid "Save all settings"
+msgstr "Сохранить все настройки"
+
+#. Text in function
+#: woo-bulk-editor/ext/meta/views/panel.php:45
+msgid "Save meta fields"
+msgstr "Сохранить мета-поля"
+
+#. Text in function
+#: woo-bulk-editor/index.php:236
+msgid "Saved"
+msgstr "Сохранено"
+
+#. Text in function
+#: woo-bulk-editor/index.php:237
+msgid "Saving"
+msgstr "Сохранение"
+
+#. Text in echo
+#: woo-bulk-editor/views/parts/advanced-table.php:43
+msgid "Scroll left"
+msgstr "Прокрутка влево"
+
+#. Text in echo
+#: woo-bulk-editor/views/parts/advanced-table.php:42
+msgid "Scroll right"
+msgstr "Прокрутить вправо"
+
+#. Text in function
+#: woo-bulk-editor/index.php:225
+#: woo-bulk-editor/views/woobe.php:443
+msgid "Search"
+msgstr "Поиск"
+
+#. Text in echo
+#: woo-bulk-editor/ext/info/views/panel.php:67
+msgid "Search by products slugs, which are in non-latin symbols does not work because in the data base they are keeps in the encoded format!"
+msgstr "Поиск по продуктовым слагам, которые находятся в нелатинских символах, не работает, потому что в базе данных они хранятся в кодированном формате!"
+
+#. Text in function
+#: woo-bulk-editor/views/woobe.php:444
+msgid "Search products by its name"
+msgstr "Поиск продуктов по названию"
+
+#. Text in echo
+#: woo-bulk-editor/ext/bulkoperations/views/panel.php:210
+msgid "This operation is only for variations of variable products and not their parents. Select a product attribute to attach and also its default term, then add attaching rules. Attaching usually uses when exists empty attribute in the variation!"
+msgstr "Эта операция предназначена только для вариаций переменных продуктов, а не для их родителей. Выберите атрибут продукта для присоединения и его значение по умолчанию, а затем добавьте правила добавления. Прикрепление обычно использует, когда в вариации уже существует пустой атрибут, но он также может изменять существующий атрибут!"
+
+#. Text in echo
+#: woo-bulk-editor/ext/bulkoperations/views/panel.php:321
+#: woo-bulk-editor/ext/bulkoperations/views/panel.php:60
+#: woo-bulk-editor/ext/bulkoperations/views/panel.php:121
+#: woo-bulk-editor/ext/bulkoperations/views/panel.php:327
+msgid "Select attributes"
+msgstr "Выберите атрибуты"
+
+#. Text in echo
+#: woo-bulk-editor/ext/bulkoperations/views/panel.php:322
+msgid "This operation is only for variations of variable products and not their parents. Select attributes combination of which you want to delete. Remember: not possible to rollback delete-operations!"
+msgstr "Эта операция предназначена только для вариаций переменных продуктов, а не для их родителей. Выберите комбинацию атрибутов, которую вы хотите удалить. Помните: невозможно отменить операцию удаления аттрибутов!"
+
+#. Text in echo
+#: woo-bulk-editor/ext/bulkoperations/views/panel.php:117
+msgid "Select attributes which combination you want to apply as default one. Select terms of the attributes and press button Apply combination. This combination will be pre-selected on the shop single page. If you will miss any attribute you can always can stop the operation, and then try again!"
+msgstr "Выберите атрибуты, комбинацию которых вы хотите применить по умолчанию. Выберите условия атрибутов и нажмите кнопку Применить комбинацию. Эта комбинация будет предварительно выбрана на странице продукта. Если вы пропустите любой атрибут, вы всегда можете остановить операцию, и затем повторить попытку!"
+
+#. Text in echo
+#: woo-bulk-editor/ext/bulkoperations/views/panel.php:56
+msgid "Select attributes which products variations you want to create"
+msgstr "Выберите атрибуты, которые вы хотите создать"
+
+#. Text in echo
+#: woo-bulk-editor/index.php:260
+msgid "Select background color"
+msgstr "Выберите атрибуты"
+
+#. Text in echo
+#: woo-bulk-editor/ext/bulk/views/panel.php:39
+msgid "Select combination(s) of attributes if you need it by your logic, another way changes will be applied to all variations of all/filtered/selected variable products. Order of the terms in combination(s) has no matter."
+msgstr "Выберите комбинацию атрибутов по вашей логике, иначе изменения будут применены ко всем вариантам всех / фильтрованных / выбранных вариативных продуктов. Порядок тёрмов в клмбинации(-ях) не имеет значения."
+
+#. Text in echo
+#: woo-bulk-editor/ext/fprofiles/views/panel.php:27
+msgid "Select filter profile to load"
+msgstr "Выберите профиль фильтра для загрузки"
+
+#. Text in echo
+#: woo-bulk-editor/views/woobe.php:801
+msgid "Select profile to load"
+msgstr "Выберите профиль для загрузки"
+
+#. Text in function
+#: woo-bulk-editor/views/woobe.php:71
+msgid "Select some columns in tab \"Settings\""
+msgstr "Выберите несколько столбцов на вкладке «Настройки»"
+
+#. Text in echo
+#: woo-bulk-editor/index.php:261
+msgid "Select text color"
+msgstr "Выберите цвет текста"
+
+#. Text in echo
+#: woo-bulk-editor/ext/bulkoperations/views/panel.php:266
+msgid "This operation is only for variations of variable products and not their parents. Select which term is replaceable and which is substitute. If the terms has the same attribute, replaceable term will be replaced by substitute term. If terms has different attributes - substitute term will be attached as new to a product variation which has replaceable term, and replaceable term will not be replaced! Also if parent product has not the substitute attribute (tab Attributes on the product page) - it will be attached to the product automatically in the current process!"
+msgstr "Эта операция предназначена только для вариаций переменных продуктов, а не для их родителей. Выберите, какой тёрм заменяется и который заменяет. Если тёрмы имеют один и тот же атрибут, заменяемый тёрм будет заменен заменяющим тёрмом. Если тёрмы принадлежат разным атрибутам - заменительный тёрм будет прикреплен как новый к вариации продукта, который имеет заменяемый тёрм, а заменяющийся тёрм не будет заменен! Также, если родительский продукт не имеет атрибут заменяющего тёрма (вкладка Атрибуты на странице продукта) - аттрибут будет автоматически присоединен к продукту в текущем процессе!"
+
+#. Text in function
+#: woo-bulk-editor/ext/bulkoperations/views/panel.php:265
+msgid "Selected combination will be applied to: %s"
+msgstr "Выбранная комбинация будет применена к: %s"
+
+#. Text in echo
+#: woo-bulk-editor/views/parts/advanced-table.php:11
+msgid "Set full width"
+msgstr "Полная ширина"
+
+#. Text in function
+#: woo-bulk-editor/ext/export/views/panel.php:44
+msgid "Set here maximal possible count of downloads per product. Not possible to automate counting of this value because this data is serialized in the data base!"
+msgstr "Задайте здесь максимально возможное количество загрузок на продукт. Невозможно автоматизировать подсчет этого значения, поскольку эти данные сериализованы в базе данных!"
+
+#. Text in function
+#: woo-bulk-editor/ext/bulk/views/panel.php:864
+msgid "Set: %s"
+msgstr "Установить: %s"
+
+#. Text in echo
+#: woo-bulk-editor/views/woobe.php:58
+msgid "Settings"
+msgstr "Настройки"
+
+#. Text in echo
+#: woo-bulk-editor/ext/export/export.php:30
+msgid "Should the export be started?"
+msgstr "Следует ли начать экспорт?"
+
+#. Text in echo
+#: woo-bulk-editor/views/woobe.php:540
+msgid "Show all columns"
+msgstr "Показать все столбцы"
+
+#. Text in echo
+#: woo-bulk-editor/index.php:257
+#: woo-bulk-editor/views/parts/top_panel.php:24
+msgid "Show: Filters/Bulk Edit/Export"
+msgstr "Показать: Фильтры / Массовое редактирование / Экспорт"
+
+#. Text in echo
+#: woo-bulk-editor/index.php:264
+msgid "Showing 0 to 0 of 0 entries"
+msgstr "Отображение от 0 до 0 из 0 записей"
+
+#. Text in echo
+#: woo-bulk-editor/index.php:263
+msgid "Showing _START_ to _END_ of _TOTAL_ entries"
+msgstr "Отображение _START_ до _END_ из _TOTAL_ записей"
+
+#. Text in function
+#: woo-bulk-editor/views/woobe.php:867
+msgid "Slug(s) of the new term"
+msgstr "Слаг(и) нового термина"
+
+#. Text in function
+#: woo-bulk-editor/ext/bulk/views/panel.php:864
+msgid "Sold individ.: No"
+msgstr "Продавать инд.: нет"
+
+#. Text in function
+#: woo-bulk-editor/ext/bulk/views/panel.php:864
+msgid "Sold individ.: Yes"
+msgstr "Продавать инд.: да"
+
+#. Text in function
+#: woo-bulk-editor/ext/filters/views/panel.php:437
+msgid "Sold individually"
+msgstr "Продавать индивидуально"
+
+#. Text in echo
+#: woo-bulk-editor/ext/info/views/panel.php:28
+msgid "Some little hints"
+msgstr "Немного финтов"
+
+#. Text in echo
+#: woo-bulk-editor/ext/info/views/panel.php:105
+msgid "Some useful plugins for your e-shop"
+msgstr "Несколько полезных плагинов для вашего интернет-магазина"
+
+#. Text in echo
+#: woo-bulk-editor/ext/bulkoperations/views/panel.php:184
+msgid "Start"
+msgstr "Старт"
+
+#. Text in echo
+#: woo-bulk-editor/ext/bulkoperations/views/panel.php:92
+msgid "Start BULK Adding!"
+msgstr "Начать массовое добавление!"
+
+#. Text in echo
+#: woo-bulk-editor/ext/bulkoperations/views/panel.php:355
+msgid "Start deleting"
+msgstr "Начать удаление"
+
+#. Text in function
+#: woo-bulk-editor/ext/filters/views/panel.php:437
+msgid "Stock status"
+msgstr "Статус запасов"
+
+#. Text in function
+#: woo-bulk-editor/index.php:241
+msgid "Sure?"
+msgstr "Уверен?"
+
+#. Text in echo
+#: woo-bulk-editor/ext/bulkoperations/views/panel.php:39
+#: woo-bulk-editor/ext/bulkoperations/views/panel.php:268
+msgid "Swap"
+msgstr "Замена"
+
+#. Text in echo
+#: woo-bulk-editor/ext/bulkoperations/bulkoperations.php:47
+msgid "Swap of variations is finished"
+msgstr "Замена вариаций завершена"
+
+#. Text in echo
+#: woo-bulk-editor/ext/bulkoperations/views/panel.php:99
+#: woo-bulk-editor/ext/bulkoperations/views/panel.php:144
+#: woo-bulk-editor/ext/bulkoperations/views/panel.php:189
+#: woo-bulk-editor/ext/bulkoperations/views/panel.php:213
+#: woo-bulk-editor/ext/bulkoperations/views/panel.php:269
+#: woo-bulk-editor/ext/bulkoperations/views/panel.php:356
+msgid "Terminate operation!"
+msgstr "Прекратить операцию!"
+
+#. Text in function
+#: woo-bulk-editor/index.php:256
+msgid "Text search by title or SKU"
+msgstr "Текстовый поиск по названию или SKU"
+
+#. Text in function
+#: woo-bulk-editor/ext/info/views/panel.php:9
+msgid "The plugin has %s and \"%s\" list. Also you can watch %s to understand all features of the plugin."
+msgstr "Плагин имеет %s и список «% s». Также вы можете посмотреть %s, чтобы понять все возможности плагина."
+
+#. Text in function
+#: woo-bulk-editor/index.php:230
+msgid "This is not deletable!"
+msgstr "Это невозможно удалить!"
+
+#. Text in function
+#: woo-bulk-editor/ext/bulk/views/panel.php:143
+msgid "Time by time (one time per week for example) - make the backup of your site database. For example by %s"
+msgstr "Время от времени (один раз в неделю, например) - делайте резервную копию базы данных своего сайта. Например используя %s"
+
+#. Text in echo
+#: woo-bulk-editor/ext/bulk/views/panel.php:188
+#: woo-bulk-editor/ext/bulk/views/panel.php:227
+msgid "TITLE"
+msgstr ""
+
+#. Text in echo
+#: woo-bulk-editor/ext/info/views/panel.php:81
+msgid "To select range of products using checkboxes - select first product, press SHIFT key on your PC keyboard and click last product."
+msgstr "Чтобы выбрать группу продуктов, используя чекбоксы - выберите первый продукт, зажмите клавишу SHIFT на клавиатуре ПК и нажмите последний продукт."
+
+#. Text in echo
+#: woo-bulk-editor/views/woobe.php:648
+msgid "General settings"
+msgstr "Общие настройки"
+
+#. Text in echo
+#: woo-bulk-editor/views/parts/advanced-table.php:25
+msgid "Uncheck all selected products"
+msgstr "Снять выделение со всех выбранных продуктов"
+
+#. Text in function
+#: woo-bulk-editor/index.php:252
+msgid "Upload file"
+msgstr "Загрузить файл"
+
+#. Text in function
+#: woo-bulk-editor/index.php:250
+msgid "Upload image"
+msgstr "Загрузить изображение"
+
+#. Text in function
+#: woo-bulk-editor/index.php:251
+msgid "Upload images"
+msgstr "Загрузить изображения"
+
+#. Text in echo
+#: woo-bulk-editor/ext/info/views/panel.php:77
+msgid "Use Enter keyboard button in the Products Editor for moving to the next products row cell with saving of changes while edit textinputs. Use arrow Up or arrow Down keyboard buttons in the Products Editor for moving to the next/previous products row without saving of changes."
+msgstr "Используйте кнопку Enter клавиатуры в редакторе продуктов для перехода к ячейке следующей строки с сохранением изменений при редактировании текстовых данных. Используйте клавишу стрелка ввер или стрелка вниз клавиатуры в редакторе продуктов для перехода к следующей / предыдущей строке товаров без сохранения изменений."
+
+#. Text in echo
+#: woo-bulk-editor/ext/bulkoperations/views/panel.php:182
+msgid "Using mouse, set order of variations you need and press start button."
+msgstr "Используя мышь, задайте порядок вариаций и нажмите кнопку «Старт»."
+
+#. Text in echo
+#: woo-bulk-editor/ext/bulkoperations/bulkoperations.php:43
+msgid "Variations Advanced Bulk Operation is finished"
+msgstr "Variations Advanced Bulk операция завершена"
+
+#. Text in function
+#: woo-bulk-editor/ext/bulkoperations/views/panel.php:79
+msgid "Variations Advanced Bulk Operation will be applied to: %s"
+msgstr "Variations Advanced Bulk операция будет применена к: %s"
+
+#. Text in echo
+#: woo-bulk-editor/ext/bulkoperations/bulkoperations.php:60
+#: woo-bulk-editor/ext/bulkoperations/views/panel.php:13
+msgid "Variations Advanced Bulk Operations"
+msgstr ""
+
+#. Text in function
+#: woo-bulk-editor/index.php:307
+msgid "View the product on the site front"
+msgstr "Посмотреть продукт на сайте"
+
+#. Text in function
+#: woo-bulk-editor/ext/bulk/views/panel.php:864
+msgid "Virtual: no"
+msgstr "Виртуальный: нет"
+
+#. Text in function
+#: woo-bulk-editor/ext/bulk/views/panel.php:864
+msgid "Virtual: yes"
+msgstr "Виртуальный: да"
+
+#. Text in echo
+#: woo-bulk-editor/ext/history/history.php:133
+msgid "WOOBE cannot create the database table! Make sure that your mysql user has the CREATE privilege! Do it manually using your host panel phpmyadmin!"
+msgstr "WOOBE не может создать таблицу базы данных! Убедитесь, что ваш пользователь mysql имеет привилегию CREATE! Сделайте это вручную с помощью панели управления phpmyadmin!"
+
+#. Text in echo
+#: woo-bulk-editor/ext/history/history.php:47
+msgid "Wait please while data reverting is going!"
+msgstr "Подождите, пока идет откат данных!"
+
+#. Text in echo
+#: woo-bulk-editor/ext/bulk/bulk.php:44
+msgid "Will be edited next:"
+msgstr "Будет изменено следующее:"
+
+#. Text in echo
+#: woo-bulk-editor/ext/history/views/panel.php:6
+msgid "Works for edit-operations and not work with delete-operations! Also does not work with all operations which are presented in \"Variations Advanced Bulk Operations\""
+msgstr "Работает для операций редактирования и не работает с операциями удаления! Также не работает со всеми операциями, которые представлены в разделе «Variations Advanced Bulk Operations»"
+
+#. Text in function
+#: woo-bulk-editor/ext/filters/views/panel.php:437
+#: woo-bulk-editor/ext/filters/views/panel.php:422
+msgid "Yes"
+msgstr "Да"
+
+#. Text in echo
+#: woo-bulk-editor/index.php:276
+msgid "You can reset selection of the products by its reset button on the panel of the editor OR uncheck them manually!"
+msgstr "Вы можете сбросить выбор продуктов кнопкой сброса на панели редактора или снять их вручную!"
+
+#. Text in echo
+#: woo-bulk-editor/ext/fprofiles/views/panel.php:63
+msgid "You can save filter profile only when you applying filters to the products."
+msgstr "Вы можете сохранить профиль фильтра только во время применения фильтров к продуктам."
+
+#. Text in echo
+#: woo-bulk-editor/views/woobe.php:24
+msgid "Your settings have been saved."
+msgstr "Ваши настройки были сохранены."
+
+#. Text in echo
+#: woo-bulk-editor/ext/history/views/panel.php:11
+msgid "all"
+msgstr "все"
+
+#. Text in function
+#: woo-bulk-editor/ext/bulkoperations/views/panel.php:79
+#: woo-bulk-editor/ext/bulkoperations/views/panel.php:140
+#: woo-bulk-editor/ext/bulkoperations/views/panel.php:181
+#: woo-bulk-editor/ext/bulkoperations/views/panel.php:265
+#: woo-bulk-editor/ext/bulkoperations/views/panel.php:352
+#: woo-bulk-editor/ext/bulk/views/panel.php:12
+#: woo-bulk-editor/ext/export/views/panel.php:9
+#: woo-bulk-editor/index.php:273
+msgid "all the products on the site"
+msgstr "все продукты на сайте"
+
+#. Text in echo
+#: woo-bulk-editor/ext/bulk/views/panel.php:202
+#: woo-bulk-editor/ext/bulk/views/panel.php:353
+msgid "append"
+msgstr "добавить"
+
+#. Text in echo
+#: woo-bulk-editor/ext/bulkoperations/views/panel.php:233
+#: woo-bulk-editor/ext/bulkoperations/views/panel.php:287
+msgid "attribute to select replaceable term"
+msgstr "атрибут для выбора сменяемого тёрма"
+
+#. Text in echo
+#: woo-bulk-editor/ext/bulkoperations/views/panel.php:298
+msgid "attribute to select substitute term"
+msgstr "атрибут для выбора тёрма замены"
+
+#. Text in function
+#: woo-bulk-editor/ext/bulk/bulk.php:56
+#: woo-bulk-editor/ext/info/views/panel.php:84
+msgid "binded editing"
+msgstr "редактирование с привязкой"
+
+#. Text in echo
+#: woo-bulk-editor/ext/history/views/panel.php:13
+msgid "bulk operations"
+msgstr "массовые операции"
+
+#. Text in echo
+#: woo-bulk-editor/index.php:1033
+msgid "cancel"
+msgstr "отмена"
+
+#. Text in echo
+#: woo-bulk-editor/ext/export/views/panel.php:23
+msgid "cancel export"
+msgstr "отменить экспорт"
+
+#. Text in echo
+#: woo-bulk-editor/ext/meta/views/panel.php:80
+msgid "checkbox"
+msgstr "чекбокс"
+
+#. Text in function
+#: woo-bulk-editor/classes/helper.php:125
+msgid "clear"
+msgstr "очистить"
+
+#. Text in echo
+#: woo-bulk-editor/views/woobe.php:529
+msgid "columns finder ..."
+msgstr "поиск столбцов ..."
+
+#. Text in function
+#: woo-bulk-editor/ext/history/views/list.php:41
+msgid "columns: %s"
+msgstr "колонки: %s"
+
+#. Text in echo
+#: woo-bulk-editor/views/woobe.php:132
+msgid "create new term"
+msgstr "создать новый тёрм"
+
+#. Text in function
+#: woo-bulk-editor/ext/bulk/views/panel.php:1045
+msgid "decrease by value"
+msgstr "снижение значением"
+
+#. Text in echo
+#: woo-bulk-editor/ext/history/views/list.php:75
+#: woo-bulk-editor/ext/history/views/list.php:79
+#: woo-bulk-editor/ext/meta/views/panel.php:93
+#: woo-bulk-editor/index.php:228
+msgid "delete"
+msgstr "удалить"
+
+#. Text in function
+#: woo-bulk-editor/ext/info/views/panel.php:9
+msgid "documentation"
+msgstr "документацию"
+
+#. Text in echo
+#: woo-bulk-editor/ext/export/views/panel.php:22
+msgid "download"
+msgstr "скачать"
+
+#. Text in echo
+#: woo-bulk-editor/ext/bulkoperations/views/panel.php:386
+#: woo-bulk-editor/ext/bulkoperations/views/panel.php:392
+#: woo-bulk-editor/ext/meta/views/panel.php:65
+#: woo-bulk-editor/views/parts/product-cross-sells.php:19
+#: woo-bulk-editor/views/parts/product-downloads.php:14
+#: woo-bulk-editor/views/parts/product-grouped.php:19
+#: woo-bulk-editor/views/parts/product-upsells.php:19
+#: woo-bulk-editor/views/woobe.php:237
+#: woo-bulk-editor/views/woobe.php:494
+#: woo-bulk-editor/views/woobe.php:554
+msgid "drag and drop"
+msgstr "перетаскивание"
+
+#. Text in echo
+#: woo-bulk-editor/ext/calculator/views/panel.php:20
+msgid "enter operation value"
+msgstr "введите значение операции"
+
+#. Text in echo
+#: woo-bulk-editor/ext/meta/views/panel.php:16
+msgid "enter product ID"
+msgstr "введите ID продукта"
+
+#. Text in echo
+#: woo-bulk-editor/ext/meta/views/panel.php:72
+msgid "enter title"
+msgstr "введите название"
+
+#. Text in function
+#: woo-bulk-editor/ext/filters/views/panel.php:449
+msgid "height from"
+msgstr "высота от"
+
+#. Text in function
+#: woo-bulk-editor/ext/filters/views/panel.php:449
+msgid "height to"
+msgstr "высота до"
+
+#. Text in function
+#: woo-bulk-editor/ext/bulkoperations/views/panel.php:339
+#: woo-bulk-editor/ext/bulk/views/panel.php:47
+msgid "here"
+msgstr "тут"
+
+#. Text in function
+#: woo-bulk-editor/index.php:229
+msgid "ignore"
+msgstr "игнорировать"
+
+#. Text in echo
+#: woo-bulk-editor/ext/bulk/views/panel.php:215
+msgid "ignore case"
+msgstr "игнорировать строчность"
+
+#. Text in function
+#: woo-bulk-editor/ext/bulk/views/panel.php:1045
+msgid "increase by value"
+msgstr "увеличить значением"
+
+#. Text in function
+#: woo-bulk-editor/ext/filters/views/panel.php:449
+msgid "length from"
+msgstr "длина от"
+
+#. Text in function
+#: woo-bulk-editor/ext/filters/views/panel.php:449
+msgid "length to"
+msgstr "длина до"
+
+#. Text in echo
+#: woo-bulk-editor/ext/fprofiles/views/panel.php:37
+#: woo-bulk-editor/views/woobe.php:811
+msgid "load"
+msgstr "загрузить"
+
+#. Text in echo
+#: woo-bulk-editor/ext/export/views/panel.php:43
+msgid "max downloads per product"
+msgstr "максимальное количество загрузок на продукт"
+
+#. Text in function
+#: woo-bulk-editor/ext/meta/views/panel.php:65
+#: woo-bulk-editor/index.php:224
+#: woo-bulk-editor/views/parts/product-cross-sells.php:19
+#: woo-bulk-editor/views/parts/product-downloads.php:14
+#: woo-bulk-editor/views/parts/product-grouped.php:19
+#: woo-bulk-editor/views/parts/product-upsells.php:19
+#: woo-bulk-editor/views/woobe.php:237
+#: woo-bulk-editor/views/woobe.php:494
+#: woo-bulk-editor/views/woobe.php:554
+msgid "move"
+msgstr "передвигать"
+
+#. Text in echo
+#: woo-bulk-editor/ext/bulk/views/panel.php:204
+#: woo-bulk-editor/index.php:1043
+msgid "new"
+msgstr "новый"
+
+#. Text in function
+#: woo-bulk-editor/index.php:233
+msgid "no data"
+msgstr "нет данных"
+
+#. Text in function
+#: woo-bulk-editor/classes/helper.php:158
+#: woo-bulk-editor/index.php:231
+msgid "no items"
+msgstr "нет искомого"
+
+#. Text in function
+#: woo-bulk-editor/index.php:232
+msgid "none"
+msgstr "ничего"
+
+#. Text in echo
+#: woo-bulk-editor/ext/meta/views/panel.php:88
+msgid "number"
+msgstr "номер"
+
+#. Text in echo
+#: woo-bulk-editor/ext/bulk/views/panel.php:203
+msgid "prepend"
+msgstr "прикрепить впереди"
+
+#. Text in function
+#: woo-bulk-editor/ext/history/views/list.php:41
+msgid "products bulked: %s"
+msgstr "продуктов изменено: %s"
+
+#. Text in function
+#: woo-bulk-editor/ext/filters/views/panel.php:449
+msgid "regular price from"
+msgstr "обычная цена от"
+
+#. Text in function
+#: woo-bulk-editor/ext/filters/views/panel.php:449
+msgid "regular price to"
+msgstr "обычная цена до"
+
+#. Text in echo
+#: woo-bulk-editor/ext/bulk/views/panel.php:355
+#: woo-bulk-editor/ext/fprofiles/views/panel.php:38
+#: woo-bulk-editor/views/woobe.php:812
+msgid "remove"
+msgstr "удалить"
+
+#. Text in function
+#: woo-bulk-editor/views/woobe.php:787
+msgid "remove current columns profile"
+msgstr "удалить текущий профиль столбцов"
+
+#. Text in echo
+#: woo-bulk-editor/ext/bulk/views/panel.php:205
+#: woo-bulk-editor/ext/bulk/views/panel.php:354
+msgid "replace"
+msgstr "заменить"
+
+#. Text in echo
+#: woo-bulk-editor/ext/bulk/views/panel.php:220
+msgid "replace to text"
+msgstr "заменить на текст"
+
+#. Text in echo
+#: woo-bulk-editor/ext/bulkoperations/views/panel.php:290
+msgid "replaceable term"
+msgstr "заменяемый тёрм"
+
+#. Text in echo
+#: woo-bulk-editor/ext/history/views/list.php:74
+#: woo-bulk-editor/ext/history/views/list.php:78
+msgid "revert"
+msgstr "откатить"
+
+#. Text in function
+#: woo-bulk-editor/ext/filters/views/panel.php:449
+msgid "sale price from"
+msgstr "цена продажи от"
+
+#. Text in function
+#: woo-bulk-editor/ext/filters/views/panel.php:449
+msgid "sale price to"
+msgstr "цена продажи до"
+
+#. Text in echo
+#: woo-bulk-editor/ext/bulk/views/panel.php:214
+msgid "same case"
+msgstr "соблюдать строчность"
+
+#. Text in echo
+#: woo-bulk-editor/index.php:1038
+msgid "save"
+msgstr "сохранить"
+
+#. Text in echo
+#: woo-bulk-editor/views/parts/advanced-table.php:36
+msgid "select all variations"
+msgstr "выбрать все варианты"
+
+#. Text in echo
+#: woo-bulk-editor/ext/bulkoperations/views/panel.php:294
+msgid "select attribute"
+msgstr "выбрать атрибут"
+
+#. Text in echo
+#: woo-bulk-editor/ext/bulk/views/panel.php:31
+msgid "select combination of attributes"
+msgstr "выбрать комбинацию атрибутов"
+
+#. Text in echo
+#: woo-bulk-editor/ext/bulk/views/panel.php:388
+#: woo-bulk-editor/ext/bulk/views/panel.php:336
+#: woo-bulk-editor/ext/bulk/views/panel.php:1027
+msgid "select it to use"
+msgstr "выберите его для использования"
+
+#. Text in function
+#: woo-bulk-editor/ext/info/views/panel.php:84
+msgid "select products and add 15% to their regular price"
+msgstr "выбрать товары и добавить 15% к их обычной цене"
+
+#. Text in echo
+#: woo-bulk-editor/ext/bulk/views/panel.php:450
+msgid "select thumbnail"
+msgstr "выбрать превьюшку"
+
+#. Text in echo
+#: woo-bulk-editor/views/woobe.php:133
+msgid "selected only"
+msgstr "выбранные только"
+
+#. Text in function
+#: woo-bulk-editor/ext/bulk/views/panel.php:1045
+msgid "set new"
+msgstr "поставить новое"
+
+#. Text in echo
+#: woo-bulk-editor/ext/bulk/views/panel.php:187
+#: woo-bulk-editor/ext/bulk/views/panel.php:226
+msgid "variable"
+msgstr "переменная"
+
+#. Text in echo
+#: woo-bulk-editor/ext/history/views/panel.php:12
+msgid "solo operations"
+msgstr "сольные операции"
+
+#. Text in function
+#: woo-bulk-editor/ext/history/views/list.php:19
+msgid "state: %s"
+msgstr "состояние: %s"
+
+#. Text in function
+#: woo-bulk-editor/ext/filters/views/panel.php:449
+msgid "stock quantity from"
+msgstr "количество запасов от"
+
+#. Text in function
+#: woo-bulk-editor/ext/filters/views/panel.php:449
+msgid "stock quantity to"
+msgstr "количество запасов до"
+
+#. Text in echo
+#: woo-bulk-editor/ext/meta/views/panel.php:87
+msgid "string"
+msgstr "строка"
+
+#. Text in echo
+#: woo-bulk-editor/ext/bulkoperations/views/panel.php:290
+msgid "substitute term"
+msgstr "заменяющий тёрм"
+
+#. Text in echo
+#: woo-bulk-editor/ext/bulkoperations/views/panel.php:290
+msgid "swap to"
+msgstr "обменять"
+
+#. Text in echo
+#: woo-bulk-editor/ext/bulk/views/panel.php:137
+msgid "terminate bulk operation"
+msgstr "прекратить массовую операцию"
+
+#. Text in echo
+#: woo-bulk-editor/ext/fprofiles/fprofiles.php:27
+#: woo-bulk-editor/ext/info/info.php:22
+msgid "test"
+msgstr "тест"
+
+#. Text in echo
+#: woo-bulk-editor/ext/meta/views/panel.php:79
+msgid "textarea"
+msgstr ""
+
+#. Text in echo
+#: woo-bulk-editor/ext/meta/views/panel.php:78
+msgid "textinput"
+msgstr ""
+
+#. Text in echo
+#: woo-bulk-editor/index.php:274
+msgid "the filtered products. To remove the products filtering press reset button on the tools panel below"
+msgstr "отфильтрованные продукты. Чтобы удалить фильтрацию продуктов, нажмите кнопку сброса на панели инструментов ниже"
+
+#. Text in function
+#: woo-bulk-editor/ext/info/views/panel.php:84
+msgid "the plugin forum"
+msgstr "форум плагина"
+
+#. Text in echo
+#: woo-bulk-editor/ext/bulkoperations/bulkoperations.php:53
+msgid "the product has no variations"
+msgstr "продукт не имеет вариантов"
+
+#. Text in echo
+#: woo-bulk-editor/index.php:275
+msgid "the selected products (variations)"
+msgstr "выбранные продукты (варианты)"
+
+#. Text in function
+#: woo-bulk-editor/ext/bulk/views/panel.php:143
+#: woo-bulk-editor/ext/info/views/panel.php:84
+msgid "this plugin"
+msgstr "плагин"
+
+#. Text in function
+#: woo-bulk-editor/ext/history/views/list.php:41
+msgid "value been: %s"
+msgstr "значение было: %s"
+
+#. Text in echo
+#: woo-bulk-editor/ext/bulkoperations/bulkoperations.php:52
+msgid "variation is not selected"
+msgstr "вариация не выбрана"
+
+#. Text in function
+#: woo-bulk-editor/views/parts/advanced-table.php:32
+msgid "variations"
+msgstr "вариации"
+
+#. Text in function
+#: woo-bulk-editor/ext/info/views/panel.php:9
+msgid "videos"
+msgstr "видео"
+
+#. Text in echo
+#: woo-bulk-editor/views/woobe.php:572
+msgid "visible for the shop manager"
+msgstr "видимый для менеджера магазина"
+
+#. Text in function
+#: woo-bulk-editor/index.php:1
+msgid "visit this page"
+msgstr "посетить эту страницу"
+
+#. Text in function
+#: woo-bulk-editor/ext/filters/views/panel.php:449
+msgid "weight from"
+msgstr "вес от"
+
+#. Text in function
+#: woo-bulk-editor/ext/filters/views/panel.php:449
+msgid "weight to"
+msgstr "вес до"
+
+#. Text in function
+#: woo-bulk-editor/ext/filters/views/panel.php:449
+msgid "width from"
+msgstr "ширина от"
+
+#. Text in function
+#: woo-bulk-editor/ext/filters/views/panel.php:449
+msgid "width to"
+msgstr "ширина до"
+
+msgid "increase by %"
+msgstr "увеличить на %"
+
+msgid "decrease by %"
+msgstr "уменьшить на %"
+
+msgid "sale price plus %"
+msgstr "sale price плюс %"
+
+msgid "sale price plus value"
+msgstr "sale price плюс значение"
+
+msgid "Recommended RAM"
+msgstr "Рекомендуемая память"
+
+msgid "Minimal PHP version is"
+msgstr "Минимальная версия PHP"
+
+msgid "Recommended PHP version"
+msgstr "Рекомендуемая версия PHP"
+
+msgid "Variable products"
+msgstr "Вариативные продукты"
+
+msgid "Default"
+msgstr "По умолчанию"
+
+msgid "For variations fields only"
+msgstr "Только для полей вариантов"
+
+msgid "Checkboxes for the products selection. Use SHIFT button on your keyboard to select multiple rows."
+msgstr "Флажки для выбора продуктов. Используйте кнопку SHIFT на клавиатуре, чтобы выбрать несколько строк."
+
+msgid "Thumbnail"
+msgstr "Превьюшка"
+
+msgid "Gallery"
+msgstr "Галлерея"
+
+msgid "Select any images which relate to the product"
+msgstr "Выберите любые изображения, относящиеся к продукту"
+
+msgid "Title"
+msgstr "Заголовок"
+
+msgid "Description"
+msgstr "Описание"
+
+msgid "Short Desc."
+msgstr "Кратк.Описание."
+
+msgid "Type"
+msgstr "Тип"
+
+msgid "Status"
+msgstr "Статус"
+
+msgid "Catalog Visibility"
+msgstr "Видимость в каталоге"
+
+msgid "This setting determines which shop pages products will be listed on"
+msgstr "Этот параметр определяет, какие продукты веб-страниц будут перечислены"
+
+msgid "Regular price"
+msgstr "Обычная цена"
+
+msgid "Sale price"
+msgstr "Цена продажи"
+
+msgid "The sale will end at the beginning of the set date"
+msgstr "Продажа закончится в начале установленной даты"
+
+msgid "Downloadable products give access to a file upon purchase."
+msgstr "Загружаемые продукты предоставляют доступ к файлу при покупке."
+
+msgid "Down.Files"
+msgstr "Файлы загрузки"
+
+msgid "Downloadable files. Attention: maybe should be enabled Downloadable by logic!"
+msgstr "Загружаемые файлы. Внимание: возможно, должно быть включено Загружаемые!"
+
+msgid "Download limit"
+msgstr "Предел загрузки"
+
+msgid "Leave blank for unlimited re-downloads.  Attention: maybe should be enabled Downloadable by logic!"
+msgstr "Оставьте поле пустым для неограниченной повторной загрузки. Внимание: возможно, должно быть включено Загружаемые!"
+
+msgid "Download expiry"
+msgstr "Срок действия"
+
+msgid "Enter the number of days before a download link expires, or leave blank. Attention: maybe should be enabled Downloadable by logic!"
+msgstr "Введите количество дней до истечения срока действия ссылки на скачивание или оставьте пустым. Внимание: возможно, должно быть включено Загружаемые!"
+
+msgid "Tax status"
+msgstr "Налоговый статус"
+
+msgid "Define whether or not the entire product is taxable, or just the cost of shipping it."
+msgstr "Определите, облагается ли весь товар налогообложением или только его стоимость."
+
+msgid "Taxable"
+msgstr "Облагаемый"
+
+msgid "Shipping only"
+msgstr "Только доставка"
+
+msgid "None"
+msgstr "Ничто"
+
+msgid "Tax class"
+msgstr "Налоговый класс"
+
+msgid "Choose a tax class for this product. Tax classes are used to apply different tax rates specific to certain types of product."
+msgstr "Выберите класс налога для этого продукта. Классы налогов используются для применения различных налоговых ставок, специфичных для определенных видов продукции."
+
+msgid "SKU refers to a Stock-keeping unit, a unique identifier for each distinct product and service that can be purchased."
+msgstr "SKU относится к Единице продукта и является уникальным идентификатором для каждого отдельного продукта и услуги, которые могут быть приобретены."
+
+msgid "Manage stock"
+msgstr "Управление запасами"
+
+msgid "Enable stock management at product level. ATTENTION: if to set count of products in Stock quantity, Manage stock option automatically set as TRUE!"
+msgstr "Включить управление запасами на уровне продукта. ВНИМАНИЕ: если установить количество товаров в количестве запаса, опция «Управление запасом» автоматически устанавливается как ИСТИНА!"
+
+msgid "In Stock"
+msgstr "В наличии"
+
+msgid "Stock quantity. If this is a variable product this value will be used to control stock for all variations, unless you define stock at variation level. ATTENTION: if to set count of products, Manage stock and Stock status options automatically set as TRUE!"
+msgstr "Количество запасов. Если это variable продукт, это значение будет использоваться для управления запасом для всех вариантов, если вы не определите запас на уровне изменения. ВНИМАНИЕ: если установить количество продуктов, параметры управления запасом и запасом автоматически устанавливаются как ИСТИНА!"
+
+msgid "Controls whether or not the product is listed as in stock or out of stock on the frontend. Count products in stock can not be zero while activating!"
+msgstr "Контролирует, есть на складе продукт или нет. Количество продуктов на складе не может быть равно нулю при активации!"
+
+msgid "Allow backorders"
+msgstr "Разрешить резерв.ордера"
+
+msgid "If managing stock, this controls whether or not backorders are allowed. If enabled, stock quantity can go below 0. Does Not work if the product Manage stock option is not activated!"
+msgstr "Разрешены ли резервные ордера. Если включено, количество запасов может снизиться ниже 0. Не работает, если опция «Управление запасом» не активирована!"
+
+msgid "Enable this to only allow one of this item to be bought in a single order"
+msgstr "Включите это, чтобы продукты можно было купить не более одного в одном ордере"
+
+msgid "Weight"
+msgstr "Вес"
+
+msgid "Length"
+msgstr "Длина"
+
+msgid "Width"
+msgstr "Ширина"
+
+msgid "Height"
+msgstr "Высота"
+
+msgid "Shipping class"
+msgstr "Класс доставки"
+
+msgid "Shipping classes are used by certain shipping methods to group similar products."
+msgstr "Классы доставки используются для доставки групп похожих продуктов."
+
+msgid "Upsells are products which you recommend instead of the currently viewed product, for example, products that are more profitable or better quality or more expensive."
+msgstr "Upsells - это продукты, которые вы рекомендуете вместо текущего просматриваемого продукта, например, продукты, которые являются более прибыльными или более качественными или более дорогими."
+
+msgid "Cross-sells are products which you promote in the cart, based on the current product."
+msgstr "Перекрестные продажи - это продукты, которые вы рекламируете вместе с текущем продуктом."
+
+msgid "Grouped products"
+msgstr "Сгруппированные продукты"
+
+msgid "This lets you choose which products are part of this group."
+msgstr "Это позволяет вам выбирать, какие продукты являются частью группы."
+
+msgid "Purchase note"
+msgstr "Информация для клиента поле покупки"
+
+msgid "Enter an optional note to send the customer after purchase."
+msgstr "Введите дополнительную заметку, чтобы отправить клиента после покупки."
+
+msgid "Custom ordering position."
+msgstr "Пользовательская позиция."
+
+msgid "Reviews allowed"
+msgstr "Отзывы разрешены"
+
+msgid "External/Affiliate product: External URL to the product"
+msgstr "Внешний / партнерский продукт: внешний URL-адрес продукта"
+
+msgid "Product url"
+msgstr "URL-адрес продукта"
+
+msgid "Aff.Button text"
+msgstr "Текст кнопки аффилиата"
+
+msgid "External/Affiliate product: This text will be shown on the button linking to the external product"
+msgstr "Внешний / партнерский продукт: этот текст будет отображаться на кнопке, связанной с внешним продуктом"
+
+msgid "Virtual"
+msgstr "Виртуальный"
+
+msgid "Virtual products are intangible and are not shipped."
+msgstr "Виртуальные продукты не физические."
+
+msgid "Author"
+msgstr "Автор"
+
+msgid "Total sales"
+msgstr "Всего продаж"
+
+msgid "Total count of the product sales"
+msgstr "Общий объем продаж продукта"
+
+msgid "Review count"
+msgstr "Количество отзывов"
+
+msgid "How many times the products been reviewed by customers"
+msgstr "Сколько отзывов продукты получили от клиентов"
+
+msgid "Average rating"
+msgstr "Средний рейтинг"
+
+msgid "Average rating of the product"
+msgstr "Средний рейтинг продукта"
+
+msgid "Date Published"
+msgstr "Дата публикации"
+
+msgid "Parent"
+msgstr "Родитель"
+
+msgid "Default products count per page"
+msgstr "Количество товаров по умолчанию на странице"
+
+msgid "How many rows of products show per page in tab Products. Max possible value is 100!"
+msgstr "Сколько строк продуктов отображается на странице в закладке Продукты. Максимальное возможное значение - 100!"
+
+msgid "Default sort by"
+msgstr "Сортировка по умолчанию"
+
+msgid "Select column by which products sorting is going after plugin page loaded"
+msgstr "Выберите столбец, по которому сортировка товаров происходит после загрузки страницы плагина"
+
+msgid "Default sort"
+msgstr "Направление сортировки"
+
+msgid "Select sort direction for Default sort by column above"
+msgstr "Выберите направление сортировки для сортировки по умолчанию по столбцу выше"
+
+msgid "Show button in admin bar"
+msgstr "Кнопка «Редактор продуктов» на верхней админ панели"
+
+msgid "Show Bulk Editor button in admin bar for quick access to the products editor"
+msgstr "Кнопка Редактор продуктов в панели администратора для быстрого доступа к редактору"
+
+msgid "Show thumbnail preview"
+msgstr "Показать предварительный просмотр"
+
+msgid "Show bigger thumbnail preview on mouse over"
+msgstr "Показать больше миниатюры при наведении мышью на превьюшку продукта в таблице"
+
+msgid "Load beauty switchers"
+msgstr "Показывать красивые переключатели"
+
+msgid "Load beauty switchers instead of checkboxes in the products table."
+msgstr "Загрузите красивые переключатели вместо флажков в таблице продуктов."
+
+msgid "Autocomplete max count"
+msgstr "Максимальное количество при автозаполнений"
+
+msgid "How many products display in the autocomplete drop-downs. Uses in up-sells, cross-sells and grouped popups."
+msgstr "Сколько продуктов отображается в раскрывающихся списках автозаполнения. Используется в up-sells, cross-sells и сгруппированные всплывающие окна."
+
+msgid "no rounding"
+msgstr "без округления"
+
+msgid "Select how to round float values fractions in the numeric fields. Works for prices and numeric meta fields. Read more %s."
+msgstr "Выберите способ округления значений чисел с плавающей запятой в числовых полях. Работает с ценами и числовыми мета-полями. Подробнее: %s."
+
+msgid "taxonomies"
+msgstr "таксономии"
+
+msgid "statuses and types"
+msgstr "статусы и типы"
+
+msgid "numeric"
+msgstr "числовой"
+
+msgid "not selected"
+msgstr "не выбран"
+
+msgid "This operation is only for attributes of variable products. Select attributes and their properties."
+msgstr "Эта операция предназначена только для аттрибутов переменных продуктов. Выберите атрибуты и их свойства."
+
+msgid "Add attribute"
+msgstr "Добавить аттрибут"
+
+msgid "Visible on the product page"
+msgstr "Видимый на странице продукта"
+
+msgid "Используется для вариаций"
+msgstr ""
+
+msgid "For [Remove selected downloads] - enter links to downloads which should be removed."
+msgstr "Для [Удалить выбранные загрузки] - введите ссылки на загружаемые файлы, которые необходимо удалить."
+
+msgid "Select CSV data delimiter. ATTENTION: if you going to import data back using native woocommerce importer - delimiter should be comma or import of the data will not be possible!"
+msgstr "Выберите разделитель данных CSV. ВНИМАНИЕ: если вы собираетесь импортировать данные обратно с помощью собственного импортера woocommerce - разделитель должен быть запятой или импорт данных будет невозможен!"
+
+msgid "Note: if horizontal scroll disappeared when it must be visible, click on tab Products Editor to make it visible"
+msgstr "Примечание: если горизонтальная прокрутка исчезла, когда она должна быть видимой, щелкните вкладку «Редактор продуктов», чтобы сделать ее видимой"
+
+msgid "IMPORTANT: if attached attribute is already selected in the product and not marked as [Used for variations] operation of attaching is not be done, so before attaching do [Visibility operation] for the products attributes."
+msgstr "ВАЖНО: если прикрепленный атрибут уже выбран в продукте и не отмечен как [Используется для вариантов], операция присоединения не выполняется, поэтому перед установкой операции [Видимость] для атрибутов продуктов."
+
+msgid "IMPORTANT: if swap-attribute is already selected in the product and not marked as [Used for variations] operation of swapping is not be done, so before swapping do [Visibility operation] for the products attributes"
+msgstr "ВАЖНО: если атрибут swap уже выбран в продукте и не помечен как [Используется для вариантов], операция обмена не выполняется, поэтому перед тем, как выполнить операцию замены, [Свойства видимости] для атрибутов продуктов"
+
+msgid "In FREE version of the plugin you can create one profile only!"
+msgstr "В бесплатной версии плагина вы можете создать только один профиль!"
+
+msgid "Current version of the plugin is FREE. See the difference between FREE and PREMIUM versions %s"
+msgstr "Текущая версия плагина БЕСПЛАТНА. См. Разницу между версиями FREE и PREMIUM% s"
+
+msgid "In red containers wrapped fields which are not possible modify in bulk in FREE version of the plugin!"
+msgstr "В поля обернутые в крвсное, не могут быть модифицированы навалом в бесплатной версии плагина!"
+
+msgid "In FREE version of the plugin it is possible manipulate with 2 meta fields."
+msgstr "В бесплатной версии плагина можно манипулировать двумя мета-полями."
+
+msgid "In FREE version of the plugin it is possible to roll back 2 last operations."
+msgstr "В бесплатной версии плагина можно отменить 2 последних операции."
+
+msgid "In FREE version of the plugin you can change only next fields: %s"
+msgstr "В бесплатной версии плагина вы можете изменить только следующие поля:% s"
+
+msgid "In FREE version of the plugin it is possible to create 1 profile."
+msgstr "В бесплатной версии плагина можно создать 1 профиль."
+
+msgid "array key"
+msgstr "ключ"
+
+msgid "array value"
+msgstr "значение"
+
+msgid "REMEMBER: sequence of data maybe have sense (and maybe not), so be attentive! Do not mix in the same popup window data of array and object data!"
+msgstr "ПОМНИТЕ: последовательность данных может иметь смысл, а может и не иметь, будте внимательны! Не смешивайте в одном попапе данные массива и объекта!"
+
+msgid "append sub item"
+msgstr "добавить вложенность"
+
+msgid "Prepend array key/value"
+msgstr "Добавить первым ключ/значение массива"
+
+msgid "Prepend object set"
+msgstr "Добавить первым ключ/значение объекта"
+
+msgid "Append array key/value"
+msgstr "Добавить последним ключ/значение массива"
+
+msgid "Append object set"
+msgstr "Добавить последним ключ/значение объекта"
+
+msgid "This field is deactivated in FREE version for bulk edit!"
+msgstr "Это поле отключено в БЕСПЛАТНОЙ версии для массового редактирования!"
+
+msgid "product status"
+msgstr "статус продукта"
+
+msgid "Bulk deleting"
+msgstr "Массовое удаление"
+
+msgid "Delete products!"
+msgstr "Удалить продукты!"
+
+msgid "Sure? Delete products?"
+msgstr "Точно? Удалить продукты?"
+
+msgid "By author"
+msgstr "По автору"
+
+

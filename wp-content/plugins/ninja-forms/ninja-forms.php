@@ -3,7 +3,7 @@
 Plugin Name: Ninja Forms
 Plugin URI: http://ninjaforms.com/
 Description: Ninja Forms is a webform builder with unparalleled ease of use and features.
-Version: 3.3.19.1
+Version: 3.3.21.1
 Author: The WP Ninjas
 Author URI: http://ninjaforms.com
 Text Domain: ninja-forms
@@ -57,9 +57,9 @@ if( get_option( 'ninja_forms_load_deprecated', FALSE ) && ! ( isset( $_POST[ 'nf
         /**
          * @since 3.0
          */
-        const VERSION = '3.3.19.1';
+        const VERSION = '3.3.21.1';
 
-        const WP_MIN_VERSION = '4.7';
+        const WP_MIN_VERSION = '4.8';
 
         /**
          * @var Ninja_Forms
@@ -392,6 +392,13 @@ if( get_option( 'ninja_forms_load_deprecated', FALSE ) && ! ( isset( $_POST[ 'nf
                 register_activation_hook( __FILE__, array( self::$instance, 'activation' ) );
 
                 self::$instance->metaboxes[ 'append-form' ] = new NF_Admin_Metaboxes_AppendAForm();
+
+                /*
+                 * Email Telemetry
+                 */
+
+                $email_telemetry = new NF_EmailTelemetry( get_option( 'ninja_forms_optin_reported' ) );
+                $email_telemetry->setup();
 
                 /*
                  * Require EDD auto-update file

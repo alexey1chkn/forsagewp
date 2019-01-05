@@ -1,0 +1,52 @@
+.woobe_history_delete{
+    font-family: 'fontello';
+    font-size: 21px !important;
+    line-height: 32px !important;
+    height: 32px !important;
+}
+
+.woobe_history_delete:before{
+    content: "\eba8";
+}
+
+.woobe_history_revert{
+    font-family: 'fontello';
+    font-size: 21px !important;
+    line-height: 32px !important;
+    height: 32px !important;
+}
+
+.woobe_history_revert:before{
+    content: "\ec7a";
+}
+
+#woobe_history_is_going{
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    animation:woobe_bulk_is_going .95s ease-out infinite;
+    text-shadow: 0 0 5px #abc, 0 0 7px #abc;
+}
+
+@keyframes woobe_history_is_going{
+    from{
+        text-shadow:0px 0px 10px #fff,
+            0px 0px 10px #fff, 
+            0px 0px 25px #fff,
+            0px 0px 25px #fff,
+            0px 0px 25px #fff,
+            0px 0px 25px #fff,
+            0px 0px 25px #fff,
+            0px 0px 25px #fff,
+            0px 0px 50px #fff,
+            0px 0px 50px #fff,
+            0px 0px 50px #7B96B8,
+            0px 0px 150px #7B96B8,
+            0px 10px 100px #7B96B8,
+            0px 10px 100px #7B96B8,
+            0px 10px 100px #7B96B8,
+            0px 10px 100px #7B96B8,
+            0px -10px 100px #7B96B8,
+            0px -10px 100px #7B96B8;
+    }
+}

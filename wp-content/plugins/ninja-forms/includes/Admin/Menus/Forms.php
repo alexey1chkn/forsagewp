@@ -130,7 +130,7 @@ final class NF_Admin_Menus_Forms extends NF_Abstracts_Menu
             <script>
                 var nfDashItems = <?php echo( json_encode( array_values( $dash_items ) ) ); ?>;
                 var useServices = <?php echo ( $use_services ) ? 'true' : 'false'; ?>;
-                var serviceSuccess = '<?php echo ( isset( $_GET[ 'success' ] ) ) ? $_GET[ 'success' ] : ''; ?>';
+                var serviceSuccess = '<?php echo ( isset( $_GET[ 'success' ] ) ) ? htmlspecialchars( $_GET[ 'success' ] ) : ''; ?>';
             </script>
             <?php
 
