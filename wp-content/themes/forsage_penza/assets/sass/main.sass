@@ -733,6 +733,89 @@ ul
 								top: 61px
 		&-email
 			padding: 8px 0px 12px
+	.goods
+		&_selection
+			.row
+				margin: 15px -15px
+			&-tires, &-discs
+				&_main
+					width: 425.6px
+					height: 239.2px
+					border-radius: 30px
+					&-characters					
+						font-size: 19.2px
+						line-height: 20px
+						margin-left: 15.2px			
+						ul
+							list-style: none
+							li
+								margin: 12.8px 0px 7.2px
+								display: flex
+								img
+									margin: 6.4px 14.4px 3.6px		
+					&-visual
+						height: 239.2px				
+						background-color: $tmf
+						margin-left: 8px //Под вопросом
+						img
+							width: 100%
+							height: 100%
+						span		
+							font-size: 28.8px
+							line-height: 28px
+						a			
+							width: 131.2px
+							height: 49.6px
+							font-size: 19.2px
+							line-height: 20px
+							bottom: 14,4px
+							left: 16px		
+				&_others
+					width: 425.6px
+					height: 148px
+					border-radius: 30px
+					margin: 15px 0
+					&-characters					
+						font-size: 19.2px
+						line-height: 20px
+						span
+							font-size: 26.4px
+						ul
+							font-size: 19.2px
+							margin-top: 17px
+							margin-left: 21px
+							font-family: 'Play', arial
+						p
+							font-size: 19.2px
+							margin-top: 17px
+					&-visual
+						width: 100%
+						height: 148px				
+						img
+							width: 100%
+							height: 100%
+						span		
+							font-size: 28.8px
+							line-height: 28px
+						a			
+							width: 131.2px
+							height: 49.6px
+							font-size: 19.2px
+							line-height: 20px
+							bottom: 14,4px
+							left: 16px
+	.characters
+		select
+			min-width: 76px
+			min-height: 24px
+			line-height: 16px
+			font-size: 15.2px
+			margin-right: -12px
+		&-checkbox
+			input[type="checkbox"] + label
+				right: -3px
+				top: 12px 
+	
 
 @media (max-width: 1024px)
 	.top-bar
@@ -740,17 +823,18 @@ ul
 	.content-area
 		margin: -7px
 		width: 100vw
-
+	html 
+		width: 100v
 @media (max-width: 960px)
-.footer
-	&-banner
-		height: 100%
-		&-logo
-			display: flex
-			justify-content: center
-		&-title
-			display: flex
-			flex-direction: column
-			justify-content: center
-			align-items: center
-		
+	.footer
+		&-banner
+			height: 100%
+			&-logo
+				display: flex
+				justify-content: center
+			&-title
+				display: flex
+				flex-direction: column
+				justify-content: center
+				align-items: center
+			

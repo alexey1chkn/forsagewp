@@ -961,6 +961,108 @@ ul .type-product a img {
   .contacts-email {
     padding: 8px 0px 12px;
   }
+
+  .goods_selection .row {
+    margin: 15px -15px;
+  }
+  .goods_selection-tires_main, .goods_selection-discs_main {
+    width: 425.6px;
+    height: 239.2px;
+    border-radius: 30px;
+  }
+  .goods_selection-tires_main-characters, .goods_selection-discs_main-characters {
+    font-size: 19.2px;
+    line-height: 20px;
+    margin-left: 15.2px;
+  }
+  .goods_selection-tires_main-characters ul, .goods_selection-discs_main-characters ul {
+    list-style: none;
+  }
+  .goods_selection-tires_main-characters ul li, .goods_selection-discs_main-characters ul li {
+    margin: 12.8px 0px 7.2px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .goods_selection-tires_main-characters ul li img, .goods_selection-discs_main-characters ul li img {
+    margin: 6.4px 14.4px 3.6px;
+  }
+  .goods_selection-tires_main-visual, .goods_selection-discs_main-visual {
+    height: 239.2px;
+    background-color: #333333;
+    margin-left: 8px;
+  }
+  .goods_selection-tires_main-visual img, .goods_selection-discs_main-visual img {
+    width: 100%;
+    height: 100%;
+  }
+  .goods_selection-tires_main-visual span, .goods_selection-discs_main-visual span {
+    font-size: 28.8px;
+    line-height: 28px;
+  }
+  .goods_selection-tires_main-visual a, .goods_selection-discs_main-visual a {
+    width: 131.2px;
+    height: 49.6px;
+    font-size: 19.2px;
+    line-height: 20px;
+    bottom: 14, 4px;
+    left: 16px;
+  }
+  .goods_selection-tires_others, .goods_selection-discs_others {
+    width: 425.6px;
+    height: 148px;
+    border-radius: 30px;
+    margin: 15px 0;
+  }
+  .goods_selection-tires_others-characters, .goods_selection-discs_others-characters {
+    font-size: 19.2px;
+    line-height: 20px;
+  }
+  .goods_selection-tires_others-characters span, .goods_selection-discs_others-characters span {
+    font-size: 26.4px;
+  }
+  .goods_selection-tires_others-characters ul, .goods_selection-discs_others-characters ul {
+    font-size: 19.2px;
+    margin-top: 17px;
+    margin-left: 21px;
+    font-family: "Play", arial;
+  }
+  .goods_selection-tires_others-characters p, .goods_selection-discs_others-characters p {
+    font-size: 19.2px;
+    margin-top: 17px;
+  }
+  .goods_selection-tires_others-visual, .goods_selection-discs_others-visual {
+    width: 100%;
+    height: 148px;
+  }
+  .goods_selection-tires_others-visual img, .goods_selection-discs_others-visual img {
+    width: 100%;
+    height: 100%;
+  }
+  .goods_selection-tires_others-visual span, .goods_selection-discs_others-visual span {
+    font-size: 28.8px;
+    line-height: 28px;
+  }
+  .goods_selection-tires_others-visual a, .goods_selection-discs_others-visual a {
+    width: 131.2px;
+    height: 49.6px;
+    font-size: 19.2px;
+    line-height: 20px;
+    bottom: 14, 4px;
+    left: 16px;
+  }
+
+  .characters select {
+    min-width: 76px;
+    min-height: 24px;
+    line-height: 16px;
+    font-size: 15.2px;
+    margin-right: -12px;
+  }
+  .characters-checkbox input[type="checkbox"] + label {
+    right: -3px;
+    top: 12px;
+  }
 }
 @media (max-width: 1024px) {
   .top-bar {
@@ -971,30 +1073,36 @@ ul .type-product a img {
     margin: -7px;
     width: 100vw;
   }
+
+  html {
+    width: 100v;
+  }
 }
-.footer-banner {
-  height: 100%;
-}
-.footer-banner-logo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-.footer-banner-title {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+@media (max-width: 960px) {
+  .footer-banner {
+    height: 100%;
+  }
+  .footer-banner-logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .footer-banner-title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
