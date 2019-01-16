@@ -23,6 +23,22 @@
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 		<!--FONTS-->
 	<?php wp_head(); ?>
+	<!-- Yandex.Metrika counter --> 
+<script type="text/javascript" >
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(51907925, "init", {
+        id:51907925,
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true
+   });
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/51907925" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
 </head>
 
 <body <?php body_class(); ?>>
@@ -35,17 +51,17 @@
 			the_custom_logo();
 			if ( is_front_page() && is_home() ) :
 				?>
-				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+				<h1 class="site-title"><a href="<?php  echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 				<?php
 			else :
 				?>
-				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
+				<p class="site-title"><a href="<?php  echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
 				<?php
 			endif;
 			$forsage_penza_description = get_bloginfo( 'description', 'display' );
 			if ( $forsage_penza_description || is_customize_preview() ) :
 				?>
-				<p class="site-description"><?php echo $forsage_penza_description; /* WPCS: xss ok. */ ?></p>
+				<p class="site-description"><?php  echo $forsage_penza_description; /* WPCS: xss ok. */ ?></p>
 			<?php endif; ?>
 		</div><!-- .site-branding -->
 
@@ -71,22 +87,22 @@
 				<div class="header">
 					<div class="row align-items-center">			
 						<div class="col-4">
-							<img src="<?echo get_template_directory_uri();?>/assets/img/logo.svg" alt="">
+							<img src="<?php echo get_template_directory_uri();?>/assets/img/logo.svg" alt="">
 						</div>
 						<div class="col-3">
-							<img src="<?echo get_template_directory_uri();?>/assets/img/Group.svg" alt="">
+							<img src="<?php echo get_template_directory_uri();?>/assets/img/Group.svg" alt="">
 						</div>
 						<div class="col-3">
-							<img src="<?echo get_template_directory_uri();?>/assets/img/pay.svg" alt="">
+							<img src="<?php echo get_template_directory_uri();?>/assets/img/pay.svg" alt="">
 						</div>
 						<div class="col-2">
 							<div class="header-cart">
-								<a href="/cart/"><img src="<?echo get_template_directory_uri();?>/assets/img/Vector.svg" alt=""></a>
+								<a href="/cart/"><img src="<?php echo get_template_directory_uri();?>/assets/img/Vector.svg" alt=""></a>
 								<div class="header-cart-event">
 									<span>
 									<?php
 										global $woocommerce; 
-										echo sprintf($woocommerce->cart->cart_contents_count); 
+										 echo sprintf($woocommerce->cart->cart_contents_count); 
 									?>
 									</span>
 								</div>
@@ -100,7 +116,7 @@
 						<div class="col-4">
 							<div class="contacts-opening_hours">
 								<div class="contacts-opening_hours-logo">
-									<img src="<?echo get_template_directory_uri();?>/assets/img/timer.svg" alt="">
+									<img src="<?php echo get_template_directory_uri();?>/assets/img/timer.svg" alt="">
 								</div>
 								<div class="contacts-opening_hours-ways">
 									<div class="contacts-opening_hours-ways-first_way">Пн-Пт 8:30 - 19:00</div>
@@ -113,7 +129,7 @@
 						<div class="col-4">
 							<div class="contacts-phone-numbers">
 								<div class="contacts-phone-numbers-logo">
-									<img src="<?echo get_template_directory_uri();?>/assets/img/phone.svg" alt="">
+									<img src="<?php echo get_template_directory_uri();?>/assets/img/phone.svg" alt="">
 								</div>
 								<div class="contacts-phone-numbers-list">
 									<div class="contacts-phone-numbers-list-nubmer-1">Отдел продаж: 8 (8412) 20-45-40</div>
@@ -135,11 +151,11 @@
 							<ul>
 								<li><a href="/">Главная</a></li>
 								<li><a href="/vybor-shin">Шины</a></li>
-								<li><a href="#">Диски</a></li>
-								<li><a href="#">АКБ</a></li>
-								<li><a href="#">Крепежи</a></li>
-								<li><a href="#">Кольца</a></li>
-								<li><a href="#">О нас</a></li>
+								<li><a href="/diski">Диски</a></li>
+								<li><a href="/akb">АКБ</a></li>
+								<li><a href="/krepezhi">Крепежи</a></li>
+								<li><a href="/kolca">Кольца</a></li>
+								<li><a href="/o-nas">О нас</a></li>
 							</ul>
 						</div>
 					</div>

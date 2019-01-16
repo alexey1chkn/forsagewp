@@ -22,9 +22,13 @@ global $product;
 if ( empty( $product ) || ! $product->is_visible() ) {
 	return;
 }
-// $shirina_shiny = $_GET['shirina-shiny'];
-// $posadochnyj_diametr = $_GET['posadochnyj_diametr'];
-// if ( $shirina_shiny == 195 && $posadochnyj_diametr == 15):
+//Универсальные данные для сортировки
+// $_GET['shirina-shiny'] != NULL ? $shirina_shiny = $_GET['shirina-shiny'] : ;
+// $_GET['diametr-diska'] != NULL ? $diametr_diska = $_GET['diametr-diska'] : $diametr_diska = $product -> get_attribute('diametr-diska');
+// $_GET['vylet-diska'] != NULL ? $vylet_diska = $_GET['vylet-diska'] : $vylet_diska= $product -> get_attribute('vylet-diska');
+// $_GET['shirina-diska'] != NULL ? $shirina_diska = $_GET['shirina-diska'] : $shirina_diska = $product -> get_attribute('shirina-diska');
+
+// if ( $product -> get_attribute('diametr-diska') == $diametr_diska && $product -> get_attribute('vylet-diska') == $vylet_diska && $product -> get_attribute('shirina-diska') == $shirina_diska):
 ?>
 
 <li <?php wc_product_class(); ?>>
@@ -68,5 +72,5 @@ if ( empty( $product ) || ! $product->is_visible() ) {
 
 </li>
 <?
-// endif;
+//endif;
 ?>

@@ -490,7 +490,7 @@ span .custom_title {
   line-height: 34px;
   margin: 12px 0 0 20px;
 }
-.goods_selection-discs_main-visual a {
+.goods_selection-discs_main-visual input {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -906,6 +906,39 @@ ul .type-product a img {
   display: none;
 }
 
+/* Pagination */
+.pagination {
+  clear: both;
+  position: relative;
+  font-size: 11px;
+  line-height: 13px;
+  float: right;
+}
+
+.pagination span, .pagination a {
+  display: block;
+  float: left;
+  margin: 2px 2px 2px 0;
+  padding: 6px 9px 5px 9px;
+  text-decoration: none;
+  width: auto;
+  color: #fff;
+  background: #555;
+  -webkit-transition: background 0.15s ease-in-out;
+  transition: background 0.15s ease-in-out;
+}
+
+.pagination a:hover {
+  color: #fff;
+  background: #6AAC70;
+}
+
+.pagination .current {
+  padding: 6px 9px 5px 9px;
+  background: #6AAC70;
+  color: #fff;
+}
+
 @media (max-width: 1200px) {
   .contacts {
     font-size: 17px;
@@ -1063,6 +1096,10 @@ ul .type-product a img {
     right: -3px;
     top: 12px;
   }
+
+  .footer-banner-title {
+    font-size: 28.8px;
+  }
 }
 @media (max-width: 1024px) {
   .top-bar {
@@ -1072,33 +1109,5 @@ ul .type-product a img {
   .content-area {
     margin: -7px;
     width: 100vw;
-  }
-}
-@media (max-width: 960px) {
-  .footer-banner {
-    height: 100%;
-  }
-  .footer-banner-logo {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  .footer-banner-title {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
   }
 }
