@@ -906,6 +906,10 @@ ul .type-product a img {
   display: none;
 }
 
+.products {
+  margin-top: 27px !important;
+}
+
 .pagination_page_down {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -914,7 +918,7 @@ ul .type-product a img {
       -ms-flex-pack: center;
           justify-content: center;
   padding: 10px;
-  margin: 27px;
+  margin: -10px 0 27px 0;
 }
 .pagination_page_down a {
   display: inline-block;

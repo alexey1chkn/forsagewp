@@ -10,20 +10,10 @@ get_header();
 $shirina_shiny = $_GET['shirina_shiny'];
 ?>
 <?php
-// if (empty($_GET))
-// 	echo do_shortcode('[products per_page="12" columns="4" paginate="true" category="diski" orderby="popularity"]');
-// else
-// 	echo do_shortcode('[products per_page="100" columns="4" paginate="true" category="diski" orderby="popularity"]');
 global $product;
 $diametr_diska = $_GET['diametr-diska'];
 $vylet_diska = $_GET['vylet-diska'];
 $shirina_diska = $_GET['shirina-diska'];
-function start_of_filter(){
-	return array( 
-	'post_type' => 'product', 
-	'posts_per_page' => 12, 
-	'product_cat' => 'diski', );
-}
 
 function disks_filter(){
 	global $diametr_diska;
@@ -57,42 +47,47 @@ function disks_filter(){
 }
 
 ?>
-
-	<ul class="products">
-	<?php
-	if( empty($_GET) || $_GET['product-page'] != NULL ){
-		echo do_shortcode('[products per_page="12" columns="4" paginate="true" category="diski" orderby="popularity"]');
-	}
-	elseif( !empty($_GET) ){
-		$_GET['page_my'] != NULL ? $page = $_GET['page_my'] : $page = 1;
-		$args_array = array( 
-		'post_type' => 'product', 
-		'posts_per_page' => 12, 
-		'product_cat' => 'diski',
-		'paged' => $page,
-		'tax_query' => array( 
-			'relation' => 'AND', 
-			disks_filter()));
-		$loop = new WP_Query( $args_array );
-		$all_posts = $loop->found_posts;
-		$page_quantity = ceil( $all_posts / 12 );
-		if ( $loop->have_posts() ) {
-			while ( $loop->have_posts() ) : $loop->the_post();
-				wc_get_template_part( 'content', 'product' );
-			endwhile;
-		} else {
-			echo __( '<h1 style="font-size: 40px; padding: 21px">Ничего не найдено. Попробуйте ещё раз</h1><br><a style="font-size: 21px; line-height: 40px; padding: 21px" href="/"><< Вернуться назад</a>' );
-		}
-		wp_reset_postdata();
-	}
-	?>
-</ul>
+<div class="woocommerce columns-4">
+	<ul class="products columns-4">
+		<?php
+			$_GET['page_my'] != NULL ? $page = $_GET['page_my'] : $page = 1;
+			$args_array = array( 
+			'post_type' => 'product', 
+			'posts_per_page' => 12, 
+			'product_cat' => 'diski',
+			'paged' => $page,
+			'tax_query' => array( 
+				'relation' => 'AND', 
+				disks_filter()));
+			$loop = new WP_Query( $args_array );
+			$all_posts = $loop->found_posts;
+			$page_quantity = ceil( $all_posts / 12 );
+			if ( $loop->have_posts() ) {
+				while ( $loop->have_posts() ) : $loop->the_post();
+					wc_get_template_part( 'content', 'product' );
+				endwhile;
+			} else {
+				echo __( '<h1 style="font-size: 40px; padding: 21px">Ничего не найдено. Попробуйте ещё раз</h1><br><a style="font-size: 21px; line-height: 40px; padding: 21px" href="/"><< Вернуться назад</a>' );
+			}
+			wp_reset_postdata();
+		?>
+	</ul>
+</div>
 
 <nav class="navigation pagination_page_down" role="navigation">
 	<?php
 		for($i = 1; $i <= $page_quantity; $i++){
 			if ( $_GET['page_my'] == NULL ){
-				echo '<a href="' . $_SERVER['REQUEST_URI'] . '&page_my=' . $i . '"><span>' . $i . '</span></a>';
+				$page = $_GET['page_my'];
+				if ($i <= 3 || $i > $page_quantity-3 || $i == $page-1 || $i == $page || $i == $page+1)
+					if( $i == $page ) 
+						echo '<a class="pagination_page_active" href="' . $_SERVER['REQUEST_URI'] . '&page_my=' .  $i . '"><span>' . $i . '</span></a>';
+					else 
+						echo '<a href="' . $_SERVER['REQUEST_URI'] . '&page_my=' . $i . '"><span>' . $i . '</span></a>';
+				elseif($count < 3 ){
+						echo '<span class="pagination_page_between">.</span>';
+						$count++;
+				}
 			}
 			elseif( $i < 10){
 				$page = $_GET['page_my'];
