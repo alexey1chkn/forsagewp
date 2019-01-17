@@ -122,8 +122,4 @@ function disks_filter(){
 	?>
 </nav>
 
-<?php get_footer(); 
-//posadochnyj-diametr 14
-//attribute="shirina-shiny" filter="185"
-?>
-
+<?php get_footer(); ?>
