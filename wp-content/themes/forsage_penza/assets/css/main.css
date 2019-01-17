@@ -60,6 +60,11 @@ html {
   font-family: "Play", arial;
 }
 
+.wrapper {
+  max-width: 1200px;
+  margin: auto;
+}
+
 span .custom_title {
   font-family: "Europe Bold Italic", arial;
 }
@@ -120,7 +125,7 @@ span .custom_title {
   border-radius: 1px;
   font-size: 21px;
   line-height: 25px;
-  margin: 0 -100px;
+  margin: 0 -40px;
   font-family: "Play", arial;
 }
 .contacts-opening_hours {
@@ -153,7 +158,7 @@ span .custom_title {
   border-top: 10px solid #333333;
   position: absolute;
   top: 17px;
-  right: 100px;
+  right: 80px;
 }
 .contacts-opening_hours:hover .contacts-opening_hours-ways {
   background-color: #F4F4F4;
@@ -226,7 +231,7 @@ span .custom_title {
   border-top: 10px solid #333333;
   position: absolute;
   top: 17px;
-  right: 60px;
+  right: 50px;
 }
 .contacts-phone-numbers:hover .contacts-phone-numbers-list {
   background-color: #F4F4F4;
@@ -281,7 +286,7 @@ span .custom_title {
 
 .main-menu {
   background-color: #333333;
-  margin: 0 -100px;
+  margin: 0 -40px;
 }
 .main-menu ul {
   text-decoration: none;
@@ -312,6 +317,7 @@ span .custom_title {
 }
 
 .slider-main_page {
+  max-width: 1140px;
   margin: 30px 0px;
 }
 .slider-main_page .carousel-inner {
@@ -323,7 +329,7 @@ span .custom_title {
   font-weight: 600;
 }
 .goods_selection .row {
-  margin-bottom: 30px;
+  margin-bottom: 61px;
 }
 .goods_selection-tires_main {
   width: 532px;
@@ -515,12 +521,14 @@ span .custom_title {
 
 .map-main_page {
   margin-bottom: 30px;
-  height: 548px;
-  margin: 0 -100px;
+  height: 540px;
+  max-width: 1280px;
+  margin: 0 -40px;
   position: relative;
 }
 .map-main_page iframe {
   height: inherit;
+  max-width: inherit;
 }
 .map-main_page-info {
   font-family: "Play", arial;
@@ -584,7 +592,7 @@ span .custom_title {
   height: 165px;
   background-color: #F4F4F4;
   padding: 27px 0;
-  margin: 0px -100px;
+  margin: 0px -40px;
 }
 .footer-banner-logo img {
   height: 107px;
@@ -604,7 +612,7 @@ span .custom_title {
   display: flex;
   height: 78px;
   background-color: #333333;
-  margin: 0 -100px 0px;
+  margin: 0 -40px 0px;
   padding: 25px 0 !important;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -625,7 +633,7 @@ span .custom_title {
       -ms-flex-pack: center;
           justify-content: center;
   text-align: center;
-  margin: 0px -100px;
+  margin: 0px -40px;
   padding: 6px 0 7px;
   background-color: #212121;
   color: rgba(255, 255, 255, 0.54);

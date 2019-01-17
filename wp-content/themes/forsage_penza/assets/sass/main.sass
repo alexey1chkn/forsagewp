@@ -5,6 +5,10 @@
 html
 	font-family: 'Play', arial
 
+.wrapper
+	max-width: 1200px
+	margin: auto
+
 span 
 	.custom_title
 		font-family: 'Europe Bold Italic', arial
@@ -45,7 +49,7 @@ span
 	border-radius: 1px
 	font-size: 21px
 	line-height: 25px
-	margin: 0 -100px
+	margin: 0 -40px
 	font-family: 'Play', arial
 	&-opening_hours
 		position: relative
@@ -72,7 +76,7 @@ span
 				border-top: 10px solid $tmf
 				position: absolute
 				top: 17px
-				right: 100px
+				right: 80px
 		&:hover
 			.contacts-opening_hours
 				&-ways
@@ -135,7 +139,7 @@ span
 					border-top: 10px solid $tmf
 					position: absolute
 					top: 17px
-					right: 60px
+					right: 50px
 		&:hover
 			.contacts-phone-numbers
 				&-list
@@ -181,7 +185,7 @@ span
 		
 .main-menu
 	background-color: $tmf
-	margin: 0 -100px
+	margin: 0 -40px
 	ul
 		text-decoration: none
 		list-style: none
@@ -204,6 +208,7 @@ span
 				color: $tmf
 .slider
 	&-main_page
+		max-width: 1140px
 		margin: 30px 0px
 		.carousel-inner
 			border-radius: 30px
@@ -213,7 +218,7 @@ span
 		font-family: 'Europe Bold Italic', arial
 		font-weight: 600
 		.row
-			margin-bottom: 30px
+			margin-bottom: 61px
 		&-tires
 			&_main
 				width: 532px
@@ -364,11 +369,13 @@ span
 .map
 	&-main_page
 		margin-bottom: 30px
-		height: 548px
-		margin: 0 -100px
+		height: 540px
+		max-width: 1280px
+		margin: 0 -40px
 		position: relative
 		iframe
 			height: inherit
+			max-width: inherit
 		&-info
 			font-family: 'Play', arial
 			font-weight: normal
@@ -416,7 +423,7 @@ span
 		height: 165px
 		background-color: $bgf
 		padding: 27px 0
-		margin: 0px -100px
+		margin: 0px -40px
 		&-logo
 			img
 				height: 107px
@@ -433,7 +440,7 @@ span
 		display: flex
 		height: 78px
 		background-color: $tmf
-		margin: 0 -100px 0px
+		margin: 0 -40px 0px
 		padding: 25px 0 !important
 		justify-content: center
 		text-align: center
@@ -447,7 +454,7 @@ span
 		height: 34px
 		justify-content: center
 		text-align: center
-		margin: 0px -100px
+		margin: 0px -40px
 		padding: 6px 0 7px
 		background-color: darken($tmf, 7%)
 		color: rgba($white, 0.54)

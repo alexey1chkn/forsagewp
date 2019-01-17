@@ -43,8 +43,8 @@ get_header();
 			?>
 			<div class="goods_selection">
 				<div class="row">
-					<form action="" method="GET">
-						<div class="col-lg-6 col-12">
+					<div class="col-lg-6 col-12">
+						<form action="" method="GET">
 							<div class="goods_selection-tires_main">
 								<div class="row">
 									<div class="col-lg-7 col-md-8 col-7">								
@@ -121,11 +121,11 @@ get_header();
 									</div>
 								</div>
 							</div>
-						</div>
-					</form>
+						</form>
+					</div>
 					<!--END FORM=================================================================================================================-->
-					<form action="/diski" method="GET">
-						<div class="col-lg-6 col-12">
+					<div class="col-lg-6 col-12">
+						<form action="/diski" method="GET">
 							<div class="goods_selection-discs_main">
 								<div class="row">
 									<div class="col-7">
@@ -223,8 +223,8 @@ get_header();
 									</div>
 								</div>
 							</div>
-						</div>
-					</form>
+						</form>
+					</div>
 				</div>
 				<!--EXTRA GOODS+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++========================================================================-->
 				<div class="row">

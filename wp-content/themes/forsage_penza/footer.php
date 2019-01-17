@@ -14,8 +14,8 @@
 	</div><!-- #content -->
 
 </div><!-- #page -->		
-		<div class="container">
-
+<div class="wrapper">
+	<div class="container-fluid">
 		<div class="bottom-bar">
 			<div class="row">
 				<div class="col-xl-12 col-md-0">
