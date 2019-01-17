@@ -62,3 +62,31 @@ Stack trace:
 
 2019-01-17T09:43:38+00:00 CRITICAL syntax error, unexpected ';', expecting ')' в D:\OSPanel\domains\forsagewp\wp-content\themes\forsage_penza\disks_product_list.php на строке 27
 
+2019-01-17T10:16:43+00:00 CRITICAL syntax error, unexpected 'else' (T_ELSE) в D:\OSPanel\domains\forsagewp\wp-content\themes\forsage_penza\disks_product_list.php на строке 113
+
+2019-01-17T10:16:51+00:00 CRITICAL syntax error, unexpected 'else' (T_ELSE) в D:\OSPanel\domains\forsagewp\wp-content\themes\forsage_penza\disks_product_list.php на строке 113
+
+2019-01-17T10:59:12+00:00 CRITICAL syntax error, unexpected ';' в D:\OSPanel\domains\forsagewp\wp-content\themes\forsage_penza\disks_product_list.php на строке 21
+
+2019-01-17T11:19:26+00:00 CRITICAL syntax error, unexpected '$vylet_diska' (T_VARIABLE), expecting ',' or ';' в D:\OSPanel\domains\forsagewp\wp-content\themes\forsage_penza\disks_product_list.php на строке 92
+
+2019-01-17T11:20:20+00:00 CRITICAL syntax error, unexpected '?' в D:\OSPanel\domains\forsagewp\wp-content\themes\forsage_penza\disks_product_list.php на строке 92
+
+2019-01-17T11:54:16+00:00 CRITICAL syntax error, unexpected '.' в D:\OSPanel\domains\forsagewp\wp-content\themes\forsage_penza\disks_product_list.php на строке 95
+
+2019-01-17T12:02:36+00:00 CRITICAL syntax error, unexpected ''">'' (T_CONSTANT_ENCAPSED_STRING), expecting ',' or ';' в D:\OSPanel\domains\forsagewp\wp-content\themes\forsage_penza\disks_product_list.php на строке 98
+
+2019-01-17T13:20:11+00:00 CRITICAL syntax error, unexpected '=' в D:\OSPanel\domains\forsagewp\wp-content\themes\forsage_penza\disks_product_list.php на строке 106
+
+2019-01-17T13:20:25+00:00 CRITICAL syntax error, unexpected '=' в D:\OSPanel\domains\forsagewp\wp-content\themes\forsage_penza\disks_product_list.php на строке 106
+
+2019-01-17T13:20:41+00:00 CRITICAL syntax error, unexpected '-' в D:\OSPanel\domains\forsagewp\wp-content\themes\forsage_penza\disks_product_list.php на строке 108
+
+2019-01-17T13:50:23+00:00 CRITICAL syntax error, unexpected 'if' (T_IF) в D:\OSPanel\domains\forsagewp\wp-content\themes\forsage_penza\disks_product_list.php на строке 99
+
+2019-01-17T14:03:16+00:00 CRITICAL syntax error, unexpected '}', expecting ',' or ';' в D:\OSPanel\domains\forsagewp\wp-content\themes\forsage_penza\disks_product_list.php на строке 103
+
+2019-01-17T14:22:35+00:00 CRITICAL syntax error, unexpected 'echo' (T_ECHO) в D:\OSPanel\domains\forsagewp\wp-content\themes\forsage_penza\disks_product_list.php на строке 100
+
+2019-01-17T14:22:51+00:00 CRITICAL syntax error, unexpected ';' в D:\OSPanel\domains\forsagewp\wp-content\themes\forsage_penza\disks_product_list.php на строке 100
+

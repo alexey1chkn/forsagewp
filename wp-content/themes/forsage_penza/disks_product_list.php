@@ -18,7 +18,6 @@ global $product;
 $diametr_diska = $_GET['diametr-diska'];
 $vylet_diska = $_GET['vylet-diska'];
 $shirina_diska = $_GET['shirina-diska'];
-
 function start_of_filter(){
 	return array( 
 	'post_type' => 'product', 
@@ -65,14 +64,18 @@ function disks_filter(){
 		echo do_shortcode('[products per_page="12" columns="4" paginate="true" category="diski" orderby="popularity"]');
 	}
 	elseif( !empty($_GET) ){
+		$_GET['page_my'] != NULL ? $page = $_GET['page_my'] : $page = 1;
 		$args_array = array( 
 		'post_type' => 'product', 
 		'posts_per_page' => 12, 
-		'product_cat' => 'diski', 
+		'product_cat' => 'diski',
+		'paged' => $page,
 		'tax_query' => array( 
 			'relation' => 'AND', 
 			disks_filter()));
 		$loop = new WP_Query( $args_array );
+		$all_posts = $loop->found_posts;
+		$page_quantity = ceil( $all_posts / 12 );
 		if ( $loop->have_posts() ) {
 			while ( $loop->have_posts() ) : $loop->the_post();
 				wc_get_template_part( 'content', 'product' );
@@ -84,7 +87,43 @@ function disks_filter(){
 	}
 	?>
 </ul>
+
+<nav class="navigation pagination_page_down" role="navigation">
+	<?php
+		for($i = 1; $i <= $page_quantity; $i++){
+			if ( $_GET['page_my'] == NULL ){
+				echo '<a href="' . $_SERVER['REQUEST_URI'] . '&page_my=' . $i . '"><span>' . $i . '</span></a>';
+			}
+			elseif( $i < 10){
+				$page = $_GET['page_my'];
+				if ($i <= 3 || $i > $page_quantity-3 || $i == $page-1 || $i == $page || $i == $page+1)
+					if( $i == $page ) 
+						echo '<a class="pagination_page_active" href="' . substr($_SERVER['REQUEST_URI'], 0, -1) .  $i . '"><span>' . $i . '</span></a>';
+					else 
+						echo '<a href="' . substr($_SERVER['REQUEST_URI'], 0, -1) .  $i . '"><span>' . $i . '</span></a>';
+				elseif($count < 3 ){
+						echo '<span class="pagination_page_between">.</span>';
+						$count++;
+				}
+			}
+			else{
+				$page = $_GET['page_my'];
+				if ($i <= 3 || $i > $page_quantity-3 || $i == $page-1 || $i == $page || $i == $page+1)
+					if( $i == $page ) 
+						echo '<a class="pagination_page_active" href="' . substr($_SERVER['REQUEST_URI'], 0, -2) .  $i . '"><span>' . $i . '</span></a>';
+					else 
+						echo '<a href="' . substr($_SERVER['REQUEST_URI'], 0, -1) .  $i . '"><span>' . $i . '</span></a>';
+				elseif($count < 3 ){
+						echo '<span class="pagination_page_between">.</span>';
+						$count++;
+				}
+			}
+		}
+	?>
+</nav>
+
 <?php get_footer(); 
 //posadochnyj-diametr 14
 //attribute="shirina-shiny" filter="185"
 ?>
+
