@@ -25,6 +25,23 @@ final class NF_Admin_Menus_Forms extends NF_Abstracts_Menu
         }
 
         add_action( 'admin_body_class', array( $this, 'body_class' ) );
+        add_action( 'admin_init', array( $this, 'nf_upgrade_redirect' ) );
+    }
+
+    /**
+     * If we have required updates, redirect to the main Ninja Forms page
+     */
+    public function nf_upgrade_redirect() {
+        global $pagenow;
+            
+        if( "1" == get_option( 'ninja_forms_needs_updates' ) &&
+            'admin.php' == $pagenow && 
+            'ninja-forms' == $_GET[ 'page' ] &&
+            isset( $_GET[ 'form_id' ] ) ) {
+                wp_safe_redirect( admin_url( 'admin.php?page=ninja-forms' ), 301 );
+                exit;
+            
+        }
     }
 
     public function body_class( $classes )
@@ -134,10 +151,13 @@ final class NF_Admin_Menus_Forms extends NF_Abstracts_Menu
             </script>
             <?php
 
+            $required_updates = get_option( 'ninja_forms_needs_updates', 0 );
+
             wp_enqueue_script( 'backbone-radio', Ninja_Forms::$url . 'assets/js/lib/backbone.radio.min.js', array( 'jquery', 'backbone' ) );
             wp_enqueue_script( 'backbone-marionette-3', Ninja_Forms::$url . 'assets/js/lib/backbone.marionette3.min.js', array( 'jquery', 'backbone' ) );
             wp_enqueue_script( 'nf-jbox', Ninja_Forms::$url . 'assets/js/lib/jBox.min.js', array( 'jquery' ) );
             wp_enqueue_script( 'nf-ninjamodal', Ninja_Forms::$url . 'assets/js/lib/ninjaModal.js', array( 'jquery' ), $this->ver );
+            wp_enqueue_script( 'nf-batch-processor', Ninja_Forms::$url . 'assets/js/lib/batch-processor.js', array( 'nf-ninjamodal' ), $this->ver );
             wp_enqueue_script( 'nf-moment', Ninja_Forms::$url . 'assets/js/lib/moment-with-locales.min.js', array( 'jquery', 'nf-dashboard' ) );
             wp_enqueue_script( 'nf-dashboard', Ninja_Forms::$url . 'assets/js/min/dashboard.min.js', array( 'backbone-radio', 'backbone-marionette-3' ), $this->ver );
 
@@ -147,19 +167,23 @@ final class NF_Admin_Menus_Forms extends NF_Abstracts_Menu
             wp_localize_script( 'nf-dashboard', 'nfAdmin', array(
                 'ajaxNonce'         => wp_create_nonce( 'ninja_forms_dashboard_nonce' ),
                 'batchNonce'        => wp_create_nonce( 'ninja_forms_batch_nonce' ),
+                'updateNonce'       => wp_create_nonce( 'ninja_forms_required_update_nonce' ),
                 'formTelemetry'     => ( get_option( 'nf_form_tel_sent' ) ) ? 0 : 1,
                 'showOptin'         => ( get_option( 'ninja_forms_do_not_allow_tracking' ) ||
                                          get_option( 'ninja_forms_allow_tracking' ) ) ? 0 : 1,
+                'requiredUpdates'    => $required_updates,
                 'currentUserEmail'  => $current_user->user_email,
-                'doingCleanup'      => ( ! get_option( 'ninja_forms_data_is_clean' ) &&
-                                        isset( $_REQUEST[ 'action' ] ) &&
-                                        'cleanup' == $_REQUEST[ 'action' ] ) ? 1 : 0,
+                'builderURL'        => admin_url( 'admin.php?page=ninja-forms&form_id=' ),
             ) );
 
             wp_enqueue_style( 'nf-builder', Ninja_Forms::$url . 'assets/css/builder.css', array(), $this->ver );
             wp_enqueue_style( 'nf-dashboard', Ninja_Forms::$url . 'assets/css/dashboard.min.css', array(), $this->ver );
             wp_enqueue_style( 'nf-jbox', Ninja_Forms::$url . 'assets/css/jBox.css' );
             wp_enqueue_style( 'nf-font-awesome', Ninja_Forms::$url . 'assets/css/font-awesome.min.css' );
+
+            if( $required_updates ) {
+                wp_enqueue_style( 'nf-updates-styles', Ninja_Forms::$url . '/assets/css/required-updates.css' );
+            }
 
             Ninja_Forms::template( 'admin-menu-dashboard.html.php' );
         }
@@ -170,6 +194,11 @@ final class NF_Admin_Menus_Forms extends NF_Abstracts_Menu
         add_submenu_page( 'ninja-forms', '', '', 'read', '', '' );
     }
 
+    /**
+     * TODO: Remove this function and its hook because we are handling template imports via the batch processor.
+     * @since  3.0
+     * @return void
+     */
     private function import_from_template()
     {
         $template = sanitize_title( $_GET['form_id'] );

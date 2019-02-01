@@ -185,19 +185,22 @@ add_action('woocommerce_single_product_summary', 'my_custom_single_product_summa
 
 function my_custom_single_product_summary(){
 	global $product;
-	$cat = count( $product->get_category_ids() );
 	echo '<p class="my_custom-single_product-summary-price">' . $product->get_price_html() . '</p>';
-	if ( $cat == 1 ) {
+
+	$product->get_attribute('shipy') == true ? $shipy = "есть" : $shipy = "нет";
+
+	if ( $product->get_attribute('kategoriya') == 'Шины' ) {
 	echo 
 	'<div class="my_custom-single_product-summary-wrapper">
 		<div class="my_custom-single_product-summary-content">
 		<div class="my_custom-single_product-summary-content-line"><div class="my_custom-single_product-summary-content-line-element">Производитель: ' . $product->get_attribute('proizvoditel') . '</div></div>' . 
 		'<div class="my_custom-single_product-summary-content-line"><div class="my_custom-single_product-summary-content-line-element">Ширина: ' . $product->get_attribute('shirina-shiny') . '</div>' .
-		'<div class="my_custom-single_product-summary-content-line-element">Высота*: ' . $product->get_attribute('shirina-shiny'). '</div></div>' .
+		'<div class="my_custom-single_product-summary-content-line-element">Высота: ' . $product->get_attribute('profil-shiny'). '</div></div>' .
 		'<div class="my_custom-single_product-summary-content-line"><div class="my_custom-single_product-summary-content-line-element">Диаметр: ' . $product->get_attribute('posadochnyj-diametr'). '</div>' .
-			'<div class="my_custom-single_product-summary-content-line-element">Шипы*: ' . $product->get_attribute('shirina-shiny') . '</div></div>' . 
-		'<div class="my_custom-single_product-summary-content-line"><div class="my_custom-single_product-summary-content-line-element">Сезон*: ' . $product->get_attribute('shirina-shiny') . '</div></div>';
+			'<div class="my_custom-single_product-summary-content-line-element">Шипы: ' . $shipy . '</div></div>' . 
+		'<div class="my_custom-single_product-summary-content-line"><div class="my_custom-single_product-summary-content-line-element">Сезон: ' . $product->get_attribute('sezonnost') . '</div></div>';
 	}
+	//elseif( $product->get_attribute('kategoriya') == 'Диски' )
 	$id = $product->get_id();
 	if ( $product->is_in_stock() ) {
     echo '<div class="my_custom-single_product-summary-content-line">
@@ -239,4 +242,22 @@ function register_my_widgets(){
 		'name' => "Ширина шины",
 		'id' => 'shirina-shiny',
 	) );
+}
+
+
+add_filter( 'woocommerce_checkout_fields' , 'custom_override_checkout_fields' );
+  
+function custom_override_checkout_fields( $fields ) {
+  unset($fields['billing']['billing_country']);  //удаляем! тут хранится значение страны оплаты
+  unset($fields['shipping']['shipping_country']); ////удаляем! тут хранится значение страны доставки
+	
+	unset($fields['billing']['billing_company']);
+	unset($fields['billing']['billing_address_1']);
+	unset($fields['billing']['billing_address_2']);
+	unset($fields['billing']['billing_city']);
+	unset($fields['billing']['billing_postcode']);
+	unset($fields['billing']['billing_country']);
+	unset($fields['billing']['billing_state']);
+	unset($fields['order']['order_comments']);
+  return $fields;
 }

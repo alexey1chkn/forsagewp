@@ -1,0 +1,11 @@
+2019-01-30T09:53:11+00:00 CRITICAL Uncaught Exception: Undefined field id. in D:\OSPanel\domains\forsagewp\wp-content\plugins\wp-all-import\models\model\record.php:148
+Stack trace:
+#0 D:\OSPanel\domains\forsagewp\wp-content\plugins\wp-all-import\controllers\admin\import.php(2413): PMXI_Model_Record->__get('id')
+#1 D:\OSPanel\domains\forsagewp\wp-content\plugins\wp-all-import\plugin.php(583): PMXI_Admin_Import->process()
+#2 D:\OSPanel\domains\forsagewp\wp-includes\class-wp-hook.php(286): PMXI_Plugin->adminInit('')
+#3 D:\OSPanel\domains\forsagewp\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#4 D:\OSPanel\domains\forsagewp\wp-includes\plugin.php(453): WP_Hook->do_action(Array)
+#5 D:\OSPanel\domains\forsagewp\wp-admin\admin.php(156): do_action('admin_init')
+#6 {main}
+  thrown в D:\OSPanel\domains\forsagewp\wp-content\plugins\wp-all-import\models\model\record.php на строке 148
+

@@ -4,6 +4,14 @@ class NF_Database_Migrations
 {
     protected $migrations = array();
 
+
+    /**
+     * Constructor method for the NF_Database_Migrations class.
+     * 
+     * @since 3.0.0
+     * 
+     * @updated 3.3.8
+     */
     public function __construct()
     {
         $this->migrations[ 'forms' ]         = new NF_Database_Migrations_Forms();
@@ -20,29 +28,40 @@ class NF_Database_Migrations
         $this->migrations[ 'chunks' ]        = new NF_Database_Migrations_Chunks();
     }
 
+
+    /**
+     * Function to run each migration on the stack.
+     * 
+     * @since 3.0.0
+     */
     public function migrate()
     {
         foreach( $this->migrations as $migration ){
             $migration->_run();
         }
     }
-    
+
+
     /**
-     * Function to run all our stage one changes.
+     * Function to run any required database upgrades.
+     * 
+     * @param $callback (String) The method this upgrade will call from individual migration files.
+     * 
+     * @since 3.4.0
      */
-    public function do_stage_one()
+    public function do_upgrade( $callback )
     {
         foreach( $this->migrations as $migration ) {
-            $migration->_stage_one();
+            $migration->_do_upgrade( $callback );
         }
     }
 
     /**
      * This function drops ninja forms tables and options
      * 
-     * @param $areYouSure
-     * @param $areYouReallySure
-     * @param $nuke_multisite
+     * @param $areYouSure (Boolean)
+     * @param $areYouReallySure (Boolean)
+     * @param $nuke_multisite (Boolean)
      * 
      * @since 2.9.34
      * @updated 3.3.16
@@ -72,6 +91,12 @@ class NF_Database_Migrations
         }
     }
 
+
+    /**
+     * Function to handle the actual deletion of tables and caches.
+     * 
+     * @since 3.1.0
+     */
     private function _nuke()
     {
         global $wpdb;
@@ -87,6 +112,15 @@ class NF_Database_Migrations
         $wpdb->query( "DELETE FROM `{$wpdb->options}` WHERE `option_name` LIKE '_transient_timeout_nf_form_%'" );
     }
 
+
+    /**
+     * Function to nuke our 3.0 settings.
+     * 
+     * @param $areYouSure (Boolean)
+     * @param $areYouReallySure (Boolean)
+     * 
+     * @since 3.1.0
+     */
     public function nuke_settings( $areYouSure = FALSE, $areYouReallySure = FALSE )
     {
         if( ! $areYouSure || ! $areYouReallySure ) return;
@@ -107,6 +141,12 @@ class NF_Database_Migrations
         }
     }
 
+
+    /**
+     * Function to handle the actual deletion of our 3.0 settings.
+     * 
+     * @since 3.1.0
+     */
     private function _nuke_settings()
     {
         global $wpdb;
@@ -134,7 +174,16 @@ class NF_Database_Migrations
         $wpdb->query( "DELETE FROM `{$wpdb->options}` WHERE `option_name` LIKE 'wp_nf_update_fields_%'" );
     }
 
-    public function nuke_deprecated(  $areYouSure = FALSE, $areYouReallySure = FALSE  )
+
+    /**
+     * Function to nuke our 2.9 database tables.
+     * 
+     * @param $areYouSure (Boolean)
+     * @param $areYouReallySure (Boolean)
+     * 
+     * @since 3.1.0
+     */
+    public function nuke_deprecated( $areYouSure = FALSE, $areYouReallySure = FALSE  )
     {
         if( ! $areYouSure || ! $areYouReallySure ) return;
 
@@ -154,6 +203,12 @@ class NF_Database_Migrations
         }
     }
 
+
+    /**
+     * Function to handle the actual deletion of deprecated tables and options.
+     * 
+     * @since 3.1.0
+     */
     private function _nuke_deprecated()
     {
         global $wpdb;

@@ -12,6 +12,7 @@ function ninja_forms_ajax_migrate_database(){
     $nuke_multisite = false;
     $migrations->nuke( $sure, $really_sure, $nuke_multisite );
     $migrations->migrate();
+    delete_option( 'ninja_forms_required_updates' );
     echo json_encode( array( 'migrate' => 'true' ) );
     wp_die();
 }

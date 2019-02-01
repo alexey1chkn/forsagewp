@@ -12,7 +12,7 @@
 ?>
 
 	</div><!-- #content -->
-
+	
 </div><!-- #page -->		
 <div class="wrapper">
 	<div class="container-fluid">

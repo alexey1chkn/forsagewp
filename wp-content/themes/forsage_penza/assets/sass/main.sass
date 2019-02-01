@@ -9,6 +9,19 @@ html
 	max-width: 1200px
 	margin: auto
 
+h1
+	font-family: 'Europe Bold Italic', arial
+	line-height: normal
+	font-size: 48px
+	color: $tmf
+
+h3
+	font-family: Play
+	font-style: normal
+	font-weight: bold
+	line-height: normal
+	font-size: 24px
+
 span 
 	.custom_title
 		font-family: 'Europe Bold Italic', arial
@@ -39,11 +52,53 @@ span
 			background-color: $mainf
 			border-radius: 50%
 			top: 0
-			right: 70px
+			right: -3px
 			align-items: center
 			justify-content: center
 			font-size: 19px
 			line-height: 23px
+	&-logo
+		img
+			width: 100%
+	&-map
+		font-family: 'Play', arial
+		font-weight: bold
+		line-height: normal
+		text-align: center
+		img
+			border-radius: 10px
+			position: relative
+		&-span
+			&_top
+				position: absolute
+				top: 0px
+				left: 10%
+				right: 10%
+				font-size: 14px
+				background-color: $white
+				padding: 0 0 2px 0
+				border-radius: 0 0 7px 7px
+				color: $tmf
+			&_bottom
+				position: absolute
+				bottom: 0px
+				font-size: 21px
+				background-color: $tmf
+				color: $mainf
+				width: 90%
+				line-height: 31px
+				border-radius: 0 0 10px 10px
+				.line
+					font-size: 27px
+					line-height: 27px
+					padding-left: 7px
+	&-platezhki
+		font-family: 'Play', arial
+		font-weight: bold
+		line-height: normal
+		font-size: 17px
+		text-align: center
+
 .contacts
 	background-color: $bgf
 	border-radius: 1px
@@ -235,7 +290,9 @@ span
 							margin: 16px 0px 9px
 							display: flex
 							img
-								margin: 16px 39px 9px		
+								margin: 16px 39px 9px
+							select
+								margin-right: -7px		
 				&-visual
 					width: 100%
 					height: 299px					
@@ -253,7 +310,8 @@ span
 						font-size: 36px
 						line-height: 34px
 						margin: 12px 0 0 20px
-					a
+					input
+						font-family: 'Europe Bold Italic', arial
 						display: flex
 						justify-content: center
 						align-items: center					
@@ -351,6 +409,7 @@ span
 						line-height: 34px
 						margin: 12px 0 0 20px
 					input
+						font-family: 'Europe Bold Italic', arial
 						display: flex
 						justify-content: center
 						align-items: center					
@@ -358,7 +417,6 @@ span
 						height: 62px
 						background-color: $mainf
 						border-radius: 10px
-						text-decoration: none
 						color: $tmf
 						font-size: 24px
 						line-height: 23px
@@ -417,6 +475,9 @@ span
 					border-bottom: 3px solid $mainf
 				&-work_hours
 					padding: 7px 0
+#map
+	position: absolute
+	top: -10vh
 
 .footer
 	&-banner
@@ -537,6 +598,11 @@ ul
 					font-size: 1em
 					font-weight: bold
 					padding: 11px
+			.added_to_cart
+				display: none
+					
+				.added
+					display: none
 		&-single_product
 			.woocommerce-product-gallery
 				width: 35% !important
@@ -720,6 +786,192 @@ ul
 			background-color: $mainf !important
 			color: $tmf !important
 
+.return-to-shop, .cart-empty
+	font-family: Play
+	font-style: normal
+	font-weight: normal
+	line-height: normal		
+	font-size: 21px
+	padding: 6px 0 6px 0
+
+.woocommerce-cart-form__contents
+	border-spacing: 0px 15px !important
+	border-collapse: separate
+	thead
+		tr
+			th
+				font-family: Play
+				font-style: normal
+				font-weight: bold
+				line-height: normal
+				font-size: 24px
+				text-align: center
+	tbody
+		font-family: Play
+		font-style: normal
+		font-weight: bold
+		line-height: normal
+		font-size: 18px
+		text-align: center
+		color: $tmf
+		a
+			text-decoration: none
+			color: $tmf
+		tr
+			background-color: $bgf
+			td
+				align-items: center
+				vertical-align: middle
+				&:first-child
+					border-radius: 10px 0 0 10px 
+				&:last-child
+					border-radius: 0px 10px 10px 0px 
+			&:last-child
+				background-color: $white
+				text-align: right
+			.product
+				&-remove
+					padding-left: 4px
+					font-size: 21px
+				&-thumbnail
+					padding: 7px 0px				
+					img
+						height: 59px
+						width: 55px
+						border-radius: 10px
+						vertical-align: middle	
+				&-name
+					text-align: left 
+					padding-left: 7px
+					span
+						a
+							font-size: 14px
+							font-weight: 400
+							color: lighten($tmf, 30%)
+				&-quantity
+					input
+						background: $white
+						border: 2px solid #CCCCCC
+						box-sizing: border-box
+						border-radius: 7px
+	&-button
+		background-color: $mainf
+		color: $tmf
+		border: none
+		padding: 12px 21px
+		font-family: Play
+		font-style: normal
+		font-weight: bold
+		line-height: normal
+		font-size: 18px
+		text-align: center
+		border-radius: 10px
+.cart
+	&-collaterals
+		display: flex
+		flex-direction: column
+		background-color: $bgf
+		color: $tmf
+		padding: 12px 18px 15px 24px
+		border-radius: 10px 
+		font-size: 18px
+		height: 77%
+		position: relative
+		h3 
+			padding-bottom: 15px
+			border-bottom: 2px solid rgba(51, 51, 51, 0.5)
+		p
+			padding: 10px
+		table
+			margin:	-7px 10px !important
+			width: 300px
+
+
+.order-total
+	th 
+		width: 27%
+		font-weight: bold
+	td 
+		font-weight: bold
+
+.wc-proceed-to-checkout
+	position: absolute
+	bottom: 0px
+	padding: 0 !important
+	display: flex	
+	justify-content: left
+	width: 100%
+	margin-left: 5px
+	a 
+		text-decoration: none 
+		background-color: $mainf
+		font-weight: bold
+		font-size: 24px
+		text-align: center
+		vertical-align: middle
+		color: $tmf
+		padding: 12px 66px !important
+		border-radius: 10px
+
+.added::after
+	content: '\e01d' !important
+
+.added_to_cart 
+	display: none !important
+	
+
+//checkout	
+.notice
+	display: flex
+	flex-direction: column
+textarea
+	width: 21em !important
+
+.woocommerce
+	&-additional-fields
+		display: none
+	&-checkout
+		font-family: Play
+		font-size: 21px
+		.payment_methods
+			border-bottom: 1px solid $tmf !important
+	&-billing-fields
+		h3
+			padding-bottom: 12px
+	&-input-wrapper
+		input
+			padding: 7px
+			border-radius: 10px
+			border: 1px solid $mainf
+			color: $tmf
+			font-size: 21px
+	&-checkout-payment
+		background-color: $mainf !important
+		#place_order
+			background-color: $tmf
+			margin-top: 12px
+
+.payment_box
+	background-color: $tmf !important
+	color: $mainf !important
+	&::before
+		border-bottom-color: $tmf !important
+		
+.category
+	&-container
+		a
+			display: flex
+			flex-direction: column
+			text-decoration: none
+			padding: 17px
+			color: $tmf
+			font-size: 21px
+			span
+				padding: 17px 0
+				text-align: center
+				
+
+
 //MEDIA
 @media (max-width: 1200px)
 	.contacts
@@ -806,12 +1058,12 @@ ul
 						span		
 							font-size: 28.8px
 							line-height: 28px
-						a			
+						input			
 							width: 131.2px
 							height: 49.6px
 							font-size: 19.2px
 							line-height: 20px
-							bottom: 14,4px
+							bottom: 14.4px
 							left: 16px		
 				&_others
 					width: 425.6px

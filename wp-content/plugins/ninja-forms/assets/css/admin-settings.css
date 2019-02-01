@@ -69,7 +69,10 @@
     border-radius: 4px;
 }
 
-/*https://github.com/wpninjas/ninja-forms/issues/2296*/
+.jBox-content {
+    overflow: hidden !important;
+}
+
 @media screen and ( max-width: 782px ) {
     .tablenav.top .actions, .tablenav .view-switch {
         display:block;

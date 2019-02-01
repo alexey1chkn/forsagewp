@@ -23,22 +23,7 @@
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 		<!--FONTS-->
 	<?php wp_head(); ?>
-	<!-- Yandex.Metrika counter --> 
-<script type="text/javascript" >
-   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
-   m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
-   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
 
-   ym(51907925, "init", {
-        id:51907925,
-        clickmap:true,
-        trackLinks:true,
-        accurateTrackBounce:true,
-        webvisor:true
-   });
-</script>
-<noscript><div><img src="https://mc.yandex.ru/watch/51907925" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-<!-- /Yandex.Metrika counter -->
 </head>
 
 <body <?php body_class(); ?>>
@@ -85,19 +70,33 @@
 			<!-- Header========================================================================================================================== -->
 			<div class="top-bar">
 				<div class="header">
-					<div class="row align-items-center">			
+					<div class="row align-items-center justify-content-around">			
 						<div class="col-4">
-							<img src="<?php echo get_template_directory_uri();?>/assets/img/logo.svg" alt="">
+							<div class="header-logo">
+								<img src="<?php echo get_template_directory_uri();?>/assets/img/logo.svg" alt="">
+							</div>
 						</div>
 						<div class="col-3">
-							<img src="<?php echo get_template_directory_uri();?>/assets/img/Group.svg" alt="">
-						</div>
-						<div class="col-3">
-							<img src="<?php echo get_template_directory_uri();?>/assets/img/pay.svg" alt="">
+							<a href="#map">
+								<div class="header-map">
+									<img src="<?php echo get_template_directory_uri();?>/assets/img/header-map_2.png" alt="">
+									<span class="header-map-span_top">г. Пенза, Проспект победы 88</span>
+									<div class="header-map-span_bottom">
+										<span>Мы на карте</span>
+										<span class="line">→</span>
+									</div>
+								</a>
+							</div>
 						</div>
 						<div class="col-2">
+							<div class="header-platezhki">
+								<img src="<?php echo get_template_directory_uri();?>/assets/img/platezhki.png" alt="">
+								<span>Мы принимаем</span>
+							</div>
+						</div>
+						<div class="col-1.5">
 							<div class="header-cart">
-								<a href="/cart/"><img src="<?php echo get_template_directory_uri();?>/assets/img/Vector.svg" alt=""></a>
+								<a href="/cart"><img src="<?php echo get_template_directory_uri();?>/assets/img/Vector.svg" alt=""></a>
 								<div class="header-cart-event">
 									<span>
 									<?php

@@ -7,23 +7,42 @@
 
 get_header();
 // Ensure visibility.
-$shirina_shiny = $_GET['shirina_shiny'];
+
 ?>
 <?php
 global $product;
 $diametr_diska = $_GET['diametr-diska'];
+$posadochnyj_diametr = $_GET['posadochnyj-diametr'];
 $vylet_diska = $_GET['vylet-diska'];
 $shirina_diska = $_GET['shirina-diska'];
+$pcd = $_GET['pcd'];
+
+if ($pcd != NULL){
+	$pcd1_arr = array( 
+		'taxonomy' => 'pa_pcd', 
+		'field' => 'slug', 
+		'terms' => $pcd, 
+		'operator' => 'IN',);
+
+	$pcd2_arr = array( 
+		'taxonomy' => 'pa_posadochnyj-razmer', 
+		'field' => 'slug', 
+		'terms' => $pcd, 
+		'operator' => 'IN',);
+}
 
 function disks_filter(){
-	global $diametr_diska;
-	global $vylet_diska;
-	global $shirina_diska;
+	global $diametr_diska, $posadochnyj_diametr, $vylet_diska, $shirina_diska;
 
 	$diametr_diska_arr = array( 
 		'taxonomy' => 'pa_diametr-diska', 
 		'field' => 'slug', 
 		'terms' => $diametr_diska, 
+		'operator' => 'IN',);
+	$posadochnyj_diametr_arr = array( 
+		'taxonomy' => 'pa_posadochnyj-diametr', 
+		'field' => 'slug', 
+		'terms' => $posadochnyj_diametr, 
 		'operator' => 'IN',);
 	$vylet_diska_arr = array(
 		'taxonomy' => 'pa_vylet-diska', 
@@ -38,6 +57,8 @@ function disks_filter(){
 
 	if ( $diametr_diska != NULL )
 		$args_array = array($args_array, $diametr_diska_arr);
+	if ( $posadochnyj_diametr != NULL )
+		$args_array = array($args_array, $posadochnyj_diametr_arr);
 	if ( $vylet_diska != NULL )
 		$args_array = array($args_array, $vylet_diska_arr);
 	if ( $shirina_diska != NULL )
@@ -58,7 +79,8 @@ function disks_filter(){
 			'paged' => $page,
 			'tax_query' => array( 
 				'relation' => 'AND', 
-				disks_filter()));
+				disks_filter()),
+		);
 			$loop = new WP_Query( $args_array );
 			$all_posts = $loop->found_posts;
 			$page_quantity = ceil( $all_posts / 12 );
@@ -67,7 +89,7 @@ function disks_filter(){
 					wc_get_template_part( 'content', 'product' );
 				endwhile;
 			} else {
-				echo __( '<h1 style="font-size: 40px; padding: 21px">Ничего не найдено. Попробуйте ещё раз</h1><br><a style="font-size: 21px; line-height: 40px; padding: 21px" href="/"><< Вернуться назад</a>' );
+				echo __( '<h1 style="font-size: 40px; padding: 21px">Ничего не найдено. Попробуйте еще раз</h1><br><a style="font-size: 21px; line-height: 40px; padding: 21px" href="/"><< Вернуться назад</a>' );
 			}
 			wp_reset_postdata();
 		?>

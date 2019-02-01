@@ -120,6 +120,13 @@ class NF_Abstracts_Model
      */
     protected $_cache = TRUE;
 
+    /**
+     * A Flag for testing whether or not we've completed stage 1 of our db.
+     * 
+     * @var boolean
+     */
+    private $db_stage_1_complete = TRUE;
+
     //-----------------------------------------------------
     // Public Methods
     //-----------------------------------------------------
@@ -251,6 +258,8 @@ class NF_Abstracts_Model
                 $this->_settings[ 'label' ] = $field[ 'label' ];
                 $this->_settings[ 'key' ] = $field[ 'key' ];
                 $this->_settings[ 'type' ] = $field[ 'type' ];
+                $this->_settings[ 'field_label' ] = $field[ 'label' ];
+                $this->_settings[ 'field_key' ] = $field[ 'key' ];
             }
         }
 
@@ -482,6 +491,22 @@ class NF_Abstracts_Model
      */
     public function save()
     {
+
+        /**
+         * Check to see if we've completed stage 1 of our db update.
+         */
+
+        $sql = "SHOW COLUMNS FROM {$this->_db->prefix}nf3_fields LIKE 'field_key'";
+        $results = $this->_db->get_results( $sql );
+        /**
+         * If we don't have the field_key column, we need to remove our new columns.
+         *
+         * Also, set our db stage 1 tracker to false.
+         */
+        if ( empty ( $results ) ) {
+            $this->db_stage_1_complete = false;
+        }
+
         $data = array ( 'updated_at' => current_time( 'mysql' ));
 
         // If the ID is not set, assign an ID
@@ -644,11 +669,11 @@ class NF_Abstracts_Model
         if( $meta_row ){
 
         	$update_values = array(
-		        'value' => $value
+                'value' => $value,
 	        );
 
         	// for forms we need to update the meta_key and meta_value columns
-        	if( 'form' == $this->_type ) {
+        	if( 'form' == $this->_type || $this->db_stage_1_complete ) {
         		$update_values[ 'meta_key' ] = $key;
         		$update_values[ 'meta_value' ] = $value;
 	        }
@@ -671,7 +696,7 @@ class NF_Abstracts_Model
 	        );
 
 	        // for forms we need to update the meta_key and meta_value columns
-        	if( 'form' == $this->_type ) {
+        	if( 'form' == $this->_type || $this->db_stage_1_complete ) {
         		$insert_values[ 'meta_key' ] = $key;
         		$insert_values[ 'meta_value' ] = $value;
 	        }

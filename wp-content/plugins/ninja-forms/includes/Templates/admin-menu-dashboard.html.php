@@ -233,6 +233,39 @@
     ?>
 </script>
 
+<!-- Section: Required Updates -->
+<script id="tmpl-nf-requiredUpdates" type="text/template">
+    <div>
+        <h1><?php _e( 'Required Updates', 'ninja-forms' ); ?></h1>
+        <div>
+            <p>
+                <?php _e( "Ninja Forms needs to run some updates on your installation before you can continue. You'll be able to create and edit forms after the updates listed below have completed.", 'ninja-forms' ); ?>
+            </p>
+            <p>
+                <?php _e( "Normally, users will still be able to view and submit forms while these updates take place. If an update needs to modify database information, we'll put the affected form in maintenance mode until we get done with that update.", 'ninja-forms' ); ?>
+            </p>
+            <p>
+                <?php _e( "It's always a good idea to have an up to date backup of your WordPress site on hand. That's especially true when you run plugin and theme updates. Luckily, there are plenty of good backup plugins available.", 'ninja-forms' ); ?>
+            </p>
+            <p>
+                <?php _e( "When you're ready, just click the \"Do Required Updates\" button below to get started. You'll be able to create and edit forms in no time.", 'ninja-forms' ); ?>
+            </p>
+        </div>
+        <div id="nfUpgradeApp">
+            <table id="nf-upgrades-table">
+                <thead>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+        <div>
+            <input class="nf-required-update nf-update-button" type='button' id='nf-required-updates-btn' name='nf-required-updates-btn' value="<?php _e( 'Do Required Updates' ); ?>" />
+        </div>
+        <div class="nf-update-progress jBox-content" id="nf-required-updates-progress"></div>
+    </div>
+</script>
+
 <!-- Widget: Forms -->
 <script id="tmpl-nf-widget-forms" type="text/template">
     <header>

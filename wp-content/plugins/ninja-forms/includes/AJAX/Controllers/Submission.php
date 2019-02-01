@@ -57,6 +57,19 @@ class NF_AJAX_Controllers_Submission extends NF_Abstracts_Controller
             $this->_respond();
         }
 
+        // Check to see if our form is maintenance mode.
+        $is_maintenance = WPN_Helper::form_in_maintenance( $this->_form_id );
+
+        /*
+         * If our form is in maintenance mode then, stop processing and throw an error with a link
+         * back to the form.
+         */
+        if ( $is_maintenance ) {
+            $this->_errors[ 'form' ][] = apply_filters( 'nf_maintenance_message', __( 'This form is currently undergoing maintenance. Please ', 'ninja-forms' )
+                . '<a href="' . $_SERVER[ 'HTTP_REFERER' ] . '">' . __( 'click here ', 'ninja-forms' ) . '</a>' . __( 'to reload the form and try again.', 'ninja-forms' )  ) ;
+            $this->_respond();
+        }
+
         if( $this->is_preview() ) {
 
             $this->_form_cache = get_user_option( 'nf_form_preview_' . $this->_form_id );

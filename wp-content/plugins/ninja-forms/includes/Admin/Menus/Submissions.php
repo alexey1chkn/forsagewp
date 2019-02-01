@@ -29,7 +29,7 @@ final class NF_Admin_Menus_Submissions extends NF_Abstracts_Submenu
      * Constructor
      */
     public function __construct()
-    {
+    {   
         parent::__construct();
 
         add_filter( 'manage_nf_sub_posts_columns', array( $this, 'change_columns' ) );
@@ -56,6 +56,23 @@ final class NF_Admin_Menus_Submissions extends NF_Abstracts_Submenu
 
         // This will only run on our post type.
         add_action( 'views_edit-nf_sub', array( $this, 'change_views' ) );
+        
+        // add_action( 'admin_init', array( $this, 'nf_upgrade_redirect' ) );
+    }
+
+    /**
+     * If we have required updates, redirect to the main Ninja Forms page
+     */
+    public function nf_upgrade_redirect() {
+        global $pagenow;
+            
+        if( "1" == get_option( 'ninja_forms_needs_updates' ) ) {
+            // remove_submenu_page( $this->parent_slug, $this->menu_slug );
+            // if( 'edit.php' == $pagenow && 'nf_sub' == $_GET[ 'post_type' ] ) {
+            //     wp_safe_redirect( admin_url( 'admin.php?page=ninja-forms' ), 301 );
+            //     exit;
+            // }
+        }
     }
 
     /**
@@ -296,6 +313,9 @@ final class NF_Admin_Menus_Submissions extends NF_Abstracts_Submenu
         $vars = apply_filters( 'ninja_forms_sub_table_qv', $vars, $form_id );
     }
 
+    /**
+     * @updated 3.3.21.2
+     */
     public function search( $pieces ) {
         global $typenow;
         // filter to select search query
@@ -308,6 +328,7 @@ final class NF_Admin_Menus_Submissions extends NF_Abstracts_Submenu
 
             foreach ($keywords as $word) {
 
+                $wpdb->escape_by_ref( $word );
                 $query .= " (mypm1.meta_value  LIKE '%{$word}%') OR ";
             }
 

@@ -15,10 +15,6 @@ msgstr ""
 msgid "Twenty Nineteen"
 msgstr "Twenty Nineteen"
 
-#. Description of the theme
-msgid "A new Gutenberg-ready theme."
-msgstr "Новая тема с поддержкой Gutenberg."
-
 #. translators: %s: parent post link
 #: single.php:31
 msgid "<span class=\"meta-nav\">Published in</span><span class=\"post-title\">%s</span>"
@@ -94,7 +90,7 @@ msgstr "Применение пользовательского цвета дл�
 msgid "Apply a filter to featured images using the primary color"
 msgstr "Применение фильтра к изображениям записей с использованием основного цвета"
 
-#: inc/template-functions.php:208
+#: inc/template-functions.php:209
 msgid "More"
 msgstr "Больше"
 
@@ -155,9 +151,9 @@ msgstr "Назад"
 msgid "Next"
 msgstr "Далее"
 
-#: image.php:52 template-parts/content/content.php:49
+#: image.php:52 template-parts/content/content-page.php:27
+#: template-parts/content/content.php:49
 #: template-parts/content/content-single.php:40
-#: template-parts/content/content-page.php:27
 msgid "Pages:"
 msgstr "Страницы:"
 
@@ -204,20 +200,20 @@ msgstr "Верхнее меню"
 msgid "Comments are closed."
 msgstr "Обсуждение закрыто."
 
-#: classes/class-twentynineteen-walker-comment.php:59
+#: classes/class-twentynineteen-walker-comment.php:67
 msgid "%s <span class=\"screen-reader-text says\">says:</span>"
 msgstr "%s <span class=\"screen-reader-text says\">пишет:</span>"
 
 #. translators: 1: comment date, 2: comment time
-#: classes/class-twentynineteen-walker-comment.php:79
+#: classes/class-twentynineteen-walker-comment.php:87
 msgid "%1$s at %2$s"
 msgstr "%1$s в %2$s"
 
-#: classes/class-twentynineteen-walker-comment.php:87
+#: classes/class-twentynineteen-walker-comment.php:95
 msgid "Edit"
 msgstr "Редактировать"
 
-#: classes/class-twentynineteen-walker-comment.php:92
+#: classes/class-twentynineteen-walker-comment.php:100
 msgid "Your comment is awaiting moderation."
 msgstr "Ваш комментарий ожидает одобрения."
 
@@ -252,10 +248,10 @@ msgstr "Комментарии"
 msgid "Primary"
 msgstr "Основное"
 
-#. translators: %s: Name of current post. Only visible to screen readers.
 #. translators: %s: Name of current post. Only visible to screen readers
-#: inc/template-tags.php:120 template-parts/content/content-page.php:41
-#: template-parts/header/entry-header.php:32
+#. translators: %s: Name of current post. Only visible to screen readers.
+#: template-parts/content/content-page.php:41
+#: template-parts/header/entry-header.php:32 inc/template-tags.php:120
 msgid "Edit <span class=\"screen-reader-text\">%s</span>"
 msgstr "Редактировать <span class=\"screen-reader-text\">%s</span>"
 

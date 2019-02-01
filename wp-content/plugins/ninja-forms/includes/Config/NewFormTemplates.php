@@ -63,9 +63,9 @@ $templates = array(
     ),
 
     'formtemplate-exportdata'        => array(
-	    'id'                            => 'formtemplate-exportdata',
-	    'title'                         => __( 'Export Data Request', 'ninja-forms' ),
-	    'template-desc'                 => __( 'Includes action to add users to WordPress\' personal data export tool, allowing admins to comply with the GDPR and other privacy regulations from the site\'s front end.', 'ninja-forms' ),
+        'id'                            => 'formtemplate-exportdata',
+        'title'                         => __( 'Export Data Request', 'ninja-forms' ),
+        'template-desc'                 => __( 'Includes action to add users to WordPress\' personal data export tool, allowing admins to comply with the GDPR and other privacy regulations from the site\'s front end.', 'ninja-forms' ),
     ),
 );
 

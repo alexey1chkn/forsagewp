@@ -1,9 +1,9 @@
 === SiteOrigin CSS ===
 Tags: css, design, edit, customize
 Requires at least: 3.9
-Tested up to: 4.9
-Stable tag: 1.2.3
-Build time: 2018-06-25T09:47:44+02:00
+Tested up to: 5.0
+Stable tag: 1.2.4
+Build time: 2019-01-17T16:42:20-08:00
 License: GPLv2 or later
 Contributors: gpriday
 Donate link: https://siteorigin.com/downloads/contribution/
@@ -64,6 +64,10 @@ We're actively developing SiteOrigin CSS. Keep track of what's happening over on
 We offer free support on the [SiteOrigin support forums](https://siteorigin.com/thread/).
 
 == Changelog ==
+
+= 1.2.4 - 17 January 2019 =
+* Prefix so-css for all codemirror assets.
+* Prevent JS error when attempting to set active element to null.
 
 = 1.2.3 - 25 June 2018 =
 * Add preview iframe 'load' event listener in `render` function.

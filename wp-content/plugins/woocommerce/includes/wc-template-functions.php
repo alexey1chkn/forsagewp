@@ -7,7 +7,7 @@
  * @package  WooCommerce\Functions
  * @version  2.5.0
  */
- 
+
 defined( 'ABSPATH' ) || exit;
 
 /**
@@ -1298,7 +1298,6 @@ if ( ! function_exists( 'woocommerce_catalog_ordering' ) ) {
 			'date'       => __( 'Sort by latest', 'woocommerce' ),
 			'price'      => __( 'Sort by price: low to high', 'woocommerce' ),
 			'price-desc' => __( 'Sort by price: high to low', 'woocommerce' ),
-			'shirina_shiny' => __('Sort by shirina_shiny' , ''),
 		) );
 
 		$default_orderby = wc_get_loop_prop( 'is_search' ) ? 'relevance' : apply_filters( 'woocommerce_default_catalog_orderby', get_option( 'woocommerce_default_catalog_orderby', '' ) );
@@ -2562,7 +2561,7 @@ if ( ! function_exists( 'woocommerce_form_field' ) ) {
 				} elseif ( ! is_null( $for_country ) && is_array( $states ) ) {
 
 					$field .= '<select name="' . esc_attr( $key ) . '" id="' . esc_attr( $args['id'] ) . '" class="state_select ' . esc_attr( implode( ' ', $args['input_class'] ) ) . '" ' . implode( ' ', $custom_attributes ) . ' data-placeholder="' . esc_attr( $args['placeholder'] ) . '">
-						<option value="">' . esc_html__( 'Select a state&hellip;', 'woocommerce' ) . '</option>';
+						<option value="">' . esc_html__( 'Select an option&hellip;', 'woocommerce' ) . '</option>';
 
 					foreach ( $states as $ckey => $cvalue ) {
 						$field .= '<option value="' . esc_attr( $ckey ) . '" ' . selected( $value, $ckey, false ) . '>' . $cvalue . '</option>';
@@ -3344,7 +3343,7 @@ function wc_get_cart_remove_url( $cart_item_key ) {
  *
  * @since 3.3.0
  * @param  string $cart_item_key Cart item key to undo.
- * @return string url to pageresult_count
+ * @return string url to page
  */
 function wc_get_cart_undo_url( $cart_item_key ) {
 	$cart_page_url = wc_get_page_permalink( 'cart' );
