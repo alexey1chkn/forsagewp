@@ -1,0 +1,18 @@
+2019-02-04T08:29:47+00:00 CRITICAL syntax error, unexpected ')' в D:\OSPanel\domains\forsagewp\wp-content\themes\forsage_penza\disks_product_list.php на строке 99
+
+2019-02-04T08:56:51+00:00 CRITICAL syntax error, unexpected ';', expecting ')' в D:\OSPanel\domains\forsagewp\wp-content\themes\forsage_penza\disks_product_list.php на строке 88
+
+2019-02-04T11:31:34+00:00 CRITICAL syntax error, unexpected 'Play' (T_STRING), expecting ',' or ';' в D:\OSPanel\domains\forsagewp\wp-content\themes\forsage_penza\functions.php на строке 219
+
+2019-02-04T14:41:08+00:00 CRITICAL syntax error, unexpected 'echo' (T_ECHO) в D:\OSPanel\domains\forsagewp\wp-content\themes\forsage_penza\functions.php на строке 166
+
+2019-02-04T14:41:17+00:00 CRITICAL syntax error, unexpected 'echo' (T_ECHO) в D:\OSPanel\domains\forsagewp\wp-content\themes\forsage_penza\functions.php на строке 166
+
+2019-02-04T14:41:22+00:00 CRITICAL syntax error, unexpected 'echo' (T_ECHO) в D:\OSPanel\domains\forsagewp\wp-content\themes\forsage_penza\functions.php на строке 166
+
+2019-02-04T14:41:25+00:00 CRITICAL syntax error, unexpected 'echo' (T_ECHO) в D:\OSPanel\domains\forsagewp\wp-content\themes\forsage_penza\functions.php на строке 166
+
+2019-02-04T14:41:27+00:00 CRITICAL syntax error, unexpected 'echo' (T_ECHO) в D:\OSPanel\domains\forsagewp\wp-content\themes\forsage_penza\functions.php на строке 166
+
+2019-02-04T15:11:33+00:00 CRITICAL syntax error, unexpected '}', expecting ',' or ';' в D:\OSPanel\domains\forsagewp\wp-content\themes\forsage_penza\functions.php на строке 231
+

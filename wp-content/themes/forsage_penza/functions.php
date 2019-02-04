@@ -162,11 +162,17 @@ add_action ('woocommerce_after_shop_loop_item_title','my_custom_good_bottom');
 
 function my_custom_good_bottom(){
 	global $product; 
-	echo '<div class="product-attribute-proizvoditel"><img src="' . get_template_directory_uri() . '/assets/img/info.svg" class="icon-info">' . '<span>' . $product->get_attribute('proizvoditel') . '</span></div>';
+	$product->get_attribute('proizvoditel') != NULL ? $product_proizvoditel = $product->get_attribute('proizvoditel') : $product_proizvoditel = "Неизвестно";
+	echo '<div class="product-attribute-proizvoditel"><img src="' . get_template_directory_uri() . '/assets/img/info.svg" class="icon-info">' . '<span>' . $product_proizvoditel . '</span></div>';
 	if ( $product->is_in_stock() ) {
     echo 
     '<div class="product-attribute-stock_quantit">
    		<span>В наличии: ' . $product->get_stock_quantity() . '</span>
+   	</div>';
+  }else{
+  	echo 
+    '<div class="product-attribute-stock_quantit">
+   		<span>Нет в наличии</span>
    	</div>';
   }
   // echo wc_display_product_attributes( $product );
@@ -188,8 +194,9 @@ function my_custom_single_product_summary(){
 	echo '<p class="my_custom-single_product-summary-price">' . $product->get_price_html() . '</p>';
 
 	$product->get_attribute('shipy') == true ? $shipy = "есть" : $shipy = "нет";
-
+	
 	if ( $product->get_attribute('kategoriya') == 'Шины' ) {
+	$flag=1;
 	echo 
 	'<div class="my_custom-single_product-summary-wrapper">
 		<div class="my_custom-single_product-summary-content">
@@ -200,12 +207,33 @@ function my_custom_single_product_summary(){
 			'<div class="my_custom-single_product-summary-content-line-element">Шипы: ' . $shipy . '</div></div>' . 
 		'<div class="my_custom-single_product-summary-content-line"><div class="my_custom-single_product-summary-content-line-element">Сезон: ' . $product->get_attribute('sezonnost') . '</div></div>';
 	}
-	//elseif( $product->get_attribute('kategoriya') == 'Диски' )
+	elseif( $product->get_attribute('kategoriya') == 'Диски' ){
+		$flag=1;
+	echo
+	'<div class="my_custom-single_product-summary-wrapper">
+		<div class="my_custom-single_product-summary-content">
+		<div class="my_custom-single_product-summary-content-line"><div class="my_custom-single_product-summary-content-line-element">Производитель: ' . $product->get_attribute('proizvoditel') . '</div></div>' . 
+		'<div class="my_custom-single_product-summary-content-line"><div class="my_custom-single_product-summary-content-line-element">Диаметр: ' . $product->get_attribute('diametr-diska') . '</div>' .
+		'<div class="my_custom-single_product-summary-content-line-element">PCD: ' . $product->get_attribute('pcd'). '</div></div>' .
+		'<div class="my_custom-single_product-summary-content-line"><div class="my_custom-single_product-summary-content-line-element">Вылет ЕТ: ' . $product->get_attribute('vylet-diska'). '</div>' .
+			'<div class="my_custom-single_product-summary-content-line-element">Ширина: ' . $product->get_attribute('shirina-diska') . '</div></div>' . 
+		'<div class="my_custom-single_product-summary-content-line"><div class="my_custom-single_product-summary-content-line-element" style="width: 100%;">Ст.отверстие: ' . $product->get_attribute('posadochnyj-diametr') . '</div></div>';
+	}else{
+		echo
+	'<div class="my_custom-single_product-summary-wrapper">
+		<div class="my_custom-single_product-summary-content">';
+	}
+
+
 	$id = $product->get_id();
 	if ( $product->is_in_stock() ) {
     echo '<div class="my_custom-single_product-summary-content-line">
     <div class="my_custom-single_product-summary-content-line-element-bottom"><span>В наличии: ' . $product->get_stock_quantity() . '</span></div>';
     echo '<div class="my_custom-single_product-summary-content-line-element-bottom"><a href="' . do_shortcode('[add_to_cart_url id="'. $id . '"]') . '">В корзину</a></div></div></div></div>';
+  }elseif( !$product->is_in_stock() && $flag == 1 ){
+  	echo '<span style="font-weight: bold; color: red; margin: 10px 0 0 0; font-family: "Play", arial; ">Нет в наличии</span><br><span style="padding: 7px; border: 3px solid #FEDD49;">Узнать подробности о товаре по телефону: 8(****)**-**-**</span></div></div>';
+  }else{
+  	echo '<span style="font-weight: bold; color: red; margin: 10px 0 0 0; font-family: "Play", arial; ">Нет в наличии</span><br><span style="padding: 7px; border: 3px solid #FEDD49;">Узнать подробности о товаре по телефону: 8(****)**-**-**</span></div></div>';
   }
 }
 
@@ -234,16 +262,6 @@ function header_add_to_cart_fragment( $fragments ) {
     $fragments['.basket-btn__counter'] = ob_get_clean();
     return $fragments;
 }
-//ДОБАВЛЯЮ САЙДБАР
-add_action( 'widgets_init', 'register_my_widgets' );
-
-function register_my_widgets(){
-	register_sidebar( array(
-		'name' => "Ширина шины",
-		'id' => 'shirina-shiny',
-	) );
-}
-
 
 add_filter( 'woocommerce_checkout_fields' , 'custom_override_checkout_fields' );
   

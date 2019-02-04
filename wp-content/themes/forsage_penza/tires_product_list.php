@@ -84,13 +84,21 @@ function tires_filter(){
 			'paged' => $page,
 			'tax_query' => array( 
 				'relation' => 'AND', 
-				tires_filter()));
+				tires_filter()),
+			'meta_query' => array(
+        array(
+            'key' => '_stock_status',
+            'value' => 'instock',
+            'compare' => '=',
+        )
+    	)   
+    );
 			$loop = new WP_Query( $args_array );
 			$all_posts = $loop->found_posts;
 			$page_quantity = ceil( $all_posts / 12 );
 			if ( $loop->have_posts() ) {
 				while ( $loop->have_posts() ) : $loop->the_post();
-					wc_get_template_part( 'content', 'product' );
+						wc_get_template_part( 'content', 'product' );
 				endwhile;
 			} else {
 				echo __( '<h1 style="font-size: 40px; padding: 21px">Ничего не найдено. Попробуйте еще раз</h1><br><a style="font-size: 21px; line-height: 40px; padding: 21px" href="/"><< Вернуться назад</a>' );

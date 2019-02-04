@@ -18,7 +18,8 @@ get_header();
 			'post_type' => 'product', 
 			'posts_per_page' => 12, 
 			'product_cat' => 'akkumulyatory',
-			'paged' => $page
+			'paged' => $page,
+
 		);
 			$loop = new WP_Query( $args_array );
 			$all_posts = $loop->found_posts;

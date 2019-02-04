@@ -17,22 +17,8 @@ $vylet_diska = $_GET['vylet-diska'];
 $shirina_diska = $_GET['shirina-diska'];
 $pcd = $_GET['pcd'];
 
-if ($pcd != NULL){
-	$pcd1_arr = array( 
-		'taxonomy' => 'pa_pcd', 
-		'field' => 'slug', 
-		'terms' => $pcd, 
-		'operator' => 'IN',);
-
-	$pcd2_arr = array( 
-		'taxonomy' => 'pa_posadochnyj-razmer', 
-		'field' => 'slug', 
-		'terms' => $pcd, 
-		'operator' => 'IN',);
-}
-
 function disks_filter(){
-	global $diametr_diska, $posadochnyj_diametr, $vylet_diska, $shirina_diska;
+	global $diametr_diska, $pcd, $posadochnyj_diametr, $vylet_diska, $shirina_diska;
 
 	$diametr_diska_arr = array( 
 		'taxonomy' => 'pa_diametr-diska', 
@@ -54,6 +40,16 @@ function disks_filter(){
 		'field' => 'slug', 
 		'terms' => $shirina_diska, 
 		'operator' => 'IN',);
+	$pcd1_arr = array( 
+		'taxonomy' => 'pa_pcd', 
+		'field' => 'slug', 
+		'terms' => $pcd, 
+		'operator' => 'IN',);
+	$pcd2_arr = array( 
+		'taxonomy' => 'pa_posadochnyj-razmer', 
+		'field' => 'slug', 
+		'terms' => $pcd, 
+		'operator' => 'IN',);
 
 	if ( $diametr_diska != NULL )
 		$args_array = array($args_array, $diametr_diska_arr);
@@ -63,6 +59,8 @@ function disks_filter(){
 		$args_array = array($args_array, $vylet_diska_arr);
 	if ( $shirina_diska != NULL )
 		$args_array = array($args_array, $shirina_diska_arr);		
+	if ( $pcd != NULL )
+		$args_array = array($args_array, $pcd1_arr);
 
 	return $args_array;
 }
@@ -77,9 +75,17 @@ function disks_filter(){
 			'posts_per_page' => 12, 
 			'product_cat' => 'diski',
 			'paged' => $page,
-			'tax_query' => array( 
-				'relation' => 'AND', 
-				disks_filter()),
+			'tax_query' => array(
+				'relation' => 'AND',
+				disks_filter()
+			),
+			'meta_query' => array(
+        array(
+            'key' => '_stock_status',
+            'value' => 'instock',
+            'compare' => '=',
+        )
+      )
 		);
 			$loop = new WP_Query( $args_array );
 			$all_posts = $loop->found_posts;
