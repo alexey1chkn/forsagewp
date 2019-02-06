@@ -50,7 +50,7 @@
 			<?php endif; ?>
 		</div><!-- .site-branding -->
 
-		<nav id="site-navigation" class="main-navigation">
+		<!-- <nav id="site-navigation" class="main-navigation">
 			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'forsage_penza' ); ?></button>
 			<?php
 			wp_nav_menu( array(
@@ -58,7 +58,7 @@
 				'menu_id'        => 'primary-menu',
 			) );
 			?>
-		</nav><!-- #site-navigation -->
+		</nav> #site-navigation -->
 
 	</header><!-- #masthead -->
 	
@@ -147,15 +147,17 @@
 				<div class="row">
 					<div class="col-12">
 						<div class="main-menu">
-							<ul>
-								<li><a href="/">Главная</a></li>
-								<li><a href="/vybor-shin">Шины</a></li>
-								<li><a href="/diski">Диски</a></li>
-								<li><a href="/akb">АКБ</a></li>
-								<li><a href="/krepezhi">Крепежи</a></li>
-								<li><a href="/kolca">Кольца</a></li>
-								<li><a href="/o-nas">О нас</a></li>
-							</ul>
+							<nav class="main-menu-nav">
+								<ul>
+									<li><a href="/">Главная</a></li>
+									<li><a href="/vybor-shin">Шины</a></li>
+									<li><a href="/diski">Диски</a></li>
+									<li><a href="/akb">АКБ</a></li>
+									<li><a href="/krepezhi">Крепежи</a></li>
+									<li><a href="/kolca">Кольца</a></li>
+									<li><a href="/o-nas">О нас</a></li>
+								</ul>
+							</nav>
 						</div>
 					</div>
 				</div>

@@ -20,15 +20,17 @@
 			<div class="row">
 				<div class="col-xl-12 col-md-0">
 					<div class="main-menu">
-						<ul>
-							<li><a href="#">Главная</a></li>
-							<li><a href="#">Шины</a></li>
-							<li><a href="#">Диски</a></li>
-							<li><a href="#">АКБ</a></li>
-							<li><a href="#">Крепежи</a></li>
-							<li><a href="#">Кольца</a></li>
-							<li><a href="#">О нас</a></li>
-						</ul>
+						<nav class="main-menu-nav">
+							<ul>
+								<li><a href="#">Главная</a></li>
+								<li><a href="#">Шины</a></li>
+								<li><a href="#">Диски</a></li>
+								<li><a href="#">АКБ</a></li>
+								<li><a href="#">Крепежи</a></li>
+								<li><a href="#">Кольца</a></li>
+								<li><a href="#">О нас</a></li>
+							</ul>
+						</nav>
 					</div>
 				</div>
 			</div>

@@ -350,7 +350,7 @@ span .custom_title {
   background-color: #333333;
   margin: 0 -40px;
 }
-.main-menu ul {
+.main-menu-nav ul {
   text-decoration: none;
   list-style: none;
   display: -webkit-box;
@@ -362,18 +362,18 @@ span .custom_title {
   line-height: 28px;
   padding: 8px 3px;
 }
-.main-menu ul li:first-child {
+.main-menu-nav ul li:first-child {
   padding-left: 42px;
 }
-.main-menu ul li:last-child {
+.main-menu-nav ul li:last-child {
   padding-right: 42px;
 }
-.main-menu ul a {
+.main-menu-nav ul a {
   text-decoration: none;
   color: #FEDD49;
   padding: 8px 3px;
 }
-.main-menu ul a:hover {
+.main-menu-nav ul a:hover {
   background-color: #FEDD49;
   color: #333333;
 }
@@ -1369,29 +1369,53 @@ textarea {
 }
 
 @media (max-width: 1200px) {
+  .header-map-span_top {
+    top: 0px;
+    left: 10%;
+    right: 10%;
+    font-size: 1.27vw;
+  }
+  .header-map-span_bottom {
+    font-size: 1.7vw;
+    left: 5.3%;
+    right: 5.3%;
+    line-height: 2vw;
+    padding: 0 0 0.5vw 0;
+    border-radius: 0 0 10px 10px;
+  }
+  .header-map-span_bottom .line {
+    font-size: 27px;
+    line-height: 2vw;
+    margin: 17px 0 0 7px;
+  }
+
+  .main-menu-nav ul li a {
+    font-size: 2.1vw;
+  }
+
   .contacts {
-    font-size: 17px;
-    line-height: 21px;
+    font-size: 1.6vw;
+    line-height: 1.7vw;
   }
   .contacts-opening_hours {
-    padding-left: 100px;
-    padding-top: 8px;
-    padding-bottom: 12px;
+    padding-left: 9vw;
+    padding-top: 0.7vw;
+    padding-bottom: 1vw;
   }
   .contacts-opening_hours-logo img {
-    height: 23px;
-    left: -23px;
+    height: 2vw;
+    left: -2.2vw;
   }
   .contacts-opening_hours-ways-check {
-    height: 5px;
-    width: 7px;
+    height: 0.4vw;
+    width: 0.7vw;
     border: 5px solid transparent;
     border-top: 7px solid #333333;
-    top: 15px;
-    right: 77px;
+    top: 1.3vw;
+    right: 3.6vw;
   }
   .contacts-opening_hours:hover .contacts-opening_hours-ways {
-    height: 92px;
+    height: 88px;
   }
   .contacts-opening_hours:hover .contacts-opening_hours-ways-second_way {
     top: 31px;
@@ -1399,20 +1423,27 @@ textarea {
   .contacts-opening_hours:hover .contacts-opening_hours-ways-third_way {
     top: 61px;
   }
+  .contacts-opening_hours:hover .contacts-opening_hours-ways-check {
+    top: 0.7vw;
+  }
+  .contacts-phone-numbers {
+    padding-top: 0.85vw;
+    padding-bottom: 0.85vw;
+  }
   .contacts-phone-numbers-logo img {
-    height: 23px;
-    left: -37px;
+    height: 2vw;
+    left: -3.5vw;
   }
   .contacts-phone-numbers-list-nubmer-check {
-    height: 5px;
-    width: 7px;
+    height: 0.4vw;
+    width: 0.7vw;
     border: 5px solid transparent;
     border-top: 7px solid #333333;
-    top: 15px;
-    right: 66px;
+    top: 1.3vw;
+    right: 2.7vw;
   }
   .contacts-phone-numbers:hover .contacts-phone-numbers-list {
-    height: 92px;
+    height: 88px;
   }
   .contacts-phone-numbers:hover .contacts-phone-numbers-list-nubmer-2 {
     top: 31px;
@@ -1420,37 +1451,52 @@ textarea {
   .contacts-phone-numbers:hover .contacts-phone-numbers-list-nubmer-3 {
     top: 61px;
   }
+  .contacts-phone-numbers:hover .contacts-phone-numbers-list-nubmer-check {
+    top: 0.7vw;
+  }
   .contacts-email {
     padding: 8px 0px 12px;
   }
 
+  .slider-main_page {
+    margin: 2vw 0;
+  }
+
+  .goods_selection {
+    margin: -2vw 0;
+  }
   .goods_selection .row {
     margin: 15px -15px;
   }
   .goods_selection-tires_main, .goods_selection-discs_main {
-    width: 425.6px;
-    height: 239.2px;
+    width: 44vw;
+    height: 27vw;
     border-radius: 30px;
   }
   .goods_selection-tires_main-characters, .goods_selection-discs_main-characters {
-    font-size: 19.2px;
-    line-height: 20px;
+    font-size: 2vw;
+    line-height: 2.1vw;
     margin-left: 15.2px;
   }
   .goods_selection-tires_main-characters ul, .goods_selection-discs_main-characters ul {
     list-style: none;
+    margin-top: 1.7vw;
   }
   .goods_selection-tires_main-characters ul li, .goods_selection-discs_main-characters ul li {
-    margin: 12.8px 0px 7.2px;
+    margin: 1vw 0px 1.77vw;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+  }
+  .goods_selection-tires_main-characters ul li select, .goods_selection-discs_main-characters ul li select {
+    margin-right: -2.17vw;
+    min-height: 2.1vw;
   }
   .goods_selection-tires_main-characters ul li img, .goods_selection-discs_main-characters ul li img {
     margin: 6.4px 14.4px 3.6px;
   }
   .goods_selection-tires_main-visual, .goods_selection-discs_main-visual {
-    height: 239.2px;
+    height: 27vw;
     background-color: #333333;
     margin-left: 8px;
   }
@@ -1471,31 +1517,29 @@ textarea {
     left: 16px;
   }
   .goods_selection-tires_others, .goods_selection-discs_others {
-    width: 425.6px;
-    height: 148px;
-    border-radius: 30px;
-    margin: 15px 0;
+    width: 44vw;
+    height: 15vw;
+    margin: 1.7vw 0;
   }
   .goods_selection-tires_others-characters, .goods_selection-discs_others-characters {
-    font-size: 19.2px;
-    line-height: 20px;
+    font-size: 2vw;
+    line-height: 2.1vw;
   }
   .goods_selection-tires_others-characters span, .goods_selection-discs_others-characters span {
-    font-size: 26.4px;
+    font-size: 2.5vw;
   }
   .goods_selection-tires_others-characters ul, .goods_selection-discs_others-characters ul {
-    font-size: 19.2px;
-    margin-top: 17px;
-    margin-left: 21px;
-    font-family: "Play", arial;
+    font-size: 2vw;
+    margin-top: 1.7vw;
+    margin-left: 2vw;
   }
   .goods_selection-tires_others-characters p, .goods_selection-discs_others-characters p {
-    font-size: 19.2px;
-    margin-top: 17px;
+    font-size: 2vw;
+    margin-top: 1.7vw;
   }
   .goods_selection-tires_others-visual, .goods_selection-discs_others-visual {
     width: 100%;
-    height: 148px;
+    height: 15vw;
   }
   .goods_selection-tires_others-visual img, .goods_selection-discs_others-visual img {
     width: 100%;
@@ -1526,17 +1570,231 @@ textarea {
     top: 12px;
   }
 
+  .contacts {
+    margin: 0px;
+  }
+
+  .main-menu {
+    margin: 0px;
+  }
+
+  .footer-banner {
+    margin: 0px;
+  }
   .footer-banner-title {
     font-size: 28.8px;
   }
+  .footer-copyright, .footer-developed-by {
+    margin: 0px;
+  }
+
+  .map-main_page {
+    max-width: 99vw;
+    margin: auto;
+  }
 }
-@media (max-width: 1024px) {
-  .top-bar {
+@media (max-width: 960px) {
+  .top-bar, .bottom-bar {
     display: none;
+  }
+
+  .contacts {
+    background-color: #F4F4F4;
+    border-radius: 1px;
+    font-size: 21px;
+    line-height: 25px;
+    margin: 0 -40px;
+    font-family: "Play", arial;
+  }
+  .contacts-opening_hours {
+    position: relative;
+    padding-left: 100px;
+    padding-top: 8px;
+    padding-bottom: 12px;
+  }
+  .contacts-opening_hours-logo {
+    position: relative;
+  }
+  .contacts-opening_hours-logo img {
+    position: absolute;
+    height: 27px;
+    left: -27px;
+  }
+  .contacts-opening_hours-ways-first_way {
+    padding-left: 12px;
+  }
+  .contacts-opening_hours-ways-second_way {
+    display: none;
+  }
+  .contacts-opening_hours-ways-third_way {
+    display: none;
+  }
+  .contacts-opening_hours-ways-check {
+    height: 6px;
+    width: 10px;
+    border: 6px solid transparent;
+    border-top: 10px solid #333333;
+    position: absolute;
+    top: 17px;
+    right: 80px;
+  }
+  .contacts-opening_hours:hover .contacts-opening_hours-ways {
+    background-color: #F4F4F4;
+    position: absolute;
+    height: 103px;
+    z-index: 99;
+    border-radius: 10px;
+    top: 2px;
+    -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    cursor: default;
+  }
+  .contacts-opening_hours:hover .contacts-opening_hours-ways-first_way {
+    display: block;
+    padding: 5px 12px;
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+  }
+  .contacts-opening_hours:hover .contacts-opening_hours-ways-first_way:hover {
+    background-color: #c9c9c9;
+  }
+  .contacts-opening_hours:hover .contacts-opening_hours-ways-second_way {
+    display: block;
+    position: absolute;
+    top: 35px;
+    padding: 5px 12px;
+    width: 100%;
+  }
+  .contacts-opening_hours:hover .contacts-opening_hours-ways-second_way:hover {
+    background-color: #c9c9c9;
+  }
+  .contacts-opening_hours:hover .contacts-opening_hours-ways-third_way {
+    display: inline-block;
+    position: absolute;
+    top: 69px;
+    padding: 5px 12px;
+    width: 100%;
+    border-radius: 0 0 10px 10px;
+  }
+  .contacts-opening_hours:hover .contacts-opening_hours-ways-third_way:hover {
+    background-color: #c9c9c9;
+  }
+  .contacts-opening_hours:hover .contacts-opening_hours-ways-check {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+    top: 10px;
   }
 
   .content-area {
     margin: -7px;
     width: 100vw;
+  }
+
+  .map-main_page-info {
+    height: 461px;
+    width: 458px;
+    background-color: rgba(51, 51, 51, 0.77);
+    position: absolute;
+    top: 44px;
+    right: 100px;
+    font-size: 17px;
+    color: #fff;
+    line-height: 37px;
+  }
+  .map-main_page-info span {
+    font-weight: 1000;
+  }
+  .map-main_page-info-title {
+    margin-top: 40px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+    line-height: 44px;
+    font-size: 29px;
+    background-color: #fff;
+    color: #333333;
+  }
+  .map-main_page-info-inner {
+    padding: 10px 21px 0px 39px;
+    text-align: right;
+  }
+  .map-main_page-info-inner ul {
+    list-style: none;
+  }
+  .map-main_page-info-inner ul li {
+    margin-top: 3px;
+  }
+  .map-main_page-info-inner-address {
+    padding: 7px 0;
+    padding-bottom: 17px;
+    font-weight: 700;
+    border-bottom: 3px solid #FEDD49;
+  }
+  .map-main_page-info-inner-phone_numbers {
+    padding: 7px 0;
+    border-bottom: 3px solid #FEDD49;
+  }
+  .map-main_page-info-inner-work_hours {
+    padding: 7px 0;
+  }
+
+  .footer-banner {
+    height: 165px;
+    background-color: #F4F4F4;
+    padding: 27px 0;
+    margin: 0px;
+  }
+  .footer-banner-logo img {
+    height: 107px;
+  }
+  .footer-banner-title {
+    font-family: "Europe Bold Italic", arial;
+    line-height: normal;
+    font-size: 36px;
+    line-height: 37px;
+    color: #333333;
+    font-weight: 1000;
+  }
+
+  .footer-copyright {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 78px;
+    background-color: #333333;
+    margin: 0px;
+    padding: 25px 0 !important;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+    font-style: normal;
+    font-weight: normal !important;
+    line-height: normal;
+    font-size: 24px;
+    color: #fff;
+  }
+  .footer-developed-by {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 34px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+    margin: 0px;
+    padding: 6px 0 7px;
+    background-color: #212121;
+    color: rgba(255, 255, 255, 0.54);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: normal;
+    line-height: normal;
+  }
+  .footer-developed-by span {
+    color: #FEDD49;
+    padding-left: 5px;
   }
 }

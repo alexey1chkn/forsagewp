@@ -241,26 +241,27 @@ span
 .main-menu
 	background-color: $tmf
 	margin: 0 -40px
-	ul
-		text-decoration: none
-		list-style: none
-		display: flex
-		justify-content: space-around
-		font-size: 24px
-		line-height: 28px	
-		padding: 8px 3px
-		li
-			&:first-child
-				padding-left: 42px
-			&:last-child
-				padding-right: 42px		
-		a
+	&-nav
+		ul
 			text-decoration: none
-			color: $mainf
+			list-style: none
+			display: flex
+			justify-content: space-around
+			font-size: 24px
+			line-height: 28px	
 			padding: 8px 3px
-			&:hover
-				background-color: $mainf
-				color: $tmf
+			li
+				&:first-child
+					padding-left: 42px
+				&:last-child
+					padding-right: 42px		
+			a
+				text-decoration: none
+				color: $mainf
+				padding: 8px 3px
+				&:hover
+					background-color: $mainf
+					color: $tmf
 .slider
 	&-main_page
 		max-width: 1140px
@@ -1048,82 +1049,128 @@ textarea
 
 //MEDIA
 @media (max-width: 1200px)
+	
+	.header-map
+		img
+		&-span
+			&_top
+				top: 0px
+				left: 10%
+				right: 10%
+				font-size: 1.27vw
+			&_bottom
+				font-size: 1.7vw
+				left: 5.3%
+				right: 5.3%
+				line-height: 2vw
+				padding: 0 0 0.5vw 0
+				border-radius: 0 0 10px 10px			
+				.line
+					font-size: 27px
+					line-height: 2vw
+					margin: 17px 0 0 7px
+
+	.main-menu
+		&-nav
+			ul
+				li
+					a
+						font-size: 2.1vw
+	
+
 	.contacts
-		font-size: 17px
-		line-height: 21px
+		font-size: 1.6vw
+		line-height: 1.7vw
 		&-opening_hours
-			padding-left: 100px
-			padding-top: 8px
-			padding-bottom: 12px
+			padding-left: 9vw
+			padding-top: 0.7vw
+			padding-bottom: 1vw
 			&-logo
 				img
-					height: 23px
-					left: -23px
+					height: 2vw
+					left: -2.2vw
 			&-ways
 				&-check
-					height: 5px
-					width: 7px
+					height: 0.4vw
+					width: 0.7vw
 					border: 5px solid transparent
 					border-top: 7px solid $tmf
-					top: 15px
-					right: 77px
+					top: 1.3vw
+					right: 3.6vw
 			&:hover
 				.contacts-opening_hours
 					&-ways
-						height: 92px
+						height: 88px
 						&-first_way
 						&-second_way
 							top: 31px
 						&-third_way
 							top: 61px
+						&-check
+							top: 0.7vw
 		&-phone-numbers
+			padding-top: 0.85vw
+			padding-bottom: 0.85vw
 			&-logo
 				img
-					height: 23px
-					left: -37px
+					height: 2vw
+					left: -3.5vw
 			&-list
 				&-nubmer
 					&-check
-						height: 5px
-						width: 7px
+						height: 0.4vw
+						width: 0.7vw
 						border: 5px solid transparent
 						border-top: 7px solid $tmf
-						top: 15px
-						right: 66px
+						top: 1.3vw
+						right: 2.7vw
 			&:hover
 				.contacts-phone-numbers
 					&-list
-						height: 92px
+						height: 88px
 						&-nubmer
 							&-1
 							&-2
 								top: 31px
 							&-3
 								top: 61px
+							&-check
+								top: 0.7vw
 		&-email
 			padding: 8px 0px 12px
+
+	.slider-main_page
+		margin: 2vw 0
+
 	.goods
 		&_selection
+			margin: -2vw 0
 			.row
 				margin: 15px -15px
 			&-tires, &-discs
 				&_main
-					width: 425.6px
-					height: 239.2px
+					width: 44vw
+					height: 27vw
+					// width: 425.6px
+					// height: 239.2px
 					border-radius: 30px
 					&-characters					
-						font-size: 19.2px
-						line-height: 20px
+						font-size: 2vw
+						line-height: 2.1vw
 						margin-left: 15.2px			
 						ul
 							list-style: none
+							margin-top: 1.7vw
 							li
-								margin: 12.8px 0px 7.2px
+								margin: 1vw 0px 1.77vw
 								display: flex
+								select
+									margin-right: -2.17vw
+									min-height: 2.1vw
 								img
 									margin: 6.4px 14.4px 3.6px		
 					&-visual
-						height: 239.2px				
+						height: 27vw				
 						background-color: $tmf
 						margin-left: 8px //Под вопросом
 						img
@@ -1140,26 +1187,24 @@ textarea
 							bottom: 14.4px
 							left: 16px		
 				&_others
-					width: 425.6px
-					height: 148px
-					border-radius: 30px
-					margin: 15px 0
+					width: 44vw
+					height: 15vw
+					margin: 1.7vw 0
 					&-characters					
-						font-size: 19.2px
-						line-height: 20px
+						font-size: 2vw
+						line-height: 2.1vw
 						span
-							font-size: 26.4px
+							font-size: 2.5vw
 						ul
-							font-size: 19.2px
-							margin-top: 17px
-							margin-left: 21px
-							font-family: 'Play', arial
+							font-size: 2vw
+							margin-top: 1.7vw
+							margin-left: 2vw
 						p
-							font-size: 19.2px
-							margin-top: 17px
+							font-size: 2vw
+							margin-top: 1.7vw
 					&-visual
 						width: 100%
-						height: 148px				
+						height: 15vw				
 						img
 							width: 100%
 							height: 100%
@@ -1183,18 +1228,205 @@ textarea
 		&-checkbox
 			input[type="checkbox"] + label
 				right: -3px
-				top: 12px 
+				top: 12px
+
+	.contacts
+		margin: 0px
+	.main-menu
+		margin: 0px
 	.footer
 		&-banner
+			margin: 0px
 			&-title
 				font-size: 28.8px
+		&-copyright, &-developed-by
+			margin: 0px
+	.map
+			&-main_page
+				max-width: 99vw
+				margin: auto
 
-@media (max-width: 1024px)
-	.top-bar
+@media (max-width: 960px)
+
+	.top-bar, .bottom-bar
 		display: none
+		
+	.contacts
+		background-color: $bgf
+		border-radius: 1px
+		font-size: 21px
+		line-height: 25px
+		margin: 0 -40px
+		font-family: 'Play', arial
+		&-opening_hours
+			position: relative
+			padding-left: 100px
+			padding-top: 8px
+			padding-bottom: 12px
+			&-logo
+				position: relative
+				img
+					position: absolute
+					height: 27px
+					left: -27px
+			&-ways
+				&-first_way
+					padding-left: 12px
+				&-second_way
+					display: none				
+				&-third_way
+					display: none
+				&-check
+					height: 6px
+					width: 10px
+					border: 6px solid transparent
+					border-top: 10px solid $tmf
+					position: absolute
+					top: 17px
+					right: 80px
+			&:hover
+				.contacts-opening_hours
+					&-ways
+						background-color: $bgf
+						position: absolute
+						height: 103px
+						z-index: 99
+						border-radius: 10px
+						top: 2px						
+						box-shadow: 0 0 5px rgba(0,0,0,0.5)
+						cursor: default
+						&-first_way
+							display: block
+							padding: 5px 12px
+							width: 100%
+							border-radius: 10px 10px 0 0
+							&:hover
+								background-color: darken($bgf,17%)
+						&-second_way
+							display: block
+							position: absolute
+							top: 35px
+							padding: 5px 12px
+							width: 100%
+							&:hover
+								background-color: darken($bgf,17%)
+						&-third_way
+							display: inline-block
+							position: absolute
+							top: 69px
+							padding: 5px 12px
+							width: 100%
+							border-radius: 0 0 10px 10px
+							&:hover
+								background-color: darken($bgf,17%)
+						&-check
+							transform: rotate(180deg)
+							top: 10px
+
+
 	.content-area
 		margin: -7px
 		width: 100vw	
+	.map
+		&-main_page
+			iframe
+			&-info
+				height: 461px
+				width: 458px
+				background-color: rgba($tmf, 0.77)
+				position: absolute
+				top: 44px
+				right: 100px
+				font-size: 17px
+				color: $white
+				line-height: 37px
+				span
+					font-weight: 1000
+				&-title
+					margin-top: 40px
+					justify-content: center
+					text-align: center
+					line-height: 44px
+					font-size: 29px
+					background-color: $white
+					color: $tmf
+				&-inner
+					padding: 10px 21px 0px 39px
+					text-align: right
+					ul 
+						list-style: none
+						li
+							margin-top: 3px
+					&-address
+						padding: 7px 0
+						padding-bottom: 17px
+						font-weight: 700
+						border-bottom: 3px solid $mainf
+					&-phone_numbers
+						padding: 7px 0
+						border-bottom: 3px solid $mainf
+					&-work_hours
+						padding: 7px 0
+	.footer
+		&-banner
+			height: 165px
+			background-color: $bgf
+			padding: 27px 0
+			margin: 0px
+			&-logo
+				img
+					height: 107px
+			&-title
+				font-family: 'Europe Bold Italic', arial
+				line-height: normal
+				font-size: 36px
+				line-height: 37px
+				color: $tmf
+				font-weight: 1000
+
+	.footer
+		&-copyright
+			display: flex
+			height: 78px
+			background-color: $tmf
+			margin: 0px
+			padding: 25px 0 !important
+			justify-content: center
+			text-align: center
+			font-style: normal
+			font-weight: normal !important
+			line-height: normal
+			font-size: 24px
+			color: $white
+		&-developed-by
+			display: flex
+			height: 34px
+			justify-content: center
+			text-align: center
+			margin: 0px
+			padding: 6px 0 7px
+			background-color: darken($tmf, 7%)
+			color: rgba($white, 0.54)
+			font-size: 18px
+			font-style: normal
+			font-weight: normal
+			line-height: normal
+			span
+				color: $mainf
+				padding-left: 5px
+
+
+
+
+
+	
+.main-menu
+	&-nav
+		ul
+			li
+				a
+
+
 // @media (max-width: 960px)
 // 	.footer
 // 		&-banner
@@ -1208,3 +1440,4 @@ textarea
 // 				flex-direction: column
 // 				justify-content: center
 // 				align-items: center
+

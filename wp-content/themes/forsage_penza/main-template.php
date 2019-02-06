@@ -43,11 +43,11 @@ get_header();
 			?>
 			<div class="goods_selection">
 				<div class="row">
-					<div class="col-lg-6 col-12">
+					<div class="col-md-6 col-12">
 						<form action="/vybor-shin" method="GET">
 							<div class="goods_selection-tires_main">
 								<div class="row">
-									<div class="col-lg-7 col-md-8 col-7">								
+									<div class="col-7">								
 										<div class="goods_selection-tires_main-characters">
 											<ul>
 												<li>
@@ -165,7 +165,7 @@ get_header();
 											</ul>										
 										</div>
 									</div>
-									<div class="col-lg-5 col-md-4 col-5">
+									<div class="col-5">
 										<div class="goods_selection-tires_main-visual">
 											<span>Подбор шин</span>
 											<img src="<?php echo get_template_directory_uri();?>/assets/img/tire_main_1.svg" alt="">
@@ -177,7 +177,7 @@ get_header();
 						</form>
 					</div>
 					<!--END FORM=================================================================================================================-->
-					<div class="col-lg-6 col-12">
+					<div class="col-md-6 col-12">
 						<form action="/diski" method="GET">
 							<div class="goods_selection-discs_main">
 								<div class="row">
