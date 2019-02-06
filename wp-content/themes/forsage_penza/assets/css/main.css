@@ -1010,7 +1010,7 @@ ul .type-product a img {
   height: 37px;
   width: 37px;
   background-color: #333333;
-  font-family: Play;
+  font-family: "Play", arial;
   font-style: normal;
   font-weight: normal;
   line-height: normal;
@@ -1031,7 +1031,7 @@ ul .type-product a img {
 }
 
 .return-to-shop, .cart-empty {
-  font-family: Play;
+  font-family: "Play", arial;
   font-style: normal;
   font-weight: normal;
   line-height: normal;
@@ -1044,7 +1044,7 @@ ul .type-product a img {
   border-collapse: separate;
 }
 .woocommerce-cart-form__contents thead tr th {
-  font-family: Play;
+  font-family: "Play", arial;
   font-style: normal;
   font-weight: bold;
   line-height: normal;
@@ -1052,7 +1052,7 @@ ul .type-product a img {
   text-align: center;
 }
 .woocommerce-cart-form__contents tbody {
-  font-family: Play;
+  font-family: "Play", arial;
   font-style: normal;
   font-weight: bold;
   line-height: normal;
@@ -1117,7 +1117,7 @@ ul .type-product a img {
   color: #333333;
   border: none;
   padding: 12px 21px;
-  font-family: Play;
+  font-family: "Play", arial;
   font-style: normal;
   font-weight: bold;
   line-height: normal;
@@ -1213,7 +1213,7 @@ textarea {
   display: none;
 }
 .woocommerce-checkout {
-  font-family: Play;
+  font-family: "Play", arial;
   font-size: 21px;
 }
 .woocommerce-checkout .payment_methods {
@@ -1261,6 +1261,111 @@ textarea {
 .category-container a span {
   padding: 17px 0;
   text-align: center;
+}
+
+.filter-wrapper {
+  margin: 21px -40px;
+}
+.filter-wrapper h2 {
+  font-family: "Europe Bold Italic", arial;
+  line-height: normal;
+  font-size: 48px;
+  color: #333333;
+  padding-left: 40px;
+}
+.filter-choice {
+  background-color: #F4F4F4;
+  padding: 17px 0 18px 40px;
+  font-weight: bold;
+  line-height: normal;
+  font-size: 24px;
+  margin-top: 17px;
+}
+.filter-choice ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 12px;
+  margin-left: 10px;
+}
+.filter-choice ul li {
+  margin-left: 55px;
+}
+.filter-choice ul input {
+  margin-left: 55px;
+  background-color: #FEDD49;
+  font-weight: bold;
+  font-size: 17px;
+  border: none;
+  border-radius: 10px;
+}
+.filter-choice ul input:hover {
+  cursor: pointer;
+}
+
+.woocommerce-tabs {
+  font-family: "Play", arial;
+  font-size: 17px;
+}
+.woocommerce-tabs .woocommerce-Tabs-panel--additional_information h2 {
+  display: none;
+}
+.woocommerce-tabs .woocommerce-Tabs-panel--additional_information table tr:nth-child(2n) {
+  background-color: #fee46d;
+}
+.woocommerce-tabs .woocommerce-Tabs-panel--additional_information table th {
+  width: 210px;
+}
+.woocommerce-tabs .woocommerce-Tabs-panel--additional_information table a {
+  color: #333333;
+}
+
+.tires_not_in_stock {
+  background-color: #F4F4F4;
+  color: #333333;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.tires_not_in_stock h2 {
+  font-family: "Europe Bold Italic", arial;
+  line-height: normal;
+  font-size: 36px;
+  padding: 30px 0;
+}
+.tires_not_in_stock span {
+  font-size: 24px;
+  padding: 0px 0 30px 0;
+}
+.tires_not_in_stock a {
+  text-decoration: none;
+  background-color: #FEDD49;
+  color: #333333;
+  font-weight: bold;
+  font-size: 24px;
+  padding: 16px 33px;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 40px;
 }
 
 @media (max-width: 1200px) {

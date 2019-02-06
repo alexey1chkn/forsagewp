@@ -16,3 +16,49 @@
 
 2019-02-04T15:11:33+00:00 CRITICAL syntax error, unexpected '}', expecting ',' or ';' в D:\OSPanel\domains\forsagewp\wp-content\themes\forsage_penza\functions.php на строке 231
 
+2019-02-04T17:56:30+00:00 CRITICAL syntax error, unexpected ''tax_query'' (T_CONSTANT_ENCAPSED_STRING), expecting ')' в D:\OSPanel\domains\forsagewp\wp-content\themes\forsage_penza\disks_product_list.php на строке 119
+
+2019-02-04T17:56:53+00:00 CRITICAL syntax error, unexpected '=>' (T_DOUBLE_ARROW), expecting ';' в D:\OSPanel\domains\forsagewp\wp-content\themes\forsage_penza\disks_product_list.php на строке 21
+
+2019-02-04T19:05:44+00:00 CRITICAL syntax error, unexpected ')' в D:\OSPanel\domains\forsagewp\wp-content\themes\forsage_penza\disks_product_list.php на строке 60
+
+2019-02-04T19:41:05+00:00 CRITICAL Uncaught Error: Call to undefined function tires_filter() in D:\OSPanel\domains\forsagewp\wp-content\themes\forsage_penza\tires_not_in_stock.php:65
+Stack trace:
+#0 D:\OSPanel\domains\forsagewp\wp-includes\template-loader.php(74): include()
+#1 D:\OSPanel\domains\forsagewp\wp-blog-header.php(19): require_once('D:\\OSPanel\\doma...')
+#2 D:\OSPanel\domains\forsagewp\index.php(17): require('D:\\OSPanel\\doma...')
+#3 {main}
+  thrown в D:\OSPanel\domains\forsagewp\wp-content\themes\forsage_penza\tires_not_in_stock.php на строке 65
+
+2019-02-04T19:41:09+00:00 CRITICAL Uncaught Error: Call to undefined function tires_filter() in D:\OSPanel\domains\forsagewp\wp-content\themes\forsage_penza\tires_not_in_stock.php:65
+Stack trace:
+#0 D:\OSPanel\domains\forsagewp\wp-includes\template-loader.php(74): include()
+#1 D:\OSPanel\domains\forsagewp\wp-blog-header.php(19): require_once('D:\\OSPanel\\doma...')
+#2 D:\OSPanel\domains\forsagewp\index.php(17): require('D:\\OSPanel\\doma...')
+#3 {main}
+  thrown в D:\OSPanel\domains\forsagewp\wp-content\themes\forsage_penza\tires_not_in_stock.php на строке 65
+
+2019-02-04T19:41:26+00:00 CRITICAL Uncaught Error: Call to undefined function tires_filter() in D:\OSPanel\domains\forsagewp\wp-content\themes\forsage_penza\tires_not_in_stock.php:65
+Stack trace:
+#0 D:\OSPanel\domains\forsagewp\wp-includes\template-loader.php(74): include()
+#1 D:\OSPanel\domains\forsagewp\wp-blog-header.php(19): require_once('D:\\OSPanel\\doma...')
+#2 D:\OSPanel\domains\forsagewp\index.php(17): require('D:\\OSPanel\\doma...')
+#3 {main}
+  thrown в D:\OSPanel\domains\forsagewp\wp-content\themes\forsage_penza\tires_not_in_stock.php на строке 65
+
+2019-02-04T19:41:59+00:00 CRITICAL Uncaught Error: Call to undefined function tires_filter() in D:\OSPanel\domains\forsagewp\wp-content\themes\forsage_penza\tires_not_in_stock.php:65
+Stack trace:
+#0 D:\OSPanel\domains\forsagewp\wp-includes\template-loader.php(74): include()
+#1 D:\OSPanel\domains\forsagewp\wp-blog-header.php(19): require_once('D:\\OSPanel\\doma...')
+#2 D:\OSPanel\domains\forsagewp\index.php(17): require('D:\\OSPanel\\doma...')
+#3 {main}
+  thrown в D:\OSPanel\domains\forsagewp\wp-content\themes\forsage_penza\tires_not_in_stock.php на строке 65
+
+2019-02-04T19:42:29+00:00 CRITICAL Uncaught Error: Call to undefined function tires_filter() in D:\OSPanel\domains\forsagewp\wp-content\themes\forsage_penza\tires_not_in_stock.php:65
+Stack trace:
+#0 D:\OSPanel\domains\forsagewp\wp-includes\template-loader.php(74): include()
+#1 D:\OSPanel\domains\forsagewp\wp-blog-header.php(19): require_once('D:\\OSPanel\\doma...')
+#2 D:\OSPanel\domains\forsagewp\index.php(17): require('D:\\OSPanel\\doma...')
+#3 {main}
+  thrown в D:\OSPanel\domains\forsagewp\wp-content\themes\forsage_penza\tires_not_in_stock.php на строке 65
+
