@@ -43,7 +43,7 @@ get_header();
 			?>
 			<div class="goods_selection">
 				<div class="row">
-					<div class="col-md-6 col-12">
+					<div class="col-lg-6 col-12">
 						<form action="/vybor-shin" method="GET">
 							<div class="goods_selection-tires_main">
 								<div class="row">
@@ -177,7 +177,7 @@ get_header();
 						</form>
 					</div>
 					<!--END FORM=================================================================================================================-->
-					<div class="col-md-6 col-12">
+					<div class="col-lg-6 col-12">
 						<form action="/diski" method="GET">
 							<div class="goods_selection-discs_main">
 								<div class="row">
@@ -432,7 +432,7 @@ get_header();
 						</div>
 					</div>
 				</div>
-			
+			</div>
 			<!--MAP===============================================================================================================================-->
 			<div class="map-main_page">
 				<iframe frameborder="no" style="border: 1px solid #a3a3a3; box-sizing: border-box;" width="100%" height="550" src="https://widgets.2gis.com/widget?type=firmsonmap&amp;options=%7B%22pos%22%3A%7B%22lat%22%3A53.222903699090196%2C%22lon%22%3A44.966611862182624%2C%22zoom%22%3A16%7D%2C%22opt%22%3A%7B%22city%22%3A%22penza%22%7D%2C%22org%22%3A%225911502792046450%22%7D"></iframe>
@@ -460,14 +460,17 @@ get_header();
 			</div>
 			<!--FOOTER=============================================================================================================================================================-->
 			<div class="footer-banner">
-				<div class="row justify-content-xl-around justify-content-md-center align-items-center">
+				<div class="row justify-content-xl-around justify-content-center align-items-center">
 					<div class="col-3"><!-- col-md-5 -->
 						<div class="footer-banner-logo">
 							<img src="<?php echo get_template_directory_uri();?>/assets/img/logo.svg" alt="">
 						</div>
 					</div>
 					<div class="col-7"><!--  col-md-8 -->
-						<div class="footer-banner-title"><span>Максимальный ассортимент</span><br><span>За минимальные цены</span></div>
+						<div class="footer-banner-title">
+							<span>Максимальный ассортимент</span><br>
+							<span>За минимальные цены</span>
+						</div>
 					</div>
 				</div>
 			</div>

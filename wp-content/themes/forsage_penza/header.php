@@ -148,6 +148,14 @@
 					<div class="col-12">
 						<div class="main-menu">
 							<nav class="main-menu-nav">
+								<a href="#" class="main-menu-btn"><span></span></a>
+								<a href="" class="main-menu-mobile-main">Главная</a>
+								<div class="header-cart-mobile">
+									<span>Корзина</span>
+									<div class="header-cart-mobile-event">
+										<span class=""><?php global $woocommerce; echo sprintf($woocommerce->cart->cart_contents_count); ?></span>
+									</div>
+								</div>
 								<ul>
 									<li><a href="/">Главная</a></li>
 									<li><a href="/vybor-shin">Шины</a></li>

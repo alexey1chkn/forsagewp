@@ -304,6 +304,7 @@ span
 					img
 						position: absolute
 						top: 0
+						left: 0
 						border-radius: 0 30px 30px 0
 					span
 						display: inline-block
@@ -681,7 +682,7 @@ ul
 
 						
 //FILTER_STYLES
-.characters,
+.characters
 	display: flex
 	justify-content: space-between
 	width: 100%	
@@ -1047,8 +1048,12 @@ textarea
 		margin-bottom: 40px
 
 
+
+.main-menu-mobile-main, .header-cart-mobile
+	display: none
+	
 //MEDIA
-@media (max-width: 1200px)
+@media (max-width: 1280px)
 	
 	.header-map
 		img
@@ -1149,26 +1154,28 @@ textarea
 				margin: 15px -15px
 			&-tires, &-discs
 				&_main
-					width: 44vw
+					width: 43vw
 					height: 27vw
 					// width: 425.6px
 					// height: 239.2px
 					border-radius: 30px
 					&-characters					
-						font-size: 2vw
-						line-height: 2.1vw
+						font-size: 2.1vw
+						line-height: 2.5vw
 						margin-left: 15.2px			
 						ul
 							list-style: none
 							margin-top: 1.7vw
 							li
-								margin: 1vw 0px 1.77vw
+								margin: 1.2vw 0px 1.5vw
 								display: flex
 								select
-									margin-right: -2.17vw
+									margin-right: -2.27vw
 									min-height: 2.1vw
+									font-size: 1.7vw
 								img
-									margin: 6.4px 14.4px 3.6px		
+									margin: 6.4px 14.4px 3.6px
+												
 					&-visual
 						height: 27vw				
 						background-color: $tmf
@@ -1177,8 +1184,8 @@ textarea
 							width: 100%
 							height: 100%
 						span		
-							font-size: 28.8px
-							line-height: 28px
+							font-size: 2.7vw
+							line-height: 3vw
 						input			
 							width: 131.2px
 							height: 49.6px
@@ -1237,129 +1244,64 @@ textarea
 	.footer
 		&-banner
 			margin: 0px
+			height: 12vw
+			padding: 1.2vw 0 1.2vw 0
 			&-title
-				font-size: 28.8px
-		&-copyright, &-developed-by
+				font-size: 2.7vw
+		&-copyright
 			margin: 0px
-	.map
-			&-main_page
-				max-width: 99vw
-				margin: auto
+			font-size: 2vw
+			line-height: 2.1vw
+			height: 7vw
+			padding: 0
+			vertical-align: middle
+		&-developed-by
+			margin: 0px
+			font-size: 1.7vw
+			line-height: 2vw
+			height: 3vw
+			padding: 0.5vw 0
+			vertical-align: middle
 
-@media (max-width: 960px)
-
-	.top-bar, .bottom-bar
-		display: none
-		
-	.contacts
-		background-color: $bgf
-		border-radius: 1px
-		font-size: 21px
-		line-height: 25px
-		margin: 0 -40px
-		font-family: 'Play', arial
-		&-opening_hours
-			position: relative
-			padding-left: 100px
-			padding-top: 8px
-			padding-bottom: 12px
-			&-logo
-				position: relative
-				img
-					position: absolute
-					height: 27px
-					left: -27px
-			&-ways
-				&-first_way
-					padding-left: 12px
-				&-second_way
-					display: none				
-				&-third_way
-					display: none
-				&-check
-					height: 6px
-					width: 10px
-					border: 6px solid transparent
-					border-top: 10px solid $tmf
-					position: absolute
-					top: 17px
-					right: 80px
-			&:hover
-				.contacts-opening_hours
-					&-ways
-						background-color: $bgf
-						position: absolute
-						height: 103px
-						z-index: 99
-						border-radius: 10px
-						top: 2px						
-						box-shadow: 0 0 5px rgba(0,0,0,0.5)
-						cursor: default
-						&-first_way
-							display: block
-							padding: 5px 12px
-							width: 100%
-							border-radius: 10px 10px 0 0
-							&:hover
-								background-color: darken($bgf,17%)
-						&-second_way
-							display: block
-							position: absolute
-							top: 35px
-							padding: 5px 12px
-							width: 100%
-							&:hover
-								background-color: darken($bgf,17%)
-						&-third_way
-							display: inline-block
-							position: absolute
-							top: 69px
-							padding: 5px 12px
-							width: 100%
-							border-radius: 0 0 10px 10px
-							&:hover
-								background-color: darken($bgf,17%)
-						&-check
-							transform: rotate(180deg)
-							top: 10px
-
-
-	.content-area
-		margin: -7px
-		width: 100vw	
 	.map
 		&-main_page
+			max-width: 99vw
+			margin: auto
+			margin-top: 6vw
+			height: 60vh
+			position: relative
 			iframe
+				height: inherit
+				max-width: inherit
 			&-info
-				height: 461px
-				width: 458px
-				background-color: rgba($tmf, 0.77)
-				position: absolute
-				top: 44px
-				right: 100px
-				font-size: 17px
+				max-width: 458px
+				height: 37vw
+				width: 37vw
+				top: 4vh
+				right: 4vw
+				font-size: 1.9vw
 				color: $white
-				line-height: 37px
+				line-height: 3vw
 				span
 					font-weight: 1000
 				&-title
-					margin-top: 40px
+					margin-top: 2.7vw
 					justify-content: center
 					text-align: center
-					line-height: 44px
-					font-size: 29px
+					line-height: 4vw
+					font-size: 2.1vw
 					background-color: $white
 					color: $tmf
 				&-inner
-					padding: 10px 21px 0px 39px
+					padding: 0.7vh 1.7vw 0vw 1vh
 					text-align: right
 					ul 
 						list-style: none
 						li
 							margin-top: 3px
 					&-address
-						padding: 7px 0
-						padding-bottom: 17px
+						padding: 0.5vw 0
+						padding-bottom: 1vw
 						font-weight: 700
 						border-bottom: 3px solid $mainf
 					&-phone_numbers
@@ -1367,64 +1309,395 @@ textarea
 						border-bottom: 3px solid $mainf
 					&-work_hours
 						padding: 7px 0
-	.footer
-		&-banner
-			height: 165px
-			background-color: $bgf
-			padding: 27px 0
-			margin: 0px
-			&-logo
-				img
-					height: 107px
-			&-title
-				font-family: 'Europe Bold Italic', arial
-				line-height: normal
-				font-size: 36px
-				line-height: 37px
-				color: $tmf
-				font-weight: 1000
 
-	.footer
-		&-copyright
-			display: flex
-			height: 78px
-			background-color: $tmf
-			margin: 0px
-			padding: 25px 0 !important
-			justify-content: center
-			text-align: center
-			font-style: normal
-			font-weight: normal !important
-			line-height: normal
-			font-size: 24px
-			color: $white
-		&-developed-by
-			display: flex
-			height: 34px
-			justify-content: center
-			text-align: center
-			margin: 0px
-			padding: 6px 0 7px
-			background-color: darken($tmf, 7%)
-			color: rgba($white, 0.54)
-			font-size: 18px
-			font-style: normal
-			font-weight: normal
-			line-height: normal
-			span
-				color: $mainf
-				padding-left: 5px
+@media (max-width: 992px)
 
-
-
-
-
+	.header, .contacts, .bottom-bar
+		display: none
 	
-.main-menu
-	&-nav
-		ul
-			li
-				a
+	.header-cart-mobile	
+		font-size: 5vw
+		display: flex
+		position: absolute
+		top: 50%
+		margin-top: -2.5vw
+		right: 12vw
+		color: $mainf
+		&-event
+			span
+				display: block
+				position: absolute
+				width: 7vw
+				height: 7vw
+				background-color: $mainf
+				color: $tmf
+				border-radius: 50%
+				padding-left: 1.4vw
+				padding-top: 1vw
+				margin-left: 2vw
+				margin-top: -1vw
+
+	.main-menu
+		position: relative
+		margin: 0 -15px
+		a
+			text-decoration: none
+			color: $mainf
+		&-mobile-main
+			font-size: 5vw
+			position: absolute
+			top: 5vw
+			left: 11vw
+			transform: translateY(-50%)
+		&-nav
+			height: 10vw
+			ul
+				display: flex
+				flex-direction: column
+				justify-content: center
+				align-items: center
+				transition: 0.2s
+				transform: scaleY(0)
+				transform-origin: top center
+				margin-top: -21px
+				li
+					padding: 0.7vw 0px !important
+					width: 100%
+					text-align: center
+					a
+						color: $tmf	
+						font-size: 4vw
+						&:hover
+							background-color: rgba(0,0,0,0) 
+					&:nth-child(n)
+						background-color: #FEDD49
+					&:nth-child(2n)
+						background-color: #F1D24C					
+							
+			&_active
+				height: 100%
+				ul
+					margin-top: 0vw
+					transform: scaleY(1)
+		&-btn
+			display: inline-block
+			width: 10vw
+			height: 10vw
+			position: relative
+			span
+				position: absolute
+				top: 50%
+				margin-top: -0.45vw
+				left: 50%
+				margin-left: -2.5vw
+				width: 5vw
+				height: 0.7vw
+				background-color: $mainf
+				&::before, &::after
+					position: absolute
+					top: 50%
+					margin-top: -0.45vw
+					left: 50%
+					margin-left: -2.5vw
+					width: 5vw
+					height: 0.7vw
+					background-color: $mainf
+				&::before, &::after
+					content: ''
+					display: block
+					transition: 0.2s
+				&::before
+					transform: translateY(-1.7vw)
+				&::after
+					transform: translateY(1.7vw)
+		&-btn_active span
+			height: 0px
+			&:before
+				transform: rotate(-45deg)
+			&:after
+				transform: rotate(45deg)
+	.goods
+		&_selection
+			margin: -2vw 7vw
+			.row
+				margin: 15px -15px
+			&-tires, &-discs
+				&_main
+					width: 80vw
+					height: 44vw
+					// width: 425.6px
+					// height: 239.2px
+					border-radius: 3vw
+					&-characters					
+						font-size: 4vw
+						line-height: 5vw
+						margin-left: 2vw			
+						ul
+							list-style: none
+							margin-top: 2.3vw
+							li
+								margin: 2.1vw 0px 2.1vw
+								display: flex
+								select
+									margin-right: -2.17vw
+									min-height: 2.1vw
+									font-size: 3vw
+									padding: 0.1vw 2vw
+								img
+									width: 6vw
+									margin: 8px 1vw 3.6px 1vw
+								input + label:after
+									left: 1vw !important
+									top: 20% !important
+									min-width: 2.7vw !important
+									min-height: 2.7vw !important
+									border-radius: 1.7vw
+									border-left: 1vw solid $tmf
+									border-bottom: 1vw solid $tmf
+								input + label
+									min-width: 6vw !important
+									min-height: 6vw !important
+									right: -3vw !important
+													
+					&-visual
+						height: 44vw				
+						background-color: $tmf
+						margin-left: 8px //Под вопросом
+						img
+							width: 100%
+							height: 100%
+						span		
+							font-size: 5vw
+							line-height: 5.1vw
+						input			
+							width: 25vw
+							height: 8.8vw
+							font-size: 3.7vw
+							line-height: 4vw
+							bottom: 2.1vw
+							left: 2.1vw
+							border-radius: 3vw	
+
+@media (max-width: 768px)
+	footer
+		margin-top: 0.7vw
+	.goods
+		&_selection
+			margin: 0
+			.row
+				margin: 15px -15px
+			&-tires, &-discs
+				&_main
+					width: 93vw
+					height: 50vw
+					margin: auto
+					// width: 425.6px
+					// height: 239.2px
+					border-radius: 3vw
+					&-characters					
+						font-size: 4vw
+						line-height: 5vw
+						margin-left: 2vw			
+						ul
+							list-style: none
+							margin-top: 2.3vw
+							li
+								margin: 2.1vw -0.7vw 2.1vw 0vw
+								display: flex
+								select
+									margin-right: -2.17vw
+									min-height: 2.1vw
+									font-size: 3vw
+									padding: 0.1vw 2vw
+								img
+									width: 6vw
+									margin: 8px 1vw 3.6px 1vw
+								input + label:after
+									left: 1vw !important
+									top: 20% !important
+									min-width: 2.7vw !important
+									min-height: 2.7vw !important
+									border-radius: 1.7vw
+									border-left: 1vw solid $tmf
+									border-bottom: 1vw solid $tmf
+								input + label
+									min-width: 6vw !important
+									min-height: 6vw !important
+									right: -3vw !important
+													
+					&-visual
+						height: 50vw				
+						background-color: $tmf
+						margin-left: 8px //Под вопросом
+						position: relative
+						img
+							width: 100%
+							height: 100%
+							position: absolute
+							left: 0
+						span		
+							font-size: 5vw
+							line-height: 5.1vw
+						input			
+							width: 25vw
+							height: 8.8vw
+							font-size: 3.7vw
+							line-height: 4vw
+							bottom: 2.1vw
+							left: 2.1vw
+							border-radius: 3vw	
+	
+@media (max-width: 546px)
+
+	.goods
+		&_selection
+			margin: 0
+			.row
+				margin: 15px -15px
+			&-tires, &-discs
+				&_main
+					width: 93vw
+					height: 50vw
+					margin: auto
+					// width: 425.6px
+					// height: 239.2px
+					border-radius: 3vw
+					&-characters					
+						font-size: 4vw
+						line-height: 5vw
+						margin-left: 2vw			
+						ul
+							list-style: none
+							margin-top: 2.3vw
+							li
+								margin: 2.1vw -2.1vw 2.1vw 0vw
+								display: flex
+								select
+									margin-right: -2.17vw
+									min-height: 2.1vw
+									font-size: 3vw
+									padding: 0.1vw 2vw
+								img
+									width: 6vw
+									margin: 8px 1vw 3.6px 1vw
+								input + label:after
+									left: 1vw !important
+									top: 20% !important
+									min-width: 2.7vw !important
+									min-height: 2.7vw !important
+									border-radius: 1.7vw
+									border-left: 1vw solid $tmf
+									border-bottom: 1vw solid $tmf
+								input + label
+									min-width: 6vw !important
+									min-height: 6vw !important
+									right: -3vw !important
+													
+					&-visual
+						height: 50vw				
+						background-color: $tmf
+						margin-left: 8px //Под вопросом
+						position: relative
+						img
+							width: 100%
+							height: 100%
+							position: absolute
+							left: 0
+						span		
+							font-size: 5vw
+							line-height: 5.1vw
+						input			
+							width: 25vw
+							height: 8.8vw
+							font-size: 3.7vw
+							line-height: 4vw
+							bottom: 2.1vw
+							left: 2.1vw
+							border-radius: 3vw	
+
+
+@media (max-width: 400px)
+
+	.slider-main_page
+		margin-left: -2vw
+	.goods
+			&_selection
+				margin: 0
+				.row
+					margin: 15px -15px
+				&-tires, &-discs
+					&_main
+						width: 93vw
+						height: 50vw
+						margin-left: -2vw
+						// width: 425.6px
+						// height: 239.2px
+						border-radius: 3vw
+						&-characters					
+							font-size: 4.2vw
+							line-height: 6vw
+							margin-left: 2vw			
+							ul
+								list-style: none
+								margin-top: 2.3vw
+								li
+									margin: 1.5vw -4vw 1.5vw 0vw
+									display: flex
+									select
+										margin-right: -2.17vw
+										min-height: 2.1vw
+										font-size: 3.6vw
+										padding: 0.1vw 2vw
+									img
+										width: 6vw
+										margin: 8px 1vw 3.6px 1vw
+									input + label:after
+										left: 1vw !important
+										top: 20% !important
+										min-width: 2.7vw !important
+										min-height: 2.7vw !important
+										border-radius: 1.7vw
+										border-left: 1vw solid $tmf
+										border-bottom: 1vw solid $tmf
+									input + label
+										min-width: 6vw !important
+										min-height: 6vw !important
+										right: -3vw !important
+														
+						&-visual
+							height: 50vw				
+							background-color: $tmf
+							margin-left: 8px //Под вопросом
+							position: relative
+							img
+								width: 100%
+								height: 100%
+								position: absolute
+								left: 0
+							span		
+								font-size: 5vw
+								line-height: 5.1vw
+							input			
+								width: 25vw
+								height: 8.8vw
+								font-size: 3.7vw
+								line-height: 4vw
+								bottom: 2.1vw
+								left: 2.1vw
+								border-radius: 3vw	
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 // @media (max-width: 960px)
@@ -1441,3 +1714,173 @@ textarea
 // 				justify-content: center
 // 				align-items: center
 
+		
+	// .contacts
+	// 	background-color: $bgf
+	// 	border-radius: 1px
+	// 	font-size: 21px
+	// 	line-height: 25px
+	// 	margin: 0 -40px
+	// 	font-family: 'Play', arial
+	// 	&-opening_hours
+	// 		position: relative
+	// 		padding-left: 100px
+	// 		padding-top: 8px
+	// 		padding-bottom: 12px
+	// 		&-logo
+	// 			position: relative
+	// 			img
+	// 				position: absolute
+	// 				height: 27px
+	// 				left: -27px
+	// 		&-ways
+	// 			&-first_way
+	// 				padding-left: 12px
+	// 			&-second_way
+	// 				display: none				
+	// 			&-third_way
+	// 				display: none
+	// 			&-check
+	// 				height: 6px
+	// 				width: 10px
+	// 				border: 6px solid transparent
+	// 				border-top: 10px solid $tmf
+	// 				position: absolute
+	// 				top: 17px
+	// 				right: 80px
+	// 		&:hover
+	// 			.contacts-opening_hours
+	// 				&-ways
+	// 					background-color: $bgf
+	// 					position: absolute
+	// 					height: 103px
+	// 					z-index: 99
+	// 					border-radius: 10px
+	// 					top: 2px						
+	// 					box-shadow: 0 0 5px rgba(0,0,0,0.5)
+	// 					cursor: default
+	// 					&-first_way
+	// 						display: block
+	// 						padding: 5px 12px
+	// 						width: 100%
+	// 						border-radius: 10px 10px 0 0
+	// 						&:hover
+	// 							background-color: darken($bgf,17%)
+	// 					&-second_way
+	// 						display: block
+	// 						position: absolute
+	// 						top: 35px
+	// 						padding: 5px 12px
+	// 						width: 100%
+	// 						&:hover
+	// 							background-color: darken($bgf,17%)
+	// 					&-third_way
+	// 						display: inline-block
+	// 						position: absolute
+	// 						top: 69px
+	// 						padding: 5px 12px
+	// 						width: 100%
+	// 						border-radius: 0 0 10px 10px
+	// 						&:hover
+	// 							background-color: darken($bgf,17%)
+	// 					&-check
+	// 						transform: rotate(180deg)
+	// 						top: 10px
+
+
+	// .content-area
+	// 	margin: -7px
+	// 	width: 100vw	
+	// .map
+	// 	&-main_page
+	// 		iframe
+	// 		&-info
+	// 			height: 461px
+	// 			width: 458px
+	// 			background-color: rgba($tmf, 0.77)
+	// 			position: absolute
+	// 			top: 44px
+	// 			right: 100px
+	// 			font-size: 17px
+	// 			color: $white
+	// 			line-height: 37px
+	// 			span
+	// 				font-weight: 1000
+	// 			&-title
+	// 				margin-top: 40px
+	// 				justify-content: center
+	// 				text-align: center
+	// 				line-height: 44px
+	// 				font-size: 29px
+	// 				background-color: $white
+	// 				color: $tmf
+	// 			&-inner
+	// 				padding: 10px 21px 0px 39px
+	// 				text-align: right
+	// 				ul 
+	// 					list-style: none
+	// 					li
+	// 						margin-top: 3px
+	// 				&-address
+	// 					padding: 7px 0
+	// 					padding-bottom: 17px
+	// 					font-weight: 700
+	// 					border-bottom: 3px solid $mainf
+	// 				&-phone_numbers
+	// 					padding: 7px 0
+	// 					border-bottom: 3px solid $mainf
+	// 				&-work_hours
+	// 					padding: 7px 0
+	// .footer
+	// 	&-banner
+	// 		height: 165px
+	// 		background-color: $bgf
+	// 		padding: 27px 0
+	// 		margin: 0px
+	// 		&-logo
+	// 			img
+	// 				height: 107px
+	// 		&-title
+	// 			font-family: 'Europe Bold Italic', arial
+	// 			line-height: normal
+	// 			font-size: 36px
+	// 			line-height: 37px
+	// 			color: $tmf
+	// 			font-weight: 1000
+
+	// .footer
+	// 	&-copyright
+	// 		display: flex
+	// 		height: 78px
+	// 		background-color: $tmf
+	// 		margin: 0px
+	// 		padding: 25px 0 !important
+	// 		justify-content: center
+	// 		text-align: center
+	// 		font-style: normal
+	// 		font-weight: normal !important
+	// 		line-height: normal
+	// 		font-size: 24px
+	// 		color: $white
+	// 	&-developed-by
+	// 		display: flex
+	// 		height: 34px
+	// 		justify-content: center
+	// 		text-align: center
+	// 		margin: 0px
+	// 		padding: 6px 0 7px
+	// 		background-color: darken($tmf, 7%)
+	// 		color: rgba($white, 0.54)
+	// 		font-size: 18px
+	// 		font-style: normal
+	// 		font-weight: normal
+	// 		line-height: normal
+	// 		span
+	// 			color: $mainf
+	// 			padding-left: 5px
+
+
+
+
+
+	
