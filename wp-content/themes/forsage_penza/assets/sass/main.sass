@@ -4,6 +4,7 @@
 
 html
 	font-family: 'Play', arial
+	overflow-x: hidden
 
 .wrapper
 	max-width: 1200px
@@ -365,7 +366,10 @@ span
 					position: relative
 					margin-left: 8px
 					img
-						border-radius: inherit   
+						border-radius: inherit
+						position: absolute
+						top: 0
+						left: 0  
 					span
 						display: inline-block
 						color: $mainf					
@@ -403,6 +407,7 @@ span
 					img
 						position: absolute
 						top: 0
+						left: 0
 						border-radius: 0 30px 30px 0			
 					span
 						display: inline-block
@@ -497,6 +502,9 @@ span
 			line-height: 37px
 			color: $tmf
 			font-weight: 1000
+			ul
+				list-style: none
+				
 
 .footer
 	&-copyright
@@ -504,12 +512,11 @@ span
 		height: 78px
 		background-color: $tmf
 		margin: 0 -40px 0px
-		padding: 25px 0 !important
 		justify-content: center
 		text-align: center
 		font-style: normal
 		font-weight: normal !important
-		line-height: normal
+		line-height: 78px
 		font-size: 24px
 		color: $white
 	&-developed-by
@@ -1248,13 +1255,13 @@ textarea
 			padding: 1.2vw 0 1.2vw 0
 			&-title
 				font-size: 2.7vw
+
 		&-copyright
 			margin: 0px
 			font-size: 2vw
-			line-height: 2.1vw
+			line-height: 7vw
 			height: 7vw
-			padding: 0
-			vertical-align: middle
+			padding: 0 !important
 		&-developed-by
 			margin: 0px
 			font-size: 1.7vw
@@ -1319,7 +1326,7 @@ textarea
 		font-size: 5vw
 		display: flex
 		position: absolute
-		top: 50%
+		top: 5vw
 		margin-top: -2.5vw
 		right: 12vw
 		color: $mainf
@@ -1359,7 +1366,7 @@ textarea
 				transition: 0.2s
 				transform: scaleY(0)
 				transform-origin: top center
-				margin-top: -21px
+				margin-top: -7.7vw
 				li
 					padding: 0.7vw 0px !important
 					width: 100%
@@ -1377,7 +1384,7 @@ textarea
 			&_active
 				height: 100%
 				ul
-					margin-top: 0vw
+					margin-top: -1.7vw
 					transform: scaleY(1)
 		&-btn
 			display: inline-block
@@ -1425,6 +1432,8 @@ textarea
 				&_main
 					width: 80vw
 					height: 44vw
+					margin: auto
+					margin-bottom: 1vw
 					// width: 425.6px
 					// height: 239.2px
 					border-radius: 3vw
@@ -1438,6 +1447,8 @@ textarea
 							li
 								margin: 2.1vw 0px 2.1vw
 								display: flex
+								#cb
+									padding-right: 2.7vw
 								select
 									margin-right: -2.17vw
 									min-height: 2.1vw
@@ -1447,7 +1458,7 @@ textarea
 									width: 6vw
 									margin: 8px 1vw 3.6px 1vw
 								input + label:after
-									left: 1vw !important
+									left: 1.5vw !important
 									top: 20% !important
 									min-width: 2.7vw !important
 									min-height: 2.7vw !important
@@ -1457,108 +1468,74 @@ textarea
 								input + label
 									min-width: 6vw !important
 									min-height: 6vw !important
-									right: -3vw !important
-													
+									right: -4.6vw !important
 					&-visual
 						height: 44vw				
-						background-color: $tmf
-						margin-left: 8px //Под вопросом
-						img
-							width: 100%
-							height: 100%
 						span		
-							font-size: 5vw
-							line-height: 5.1vw
+							font-size: 5.5vw
+							line-height: 5.7vw
 						input			
 							width: 25vw
-							height: 8.8vw
-							font-size: 3.7vw
-							line-height: 4vw
-							bottom: 2.1vw
-							left: 2.1vw
-							border-radius: 3vw	
+							height: 9vw
+							font-size: 4vw
+							line-height: 9vw
+							bottom: 1.7vw
+							left: 1.7vw
+							padding: 0				
+				&_others
+					width: 80vw
+					height: 21vw
+					margin: 1.7vw 0
+					&-characters					
+						font-size: 2.7vw
+						line-height: 3vw
+						span
+							font-size: 4vw
+						ul
+							font-size: 2.7vw
+							margin-top: 1.7vw
+							margin-left: 2vw
+						p
+							font-size: 2.7vw
+							margin-top: 1.7vw
+					&-visual
+						height: 21vw				
+						img
+						a
+							z-index: 7
+							width: 21vw
+							height: 8vw
+							font-size: 3.6vw
+							line-height: 8vw
+							padding: 0
+							bottom: 1.7vw
+							left: 1.7vw
+	.footer
+		&-banner
+			padding: 0
+			margin-bottom: 0
+			.row
+				height: inherit
+				width: inherit
+			&-title
+				ul
+					li:last-child
+						margin-top: -0.7vw
+
 
 @media (max-width: 768px)
-	footer
-		margin-top: 0.7vw
-	.goods
-		&_selection
-			margin: 0
-			.row
-				margin: 15px -15px
-			&-tires, &-discs
-				&_main
-					width: 93vw
-					height: 50vw
-					margin: auto
-					// width: 425.6px
-					// height: 239.2px
-					border-radius: 3vw
-					&-characters					
-						font-size: 4vw
-						line-height: 5vw
-						margin-left: 2vw			
-						ul
-							list-style: none
-							margin-top: 2.3vw
-							li
-								margin: 2.1vw -0.7vw 2.1vw 0vw
-								display: flex
-								select
-									margin-right: -2.17vw
-									min-height: 2.1vw
-									font-size: 3vw
-									padding: 0.1vw 2vw
-								img
-									width: 6vw
-									margin: 8px 1vw 3.6px 1vw
-								input + label:after
-									left: 1vw !important
-									top: 20% !important
-									min-width: 2.7vw !important
-									min-height: 2.7vw !important
-									border-radius: 1.7vw
-									border-left: 1vw solid $tmf
-									border-bottom: 1vw solid $tmf
-								input + label
-									min-width: 6vw !important
-									min-height: 6vw !important
-									right: -3vw !important
-													
-					&-visual
-						height: 50vw				
-						background-color: $tmf
-						margin-left: 8px //Под вопросом
-						position: relative
-						img
-							width: 100%
-							height: 100%
-							position: absolute
-							left: 0
-						span		
-							font-size: 5vw
-							line-height: 5.1vw
-						input			
-							width: 25vw
-							height: 8.8vw
-							font-size: 3.7vw
-							line-height: 4vw
-							bottom: 2.1vw
-							left: 2.1vw
-							border-radius: 3vw	
-	
-@media (max-width: 546px)
 
 	.goods
 		&_selection
 			margin: 0
 			.row
-				margin: 15px -15px
+				margin: 1.7vw -1.7vw
 			&-tires, &-discs
 				&_main
-					width: 93vw
-					height: 50vw
+					width: 88vw
+					height: 46vw
 					margin: auto
+					margin-bottom: 1vw
 					// width: 425.6px
 					// height: 239.2px
 					border-radius: 3vw
@@ -1570,8 +1547,10 @@ textarea
 							list-style: none
 							margin-top: 2.3vw
 							li
-								margin: 2.1vw -2.1vw 2.1vw 0vw
+								margin: 2.1vw -1.7vw 2.1vw 0
 								display: flex
+								#cb
+									padding-right: 2.7vw
 								select
 									margin-right: -2.17vw
 									min-height: 2.1vw
@@ -1581,7 +1560,7 @@ textarea
 									width: 6vw
 									margin: 8px 1vw 3.6px 1vw
 								input + label:after
-									left: 1vw !important
+									left: 1.5vw !important
 									top: 20% !important
 									min-width: 2.7vw !important
 									min-height: 2.7vw !important
@@ -1591,103 +1570,149 @@ textarea
 								input + label
 									min-width: 6vw !important
 									min-height: 6vw !important
-									right: -3vw !important
-													
+									right: -4.6vw !important
 					&-visual
-						height: 50vw				
-						background-color: $tmf
-						margin-left: 8px //Под вопросом
-						position: relative
-						img
-							width: 100%
-							height: 100%
-							position: absolute
-							left: 0
+						height: 46vw				
 						span		
-							font-size: 5vw
-							line-height: 5.1vw
+							font-size: 5.5vw
+							line-height: 5.7vw
 						input			
-							width: 25vw
-							height: 8.8vw
-							font-size: 3.7vw
-							line-height: 4vw
+							width: 27vw
+							height: 10vw
+							font-size: 4.4vw
+							line-height: 10vw
 							bottom: 2.1vw
 							left: 2.1vw
-							border-radius: 3vw	
+							padding: 0				
+				&_others
+					width: 88vw
+					height: 27vw
+					margin: auto
+					&-characters					
+						font-size: 2.7vw
+						line-height: 3vw
+						span
+							font-size: 4.6vw
+						ul
+							font-size: 3.3vw
+							margin-top: 2.7vw
+							margin-left: 2.7vw
+						p
+							font-size: 3.3vw
+							margin-top: 2.7vw
+					&-visual
+						height: 27vw				
+						img
+						a
+							z-index: 7
+							width: 24vw
+							height: 9vw
+							font-size: 4vw
+							line-height: 9vw
+							padding: 0
+							bottom: 2.1vw
+							left: 2.1vw
+	.map
+		&-main_page
+			&-info
+				height: 38vw
+				width: 35vw
+				top: 30vh
+				right: 2vw
+				&-title
+					margin-top: 1.7vw
+					&-address
+						padding: 0.5vw 0
+						padding-bottom: 1vw
+						border-bottom: 0.3vw solid $mainf
+					&-phone_numbers
+						padding: 0.5vw 0
+						border-bottom: 0.3vw solid $mainf
+					&-work_hours
+						padding: 0.5vw 0
+	.footer
+		&-banner
+			padding: 0
+			margin-bottom: 0
+			.row
+				height: inherit
+				width: inherit
+			&-title
+				ul
+					li:last-child
+						margin-top: -2.5vw 
+	
+@media (max-width: 576px)
+	.slider-main_page
+		margin-bottom: 0
+	.goods
+		&_selection
+			margin: 0 -4vw
+			.row
+				margin: 1.1vw -2.1vw
+				form
+					margin-top: 2vw
+			&-tires, &-discs
+				&_main
+					width: 94vw
+					height: 46vw
+					// width: 425.6px
+					// height: 239.2px
+					border-radius: 5vw
+					&-visual			
+						span		
+						input			
+							width: 30vw
+							height: 12vw
+							font-size: 4.6vw
+							line-height: 12vw
+				&_others
+					width: 94vw
+					height: 27vw
+					margin-bottom: 2vw
+					&-characters
+						margin-top: -2vw
+					&-visual
+						a
+							width: 26vw
+							height: 11vw
+							font-size: 4.4vw
+							line-height: 11vw
+	.map
+		&-main_page
+			margin-top: 3vw
+			&-info
+				display: none
+				
+	.footer
+		&-banner
+			padding: 0
+			margin-bottom: 0
+			padding-top: 1vw
+			height: 100%
+			text-align: center
+			.row
+				height: inherit
+				width: inherit
+			&-title
+				ul
+					font-size: 4.6vw
+		&-copyright
+			margin: 0px
+			font-size: 2.3vw
+			line-height: 10vw			
+			height: 10vw
+			text-align: left
+		&-developed-by
+			margin: 0px
+			font-size: 3vw
+			line-height: 4.6vw
+			height: 5.6vw
+			padding: 0.5vw 0			
+						
 
 
 @media (max-width: 400px)
-
-	.slider-main_page
-		margin-left: -2vw
-	.goods
-			&_selection
-				margin: 0
-				.row
-					margin: 15px -15px
-				&-tires, &-discs
-					&_main
-						width: 93vw
-						height: 50vw
-						margin-left: -2vw
-						// width: 425.6px
-						// height: 239.2px
-						border-radius: 3vw
-						&-characters					
-							font-size: 4.2vw
-							line-height: 6vw
-							margin-left: 2vw			
-							ul
-								list-style: none
-								margin-top: 2.3vw
-								li
-									margin: 1.5vw -4vw 1.5vw 0vw
-									display: flex
-									select
-										margin-right: -2.17vw
-										min-height: 2.1vw
-										font-size: 3.6vw
-										padding: 0.1vw 2vw
-									img
-										width: 6vw
-										margin: 8px 1vw 3.6px 1vw
-									input + label:after
-										left: 1vw !important
-										top: 20% !important
-										min-width: 2.7vw !important
-										min-height: 2.7vw !important
-										border-radius: 1.7vw
-										border-left: 1vw solid $tmf
-										border-bottom: 1vw solid $tmf
-									input + label
-										min-width: 6vw !important
-										min-height: 6vw !important
-										right: -3vw !important
-														
-						&-visual
-							height: 50vw				
-							background-color: $tmf
-							margin-left: 8px //Под вопросом
-							position: relative
-							img
-								width: 100%
-								height: 100%
-								position: absolute
-								left: 0
-							span		
-								font-size: 5vw
-								line-height: 5.1vw
-							input			
-								width: 25vw
-								height: 8.8vw
-								font-size: 3.7vw
-								line-height: 4vw
-								bottom: 2.1vw
-								left: 2.1vw
-								border-radius: 3vw	
-
-
-
 
 
 

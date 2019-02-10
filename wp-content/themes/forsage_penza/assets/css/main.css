@@ -59,6 +59,7 @@ table {
 }
 html {
   font-family: "Play", arial;
+  overflow-x: hidden;
 }
 
 .wrapper {
@@ -507,6 +508,9 @@ span .custom_title {
 }
 .goods_selection-tires_others-visual img {
   border-radius: inherit;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 .goods_selection-tires_others-visual span {
   display: inline-block;
@@ -554,6 +558,7 @@ span .custom_title {
 .goods_selection-discs_main-visual img {
   position: absolute;
   top: 0;
+  left: 0;
   border-radius: 0 30px 30px 0;
 }
 .goods_selection-discs_main-visual span {
@@ -677,6 +682,9 @@ span .custom_title {
   color: #333333;
   font-weight: 1000;
 }
+.footer-banner-title ul {
+  list-style: none;
+}
 
 .footer-copyright {
   display: -webkit-box;
@@ -685,14 +693,13 @@ span .custom_title {
   height: 78px;
   background-color: #333333;
   margin: 0 -40px 0px;
-  padding: 25px 0 !important;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   text-align: center;
   font-style: normal;
   font-weight: normal !important;
-  line-height: normal;
+  line-height: 78px;
   font-size: 24px;
   color: #fff;
 }
@@ -1595,10 +1602,9 @@ textarea {
   .footer-copyright {
     margin: 0px;
     font-size: 2vw;
-    line-height: 2.1vw;
+    line-height: 7vw;
     height: 7vw;
-    padding: 0;
-    vertical-align: middle;
+    padding: 0 !important;
   }
   .footer-developed-by {
     margin: 0px;
@@ -1679,7 +1685,7 @@ textarea {
     display: -ms-flexbox;
     display: flex;
     position: absolute;
-    top: 50%;
+    top: 5vw;
     margin-top: -2.5vw;
     right: 12vw;
     color: #FEDD49;
@@ -1737,7 +1743,7 @@ textarea {
             transform: scaleY(0);
     -webkit-transform-origin: top center;
             transform-origin: top center;
-    margin-top: -21px;
+    margin-top: -7.7vw;
   }
   .main-menu-nav ul li {
     padding: 0.7vw 0px !important;
@@ -1761,7 +1767,7 @@ textarea {
     height: 100%;
   }
   .main-menu-nav_active ul {
-    margin-top: 0vw;
+    margin-top: -1.7vw;
     -webkit-transform: scaleY(1);
             transform: scaleY(1);
   }
@@ -1826,6 +1832,8 @@ textarea {
   .goods_selection-tires_main, .goods_selection-discs_main {
     width: 80vw;
     height: 44vw;
+    margin: auto;
+    margin-bottom: 1vw;
     border-radius: 3vw;
   }
   .goods_selection-tires_main-characters, .goods_selection-discs_main-characters {
@@ -1843,6 +1851,9 @@ textarea {
     display: -ms-flexbox;
     display: flex;
   }
+  .goods_selection-tires_main-characters ul li #cb, .goods_selection-discs_main-characters ul li #cb {
+    padding-right: 2.7vw;
+  }
   .goods_selection-tires_main-characters ul li select, .goods_selection-discs_main-characters ul li select {
     margin-right: -2.17vw;
     min-height: 2.1vw;
@@ -1854,7 +1865,7 @@ textarea {
     margin: 8px 1vw 3.6px 1vw;
   }
   .goods_selection-tires_main-characters ul li input + label:after, .goods_selection-discs_main-characters ul li input + label:after {
-    left: 1vw !important;
+    left: 1.5vw !important;
     top: 20% !important;
     min-width: 2.7vw !important;
     min-height: 2.7vw !important;
@@ -1865,270 +1876,285 @@ textarea {
   .goods_selection-tires_main-characters ul li input + label, .goods_selection-discs_main-characters ul li input + label {
     min-width: 6vw !important;
     min-height: 6vw !important;
-    right: -3vw !important;
+    right: -4.6vw !important;
   }
   .goods_selection-tires_main-visual, .goods_selection-discs_main-visual {
     height: 44vw;
-    background-color: #333333;
-    margin-left: 8px;
-  }
-  .goods_selection-tires_main-visual img, .goods_selection-discs_main-visual img {
-    width: 100%;
-    height: 100%;
   }
   .goods_selection-tires_main-visual span, .goods_selection-discs_main-visual span {
-    font-size: 5vw;
-    line-height: 5.1vw;
+    font-size: 5.5vw;
+    line-height: 5.7vw;
   }
   .goods_selection-tires_main-visual input, .goods_selection-discs_main-visual input {
     width: 25vw;
-    height: 8.8vw;
-    font-size: 3.7vw;
-    line-height: 4vw;
-    bottom: 2.1vw;
-    left: 2.1vw;
-    border-radius: 3vw;
+    height: 9vw;
+    font-size: 4vw;
+    line-height: 9vw;
+    bottom: 1.7vw;
+    left: 1.7vw;
+    padding: 0;
+  }
+  .goods_selection-tires_others, .goods_selection-discs_others {
+    width: 80vw;
+    height: 21vw;
+    margin: 1.7vw 0;
+  }
+  .goods_selection-tires_others-characters, .goods_selection-discs_others-characters {
+    font-size: 2.7vw;
+    line-height: 3vw;
+  }
+  .goods_selection-tires_others-characters span, .goods_selection-discs_others-characters span {
+    font-size: 4vw;
+  }
+  .goods_selection-tires_others-characters ul, .goods_selection-discs_others-characters ul {
+    font-size: 2.7vw;
+    margin-top: 1.7vw;
+    margin-left: 2vw;
+  }
+  .goods_selection-tires_others-characters p, .goods_selection-discs_others-characters p {
+    font-size: 2.7vw;
+    margin-top: 1.7vw;
+  }
+  .goods_selection-tires_others-visual, .goods_selection-discs_others-visual {
+    height: 21vw;
+  }
+  .goods_selection-tires_others-visual a, .goods_selection-discs_others-visual a {
+    z-index: 7;
+    width: 21vw;
+    height: 8vw;
+    font-size: 3.6vw;
+    line-height: 8vw;
+    padding: 0;
+    bottom: 1.7vw;
+    left: 1.7vw;
+  }
+
+  .footer-banner {
+    padding: 0;
+    margin-bottom: 0;
+  }
+  .footer-banner .row {
+    height: inherit;
+    width: inherit;
+  }
+  .footer-banner-title ul li:last-child {
+    margin-top: -0.7vw;
   }
 }
 @media (max-width: 768px) {
-  footer {
-    margin-top: 0.7vw;
+  .goods_selection {
+    margin: 0;
+  }
+  .goods_selection .row {
+    margin: 1.7vw -1.7vw;
+  }
+  .goods_selection-tires_main, .goods_selection-discs_main {
+    width: 88vw;
+    height: 46vw;
+    margin: auto;
+    margin-bottom: 1vw;
+    border-radius: 3vw;
+  }
+  .goods_selection-tires_main-characters, .goods_selection-discs_main-characters {
+    font-size: 4vw;
+    line-height: 5vw;
+    margin-left: 2vw;
+  }
+  .goods_selection-tires_main-characters ul, .goods_selection-discs_main-characters ul {
+    list-style: none;
+    margin-top: 2.3vw;
+  }
+  .goods_selection-tires_main-characters ul li, .goods_selection-discs_main-characters ul li {
+    margin: 2.1vw -1.7vw 2.1vw 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .goods_selection-tires_main-characters ul li #cb, .goods_selection-discs_main-characters ul li #cb {
+    padding-right: 2.7vw;
+  }
+  .goods_selection-tires_main-characters ul li select, .goods_selection-discs_main-characters ul li select {
+    margin-right: -2.17vw;
+    min-height: 2.1vw;
+    font-size: 3vw;
+    padding: 0.1vw 2vw;
+  }
+  .goods_selection-tires_main-characters ul li img, .goods_selection-discs_main-characters ul li img {
+    width: 6vw;
+    margin: 8px 1vw 3.6px 1vw;
+  }
+  .goods_selection-tires_main-characters ul li input + label:after, .goods_selection-discs_main-characters ul li input + label:after {
+    left: 1.5vw !important;
+    top: 20% !important;
+    min-width: 2.7vw !important;
+    min-height: 2.7vw !important;
+    border-radius: 1.7vw;
+    border-left: 1vw solid #333333;
+    border-bottom: 1vw solid #333333;
+  }
+  .goods_selection-tires_main-characters ul li input + label, .goods_selection-discs_main-characters ul li input + label {
+    min-width: 6vw !important;
+    min-height: 6vw !important;
+    right: -4.6vw !important;
+  }
+  .goods_selection-tires_main-visual, .goods_selection-discs_main-visual {
+    height: 46vw;
+  }
+  .goods_selection-tires_main-visual span, .goods_selection-discs_main-visual span {
+    font-size: 5.5vw;
+    line-height: 5.7vw;
+  }
+  .goods_selection-tires_main-visual input, .goods_selection-discs_main-visual input {
+    width: 27vw;
+    height: 10vw;
+    font-size: 4.4vw;
+    line-height: 10vw;
+    bottom: 2.1vw;
+    left: 2.1vw;
+    padding: 0;
+  }
+  .goods_selection-tires_others, .goods_selection-discs_others {
+    width: 88vw;
+    height: 27vw;
+    margin: auto;
+  }
+  .goods_selection-tires_others-characters, .goods_selection-discs_others-characters {
+    font-size: 2.7vw;
+    line-height: 3vw;
+  }
+  .goods_selection-tires_others-characters span, .goods_selection-discs_others-characters span {
+    font-size: 4.6vw;
+  }
+  .goods_selection-tires_others-characters ul, .goods_selection-discs_others-characters ul {
+    font-size: 3.3vw;
+    margin-top: 2.7vw;
+    margin-left: 2.7vw;
+  }
+  .goods_selection-tires_others-characters p, .goods_selection-discs_others-characters p {
+    font-size: 3.3vw;
+    margin-top: 2.7vw;
+  }
+  .goods_selection-tires_others-visual, .goods_selection-discs_others-visual {
+    height: 27vw;
+  }
+  .goods_selection-tires_others-visual a, .goods_selection-discs_others-visual a {
+    z-index: 7;
+    width: 24vw;
+    height: 9vw;
+    font-size: 4vw;
+    line-height: 9vw;
+    padding: 0;
+    bottom: 2.1vw;
+    left: 2.1vw;
   }
 
-  .goods_selection {
-    margin: 0;
+  .map-main_page-info {
+    height: 38vw;
+    width: 35vw;
+    top: 30vh;
+    right: 2vw;
   }
-  .goods_selection .row {
-    margin: 15px -15px;
+  .map-main_page-info-title {
+    margin-top: 1.7vw;
   }
-  .goods_selection-tires_main, .goods_selection-discs_main {
-    width: 93vw;
-    height: 50vw;
-    margin: auto;
-    border-radius: 3vw;
+  .map-main_page-info-title-address {
+    padding: 0.5vw 0;
+    padding-bottom: 1vw;
+    border-bottom: 0.3vw solid #FEDD49;
   }
-  .goods_selection-tires_main-characters, .goods_selection-discs_main-characters {
-    font-size: 4vw;
-    line-height: 5vw;
-    margin-left: 2vw;
+  .map-main_page-info-title-phone_numbers {
+    padding: 0.5vw 0;
+    border-bottom: 0.3vw solid #FEDD49;
   }
-  .goods_selection-tires_main-characters ul, .goods_selection-discs_main-characters ul {
-    list-style: none;
-    margin-top: 2.3vw;
+  .map-main_page-info-title-work_hours {
+    padding: 0.5vw 0;
   }
-  .goods_selection-tires_main-characters ul li, .goods_selection-discs_main-characters ul li {
-    margin: 2.1vw -0.7vw 2.1vw 0vw;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+
+  .footer-banner {
+    padding: 0;
+    margin-bottom: 0;
   }
-  .goods_selection-tires_main-characters ul li select, .goods_selection-discs_main-characters ul li select {
-    margin-right: -2.17vw;
-    min-height: 2.1vw;
-    font-size: 3vw;
-    padding: 0.1vw 2vw;
+  .footer-banner .row {
+    height: inherit;
+    width: inherit;
   }
-  .goods_selection-tires_main-characters ul li img, .goods_selection-discs_main-characters ul li img {
-    width: 6vw;
-    margin: 8px 1vw 3.6px 1vw;
-  }
-  .goods_selection-tires_main-characters ul li input + label:after, .goods_selection-discs_main-characters ul li input + label:after {
-    left: 1vw !important;
-    top: 20% !important;
-    min-width: 2.7vw !important;
-    min-height: 2.7vw !important;
-    border-radius: 1.7vw;
-    border-left: 1vw solid #333333;
-    border-bottom: 1vw solid #333333;
-  }
-  .goods_selection-tires_main-characters ul li input + label, .goods_selection-discs_main-characters ul li input + label {
-    min-width: 6vw !important;
-    min-height: 6vw !important;
-    right: -3vw !important;
-  }
-  .goods_selection-tires_main-visual, .goods_selection-discs_main-visual {
-    height: 50vw;
-    background-color: #333333;
-    margin-left: 8px;
-    position: relative;
-  }
-  .goods_selection-tires_main-visual img, .goods_selection-discs_main-visual img {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    left: 0;
-  }
-  .goods_selection-tires_main-visual span, .goods_selection-discs_main-visual span {
-    font-size: 5vw;
-    line-height: 5.1vw;
-  }
-  .goods_selection-tires_main-visual input, .goods_selection-discs_main-visual input {
-    width: 25vw;
-    height: 8.8vw;
-    font-size: 3.7vw;
-    line-height: 4vw;
-    bottom: 2.1vw;
-    left: 2.1vw;
-    border-radius: 3vw;
+  .footer-banner-title ul li:last-child {
+    margin-top: -2.5vw;
   }
 }
-@media (max-width: 546px) {
-  .goods_selection {
-    margin: 0;
-  }
-  .goods_selection .row {
-    margin: 15px -15px;
-  }
-  .goods_selection-tires_main, .goods_selection-discs_main {
-    width: 93vw;
-    height: 50vw;
-    margin: auto;
-    border-radius: 3vw;
-  }
-  .goods_selection-tires_main-characters, .goods_selection-discs_main-characters {
-    font-size: 4vw;
-    line-height: 5vw;
-    margin-left: 2vw;
-  }
-  .goods_selection-tires_main-characters ul, .goods_selection-discs_main-characters ul {
-    list-style: none;
-    margin-top: 2.3vw;
-  }
-  .goods_selection-tires_main-characters ul li, .goods_selection-discs_main-characters ul li {
-    margin: 2.1vw -2.1vw 2.1vw 0vw;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-  .goods_selection-tires_main-characters ul li select, .goods_selection-discs_main-characters ul li select {
-    margin-right: -2.17vw;
-    min-height: 2.1vw;
-    font-size: 3vw;
-    padding: 0.1vw 2vw;
-  }
-  .goods_selection-tires_main-characters ul li img, .goods_selection-discs_main-characters ul li img {
-    width: 6vw;
-    margin: 8px 1vw 3.6px 1vw;
-  }
-  .goods_selection-tires_main-characters ul li input + label:after, .goods_selection-discs_main-characters ul li input + label:after {
-    left: 1vw !important;
-    top: 20% !important;
-    min-width: 2.7vw !important;
-    min-height: 2.7vw !important;
-    border-radius: 1.7vw;
-    border-left: 1vw solid #333333;
-    border-bottom: 1vw solid #333333;
-  }
-  .goods_selection-tires_main-characters ul li input + label, .goods_selection-discs_main-characters ul li input + label {
-    min-width: 6vw !important;
-    min-height: 6vw !important;
-    right: -3vw !important;
-  }
-  .goods_selection-tires_main-visual, .goods_selection-discs_main-visual {
-    height: 50vw;
-    background-color: #333333;
-    margin-left: 8px;
-    position: relative;
-  }
-  .goods_selection-tires_main-visual img, .goods_selection-discs_main-visual img {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    left: 0;
-  }
-  .goods_selection-tires_main-visual span, .goods_selection-discs_main-visual span {
-    font-size: 5vw;
-    line-height: 5.1vw;
-  }
-  .goods_selection-tires_main-visual input, .goods_selection-discs_main-visual input {
-    width: 25vw;
-    height: 8.8vw;
-    font-size: 3.7vw;
-    line-height: 4vw;
-    bottom: 2.1vw;
-    left: 2.1vw;
-    border-radius: 3vw;
-  }
-}
-@media (max-width: 400px) {
+@media (max-width: 576px) {
   .slider-main_page {
-    margin-left: -2vw;
+    margin-bottom: 0;
   }
 
   .goods_selection {
-    margin: 0;
+    margin: 0 -4vw;
   }
   .goods_selection .row {
-    margin: 15px -15px;
+    margin: 1.1vw -2.1vw;
+  }
+  .goods_selection .row form {
+    margin-top: 2vw;
   }
   .goods_selection-tires_main, .goods_selection-discs_main {
-    width: 93vw;
-    height: 50vw;
-    margin-left: -2vw;
-    border-radius: 3vw;
-  }
-  .goods_selection-tires_main-characters, .goods_selection-discs_main-characters {
-    font-size: 4.2vw;
-    line-height: 6vw;
-    margin-left: 2vw;
-  }
-  .goods_selection-tires_main-characters ul, .goods_selection-discs_main-characters ul {
-    list-style: none;
-    margin-top: 2.3vw;
-  }
-  .goods_selection-tires_main-characters ul li, .goods_selection-discs_main-characters ul li {
-    margin: 1.5vw -4vw 1.5vw 0vw;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-  .goods_selection-tires_main-characters ul li select, .goods_selection-discs_main-characters ul li select {
-    margin-right: -2.17vw;
-    min-height: 2.1vw;
-    font-size: 3.6vw;
-    padding: 0.1vw 2vw;
-  }
-  .goods_selection-tires_main-characters ul li img, .goods_selection-discs_main-characters ul li img {
-    width: 6vw;
-    margin: 8px 1vw 3.6px 1vw;
-  }
-  .goods_selection-tires_main-characters ul li input + label:after, .goods_selection-discs_main-characters ul li input + label:after {
-    left: 1vw !important;
-    top: 20% !important;
-    min-width: 2.7vw !important;
-    min-height: 2.7vw !important;
-    border-radius: 1.7vw;
-    border-left: 1vw solid #333333;
-    border-bottom: 1vw solid #333333;
-  }
-  .goods_selection-tires_main-characters ul li input + label, .goods_selection-discs_main-characters ul li input + label {
-    min-width: 6vw !important;
-    min-height: 6vw !important;
-    right: -3vw !important;
-  }
-  .goods_selection-tires_main-visual, .goods_selection-discs_main-visual {
-    height: 50vw;
-    background-color: #333333;
-    margin-left: 8px;
-    position: relative;
-  }
-  .goods_selection-tires_main-visual img, .goods_selection-discs_main-visual img {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    left: 0;
-  }
-  .goods_selection-tires_main-visual span, .goods_selection-discs_main-visual span {
-    font-size: 5vw;
-    line-height: 5.1vw;
+    width: 94vw;
+    height: 46vw;
+    border-radius: 5vw;
   }
   .goods_selection-tires_main-visual input, .goods_selection-discs_main-visual input {
-    width: 25vw;
-    height: 8.8vw;
-    font-size: 3.7vw;
-    line-height: 4vw;
-    bottom: 2.1vw;
-    left: 2.1vw;
-    border-radius: 3vw;
+    width: 30vw;
+    height: 12vw;
+    font-size: 4.6vw;
+    line-height: 12vw;
+  }
+  .goods_selection-tires_others, .goods_selection-discs_others {
+    width: 94vw;
+    height: 27vw;
+    margin-bottom: 2vw;
+  }
+  .goods_selection-tires_others-characters, .goods_selection-discs_others-characters {
+    margin-top: -2vw;
+  }
+  .goods_selection-tires_others-visual a, .goods_selection-discs_others-visual a {
+    width: 26vw;
+    height: 11vw;
+    font-size: 4.4vw;
+    line-height: 11vw;
+  }
+
+  .map-main_page {
+    margin-top: 3vw;
+  }
+  .map-main_page-info {
+    display: none;
+  }
+
+  .footer-banner {
+    padding: 0;
+    margin-bottom: 0;
+    padding-top: 1vw;
+    height: 100%;
+    text-align: center;
+  }
+  .footer-banner .row {
+    height: inherit;
+    width: inherit;
+  }
+  .footer-banner-title ul {
+    font-size: 4.6vw;
+  }
+  .footer-copyright {
+    margin: 0px;
+    font-size: 2.3vw;
+    line-height: 10vw;
+    height: 10vw;
+    text-align: left;
+  }
+  .footer-developed-by {
+    margin: 0px;
+    font-size: 3vw;
+    line-height: 4.6vw;
+    height: 5.6vw;
+    padding: 0.5vw 0;
   }
 }

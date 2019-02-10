@@ -140,7 +140,7 @@ get_header();
 													</div>
 												</li>
 												<li>
-													<div class="characters">
+													<div class="characters" id="cb">
 														<div class="characters-checkbox">
 															<img src="<?php echo get_template_directory_uri();?>/assets/img/cold.svg" alt="">
 															<input type="checkbox" id="winter" name="winter" checked>
@@ -391,7 +391,7 @@ get_header();
 				</div>
 				<!--EXTRA GOODS+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++========================================================================-->
 				<div class="row">
-					<div class="col-md-6 col-12">
+					<div class="col-lg-6 col-12">
 						<div class="goods_selection-tires_others">
 							<div class="row">
 								<div class="col-7">
@@ -413,7 +413,7 @@ get_header();
 							</div>
 						</div>
 					</div>
-					<div class="col-md-6 col-12">
+					<div class="col-lg-6 col-12">
 						<div class="goods_selection-tires_others">
 							<div class="row">
 								<div class="col-7">
@@ -461,15 +461,21 @@ get_header();
 			<!--FOOTER=============================================================================================================================================================-->
 			<div class="footer-banner">
 				<div class="row justify-content-xl-around justify-content-center align-items-center">
-					<div class="col-3"><!-- col-md-5 -->
+					<div class="col-sm-3 col-12"><!-- col-md-5 -->
 						<div class="footer-banner-logo">
 							<img src="<?php echo get_template_directory_uri();?>/assets/img/logo.svg" alt="">
 						</div>
 					</div>
-					<div class="col-7"><!--  col-md-8 -->
+					<div class="col-sm-7 col-12"><!--  col-md-8 -->
 						<div class="footer-banner-title">
-							<span>Максимальный ассортимент</span><br>
-							<span>За минимальные цены</span>
+							<ul>
+								<li>
+									<span>Максимальный ассортимент</span>
+								</li>
+								<li>
+									<span>За минимальные цены</span>
+								</li>
+							</ul>
 						</div>
 					</div>
 				</div>
