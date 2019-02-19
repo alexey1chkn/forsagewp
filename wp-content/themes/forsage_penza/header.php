@@ -15,9 +15,15 @@
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="theme-color" content="rgb(254, 221, 73)">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
 	<!--FROM MY PC-PROJECT-->
-		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+		<!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"> -->
+	<!-- BOOTSTRAP -->
+	<link rel="stylesheet" href="<?php echo get_template_directory_uri();?>/assets/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="<?php echo get_template_directory_uri();?>/assets/bootstrap/css/bootstrap-grid.min.css">
+
+
 
 		<!-- Icons -->
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
@@ -150,12 +156,14 @@
 							<nav class="main-menu-nav">
 								<a href="#" class="main-menu-btn"><span></span></a>
 								<a href="" class="main-menu-mobile-main">Главная</a>
-								<div class="header-cart-mobile">
-									<span>Корзина</span>
-									<div class="header-cart-mobile-event">
-										<span class=""><?php global $woocommerce; echo sprintf($woocommerce->cart->cart_contents_count); ?></span>
+								<a href="/cart">
+									<div class="header-cart-mobile">
+										<span>Корзина</span>
+										<div class="header-cart-mobile-event">
+											<span class=""><?php global $woocommerce; echo sprintf($woocommerce->cart->cart_contents_count); ?></span>
+										</div>
 									</div>
-								</div>
+								</a>
 								<ul>
 									<li><a href="/">Главная</a></li>
 									<li><a href="/vybor-shin">Шины</a></li>

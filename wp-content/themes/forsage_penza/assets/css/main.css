@@ -59,7 +59,7 @@ table {
 }
 html {
   font-family: "Play", arial;
-  overflow-x: hidden;
+  overflow-x: hidden !important;
 }
 
 .wrapper {
@@ -729,12 +729,12 @@ span .custom_title {
 ul .type-product {
   display: inline-block;
   height: 100%;
-  width: 255px;
+  min-width: 200px;
   background-color: #FEDD49;
   -webkit-box-shadow: 0px 5px 7px rgba(0, 0, 0, 0.08);
           box-shadow: 0px 5px 7px rgba(0, 0, 0, 0.08);
   border-radius: 20px;
-  padding: 5px 15px 15px !important;
+  padding: 7px 15px 15px !important;
 }
 ul .type-product:nth-child(4n+1) {
   margin-left: 0;
@@ -812,10 +812,10 @@ ul .type-product a img {
   border-radius: 0px 10px 10px 0px;
   right: 0;
   top: 15px;
+  bottom: 0px;
   width: 25%;
   font-size: 1em;
   font-weight: bold;
-  padding: 11px;
 }
 .my_custom-add_to_cart_button .added_to_cart {
   display: none;
@@ -1283,13 +1283,28 @@ textarea {
 }
 .filter-choice {
   background-color: #F4F4F4;
-  padding: 17px 0 18px 40px;
+  padding: 1vw 0 1vw 2vw;
   font-weight: bold;
   line-height: normal;
   font-size: 24px;
-  margin-top: 17px;
+  margin-top: 1vw;
 }
-.filter-choice ul {
+.filter-choice form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.filter-choice form ul:first-child {
+  padding-left: 2.7vw;
+}
+.filter-choice form ul {
   list-style: none;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1301,21 +1316,31 @@ textarea {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-left: 12px;
-  margin-left: 10px;
+  margin-bottom: 1vw;
 }
-.filter-choice ul li {
-  margin-left: 55px;
+.filter-choice form ul li {
+  margin-right: 4vw;
 }
-.filter-choice ul input {
-  margin-left: 55px;
+.filter-choice form ul li .characters select {
+  margin-left: 4vw;
+}
+.filter-choice form ul li .characters-checkbox input[type="checkbox"] + label {
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+}
+.filter-choice form ul li .characters .spikes input[type="checkbox"] {
+  margin-left: 1vw;
+}
+.filter-choice form input {
+  margin-left: 4vw;
   background-color: #FEDD49;
   font-weight: bold;
   font-size: 17px;
   border: none;
   border-radius: 10px;
 }
-.filter-choice ul input:hover {
+.filter-choice form input:hover {
   cursor: pointer;
 }
 
@@ -1352,28 +1377,29 @@ textarea {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin: 0 -40px;
 }
 .tires_not_in_stock h2 {
   font-family: "Europe Bold Italic", arial;
   line-height: normal;
-  font-size: 36px;
-  padding: 30px 0;
+  font-size: 2vw;
+  padding: 2vw 0;
 }
 .tires_not_in_stock span {
-  font-size: 24px;
-  padding: 0px 0 30px 0;
+  font-size: 1.4vw;
+  padding: 0px 0 2vw 0;
 }
 .tires_not_in_stock a {
   text-decoration: none;
   background-color: #FEDD49;
   color: #333333;
   font-weight: bold;
-  font-size: 24px;
-  padding: 16px 33px;
+  font-size: 1.4vw;
+  padding: 1vw 2vw;
   border-radius: 10px;
   -webkit-box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
           box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-  margin-bottom: 40px;
+  margin-bottom: 2.1vw;
 }
 
 .main-menu-mobile-main, .header-cart-mobile {
@@ -1673,8 +1699,74 @@ textarea {
   .map-main_page-info-inner-work_hours {
     padding: 7px 0;
   }
+
+  .filter-wrapper {
+    margin: 1vw 0;
+  }
+  .filter-wrapper h2 {
+    font-family: "Europe Bold Italic", arial;
+    line-height: normal;
+    font-size: 4vw;
+    color: #333333;
+    padding-left: 3vw;
+  }
+  .filter-choice {
+    background-color: #F4F4F4;
+    padding: 1vw 0 1vw 4vw;
+    font-weight: bold;
+    line-height: normal;
+    font-size: 2.1vw;
+    margin-top: 1vw;
+  }
+  .filter-choice ul {
+    list-style: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-left: 1.2vw;
+    margin-left: 1.2vw;
+  }
+  .filter-choice ul li {
+    margin-left: 2.7vw;
+  }
+  .filter-choice ul li .characters select {
+    font-size: 1.7vw;
+    line-height: 1.7vw;
+  }
+  .filter-choice ul input {
+    margin-left: 3.7vw;
+    background-color: #FEDD49;
+    font-weight: bold;
+    font-size: 1.7vw;
+    border: none;
+    border-radius: 10px;
+  }
+  .filter-choice ul input:hover {
+    cursor: pointer;
+  }
+
+  .tires_not_in_stock h2 {
+    font-size: 2.7vw;
+  }
+  .tires_not_in_stock span {
+    font-size: 1.7vw;
+  }
+  .tires_not_in_stock a {
+    font-size: 1.7vw;
+  }
 }
 @media (max-width: 992px) {
+  .wrapper {
+    margin: 0 -4vw 0 0;
+  }
+
   .header, .contacts, .bottom-bar {
     display: none;
   }
@@ -1687,7 +1779,7 @@ textarea {
     position: absolute;
     top: 5vw;
     margin-top: -2.5vw;
-    right: 12vw;
+    right: 15vw;
     color: #FEDD49;
   }
   .header-cart-mobile-event span {
@@ -1940,8 +2032,73 @@ textarea {
   .footer-banner-title ul li:last-child {
     margin-top: -0.7vw;
   }
+
+  .product-attribute-proizvoditel {
+    position: relative;
+    padding-left: 6vw;
+    margin-top: 12px;
+  }
+  .product-attribute-proizvoditel span {
+    line-height: 4vw;
+  }
+  .product-attribute-stock_quantit {
+    padding-left: 6vw;
+  }
+
+  .tires_not_in_stock {
+    margin: 0;
+  }
+  .tires_not_in_stock h2 {
+    font-size: 3.4vw;
+  }
+  .tires_not_in_stock span {
+    font-size: 2.1vw;
+  }
+  .tires_not_in_stock a {
+    font-size: 2.1vw;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  ul .type-product {
+    display: inline-block;
+    height: 100%;
+    min-width: 46.2%;
+    font-size: 3vw;
+    background-color: #FEDD49;
+    -webkit-box-shadow: 0px 5px 7px rgba(0, 0, 0, 0.08);
+            box-shadow: 0px 5px 7px rgba(0, 0, 0, 0.08);
+    border-radius: 20px;
+  }
+  ul .type-product:nth-child(4n+1) {
+    margin-left: 0;
+  }
+  ul .type-product a {
+    color: #333333;
+  }
+  ul .type-product a .woocommerce-loop-product__title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 2.7em;
+    font-weight: bold;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  ul .type-product a img {
+    margin: auto !important;
+    border-radius: 10px;
+  }
 }
 @media (max-width: 768px) {
+  .header-cart-mobile {
+    right: 12vw;
+  }
+
+  .wrapper {
+    margin: 0 0 0 0;
+  }
+
   .goods_selection {
     margin: 0;
   }
@@ -2081,8 +2238,65 @@ textarea {
   .footer-banner-title ul li:last-child {
     margin-top: -2.5vw;
   }
+
+  .filter-wrapper {
+    margin: 1vw 0;
+  }
+  .filter-wrapper h2 {
+    font-family: "Europe Bold Italic", arial;
+    line-height: normal;
+    font-size: 4.4vw;
+    color: #333333;
+    padding-left: 1vw;
+  }
+  .filter-choice {
+    background-color: #F4F4F4;
+    padding: 1.7vw 0 1.7vw 4vw;
+    margin: 1vw -2vw;
+    font-weight: bold;
+    line-height: normal;
+    font-size: 2.7vw;
+  }
+  .filter-choice ul {
+    list-style: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-left: 1.2vw;
+    margin-left: 1.2vw;
+  }
+  .filter-choice ul li {
+    margin-left: 4vw;
+  }
+  .filter-choice ul li .characters select {
+    font-size: 2.1vw;
+    line-height: 2.1vw;
+    padding-right: 1vw;
+  }
+  .filter-choice ul input {
+    margin-left: 4.4vw;
+    background-color: #FEDD49;
+    font-weight: bold;
+    font-size: 2.1vw;
+    border: none;
+    border-radius: 10px;
+  }
+  .filter-choice ul input:hover {
+    cursor: pointer;
+  }
 }
 @media (max-width: 576px) {
+  .wrapper {
+    margin: 0 -5px 0 0;
+  }
+
   .slider-main_page {
     margin-bottom: 0;
   }
@@ -2132,7 +2346,7 @@ textarea {
   .footer-banner {
     padding: 0;
     margin-bottom: 0;
-    padding-top: 1vw;
+    margin-top: 1vw;
     height: 100%;
     text-align: center;
   }
@@ -2156,5 +2370,171 @@ textarea {
     line-height: 4.6vw;
     height: 5.6vw;
     padding: 0.5vw 0;
+  }
+
+  .filter-wrapper {
+    margin: 1vw -2vw;
+  }
+  .filter-wrapper h2 {
+    font-family: "Europe Bold Italic", arial;
+    line-height: normal;
+    font-size: 5vw;
+    color: #333333;
+    padding: 1vw 0 0 1vw;
+    text-align: center;
+  }
+  .filter-choice {
+    background-color: #F4F4F4;
+    font-weight: bold;
+    line-height: normal;
+    font-size: 4vw;
+  }
+  .filter-choice form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .filter-choice form ul {
+    list-style: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-left: 1.2vw;
+    margin-left: 1.2vw;
+  }
+  .filter-choice form ul li {
+    margin: 1.7vw 4vw;
+  }
+  .filter-choice form ul li .characters select {
+    font-size: 4.4vw;
+    line-height: 4.4vw;
+    padding-right: 1.7vw;
+  }
+  .filter-choice form input {
+    margin: 1vw 0;
+    background-color: #FEDD49;
+    font-weight: bold;
+    font-size: 4vw;
+    border: none;
+    border-radius: 10px;
+  }
+  .filter-choice form input:hover {
+    cursor: pointer;
+  }
+
+  ul.products {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  ul.products .type-product {
+    display: inline-block;
+    height: 100%;
+    min-width: 96.2%;
+    -webkit-box-align: left;
+        -ms-flex-align: left;
+            align-items: left;
+    background-color: #FEDD49;
+    -webkit-box-shadow: 0px 5px 7px rgba(0, 0, 0, 0.08);
+            box-shadow: 0px 5px 7px rgba(0, 0, 0, 0.08);
+    border-radius: 20px;
+    font-size: 4vw;
+  }
+  ul.products .type-product:nth-child(4n+1) {
+    margin-left: 0;
+  }
+  ul.products .type-product a {
+    color: #333333;
+  }
+  ul.products .type-product a .woocommerce-loop-product__title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 2.7em;
+    font-weight: bold;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  ul.products .type-product a img {
+    margin: auto !important;
+    border-radius: 10px;
+  }
+
+  .product-attribute-proizvoditel {
+    position: relative;
+    padding-left: 9vw;
+    margin-top: 12px;
+  }
+  .product-attribute-proizvoditel span {
+    line-height: 4vw;
+  }
+  .product-attribute-stock_quantit {
+    padding-left: 9vw;
+  }
+
+  .tires_not_in_stock {
+    margin: 0;
+  }
+  .tires_not_in_stock h2 {
+    font-size: 5vw;
+  }
+  .tires_not_in_stock span {
+    font-size: 4vw;
+  }
+  .tires_not_in_stock a {
+    font-size: 4vw;
+    line-height: 7vw;
+  }
+}
+@media (max-width: 400px) {
+  .goods_selection-tires_main, .goods_selection-discs_main {
+    width: 94vw;
+    height: 46vw;
+    border-radius: 7vw;
+  }
+  .goods_selection-tires_main-characters ul li, .goods_selection-discs_main-characters ul li {
+    margin-right: -6vw;
+  }
+  .goods_selection-tires_main-visual input, .goods_selection-discs_main-visual input {
+    width: 27vw;
+    height: 11vw;
+    font-size: 4.4vw;
+    line-height: 11vw;
+  }
+  .goods_selection-tires_others, .goods_selection-discs_others {
+    width: 94vw;
+    height: 27vw;
+    margin-bottom: 2vw;
+  }
+  .goods_selection-tires_others-characters, .goods_selection-discs_others-characters {
+    margin-top: -2vw;
+  }
+  .goods_selection-tires_others-visual a, .goods_selection-discs_others-visual a {
+    width: 26vw;
+    height: 11vw;
+    font-size: 4.4vw;
+    line-height: 11vw;
   }
 }

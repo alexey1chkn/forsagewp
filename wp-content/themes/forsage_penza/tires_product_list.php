@@ -110,6 +110,7 @@ function tires_filter(){
 					</li>
 					<input type="submit" value="Сортировать">
 				</ul>
+				
 			</form>
 		</div>
 	</div>

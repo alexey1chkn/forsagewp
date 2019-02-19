@@ -206,7 +206,7 @@ get_header();
 													<div class="characters">
 														<span>PCD</span>
 														<select name="pcd">
-															<option disabled selected> ОШИБКА! </option>
+															<option disabled selected> - </option>
 															<option value="3">3</option>
 															<option value="4-98">4/98</option>
 															<option value="4-98-100">4/98-100</option>

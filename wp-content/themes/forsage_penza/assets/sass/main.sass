@@ -4,7 +4,7 @@
 
 html
 	font-family: 'Play', arial
-	overflow-x: hidden
+	overflow-x: hidden !important
 
 .wrapper
 	max-width: 1200px
@@ -540,11 +540,11 @@ ul
 	.type-product
 		display: inline-block
 		height: 100%
-		width: 255px
+		min-width: 200px
 		background-color: $mainf
 		box-shadow: 0px 5px 7px rgba(0, 0, 0, 0.08)
 		border-radius: 20px
-		padding: 5px 15px 15px !important
+		padding: 7px 15px 15px !important
 		&:nth-child(4n+1)
 			margin-left: 0
 		a
@@ -603,10 +603,10 @@ ul
 					border-radius: 0px 10px 10px 0px
 					right: 0
 					top: 15px
+					bottom: 0px
 					width: 25%
 					font-size: 1em
 					font-weight: bold
-					padding: 11px
 			.added_to_cart
 				display: none
 					
@@ -990,22 +990,42 @@ textarea
 			padding-left: 40px
 	&-choice
 		background-color: $bgf
-		padding: 17px 0 18px 40px
+		padding: 1vw 0 1vw 2vw
 		font-weight: bold
 		line-height: normal
 		font-size: 24px
-		margin-top: 17px
-		ul
-			list-style: none
+		margin-top: 1vw
+		form
 			display: flex
-			flex-direction: row
+			flex-direction: column
 			align-items: center
-			padding-left: 12px
-			margin-left: 10px
-			li
-				margin-left: 55px
+			ul:first-child
+				padding-left: 2.7vw
+			ul
+				list-style: none
+				display: flex
+				flex-direction: row
+				align-items: center
+				margin-bottom: 1vw
+				li
+					margin-right: 4vw
+					.characters				
+						select
+							margin-left: 4vw
+						&-checkbox
+							img
+							input[type="checkbox"] + label
+								top: 50%
+								transform: translate(0, -50%)
+						.spikes
+							input[type="checkbox"]
+								margin-left: 1vw
+									
+
+
+
 			input
-				margin-left: 55px
+				margin-left: 4vw
 				background-color: $mainf
 				font-weight: bold
 				font-size: 17px
@@ -1035,24 +1055,25 @@ textarea
 	flex-direction: column
 	align-items: center
 	justify-content: center
+	margin: 0 -40px
 	h2
 		font-family: 'Europe Bold Italic', arial
 		line-height: normal
-		font-size: 36px
-		padding: 30px 0
+		font-size: 2vw
+		padding: 2vw 0
 	span
-		font-size: 24px
-		padding: 0px 0 30px 0
+		font-size: 1.4vw
+		padding: 0px 0 2vw 0
 	a
 		text-decoration: none
 		background-color: $mainf
 		color: $tmf
 		font-weight: bold
-		font-size: 24px
-		padding: 16px 33px
+		font-size: 1.4vw
+		padding: 1vw 2vw
 		border-radius: 10px
 		box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1)
-		margin-bottom: 40px
+		margin-bottom: 2.1vw
 
 
 
@@ -1316,9 +1337,57 @@ textarea
 						border-bottom: 3px solid $mainf
 					&-work_hours
 						padding: 7px 0
+	.filter
+		&-wrapper
+			margin: 1vw 0
+			h2
+				font-family: 'Europe Bold Italic', arial
+				line-height: normal
+				font-size: 4vw
+				color: $tmf
+				padding-left: 3vw
+		&-choice
+			background-color: $bgf
+			padding: 1vw 0 1vw 4vw
+			font-weight: bold
+			line-height: normal
+			font-size: 2.1vw
+			margin-top: 1vw
+			ul
+				list-style: none
+				display: flex
+				flex-direction: row
+				align-items: center
+				padding-left: 1.2vw
+				margin-left: 1.2vw
+				li
+					margin-left: 2.7vw
+					.characters
+						select
+							font-size: 1.7vw
+							line-height: 1.7vw
+				input
+					margin-left: 3.7vw
+					background-color: $mainf
+					font-weight: bold
+					font-size: 1.7vw
+					border: none
+					border-radius: 10px
+					&:hover
+						cursor: pointer
+	.tires_not_in_stock
+		h2
+			font-size: 2.7vw
+		span
+			font-size: 1.7vw
+		a
+			font-size: 1.7vw
+
+
 
 @media (max-width: 992px)
-
+	.wrapper
+		margin: 0 -4vw 0 0
 	.header, .contacts, .bottom-bar
 		display: none
 	
@@ -1328,7 +1397,7 @@ textarea
 		position: absolute
 		top: 5vw
 		margin-top: -2.5vw
-		right: 12vw
+		right: 15vw
 		color: $mainf
 		&-event
 			span
@@ -1521,10 +1590,59 @@ textarea
 				ul
 					li:last-child
 						margin-top: -0.7vw
+	.product
+		&-attribute
+			&-proizvoditel
+				position: relative
+				padding-left: 6vw
+				margin-top: 12px
+				span
+					line-height: 4vw
+			&-stock_quantit
+				padding-left: 6vw
+
+	.tires_not_in_stock
+		margin: 0 
+		h2
+			font-size: 3.4vw
+		span
+			font-size: 2.1vw
+		a
+			font-size: 2.1vw
+
+@media screen and (min-width: 768px) and (max-width: 992px)
+	ul
+		.type-product
+			display: inline-block
+			height: 100%
+			min-width: 46.2%
+			font-size: 3vw
+			background-color: $mainf
+			box-shadow: 0px 5px 7px rgba(0, 0, 0, 0.08)
+			border-radius: 20px
+			&:nth-child(4n+1)
+				margin-left: 0
+			a
+				color: $tmf
+				.woocommerce-loop-product__title
+					display: flex	
+					height: 2.7em
+					font-weight: 	bold
+					justify-content: 	center
+				img 
+					margin: auto !important
+					border-radius: 10px
+
+		
 
 
 @media (max-width: 768px)
 
+	.header-cart-mobile	
+		right: 12vw
+
+	.wrapper
+		margin: 0 0 0 0
 	.goods
 		&_selection
 			margin: 0
@@ -1641,8 +1759,53 @@ textarea
 				ul
 					li:last-child
 						margin-top: -2.5vw 
+	.filter
+		&-wrapper
+			margin: 1vw 0
+			h2
+				font-family: 'Europe Bold Italic', arial
+				line-height: normal
+				font-size: 4.4vw
+				color: $tmf
+				padding-left: 1vw
+		&-choice
+			background-color: $bgf
+			padding: 1.7vw 0 1.7vw 4vw
+			margin: 1vw -2vw
+			font-weight: bold
+			line-height: normal
+			font-size: 2.7vw
+			ul
+				list-style: none
+				display: flex
+				flex-direction: row
+				align-items: center
+				padding-left: 1.2vw
+				margin-left: 1.2vw
+				li
+					margin-left: 4vw
+					.characters
+						select
+							font-size: 2.1vw
+							line-height: 2.1vw
+							padding-right: 1vw
+				input
+					margin-left: 4.4vw
+					background-color: $mainf
+					font-weight: bold
+					font-size: 2.1vw
+					border: none
+					border-radius: 10px
+					&:hover
+						cursor: pointer
+
+
+
+
 	
 @media (max-width: 576px)
+	.wrapper
+		margin: 0 -5px 0 0
 	.slider-main_page
 		margin-bottom: 0
 	.goods
@@ -1688,7 +1851,7 @@ textarea
 		&-banner
 			padding: 0
 			margin-bottom: 0
-			padding-top: 1vw
+			margin-top: 1vw
 			height: 100%
 			text-align: center
 			.row
@@ -1710,10 +1873,127 @@ textarea
 			height: 5.6vw
 			padding: 0.5vw 0			
 						
+	.filter
+		&-wrapper
+			margin: 1vw -2vw
+			h2
+				font-family: 'Europe Bold Italic', arial
+				line-height: normal
+				font-size: 5vw
+				color: $tmf
+				padding: 1vw 0 0 1vw 
+				text-align: center
+		&-choice
+			background-color: $bgf
+			font-weight: bold
+			line-height: normal
+			font-size: 4vw
+			form
+				display: flex
+				flex-direction: column
+				align-items: center
+				ul
+					list-style: none
+					display: flex
+					flex-direction: row
+					align-items: center
+					padding-left: 1.2vw
+					margin-left: 1.2vw
+					li
+						margin: 1.7vw 4vw
+						.characters
+							select
+								font-size: 4.4vw
+								line-height: 4.4vw
+								padding-right: 1.7vw
+				input
+					margin: 1vw 0
+					background-color: $mainf
+					font-weight: bold
+					font-size: 4vw
+					border: none
+					border-radius: 10px
+					&:hover
+						cursor: pointer
+	ul.products
+		display: flex
+		flex-direction: column
+		justify-content: center
+		.type-product
+			display: inline-block
+			height: 100%
+			min-width: 96.2%
+			align-items: left
+			background-color: $mainf
+			box-shadow: 0px 5px 7px rgba(0, 0, 0, 0.08)
+			border-radius: 20px
+			font-size: 4vw
+			&:nth-child(4n+1)
+				margin-left: 0
+			a
+				color: $tmf
+				.woocommerce-loop-product__title
+					display: flex	
+					height: 2.7em
+					font-weight: 	bold
+					justify-content: 	center
+				img 
+					margin: auto !important
+					border-radius: 10px
+	.product
+		&-attribute
+			&-proizvoditel
+				position: relative
+				padding-left: 9vw
+				margin-top: 12px
+				span
+					line-height: 4vw
+			&-stock_quantit
+				padding-left: 9vw
 
+	.tires_not_in_stock
+		margin: 0 
+		h2
+			font-size: 5vw
+		span
+			font-size: 4vw
+		a
+			font-size: 4vw
+			line-height: 7vw
 
 @media (max-width: 400px)
-
+	.goods
+		&_selection
+			&-tires, &-discs
+				&_main
+					width: 94vw
+					height: 46vw
+					// width: 425.6px
+					// height: 239.2px
+					border-radius: 7vw
+					&-characters
+						ul 
+							li
+								margin-right: -6vw
+					&-visual			
+						span		
+						input			
+							width: 27vw
+							height: 11vw
+							font-size: 4.4vw
+							line-height: 11vw
+				&_others
+					width: 94vw
+					height: 27vw
+					margin-bottom: 2vw
+					&-characters
+						margin-top: -2vw
+					&-visual
+						a
+							width: 26vw
+							height: 11vw
+							font-size: 4.4vw
+							line-height: 11vw
 
 
 
