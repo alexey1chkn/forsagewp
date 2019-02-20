@@ -80,29 +80,31 @@ function disks_filter(){
 	<div class="filter-choice">
 		<div class="row">
 			<form method="POST">
-				<ul>
+				<div class="for_mobile_adaptive">
 					<span>Сортировка:</span>
-					<li>
-						<div class="characters">
-							<select name="proizvoditel" id="">
-								<option disabled selected> Производитель </option>
-								<option value="neo">NEO</option>
-								<option value=""></option>
-								<option value=""></option>
-							</select>
-						</div>
-					</li>
-					<li>
-						<div class="characters">
-							<select name="price" id="">
-								<option disabled selected> Цена </option>
-								<option value="ASC">По возрастанию</option>
-								<option value="DESC">По убыванию</option>
-							</select>
-						</div>
-					</li>
+					<ul>
+						<li>
+							<div class="characters">
+								<select name="proizvoditel" id="">
+									<option disabled selected> Производитель </option>
+									<option value="neo">NEO</option>
+									<option value=""></option>
+									<option value=""></option>
+								</select>
+							</div>
+						</li>
+						<li>
+							<div class="characters">
+								<select name="price" id="">
+									<option disabled selected> Цена </option>
+									<option value="ASC">По возрастанию</option>
+									<option value="DESC">По убыванию</option>
+								</select>
+							</div>
+						</li>
+					</ul>
 					<input type="submit" value="Сортировать">
-				</ul>
+				</div>
 			</form>
 		</div>
 	</div>
