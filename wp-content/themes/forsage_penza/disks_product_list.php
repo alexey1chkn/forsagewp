@@ -86,10 +86,62 @@ function disks_filter(){
 						<li>
 							<div class="characters">
 								<select name="proizvoditel" id="">
-									<option disabled selected> Производитель </option>
+									<option value="" selected> <?php echo $proizvoditel != NULL ? "Производитель выбран" : " Производитель "; ?> </option>
+									<?php if($proizvoditel != NULL):?><option value=""> Любой </option><?php endif;?>
+									<option value="kitaj">Китай</option>
+									<option value="k-amp-k-krasnoyarsk">K&K Красноярск</option>
+									<option value="tech-line">Tech-Line</option>
+									<option value="vicom">VICOM</option>
+									<option value="nitro">NITRO</option>
+									<option value="nw">NW</option>
 									<option value="neo">NEO</option>
-									<option value=""></option>
-									<option value=""></option>
+									<option value="replica">REPLICA</option>
+									<option value="yaponiya">Япония</option>
+									<option value="turciya">Турция</option>
+									<option value="tolyatti">ТОЛЬЯТТИ</option>
+									<option value="tajvan">Тайвань</option>
+									<option value="skad">СКАД</option>
+									<option value="rossiya">Россия</option>
+									<option value="nizhnij-novgorod">Нижний Новгород</option>
+									<option value="megaljum">МЕГАЛЮМ</option>
+									<option value="kursk">КУРСК</option>
+									<option value="kremenchug">Кременчуг</option>
+									<option value="vsmpo">ВСМПО</option>
+									<option value="avtovaz">АвтоВАЗ</option>
+									<option value="zumbo-wheels">Zumbo Wheels</option>
+									<option value="yokatta">YOKATTA</option>
+									<option value="yam">YAM</option>
+									<option value="x-race">X-RACE</option>
+									<option value="xtrike">X’trike</option>									
+									<option value="venti">VENTI</option>
+									<option value="usw">USW</option>
+									<option value="trebl">TREBL</option>									
+									<option value="stilavto">STILAVTO</option>
+									<option value="sant">SANT</option>
+									<option value="sanfox">SanFox</option>
+									<option value="roner">Roner</option>
+									<option value="replikey">RepliKey</option>									
+									<option value="r-steel">R-Steel</option>
+									<option value="pdw">PDW</option>
+									<option value="od">OD</option>
+									<option value="nz">NZ</option>													
+									<option value="mw">MW</option>
+									<option value="megami">MEGAMI</option>
+									<option value="ls">LS</option>
+									<option value="legeartis">LegeArtis</option>
+									<option value="kronprinz">KRONPRINZ</option>
+									<option value="kfz">KFZ</option>									
+									<option value="ifree">iFREE</option>
+									<option value="forse">FORSE</option>
+									<option value="fire-ball">FIRE BALL</option>
+									<option value="eurodisk">EURODISK</option>
+									<option value="dezent">DEZENT</option>
+									<option value="cross-street">Cross Street</option>
+									<option value="cam">CAM</option>
+									<option value="bap">BAP</option>
+									<option value="alfa-wheels">Alfa Wheels</option>
+									<option value="alcasta">ALCASTA</option>
+									<option value="4-go">4 GO</option>
 								</select>
 							</div>
 						</li>
@@ -153,63 +205,13 @@ function disks_filter(){
 	</ul>
 </div>
 
-<nav class="navigation pagination_page_down" role="navigation">
-	<?php
-		if(empty($_GET))
-			$get_sign = "?";
-		else
-			$get_sign = "&";
+<?php require 'pagination.php'; ?>
 
-		for($i = 1; $i <= $page_quantity; $i++){
-			if ( $_GET['page_my'] == NULL ){
-				$page = $_GET['page_my'];
-				if ($i <= 3 || $i > $page_quantity-3 || $i == $page-1 || $i == $page || $i == $page+1)
-					if( $i == $page ) 
-						echo '<a class="pagination_page_active" href="' . $_SERVER['REQUEST_URI'] . $get_sign . 'page_my=' .  $i . '"><span>' . $i . '</span></a>';
-					else 
-						echo '<a href="' . $_SERVER['REQUEST_URI'] . $get_sign . 'page_my=' . $i . '"><span>' . $i . '</span></a>';
-				elseif($count < 3 ){
-						echo '<span class="pagination_page_between">.</span>';
-						$count++;
-				}
-			}
-			elseif( $page_quantity < 10){
-				$page = $_GET['page_my'];
-				if ($i <= 3 || $i > $page_quantity-3 || $i == $page-1 || $i == $page || $i == $page+1)
-					if( $i == $page ) 
-						echo '<a class="pagination_page_active" href="' . substr($_SERVER['REQUEST_URI'], 0, -1) .  $i . '"><span>' . $i . '</span></a>';
-					else 
-						echo '<a href="' . substr($_SERVER['REQUEST_URI'], 0, -1) .  $i . '"><span>' . $i . '</span></a>';
-				elseif($count < 3 ){
-						echo '<span class="pagination_page_between">.</span>';
-						$count++;
-				}
-			}
-			elseif( $page_quantity < 100 ){
-				$page = $_GET['page_my'];
-				if ($i <= 3 || $i > $page_quantity-3 || $i == $page-1 || $i == $page || $i == $page+1)
-					if( $i == $page ) 
-						echo '<a class="pagination_page_active" href="' . substr($_SERVER['REQUEST_URI'], 0, -2) .  $i . '"><span>' . $i . '</span></a>';
-					else 
-						echo '<a href="' . substr($_SERVER['REQUEST_URI'], 0, -2) .  $i . '"><span>' . $i . '</span></a>';
-				elseif($count < 2 ){
-						echo '<span class="pagination_page_between">.</span>';
-						$count++;
-				}
-			}else{
-				$page = $_GET['page_my'];
-				if ($i <= 3 || $i > $page_quantity-3 || $i == $page-1 || $i == $page || $i == $page+1)
-					if( $i == $page ) 
-						echo '<a class="pagination_page_active" href="' . substr($_SERVER['REQUEST_URI'], 0, -3) .  $i . '"><span>' . $i . '</span></a>';
-					else 
-						echo '<a href="' . substr($_SERVER['REQUEST_URI'], 0, -3) .  $i . '"><span>' . $i . '</span></a>';
-				elseif($count < 3 ){
-						echo '<span class="pagination_page_between">.</span>';
-						$count++;
-				}
-			}
-		}
-	?>
-</nav>
+<div class="tires_not_in_stock">
+	<h2>Нет нужных дисков в наличии?</h2>
+	<span>Посмотрите в каталоге “Диски под заказ”</span>
+	<span>Привезем в кратчайшие сроки!</span>
+	<a href="/disks-pod-zakaz">Посмотреть каталог</a>
+</div>
 
 <?php get_footer(); ?>

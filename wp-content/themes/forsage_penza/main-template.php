@@ -54,7 +54,7 @@ get_header();
 													<div class="characters">
 														<span>Ширина</span>								
 														<select name="shirina-shiny">
-															<option disabled selected> - </option>
+															<option value="" selected> - </option>
 															<!-- values: 10.00, 11.00, 6.45, 7.0, 7.5, 8.25, 8.4, 9.00 -->
 															<option value="31">31</option>
 															<option value="32">32</option>
@@ -90,7 +90,7 @@ get_header();
 													<div class="characters">
 														<span>Высота</span>
 														<select name="profil-shiny">
-															<option disabled selected> - </option>
+															<option value="" selected> - </option>
 															<option value="6.45">6.45</option>		
 															<option value="9.5">9.5</option>
 															<option value="10.50">10.5</option>
@@ -117,7 +117,7 @@ get_header();
 													<div class="characters">
 														<span>Диаметр</span>
 														<select name="posadochnyj-diametr">
-															<option disabled selected> - </option>	
+															<option value="" selected> - </option>	
 															<option value="12">12</option>
 															<option value="13">13</option>
 															<option value="13С">13С</option>
@@ -188,7 +188,7 @@ get_header();
 													<div class="characters">
 														<span>Диаметр</span>
 														<select name="diametr-diska">
-															<option disabled selected> - </option>
+															<option value="" selected> - </option>
 															<option value="12">12</option>
 															<option value="13">13</option>
 															<option value="14">14</option>
@@ -206,7 +206,7 @@ get_header();
 													<div class="characters">
 														<span>PCD</span>
 														<select name="pcd">
-															<option disabled selected> - </option>
+															<option value="" selected> - </option>
 															<option value="3">3</option>
 															<option value="4-98">4/98</option>
 															<option value="4-98-100">4/98-100</option>
@@ -240,7 +240,7 @@ get_header();
 													<div class="characters">
 														<span>Ст.отверстие</span>
 														<select name="posadochnyj-diametr">
-															<option disabled selected> - </option>
+															<option value="" selected> - </option>
 															<option value="50">50</option>
 															<option value="52-5">52,5</option>
 															<option value="54">54</option>
@@ -292,7 +292,7 @@ get_header();
 													<div class="characters">
 														<span>Вылет ЕТ</span>
 														<select name="vylet-diska">
-															<option disabled selected> - </option>
+															<option value="" selected> - </option>
 															<!-- -10, 102, 106, 3, 4  -->
 															<option value="15">15</option>
 															<option value="16">16</option>
@@ -347,7 +347,7 @@ get_header();
 													<div class="characters">
 														<span>Ширина диска</span>
 														<select name="shirina-diska">
-															<option disabled selected> - </option>
+															<option value="" selected> - </option>
 															<option value="4">4</option>
 															<option value="4-5-j">4.5J</option>
 															<option value="5-0-j">5.0J</option>
@@ -405,9 +405,9 @@ get_header();
 									</div>
 								</div>
 								<div class="col-5">
-									<div class="goods_selection-tires_others-visual">
-										<a href="/drugie-tovary/">Показать</a>
+									<div class="goods_selection-tires_others-visual">										
 										<img src="<?php echo get_template_directory_uri();?>/assets/img/others.svg" alt="">
+										<a href="/drugie-tovary/">Показать</a>
 									</div>
 								</div>
 							</div>
@@ -424,8 +424,8 @@ get_header();
 								</div>
 								<div class="col-5">
 									<div class="goods_selection-tires_others-visual">
-										<a href="#">Показать</a>
 										<img src="<?php echo get_template_directory_uri();?>/assets/img/extra.svg" alt="">
+										<a href="#">Показать</a>										
 									</div>
 								</div>
 							</div>

@@ -95,8 +95,6 @@ function tires_filter(){
 									<select name="proizvoditel" id="">
 										<option disabled selected> Производитель </option>
 										<option value="nokian">NOKIAN</option>
-										<option value=""></option>
-										<option value=""></option>
 									</select>
 								</div>
 							</li>
@@ -159,64 +157,7 @@ if ($sort_price_value != NULL) $sort_price = '_price';
 	</ul>
 </div>
 
-<nav class="navigation pagination_page_down" role="navigation">
-	<?php
-		if(empty($_GET))
-			$get_sign = "?";
-		else
-			$get_sign = "&";
-
-		for($i = 1; $i <= $page_quantity; $i++){
-			if ( $_GET['page_my'] == NULL ){
-				$page = $_GET['page_my'];
-				if ($i <= 3 || $i > $page_quantity-3 || $i == $page-1 || $i == $page || $i == $page+1)
-					if( $i == $page ) 
-						echo '<a class="pagination_page_active" href="' . $_SERVER['REQUEST_URI'] . $get_sign . 'page_my=' .  $i . '"><span>' . $i . '</span></a>';
-					else 
-						echo '<a href="' . $_SERVER['REQUEST_URI'] . $get_sign . 'page_my=' . $i . '"><span>' . $i . '</span></a>';
-				elseif($count < 3 ){
-						echo '<span class="pagination_page_between">.</span>';
-						$count++;
-				}
-			}
-			elseif( $page_quantity < 10){
-				$page = $_GET['page_my'];
-				if ($i <= 3 || $i > $page_quantity-3 || $i == $page-1 || $i == $page || $i == $page+1)
-					if( $i == $page ) 
-						echo '<a class="pagination_page_active" href="' . substr($_SERVER['REQUEST_URI'], 0, -1) .  $i . '"><span>' . $i . '</span></a>';
-					else 
-						echo '<a href="' . substr($_SERVER['REQUEST_URI'], 0, -1) .  $i . '"><span>' . $i . '</span></a>';
-				elseif($count < 3 ){
-						echo '<span class="pagination_page_between">.</span>';
-						$count++;
-				}
-			}
-			elseif( $page_quantity < 100 ){
-				$page = $_GET['page_my'];
-				if ($i <= 3 || $i > $page_quantity-3 || $i == $page-1 || $i == $page || $i == $page+1)
-					if( $i == $page ) 
-						echo '<a class="pagination_page_active" href="' . substr($_SERVER['REQUEST_URI'], 0, -2) .  $i . '"><span>' . $i . '</span></a>';
-					else 
-						echo '<a href="' . substr($_SERVER['REQUEST_URI'], 0, -2) .  $i . '"><span>' . $i . '</span></a>';
-				elseif($count < 2 ){
-						echo '<span class="pagination_page_between">.</span>';
-						$count++;
-				}
-			}else{
-				$page = $_GET['page_my'];
-				if ($i <= 3 || $i > $page_quantity-3 || $i == $page-1 || $i == $page || $i == $page+1)
-					if( $i == $page ) 
-						echo '<a class="pagination_page_active" href="' . substr($_SERVER['REQUEST_URI'], 0, -3) .  $i . '"><span>' . $i . '</span></a>';
-					else 
-						echo '<a href="' . substr($_SERVER['REQUEST_URI'], 0, -3) .  $i . '"><span>' . $i . '</span></a>';
-				elseif($count < 3 ){
-						echo '<span class="pagination_page_between">.</span>';
-						$count++;
-				}
-			}
-		}
-	?>
-</nav>
+<?php require 'pagination.php'; ?>
 
 <div class="tires_not_in_stock">
 	<h2>Нет нужных шин в наличии?</h2>

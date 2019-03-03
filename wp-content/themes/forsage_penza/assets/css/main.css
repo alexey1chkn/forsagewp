@@ -364,7 +364,14 @@ span .custom_title {
       justify-content: space-around;
   font-size: 24px;
   line-height: 28px;
-  padding: 8px 3px;
+}
+.main-menu-nav ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
 .main-menu-nav ul li:first-child {
   padding-left: 42px;
@@ -373,9 +380,12 @@ span .custom_title {
   padding-right: 42px;
 }
 .main-menu-nav ul a {
+  display: inline-block;
+  padding: 8px 3px;
+  width: 100%;
+  text-align: center;
   text-decoration: none;
   color: #FEDD49;
-  padding: 8px 3px;
 }
 .main-menu-nav ul a:hover {
   background-color: #FEDD49;
@@ -1060,7 +1070,6 @@ ul .type-product a img {
   font-weight: bold;
   line-height: normal;
   font-size: 24px;
-  text-align: center;
 }
 .woocommerce-cart-form__contents tbody {
   font-family: "Play", arial;
@@ -1150,7 +1159,7 @@ ul .type-product a img {
   padding: 12px 18px 15px 24px;
   border-radius: 10px;
   font-size: 18px;
-  height: 77%;
+  height: 100%;
   position: relative;
 }
 .cart-collaterals h3 {
@@ -1173,29 +1182,40 @@ ul .type-product a img {
   font-weight: bold;
 }
 
+.cart_wrapper {
+  margin-bottom: 3vw;
+  margin-top: 1.7vw;
+}
+.cart_wrapper h1 {
+  padding-left: 1.7vw;
+}
+
 .wc-proceed-to-checkout {
-  position: absolute;
-  bottom: 0px;
-  padding: 0 !important;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: left;
       -ms-flex-pack: left;
           justify-content: left;
-  width: 100%;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  width: 21vw;
+  max-width: 300px;
   margin-left: 5px;
+  font-size: 1.2vw;
 }
 .wc-proceed-to-checkout a {
   text-decoration: none;
   background-color: #FEDD49;
   font-weight: bold;
-  font-size: 24px;
   text-align: center;
   vertical-align: middle;
   color: #333333;
-  padding: 12px 66px !important;
+  line-height: 2vw;
+  width: 100%;
   border-radius: 10px;
+  margin-bottom: 0 !important;
 }
 
 .added::after {
@@ -1432,6 +1452,10 @@ textarea {
 }
 
 @media (max-width: 1280px) {
+  .wc-proceed-to-checkout {
+    font-size: 1.4vw;
+  }
+
   .header-map-span_top {
     top: 0px;
     left: 10%;
@@ -1890,12 +1914,13 @@ textarea {
     display: -ms-flexbox;
     display: flex;
     position: absolute;
-    top: 5vw;
-    margin-top: -2.5vw;
-    right: 15vw;
+    top: 50%;
+    -webkit-transform: translate(0, -50%);
+            transform: translate(0, -50%);
+    right: 16vw;
     color: #FEDD49;
   }
-  .header-cart-mobile-event span {
+  .header-cart-mobile-event {
     display: block;
     position: absolute;
     width: 7vw;
@@ -1903,10 +1928,16 @@ textarea {
     background-color: #FEDD49;
     color: #333333;
     border-radius: 50%;
-    padding-left: 1.4vw;
-    padding-top: 1vw;
-    margin-left: 2vw;
-    margin-top: -1vw;
+    right: -9vw;
+    top: 50%;
+    -webkit-transform: translate(0, -50%);
+            transform: translate(0, -50%);
+    text-align: center;
+    vertical-align: middle;
+  }
+  .header-cart-mobile-event span {
+    line-height: 8vw;
+    margin-left: -0.7vw;
   }
 
   .main-menu {
@@ -2302,8 +2333,32 @@ textarea {
   }
 }
 @media (max-width: 768px) {
+  .woocommerce-cart-form table.shop_table_responsive tr td, .woocommerce-page table.shop_table_responsive tr:not(.order-total) td {
+    border-radius: 0;
+    max-width: 448px;
+    padding: 0 1.7vw;
+    width: 100vw;
+    margin: auto;
+  }
+  .woocommerce-cart-form table.shop_table_responsive tr td button, .woocommerce-page table.shop_table_responsive tr:not(.order-total) td button {
+    margin: 1vw 0;
+  }
+
+  .actions {
+    max-width: 100% !important;
+    padding-right: 1% !important;
+  }
+
+  .cart-collaterals {
+    font-size: 3vw;
+  }
+  .cart-collaterals .wc-proceed-to-checkout {
+    font-size: 3vw;
+    width: 50vw;
+  }
+
   .header-cart-mobile {
-    right: 14vw;
+    right: 16vw;
   }
 
   .wrapper {
@@ -2596,6 +2651,14 @@ textarea {
   }
 }
 @media (max-width: 576px) {
+  .cart-collaterals {
+    font-size: 5vw;
+  }
+  .cart-collaterals .wc-proceed-to-checkout {
+    font-size: 4vw;
+    width: 50vw;
+  }
+
   .slider-main_page {
     margin-bottom: 0;
   }
@@ -2783,6 +2846,11 @@ textarea {
   }
 }
 @media (max-width: 400px) {
+  .header-cart-mobile-event span {
+    margin-top: 0.7vw;
+    margin-left: -0.4vw;
+  }
+
   .main-menu-btn span {
     margin-left: 1vw;
   }

@@ -1,7 +1,0 @@
-2019-01-25T10:39:13+00:00 INFO Queuing 3.5.4 - wc_update_354_modify_shop_manager_caps
-2019-01-25T10:39:13+00:00 INFO Queuing 3.5.4 - wc_update_354_db_version
-2019-01-25T10:39:15+00:00 INFO Running wc_update_354_modify_shop_manager_caps callback
-2019-01-25T10:39:15+00:00 INFO Finished running wc_update_354_modify_shop_manager_caps callback
-2019-01-25T10:39:15+00:00 INFO Running wc_update_354_db_version callback
-2019-01-25T10:39:15+00:00 INFO Finished running wc_update_354_db_version callback
-2019-01-25T10:39:15+00:00 INFO Data update complete

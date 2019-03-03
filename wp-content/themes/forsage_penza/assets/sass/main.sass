@@ -5,8 +5,7 @@
 html
 	font-family: 'Play', arial
 	overflow-x: hidden !important
-	body
-		overflow-x: hidden
+
 .wrapper
 	max-width: 1200px
 	margin: auto
@@ -991,52 +990,29 @@ textarea
 			padding-left: 40px
 	&-choice
 		background-color: $bgf
-		padding: 1vw
+		padding: 1vw 0 1vw 4vw
 		font-weight: bold
 		line-height: normal
 		font-size: 24px
 		margin-top: 1vw
 		form
 			display: flex
-			width: 100%
-			flex-direction: column
+			flex-direction: row
 			align-items: center
-			justify-content: center
-			.for_mobile_adaptive
-				display: flex
-				flex-direction: row
-				align-items: center
-			span
-				text-align: center
-				font-size: 27px
-				line-height: 30px
 			ul
 				list-style: none
 				display: flex
 				flex-direction: row
 				align-items: center
-				margin: 0.5vw 0
+				padding-left: 1vw
+				margin-left: 1vw
 				li
-					margin-right: 2vw
-					.characters				
-						select
-						&-checkbox
-							img
-								margin-right: 3vw
-								transform: translate(0, 7%)
-							input[type="checkbox"] + label
-								top: 50%
-								transform: translate(0, -50%)
-						.spikes
-							input[type="checkbox"]
-								margin-left: 1.7vw				
+					margin-left: 4vw
 			input
+				margin-left: 4vw
 				background-color: $mainf
 				font-weight: bold
-				margin: 0.5vw 0
-				font-size: 27px
-				padding: 0 1vw
-				line-height: 44px
+				font-size: 17px
 				border: none
 				border-radius: 10px
 				&:hover
@@ -1085,9 +1061,8 @@ textarea
 
 
 
-.main-menu-mobile-main, .header-cart-mobile, .out-of-stock
+.main-menu-mobile-main, .header-cart-mobile
 	display: none
-
 	
 //MEDIA
 @media (max-width: 1280px)
@@ -1348,75 +1323,38 @@ textarea
 						padding: 7px 0
 	.filter
 		&-wrapper
-			margin: 21px 0
+			margin: 1vw 0
 			h2
 				font-family: 'Europe Bold Italic', arial
 				line-height: normal
-				font-size: 48px
+				font-size: 4vw
 				color: $tmf
-				padding-left: 40px
+				padding-left: 3vw
 		&-choice
 			background-color: $bgf
-			padding: 1vw
+			padding: 1vw 0 1vw 4vw
 			font-weight: bold
 			line-height: normal
-			font-size: 24px
+			font-size: 2.1vw
 			margin-top: 1vw
-			form
+			ul
+				list-style: none
 				display: flex
-				width: 100%
-				flex-direction: column
+				flex-direction: row
 				align-items: center
-				justify-content: center
-				span
-					text-align: center
-					font-size: 2.7vw
-					line-height: 3.7vw
-				.for_mobile_adaptive
-					display: flex
-					flex-direction: row
-					align-items: center
-					ul
-						list-style: none
-						display: flex
-						flex-direction: row
-						align-items: center
-						margin: 0.5vw 0
-						margin-right: 2vw
-						li:last-child
-							margin-right: 1vw
-						li:nth-child(4)
-							margin-right: 2vw					
-						li
-							margin-right: 3vw
-							line-height: 2.7vw
-							.characters				
-								select
-									font-size: 1.7vw
-								&-checkbox
-									span
-										font-size: 2.1vw
-									img
-										margin-right: 1.4vw
-										margin-left: 1vw
-										transform: translate(0, 7%)
-										height: 3.7vw
-										width: 3.7vw
-									input[type="checkbox"] + label
-										top: 50%
-										transform: translate(0, -50%)
-										min-height: 3vw
-										min-width: 3vw
-								.spikes
-									input[type="checkbox"]
-										margin-left: 0.7vw		
+				padding-left: 1.2vw
+				margin-left: 1.2vw
+				li
+					margin-left: 2.7vw
+					.characters
+						select
+							font-size: 1.7vw
+							line-height: 1.7vw
 				input
+					margin-left: 3.7vw
 					background-color: $mainf
 					font-weight: bold
-					margin: 0.5vw 0
-					font-size: 2.7vw
-					padding: 0 1vw
-					line-height: 4.4vw
+					font-size: 1.7vw
 					border: none
 					border-radius: 10px
 					&:hover
@@ -1428,26 +1366,12 @@ textarea
 			font-size: 1.7vw
 		a
 			font-size: 1.7vw
-	.my_custom-single_product-summary-wrapper
-		width: 85%
+
+
 
 @media (max-width: 992px)
-	.container-fluid
-		padding: 0
-	.my_custom-single_product-summary
-		&-wrapper
-			width: 100%
-		&-content-line-element
-			width: 50%
-			&-bottom
-				width: auto
-	.related
-		margin-left: 3.8%
-		font-size: 4vw
-		ul
-			margin-right: -3.8%			
 	.wrapper
-		margin: 0
+		margin: 0 -4vw 0 0
 	.header, .contacts, .bottom-bar
 		display: none
 	
@@ -1501,8 +1425,6 @@ textarea
 					width: 100%
 					text-align: center
 					a
-						display: inline-block
-						width: 100%
 						color: $tmf	
 						font-size: 4vw
 						&:hover
@@ -1527,7 +1449,7 @@ textarea
 				top: 50%
 				margin-top: -0.45vw
 				left: 50%
-				margin-left: -1.2vw
+				margin-left: -2.5vw
 				width: 5vw
 				height: 0.7vw
 				background-color: $mainf
@@ -1641,7 +1563,6 @@ textarea
 							padding: 0
 							bottom: 1.7vw
 							left: 1.7vw
-
 	.footer
 		&-banner
 			padding: 0
@@ -1672,72 +1593,6 @@ textarea
 			font-size: 2.1vw
 		a
 			font-size: 2.1vw
-	.filter
-		&-wrapper
-			margin: 1vw 0
-			h2
-				font-family: 'Europe Bold Italic', arial
-				line-height: normal
-				font-size: 4.4vw
-				color: $tmf
-				padding-left: 1vw
-		&-choice
-			background-color: $bgf
-			margin: 1vw 0
-			font-weight: bold
-			line-height: normal
-			form
-				width: 100%
-				span
-					font-size: 3.7vw
-					width: 100%
-					text-align: center	
-				.for_mobile_adaptive
-					display: flex
-					width: 100%
-					flex-direction: column !important
-					justify-content: center
-					margin: 1vw 0
-					ul
-						list-style: none
-						display: flex
-						width: 100%
-						justify-content: space-around
-						flex-direction: row
-						align-items: center
-						padding-left: 0
-						margin: 1vw 0
-						li
-							margin-right: 0
-							.characters
-								span
-									font-size: 2.7vw
-								select
-									font-size: 2.7vw
-									line-height: 4vw
-									padding-right: 0
-								&-checkbox
-									img
-										margin-right: 2.1vw
-										margin-left: 2.1vw
-										transform: translate(0, 7%)
-										height: 4.4vw
-										width: 4.4vw	
-									input[type="checkbox"] + label
-										top: 50%
-										transform: translate(0, -50%)
-										min-height: 4vw
-										min-width: 4vw
-				input[type="submit"]
-					background-color: $mainf
-					font-weight: bold
-					font-size: 3.7vw
-					line-height: 7vw
-					width: 44vw
-					border: none
-					border-radius: 10px
-	h1
-		font-size: 4vw !important
 
 @media screen and (min-width: 768px) and (max-width: 992px)
 	ul
@@ -1768,9 +1623,10 @@ textarea
 @media (max-width: 768px)
 
 	.header-cart-mobile	
-		right: 14vw
+		right: 12vw
+
 	.wrapper
-		margin: 0
+		margin: 0 0 0 0
 	.goods
 		&_selection
 			margin: 0
@@ -1781,7 +1637,6 @@ textarea
 					width: 88vw
 					height: 46vw
 					margin: auto
-
 					margin-bottom: 1vw
 					// width: 425.6px
 					// height: 239.2px
@@ -1789,7 +1644,7 @@ textarea
 					&-characters					
 						font-size: 4vw
 						line-height: 5vw
-						margin-left: 2vw	
+						margin-left: 2vw			
 						ul
 							list-style: none
 							margin-top: 2.3vw
@@ -1894,112 +1749,47 @@ textarea
 			h2
 				font-family: 'Europe Bold Italic', arial
 				line-height: normal
-				font-size: 5vw
+				font-size: 4.4vw
 				color: $tmf
 				padding-left: 1vw
 		&-choice
 			background-color: $bgf
-			margin: 2vw 0
+			padding: 1.7vw 0 1.7vw 4vw
+			margin: 1vw -2vw
 			font-weight: bold
 			line-height: normal
-			form
-				width: 100%
-				span
-					font-size: 4vw
-					width: 100%
-					text-align: center	
-				.for_mobile_adaptive
-					display: flex
-					width: 100%
-					flex-direction: column !important
-					justify-content: center
-					margin: 2.1vw 0
-					ul
-						list-style: none
-						display: flex
-						width: 100%
-						justify-content: space-around
-						flex-direction: row
-						align-items: center
-						padding-left: 0
-						margin: 1.7vw 0
-						li
-							margin-right: 0
-							.characters
-								span
-									font-size: 3.7vw
-								select
-									font-size: 3.7vw
-									line-height: 6vw
-									padding-right: 0
-									padding-right: 1vw
-								&-checkbox
-									img
-										margin-right: 2.1vw
-										margin-left: 2.1vw
-										transform: translate(0, 7%)
-										height: 5vw
-										width: 5vw	
-									input[type="checkbox"] + label
-										top: 50%
-										transform: translate(0, -50%)
-										min-height: 5vw
-										min-width: 5vw
-				input[type="submit"]
+			font-size: 2.7vw
+			ul
+				list-style: none
+				display: flex
+				flex-direction: row
+				align-items: center
+				padding-left: 1.2vw
+				margin-left: 1.2vw
+				li
+					margin-left: 4vw
+					.characters
+						select
+							font-size: 2.1vw
+							line-height: 2.1vw
+							padding-right: 1vw
+				input
+					margin-left: 4.4vw
 					background-color: $mainf
 					font-weight: bold
-					font-size: 4vw
-					line-height: 7vw
-					width: 44vw
+					font-size: 2.1vw
 					border: none
 					border-radius: 10px
+					&:hover
+						cursor: pointer
 
-	.my_custom-single_product				
-		.my_custom-single_product-title
-			display: block
-			width: 100vw
-			padding: 0 0 1vw 0
-			font-size: 4.4vw
-		*
-			margin: auto
-		.woocommerce-product-gallery--columns-4
-			width: 55vw !important
-			margin-bottom: 0em !important
-			.woocommerce-product-gallery__wrapper
-				.woocommerce-product-gallery__image--placeholder
-					img
-						width: 100%
-		.entry-summary
-			.my_custom-single_product-summary-price
-				text-align: center
-				padding: 1vw 0
-				font-size: 6vw
-				line-height: 7.7vw			
-			.my_custom-single_product-summary
-				&-wrapper
-					width: 95vw !important
-					transform: translate(-17.7vw, 0)
-					padding: 5vw 3vw
-				&-content
-					margin: 0
-					&-line
-						width: 100%
-						&-element
-							display: block
-							width: 100%
-							font-size: 5vw
-							&-bottom
-								span, a
-									font-size: 5vw
-		.woocommerce-tabs
-			transform: translate(1vw, 0)
-		.related
-			h2
-				transform: translate(2vw, 0)
-				font-size: 4vw
+
+
 
 	
 @media (max-width: 576px)
+	.wrapper
+		margin: 0 -5px 0 0
 	.slider-main_page
 		margin-bottom: 0
 	.goods
@@ -2067,20 +1857,63 @@ textarea
 			height: 5.6vw
 			padding: 0.5vw 0			
 						
-	
+	.filter
+		&-wrapper
+			margin: 1vw -2vw
+			h2
+				font-family: 'Europe Bold Italic', arial
+				line-height: normal
+				font-size: 5vw
+				color: $tmf
+				padding: 1vw 0 0 1vw 
+				text-align: center
+		&-choice
+			background-color: $bgf
+			font-weight: bold
+			line-height: normal
+			font-size: 4vw
+			form
+				display: flex
+				flex-direction: column
+				align-items: center
+				ul
+					list-style: none
+					display: flex
+					flex-direction: row
+					align-items: center
+					padding-left: 1.2vw
+					margin-left: 1.2vw
+					li
+						margin: 1.7vw 4vw
+						.characters
+							select
+								font-size: 4.4vw
+								line-height: 4.4vw
+								padding-right: 1.7vw
+				input
+					margin: 1vw 0
+					background-color: $mainf
+					font-weight: bold
+					font-size: 4vw
+					border: none
+					border-radius: 10px
+					&:hover
+						cursor: pointer
 	ul.products
 		display: flex
 		flex-direction: column
 		justify-content: center
-		li.type-product
-			display: block
-			height: 88%
-			min-width: 88%
-			margin: 2.7vw auto  !important
+		.type-product
+			display: inline-block
+			height: 100%
+			min-width: 96.2%
+			align-items: left
 			background-color: $mainf
 			box-shadow: 0px 5px 7px rgba(0, 0, 0, 0.08)
 			border-radius: 20px
 			font-size: 4vw
+			&:nth-child(4n+1)
+				margin-left: 0
 			a
 				color: $tmf
 				.woocommerce-loop-product__title
@@ -2111,49 +1944,8 @@ textarea
 		a
 			font-size: 4vw
 			line-height: 7vw
-	.filter
-		&-choice
-			form	
-				span
-					padding-top: 1vw
-				.for_mobile_adaptive
-					ul
-						margin: 2.1vw 0
-						margin-left: -2vw
-						li
-							margin-right: 0
-							.characters
-								span
-									font-size: 4vw
-								select
-									font-size: 4vw
-									line-height: 6vw
-									padding-right: 0
-									padding-right: 1vw
-								&-checkbox
-									img
-										margin-right: 2.1vw
-										margin-left: 2.1vw
-										transform: translate(0, 7%)
-										height: 6vw
-										width: 6vw	
-									input[type="checkbox"] + label
-										top: 50%
-										transform: translate(0, -50%)
-										min-height: 6vw
-										min-width: 6vw
-				input[type="submit"]
-					background-color: $mainf
-					font-weight: bold
-					font-size: 4vw
-					line-height: 9vw
-					width: 60vw
-					border: none
-					border-radius: 10px
 
 @media (max-width: 400px)
-	.main-menu-btn span
-		margin-left: 1vw
 	.goods
 		&_selection
 			&-tires, &-discs
@@ -2186,3 +1978,198 @@ textarea
 							height: 11vw
 							font-size: 4.4vw
 							line-height: 11vw
+
+
+
+
+
+
+
+
+
+
+
+// @media (max-width: 960px)
+// 	.footer
+// 		&-banner
+// 			height: 100%
+// 			font-size: 28.8px
+// 			&-logo
+// 				display: flex
+// 				justify-content: center
+// 			&-title
+// 				display: flex
+// 				flex-direction: column
+// 				justify-content: center
+// 				align-items: center
+
+		
+	// .contacts
+	// 	background-color: $bgf
+	// 	border-radius: 1px
+	// 	font-size: 21px
+	// 	line-height: 25px
+	// 	margin: 0 -40px
+	// 	font-family: 'Play', arial
+	// 	&-opening_hours
+	// 		position: relative
+	// 		padding-left: 100px
+	// 		padding-top: 8px
+	// 		padding-bottom: 12px
+	// 		&-logo
+	// 			position: relative
+	// 			img
+	// 				position: absolute
+	// 				height: 27px
+	// 				left: -27px
+	// 		&-ways
+	// 			&-first_way
+	// 				padding-left: 12px
+	// 			&-second_way
+	// 				display: none				
+	// 			&-third_way
+	// 				display: none
+	// 			&-check
+	// 				height: 6px
+	// 				width: 10px
+	// 				border: 6px solid transparent
+	// 				border-top: 10px solid $tmf
+	// 				position: absolute
+	// 				top: 17px
+	// 				right: 80px
+	// 		&:hover
+	// 			.contacts-opening_hours
+	// 				&-ways
+	// 					background-color: $bgf
+	// 					position: absolute
+	// 					height: 103px
+	// 					z-index: 99
+	// 					border-radius: 10px
+	// 					top: 2px						
+	// 					box-shadow: 0 0 5px rgba(0,0,0,0.5)
+	// 					cursor: default
+	// 					&-first_way
+	// 						display: block
+	// 						padding: 5px 12px
+	// 						width: 100%
+	// 						border-radius: 10px 10px 0 0
+	// 						&:hover
+	// 							background-color: darken($bgf,17%)
+	// 					&-second_way
+	// 						display: block
+	// 						position: absolute
+	// 						top: 35px
+	// 						padding: 5px 12px
+	// 						width: 100%
+	// 						&:hover
+	// 							background-color: darken($bgf,17%)
+	// 					&-third_way
+	// 						display: inline-block
+	// 						position: absolute
+	// 						top: 69px
+	// 						padding: 5px 12px
+	// 						width: 100%
+	// 						border-radius: 0 0 10px 10px
+	// 						&:hover
+	// 							background-color: darken($bgf,17%)
+	// 					&-check
+	// 						transform: rotate(180deg)
+	// 						top: 10px
+
+
+	// .content-area
+	// 	margin: -7px
+	// 	width: 100vw	
+	// .map
+	// 	&-main_page
+	// 		iframe
+	// 		&-info
+	// 			height: 461px
+	// 			width: 458px
+	// 			background-color: rgba($tmf, 0.77)
+	// 			position: absolute
+	// 			top: 44px
+	// 			right: 100px
+	// 			font-size: 17px
+	// 			color: $white
+	// 			line-height: 37px
+	// 			span
+	// 				font-weight: 1000
+	// 			&-title
+	// 				margin-top: 40px
+	// 				justify-content: center
+	// 				text-align: center
+	// 				line-height: 44px
+	// 				font-size: 29px
+	// 				background-color: $white
+	// 				color: $tmf
+	// 			&-inner
+	// 				padding: 10px 21px 0px 39px
+	// 				text-align: right
+	// 				ul 
+	// 					list-style: none
+	// 					li
+	// 						margin-top: 3px
+	// 				&-address
+	// 					padding: 7px 0
+	// 					padding-bottom: 17px
+	// 					font-weight: 700
+	// 					border-bottom: 3px solid $mainf
+	// 				&-phone_numbers
+	// 					padding: 7px 0
+	// 					border-bottom: 3px solid $mainf
+	// 				&-work_hours
+	// 					padding: 7px 0
+	// .footer
+	// 	&-banner
+	// 		height: 165px
+	// 		background-color: $bgf
+	// 		padding: 27px 0
+	// 		margin: 0px
+	// 		&-logo
+	// 			img
+	// 				height: 107px
+	// 		&-title
+	// 			font-family: 'Europe Bold Italic', arial
+	// 			line-height: normal
+	// 			font-size: 36px
+	// 			line-height: 37px
+	// 			color: $tmf
+	// 			font-weight: 1000
+
+	// .footer
+	// 	&-copyright
+	// 		display: flex
+	// 		height: 78px
+	// 		background-color: $tmf
+	// 		margin: 0px
+	// 		padding: 25px 0 !important
+	// 		justify-content: center
+	// 		text-align: center
+	// 		font-style: normal
+	// 		font-weight: normal !important
+	// 		line-height: normal
+	// 		font-size: 24px
+	// 		color: $white
+	// 	&-developed-by
+	// 		display: flex
+	// 		height: 34px
+	// 		justify-content: center
+	// 		text-align: center
+	// 		margin: 0px
+	// 		padding: 6px 0 7px
+	// 		background-color: darken($tmf, 7%)
+	// 		color: rgba($white, 0.54)
+	// 		font-size: 18px
+	// 		font-style: normal
+	// 		font-weight: normal
+	// 		line-height: normal
+	// 		span
+	// 			color: $mainf
+	// 			padding-left: 5px
+
+
+
+
+
+	
