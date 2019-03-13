@@ -33,7 +33,6 @@ get_header();
 						
 			<div class="cart-collaterals">
 				<h3>Ваш заказ:</h3>
-				<p>Всего товаров: <?php echo sprintf($woocommerce->cart->cart_contents_count); ?></p>
 				<?php
 					/**
 					 * Cart collaterals hook.

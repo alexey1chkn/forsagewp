@@ -217,7 +217,7 @@ function my_custom_single_product_summary(){
 		'<div class="my_custom-single_product-summary-content-line-element">PCD: ' . $product->get_attribute('pcd'). '</div></div>' .
 		'<div class="my_custom-single_product-summary-content-line"><div class="my_custom-single_product-summary-content-line-element">Вылет ЕТ: ' . $product->get_attribute('vylet-diska'). '</div>' .
 			'<div class="my_custom-single_product-summary-content-line-element">Ширина: ' . $product->get_attribute('shirina-diska') . '</div></div>' . 
-		'<div class="my_custom-single_product-summary-content-line"><div class="my_custom-single_product-summary-content-line-element" style="width: 100%;">Ст.отверстие: ' . $product->get_attribute('posadochnyj-diametr') . '</div></div>';
+		'<div class="my_custom-single_product-summary-content-line"><div class="my_custom-single_product-summary-content-line-element" style="width: 63%;">Ст.отверстие: ' . $product->get_attribute('posadochnyj-diametr') . '</div><div class="my_custom-single_product-summary-content-line-element" style="width: 37%;">Цвет: ' . $product->get_attribute('cvet-diska') . '</div></div>';
 	}else{
 		echo
 	'<div class="my_custom-single_product-summary-wrapper">
@@ -242,6 +242,11 @@ add_filter( 'woocommerce_product_tabs', 'devise_woo_rename_reviews_tab', 98);
 function devise_woo_rename_reviews_tab($tabs) {
 	$tabs['additional_information']['title'] = 'Характеристики';
 	return $tabs;
+}
+
+add_filter( 'woocommerce_product_tabs',  'woocommerce_spikes_product_tabs', 99 );
+
+function woocommerce_spikes_product_tabs($atts){
 }
 
 add_filter( 'woocommerce_output_related_products_args', 'jk_related_products_args' );
@@ -278,4 +283,28 @@ function custom_override_checkout_fields( $fields ) {
 	unset($fields['billing']['billing_state']);
 	unset($fields['order']['order_comments']);
   return $fields;
+}
+
+add_action( 'init', 'custom_fix_thumbnail' );
+  
+function custom_fix_thumbnail() {
+  add_filter('woocommerce_placeholder_img_src', 'custom_woocommerce_placeholder_img_src');
+    
+    function custom_woocommerce_placeholder_img_src( $src ) {
+    global $product;
+    $upload_dir = wp_upload_dir();
+    $uploads = untrailingslashit( $upload_dir['baseurl'] );
+    $cat = $product->get_attribute('kategoriya');
+
+    if($cat == 'Шины')
+	    $src = $uploads . '/2019/03/NoTire.jpg';
+	  else if($cat == 'Диски')
+	    $src = $uploads . '/2019/03/4e41c62s-960-e1552488450257.png';
+	  else if($cat == 'Аккумуляторы')
+	    $src = $uploads . '/2019/03/4e41c62s-960-1.png';
+	  else if($cat == 'прочее')
+	    
+
+    return $src;
+    }
 }

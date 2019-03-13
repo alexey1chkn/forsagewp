@@ -19,9 +19,9 @@
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
-
+global $woocommerce;
 ?>
-<div class="cart_totals <?php echo ( WC()->customer->has_calculated_shipping() ) ? 'calculated_shipping' : ''; ?>">
+<div class="cart_totals <?php echo ( WC()->customer->has_calculated_shipping() ) ? 'calculated_shipping' : ''; ?>" style="width: 100%">
 
 	<?php do_action( 'woocommerce_before_cart_totals' ); ?>
 
@@ -87,7 +87,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 		<?php endif; ?>
 
 		<?php do_action( 'woocommerce_cart_totals_before_order_total' ); ?>
-
+		<p>Всего товаров: <?php echo sprintf($woocommerce->cart->cart_contents_count); ?></p>
 		<tr class="order-total">
 			<th><?php _e( 'К оплате', 'woocommerce' ); ?>:</th>
 			<td data-title="<?php esc_attr_e( 'Total', 'woocommerce' ); ?>"><?php wc_cart_totals_order_total_html(); ?></td>
